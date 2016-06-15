@@ -20,3 +20,4 @@ build/bin
 *.bin
 *.dylib
 *.xcuserstate
+build/modules/world/face_detector.build

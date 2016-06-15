@@ -223,6 +223,5 @@ inline int hal_ni_merge64s(const int64**, int64*, int, int) { return CV_HAL_ERRO
 #define cv_hal_merge32s hal_ni_merge32s
 #define cv_hal_merge64s hal_ni_merge64s
 
-#include "custom_hal.hpp"
 
 #endif

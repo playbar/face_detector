@@ -2671,14 +2671,6 @@
 			name = objdetect;
 			sourceTree = "<group>";
 		};
-		00CEE6712E3C43CDB2754057 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD9F3F6D99D94A2BB332B130 /* dbt_face_detection.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
 		020059C1B34B441DA034304B /* Src */ = {
 			isa = PBXGroup;
 			children = (
@@ -2938,7 +2930,7 @@
 		0F829A77EF684096A775C5F6 /* example_dbt_face_detection */ = {
 			isa = PBXGroup;
 			children = (
-				00CEE6712E3C43CDB2754057 /* Source Files */,
+				CD9F3F6D99D94A2BB332B130 /* dbt_face_detection.cpp */,
 			);
 			name = example_dbt_face_detection;
 			sourceTree = "<group>";
@@ -4534,14 +4526,6 @@
 			name = Include;
 			sourceTree = "<group>";
 		};
-		79121A885D024297B17E67EB /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				4A5322A83D1C4E9AAD83F07A /* facedetect.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
 		795C668E883543B3A2945E1E /* Src */ = {
 			isa = PBXGroup;
 			children = (
@@ -5114,7 +5098,7 @@
 		A1739FEA433C4EDC9A45CF04 /* example_facedetect */ = {
 			isa = PBXGroup;
 			children = (
-				79121A885D024297B17E67EB /* Source Files */,
+				4A5322A83D1C4E9AAD83F07A /* facedetect.cpp */,
 			);
 			name = example_facedetect;
 			sourceTree = "<group>";
@@ -7827,6 +7811,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/src,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/src,
+					/Users/mac/MyWorks/HongNuo/face_detector/include,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -9272,6 +9257,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/src,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/src,
+					/Users/mac/MyWorks/HongNuo/face_detector/include,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
