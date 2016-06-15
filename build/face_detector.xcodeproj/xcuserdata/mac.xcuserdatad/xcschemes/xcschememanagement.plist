@@ -4,25 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ALL_BUILD.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
 		<key>IlmImf.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>15</integer>
-		</dict>
-		<key>RUN_TESTS.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
-		<key>ZERO_CHECK.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 		<key>cpp-tutorial-pnp_detection.xcscheme</key>
 		<dict>
@@ -594,11 +579,6 @@
 			<key>orderHint</key>
 			<integer>154</integer>
 		</dict>
-		<key>install.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
 		<key>libjasper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -633,11 +613,6 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>46</integer>
-		</dict>
-		<key>opencv_modules.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>opencv_perf_calib3d.xcscheme</key>
 		<dict>
@@ -683,11 +658,6 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>34</integer>
-		</dict>
-		<key>opencv_perf_tests.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>opencv_perf_video.xcscheme</key>
 		<dict>
@@ -774,11 +744,6 @@
 			<key>orderHint</key>
 			<integer>37</integer>
 		</dict>
-		<key>opencv_tests.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
 		<key>opencv_traincascade.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -798,11 +763,6 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>41</integer>
-		</dict>
-		<key>package.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>tutorial_AKAZE_match.xcscheme</key>
 		<dict>
@@ -1258,11 +1218,6 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>181</integer>
-		</dict>
-		<key>uninstall.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>zlib.xcscheme</key>
 		<dict>
