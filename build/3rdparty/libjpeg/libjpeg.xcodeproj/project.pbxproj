@@ -1,0 +1,1033 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              493D0BD246784F1BBCC547AD /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 9DE3A07DAF1245BB8C77D673 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            92267E888EA445769ECF78E9 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            F0778FCFC93D4C948FE09A6E /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              F74C27E2ACCC44799BD1E5F8 /* RUN_TESTS */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 7E4BCDB4C0434B64BA167CC7 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+                     buildPhases = (
+                            DF83CE07261B445C8D4BF5D9 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = RUN_TESTS;
+                     productName = RUN_TESTS;
+              };
+              1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = F834919FED114933893F6672 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            D40C48E85C5D4C15B4B97C9D /* CMake Rules */,
+                     );
+                     dependencies = (
+                            A36A9E4E477741D997D77463 /* PBXTargetDependency */,
+                            4E7D9A0D56554171AE8DC837 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              B6681EA43CE64D8AAF0836AC /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 6078ED19500D4EC9959627AF /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            AE60923485404E1AAB38C9AD /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            3BE0CBBC2FD44BECB48C4AF7 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+              3365F89319B243209663F22B /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 6A28787048804DCE930F9CF9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            20A960F6184E4293AFC22C68 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+2F6C0808A8544072A5A6B8DA /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F46BD2FC7B324E0FAFBECBDB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+F0F1D3104528432AB4401F71 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jaricom.c */ = {isa = PBXBuildFile; fileRef = E6506FD81F7F4C729293A788 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jaricom.c */; settings = { COMPILER_FLAGS = ""; }; };
+B313909A8910422A8C10BBA9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXBuildFile; fileRef = 7FD90FA92C0049E48C4BF249 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+8820594D69C54931B38C973B /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXBuildFile; fileRef = 74088164F4834498834EF427 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+ACE5454DA1ED46E8A510318A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcarith.c */ = {isa = PBXBuildFile; fileRef = 60E32431DA32450B873E1E40 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+D182F39B40644DD1AB849DE9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXBuildFile; fileRef = 6DBCA8D3A5F2438F87EB655C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+32054639FC9B47998C5ACF8E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccolor.c */ = {isa = PBXBuildFile; fileRef = 82A92B5BC0964E19B425E5CC /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+80108CB490844635B8B1DF4C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXBuildFile; fileRef = 2CA4B52BC8014DF28AA70157 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcdctmgr.c */; settings = { COMPILER_FLAGS = "-O1"; }; };
+F9CB38BFB3ED4DF1862DCB05 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jchuff.c */ = {isa = PBXBuildFile; fileRef = 7A18728BBE374D519D09209A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jchuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+A7BECBC9102640908139E7B2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcinit.c */ = {isa = PBXBuildFile; fileRef = 5951A1B8517348CB906C41F1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcinit.c */; settings = { COMPILER_FLAGS = ""; }; };
+6EE6BD30611941CEADCB8792 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXBuildFile; fileRef = 47F21F0A48944C5C8DABE91D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+63E087D1ED0247E0ACED256D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXBuildFile; fileRef = C1D8F2573A6947B5BF7DF199 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+F3AC97297E6B4E19B7D7E45F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXBuildFile; fileRef = FA6F0F6D1E52422DA97EDC13 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+6A881C9FE0F64D9787DF02D0 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXBuildFile; fileRef = 1C48357D9343481191326F3F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcomapi.c */; settings = { COMPILER_FLAGS = ""; }; };
+A00029ED588B47B08DDF4B86 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jconfig.h */ = {isa = PBXBuildFile; fileRef = 397B5EC93C7140B290DA51D9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+7738CF0A4B984EED8E377342 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcparam.c */ = {isa = PBXBuildFile; fileRef = 729B97A6CB94401FBCA1DB8E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcparam.c */; settings = { COMPILER_FLAGS = ""; }; };
+8B01C890BAA548C8A8B9EA20 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXBuildFile; fileRef = D9015238137B464F8E128EE7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcprepct.c */; settings = { COMPILER_FLAGS = ""; }; };
+F35EBCE4B5C54B0080E2757D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcsample.c */ = {isa = PBXBuildFile; fileRef = C333E9F19EEC4085B2984460 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+C5CA8920A37F48609C8DE847 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jctrans.c */ = {isa = PBXBuildFile; fileRef = 82B57550AF7246CC851B6450 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jctrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+74E0C3916E154DFFB0E8ADC2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXBuildFile; fileRef = E755340E986148E9996526E8 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+88D695750FBC48A7AC4E5E0A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXBuildFile; fileRef = DC0059BE5E2A4DFA98FDEDB4 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+3F2E6B1FB3D64D9C9B4379C1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdarith.c */ = {isa = PBXBuildFile; fileRef = 3CA2F16ADFA748D2A53BC343 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+401AA76501E24BB8902E3E99 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXBuildFile; fileRef = E79088212C364D868DFC3F9F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatadst.c */; settings = { COMPILER_FLAGS = ""; }; };
+EDDE0FAC805541D689155107 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXBuildFile; fileRef = 80227466847944E68524FA3A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatasrc.c */; settings = { COMPILER_FLAGS = ""; }; };
+F03E644926914B4A96008AAF /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXBuildFile; fileRef = 271C67AF064649E39CA3E36A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+746E5397D0D947BDA28960BA /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXBuildFile; fileRef = DAB8122064FC486D9CCCA734 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+EE268EEDB1EB4F73BA0E97B4 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdct.h */ = {isa = PBXBuildFile; fileRef = F9D073BF2BA249AF87E3B150 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdct.h */; settings = { COMPILER_FLAGS = ""; }; };
+BB56C39B185743D296D4A825 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXBuildFile; fileRef = 8C87FA415B2D4CB4B5CAA056 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jddctmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+D9260936115A4B43BAA8CDA8 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXBuildFile; fileRef = 382D1D4CB04A4709B1E96D3D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdhuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+DEEBC8F484F04EDF91BDEF1F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdinput.c */ = {isa = PBXBuildFile; fileRef = FAB0DF0986284582919F447E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdinput.c */; settings = { COMPILER_FLAGS = ""; }; };
+1AA5D3EC57F0466999ECD59C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXBuildFile; fileRef = 562B008D4068414C84E3ED69 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+18DEE6047F4E4A48ACDFBAA8 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXBuildFile; fileRef = 8C80172DEBBB413092006698 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+66EAE04357E64930A0F6E0BD /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXBuildFile; fileRef = F91562BE33034E30B8AADD0C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+A42841A081A34313AA6816D1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXBuildFile; fileRef = 75A484B79E4B49B49C7CF9A2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmerge.c */; settings = { COMPILER_FLAGS = ""; }; };
+B1C43A8A127045BF9ABAA0A1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXBuildFile; fileRef = FD6427D4AE124FE0B0F5D8F1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdpostct.c */; settings = { COMPILER_FLAGS = ""; }; };
+272350DA99E94CF3A5B9B56E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdsample.c */ = {isa = PBXBuildFile; fileRef = 0C7EA6D628C744C7966D271D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+A63E22AFA96B493D84D1FBD3 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXBuildFile; fileRef = 9609DCF2617249FD8008857C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+EB46F6A004B2433388F66C78 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.c */ = {isa = PBXBuildFile; fileRef = 448F22A54E134423B284CE44 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+D5E08C5E753F42ACA22DB133 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.h */ = {isa = PBXBuildFile; fileRef = 74A1C962CB064F07808DB8E7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.h */; settings = { COMPILER_FLAGS = ""; }; };
+440D2535A42C4CAEBA1E5A4D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXBuildFile; fileRef = 9930686AA4064BA193C1D211 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+A15AF2E9702D48248713ECF9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXBuildFile; fileRef = 4FC2E18B6FC1485CB01C0568 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+603ED7264E8942BF83B36F1D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXBuildFile; fileRef = 546E9AC94FA1484A829892E5 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+65BF656424A34EC798ACB0AC /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXBuildFile; fileRef = D86756EA03D649D5BBB6AECE /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+08715E48B09241D587421E62 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXBuildFile; fileRef = 3C70E20D106E4D7699C72FA9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+E060D7A00C6A4505819629DB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctint.c */ = {isa = PBXBuildFile; fileRef = 556A67730AA545F1825057C7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+EE11CBD964CD4041ACE33FD4 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jinclude.h */ = {isa = PBXBuildFile; fileRef = 3B8058095DE142CB9107D667 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jinclude.h */; settings = { COMPILER_FLAGS = ""; }; };
+51F79E5D14314F31B83F0D46 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXBuildFile; fileRef = A2C2EE4126EC47BE96195795 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+DDA9E1355DB74AD99138C02F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXBuildFile; fileRef = A514DD040EF9414E956097CF /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemnobs.c */; settings = { COMPILER_FLAGS = ""; }; };
+DA94A1CF805E4D3E8427AB05 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXBuildFile; fileRef = 3344FF7AC9A84FF0B08267EB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemsys.h */; settings = { COMPILER_FLAGS = ""; }; };
+5BAC075421BC42BFBACA4AC2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXBuildFile; fileRef = 0E40F1AFD8B1464C8F9C864F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmorecfg.h */; settings = { COMPILER_FLAGS = ""; }; };
+FA2EBD2E139645388B619E16 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpegint.h */ = {isa = PBXBuildFile; fileRef = 0E9E95C5229C4812B5B695F3 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpegint.h */; settings = { COMPILER_FLAGS = ""; }; };
+06E164D0FB364271B4C880CB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXBuildFile; fileRef = 4812C3B17A554F0A87A0859C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpeglib.h */; settings = { COMPILER_FLAGS = ""; }; };
+29BE04A56F884AB7BC072FF5 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant1.c */ = {isa = PBXBuildFile; fileRef = BAF4AAA0FC374CE883E2BF92 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant1.c */; settings = { COMPILER_FLAGS = ""; }; };
+652EF6270CCC45E889FE351C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant2.c */ = {isa = PBXBuildFile; fileRef = 30F84F71DC6A4686B711F162 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant2.c */; settings = { COMPILER_FLAGS = ""; }; };
+5C80FAC3D370443E9E4F3537 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jutils.c */ = {isa = PBXBuildFile; fileRef = E2CC0B5865414E41AF6A804E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jutils.c */; settings = { COMPILER_FLAGS = ""; }; };
+A2F189C89BC94F70945BE6F7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jversion.h */ = {isa = PBXBuildFile; fileRef = 5FF82FBE2C0749B386DABB29 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jversion.h */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              9B002BCC81AE405298372C5A /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              6DD35CDED98C483E9AC4CEE6 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              AFCC21FDFEE24556B63A3FFD /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              FC0C51E31E7A46FDA00FE4ED /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B740F655D4DD4215A14ACC2B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1BAA4FB1DBAC4358B615E327;
+                     remoteInfo = ALL_BUILD;
+              };
+              E4C7A2EB82DA4BA6A1083646 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B740F655D4DD4215A14ACC2B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 3365F89319B243209663F22B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              B9750E92B4BF4023A7E89882 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B740F655D4DD4215A14ACC2B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 49D1D325B34E4FDAAE62B113;
+                     remoteInfo = libjpeg;
+              };
+              2C9A1E10EF5145B2B0164AD9 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B740F655D4DD4215A14ACC2B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 3365F89319B243209663F22B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              4368AB041AC1478EAC565063 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B740F655D4DD4215A14ACC2B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1BAA4FB1DBAC4358B615E327;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+F46BD2FC7B324E0FAFBECBDB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+E6506FD81F7F4C729293A788 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jaricom.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jaricom.c"; path = "jaricom.c"; sourceTree = SOURCE_ROOT; };
+7FD90FA92C0049E48C4BF249 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapimin.c"; path = "jcapimin.c"; sourceTree = SOURCE_ROOT; };
+74088164F4834498834EF427 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapistd.c"; path = "jcapistd.c"; sourceTree = SOURCE_ROOT; };
+60E32431DA32450B873E1E40 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcarith.c"; path = "jcarith.c"; sourceTree = SOURCE_ROOT; };
+6DBCA8D3A5F2438F87EB655C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccoefct.c"; path = "jccoefct.c"; sourceTree = SOURCE_ROOT; };
+82A92B5BC0964E19B425E5CC /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccolor.c"; path = "jccolor.c"; sourceTree = SOURCE_ROOT; };
+2CA4B52BC8014DF28AA70157 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcdctmgr.c"; path = "jcdctmgr.c"; sourceTree = SOURCE_ROOT; };
+7A18728BBE374D519D09209A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jchuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jchuff.c"; path = "jchuff.c"; sourceTree = SOURCE_ROOT; };
+5951A1B8517348CB906C41F1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcinit.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcinit.c"; path = "jcinit.c"; sourceTree = SOURCE_ROOT; };
+47F21F0A48944C5C8DABE91D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmainct.c"; path = "jcmainct.c"; sourceTree = SOURCE_ROOT; };
+C1D8F2573A6947B5BF7DF199 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmarker.c"; path = "jcmarker.c"; sourceTree = SOURCE_ROOT; };
+FA6F0F6D1E52422DA97EDC13 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmaster.c"; path = "jcmaster.c"; sourceTree = SOURCE_ROOT; };
+1C48357D9343481191326F3F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcomapi.c"; path = "jcomapi.c"; sourceTree = SOURCE_ROOT; };
+397B5EC93C7140B290DA51D9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jconfig.h"; path = "jconfig.h"; sourceTree = SOURCE_ROOT; };
+729B97A6CB94401FBCA1DB8E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcparam.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcparam.c"; path = "jcparam.c"; sourceTree = SOURCE_ROOT; };
+D9015238137B464F8E128EE7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcprepct.c"; path = "jcprepct.c"; sourceTree = SOURCE_ROOT; };
+C333E9F19EEC4085B2984460 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcsample.c"; path = "jcsample.c"; sourceTree = SOURCE_ROOT; };
+82B57550AF7246CC851B6450 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jctrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jctrans.c"; path = "jctrans.c"; sourceTree = SOURCE_ROOT; };
+E755340E986148E9996526E8 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapimin.c"; path = "jdapimin.c"; sourceTree = SOURCE_ROOT; };
+DC0059BE5E2A4DFA98FDEDB4 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapistd.c"; path = "jdapistd.c"; sourceTree = SOURCE_ROOT; };
+3CA2F16ADFA748D2A53BC343 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdarith.c"; path = "jdarith.c"; sourceTree = SOURCE_ROOT; };
+E79088212C364D868DFC3F9F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatadst.c"; path = "jdatadst.c"; sourceTree = SOURCE_ROOT; };
+80227466847944E68524FA3A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatasrc.c"; path = "jdatasrc.c"; sourceTree = SOURCE_ROOT; };
+271C67AF064649E39CA3E36A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcoefct.c"; path = "jdcoefct.c"; sourceTree = SOURCE_ROOT; };
+DAB8122064FC486D9CCCA734 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcolor.c"; path = "jdcolor.c"; sourceTree = SOURCE_ROOT; };
+F9D073BF2BA249AF87E3B150 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jdct.h"; path = "jdct.h"; sourceTree = SOURCE_ROOT; };
+8C87FA415B2D4CB4B5CAA056 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jddctmgr.c"; path = "jddctmgr.c"; sourceTree = SOURCE_ROOT; };
+382D1D4CB04A4709B1E96D3D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdhuff.c"; path = "jdhuff.c"; sourceTree = SOURCE_ROOT; };
+FAB0DF0986284582919F447E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdinput.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdinput.c"; path = "jdinput.c"; sourceTree = SOURCE_ROOT; };
+562B008D4068414C84E3ED69 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmainct.c"; path = "jdmainct.c"; sourceTree = SOURCE_ROOT; };
+8C80172DEBBB413092006698 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmarker.c"; path = "jdmarker.c"; sourceTree = SOURCE_ROOT; };
+F91562BE33034E30B8AADD0C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmaster.c"; path = "jdmaster.c"; sourceTree = SOURCE_ROOT; };
+75A484B79E4B49B49C7CF9A2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmerge.c"; path = "jdmerge.c"; sourceTree = SOURCE_ROOT; };
+FD6427D4AE124FE0B0F5D8F1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdpostct.c"; path = "jdpostct.c"; sourceTree = SOURCE_ROOT; };
+0C7EA6D628C744C7966D271D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdsample.c"; path = "jdsample.c"; sourceTree = SOURCE_ROOT; };
+9609DCF2617249FD8008857C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdtrans.c"; path = "jdtrans.c"; sourceTree = SOURCE_ROOT; };
+448F22A54E134423B284CE44 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jerror.c"; path = "jerror.c"; sourceTree = SOURCE_ROOT; };
+74A1C962CB064F07808DB8E7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jerror.h"; path = "jerror.h"; sourceTree = SOURCE_ROOT; };
+9930686AA4064BA193C1D211 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctflt.c"; path = "jfdctflt.c"; sourceTree = SOURCE_ROOT; };
+4FC2E18B6FC1485CB01C0568 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctfst.c"; path = "jfdctfst.c"; sourceTree = SOURCE_ROOT; };
+546E9AC94FA1484A829892E5 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctint.c"; path = "jfdctint.c"; sourceTree = SOURCE_ROOT; };
+D86756EA03D649D5BBB6AECE /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctflt.c"; path = "jidctflt.c"; sourceTree = SOURCE_ROOT; };
+3C70E20D106E4D7699C72FA9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctfst.c"; path = "jidctfst.c"; sourceTree = SOURCE_ROOT; };
+556A67730AA545F1825057C7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctint.c"; path = "jidctint.c"; sourceTree = SOURCE_ROOT; };
+3B8058095DE142CB9107D667 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jinclude.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jinclude.h"; path = "jinclude.h"; sourceTree = SOURCE_ROOT; };
+A2C2EE4126EC47BE96195795 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemmgr.c"; path = "jmemmgr.c"; sourceTree = SOURCE_ROOT; };
+A514DD040EF9414E956097CF /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemnobs.c"; path = "jmemnobs.c"; sourceTree = SOURCE_ROOT; };
+3344FF7AC9A84FF0B08267EB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmemsys.h"; path = "jmemsys.h"; sourceTree = SOURCE_ROOT; };
+0E40F1AFD8B1464C8F9C864F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmorecfg.h"; path = "jmorecfg.h"; sourceTree = SOURCE_ROOT; };
+0E9E95C5229C4812B5B695F3 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpegint.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpegint.h"; path = "jpegint.h"; sourceTree = SOURCE_ROOT; };
+4812C3B17A554F0A87A0859C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpeglib.h"; path = "jpeglib.h"; sourceTree = SOURCE_ROOT; };
+BAF4AAA0FC374CE883E2BF92 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant1.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant1.c"; path = "jquant1.c"; sourceTree = SOURCE_ROOT; };
+30F84F71DC6A4686B711F162 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant2.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant2.c"; path = "jquant2.c"; sourceTree = SOURCE_ROOT; };
+E2CC0B5865414E41AF6A804E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jutils.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jutils.c"; path = "jutils.c"; sourceTree = SOURCE_ROOT; };
+5FF82FBE2C0749B386DABB29 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jversion.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jversion.h"; path = "jversion.h"; sourceTree = SOURCE_ROOT; };
+D4621993669345C3848323C7 /* libjpeg */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibjpeg.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+9974D74532EE4F48AF93432D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+22EDE62D5E75423484335EF5 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              2CFE44E3879B4DEC9B5A4154  = {
+                     isa = PBXGroup;
+                     children = (
+                            7FC6BB5E28E8445B96F8740A /* Sources */,
+                            65356DDCF986400D9C27A9E0 /* Resources */,
+                            B9BFEA1CEC5B46D98971C19A /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              7FC6BB5E28E8445B96F8740A /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7F0036459EB846B6BDE146FC /* 3rdparty */,
+                            BCA32FDF79964E64BBF2E257 /* ALL_BUILD */,
+                            F87444C607B649ED8AFF4223 /* ZERO_CHECK */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              65356DDCF986400D9C27A9E0 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              7F0036459EB846B6BDE146FC /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            77B38BD33A7945C4B22C366E /* libjpeg */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              77B38BD33A7945C4B22C366E /* libjpeg */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2D63FA4418B24CAF9D8DD178 /* Source Files */,
+                            1CD9102B2AE643DDA9CACBCC /* Header Files */,
+                            F46BD2FC7B324E0FAFBECBDB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = libjpeg;
+                     sourceTree = "<group>";
+              };
+              2D63FA4418B24CAF9D8DD178 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E6506FD81F7F4C729293A788 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jaricom.c */,
+                            7FD90FA92C0049E48C4BF249 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapimin.c */,
+                            74088164F4834498834EF427 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapistd.c */,
+                            60E32431DA32450B873E1E40 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcarith.c */,
+                            6DBCA8D3A5F2438F87EB655C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccoefct.c */,
+                            82A92B5BC0964E19B425E5CC /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccolor.c */,
+                            2CA4B52BC8014DF28AA70157 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcdctmgr.c */,
+                            7A18728BBE374D519D09209A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jchuff.c */,
+                            5951A1B8517348CB906C41F1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcinit.c */,
+                            47F21F0A48944C5C8DABE91D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmainct.c */,
+                            C1D8F2573A6947B5BF7DF199 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmarker.c */,
+                            FA6F0F6D1E52422DA97EDC13 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmaster.c */,
+                            1C48357D9343481191326F3F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcomapi.c */,
+                            729B97A6CB94401FBCA1DB8E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcparam.c */,
+                            D9015238137B464F8E128EE7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcprepct.c */,
+                            C333E9F19EEC4085B2984460 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcsample.c */,
+                            82B57550AF7246CC851B6450 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jctrans.c */,
+                            E755340E986148E9996526E8 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapimin.c */,
+                            DC0059BE5E2A4DFA98FDEDB4 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapistd.c */,
+                            3CA2F16ADFA748D2A53BC343 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdarith.c */,
+                            E79088212C364D868DFC3F9F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatadst.c */,
+                            80227466847944E68524FA3A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatasrc.c */,
+                            271C67AF064649E39CA3E36A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcoefct.c */,
+                            DAB8122064FC486D9CCCA734 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcolor.c */,
+                            8C87FA415B2D4CB4B5CAA056 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jddctmgr.c */,
+                            382D1D4CB04A4709B1E96D3D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdhuff.c */,
+                            FAB0DF0986284582919F447E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdinput.c */,
+                            562B008D4068414C84E3ED69 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmainct.c */,
+                            8C80172DEBBB413092006698 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmarker.c */,
+                            F91562BE33034E30B8AADD0C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmaster.c */,
+                            75A484B79E4B49B49C7CF9A2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmerge.c */,
+                            FD6427D4AE124FE0B0F5D8F1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdpostct.c */,
+                            0C7EA6D628C744C7966D271D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdsample.c */,
+                            9609DCF2617249FD8008857C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdtrans.c */,
+                            448F22A54E134423B284CE44 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.c */,
+                            9930686AA4064BA193C1D211 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctflt.c */,
+                            4FC2E18B6FC1485CB01C0568 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctfst.c */,
+                            546E9AC94FA1484A829892E5 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctint.c */,
+                            D86756EA03D649D5BBB6AECE /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctflt.c */,
+                            3C70E20D106E4D7699C72FA9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctfst.c */,
+                            556A67730AA545F1825057C7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctint.c */,
+                            A2C2EE4126EC47BE96195795 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemmgr.c */,
+                            A514DD040EF9414E956097CF /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemnobs.c */,
+                            BAF4AAA0FC374CE883E2BF92 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant1.c */,
+                            30F84F71DC6A4686B711F162 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant2.c */,
+                            E2CC0B5865414E41AF6A804E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jutils.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              1CD9102B2AE643DDA9CACBCC /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            397B5EC93C7140B290DA51D9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jconfig.h */,
+                            F9D073BF2BA249AF87E3B150 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdct.h */,
+                            74A1C962CB064F07808DB8E7 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.h */,
+                            3B8058095DE142CB9107D667 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jinclude.h */,
+                            3344FF7AC9A84FF0B08267EB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemsys.h */,
+                            0E40F1AFD8B1464C8F9C864F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmorecfg.h */,
+                            0E9E95C5229C4812B5B695F3 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpegint.h */,
+                            4812C3B17A554F0A87A0859C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jpeglib.h */,
+                            5FF82FBE2C0749B386DABB29 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jversion.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              BCA32FDF79964E64BBF2E257 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            05F865FE6A8F44A285B94187 /* CMake Rules */,
+                            9974D74532EE4F48AF93432D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              05F865FE6A8F44A285B94187 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              F87444C607B649ED8AFF4223 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            90D41125F0604EC59E206601 /* CMake Rules */,
+                            22EDE62D5E75423484335EF5 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              90D41125F0604EC59E206601 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              B9BFEA1CEC5B46D98971C19A /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D4621993669345C3848323C7 /* libjpeg */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              49D1D325B34E4FDAAE62B113 /* libjpeg */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = B54F6705C885412DACA51D76 /* Build configuration list for PBXNativeTarget "libjpeg" */;
+                     buildPhases = (
+                            65C6BF744FDA4F9F8F532F1A /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            858518F0DBC84F689AC274E2 /* PBXTargetDependency */,
+                     );
+                     name = libjpeg;
+                     productName = libjpeg;
+                     productReference = D4621993669345C3848323C7 /* libjpeg */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              B740F655D4DD4215A14ACC2B /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 63FEE021B0A44E5A87CA642C /* Build configuration list for PBXProject  "libjpeg" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            6DD35CDED98C483E9AC4CEE6 /* Debug */,
+                            AFCC21FDFEE24556B63A3FFD /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 2CFE44E3879B4DEC9B5A4154;
+                     projectDirPath = "../../../3rdparty/libjpeg";
+                     projectRoot = "";
+                     targets = (
+                            493D0BD246784F1BBCC547AD /* install */,
+                            49D1D325B34E4FDAAE62B113 /* libjpeg */,
+                            F74C27E2ACCC44799BD1E5F8 /* RUN_TESTS */,
+                            1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */,
+                            B6681EA43CE64D8AAF0836AC /* package */,
+                            3365F89319B243209663F22B /* ZERO_CHECK */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              5FF18F09790746F2A92B60A8 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              92267E888EA445769ECF78E9 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg -f /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              47A87537F0994CBE8A46B1DE /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              DF83CE07261B445C8D4BF5D9 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg -f /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              59D572269EEE476BA317C75E /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D40C48E85C5D4C15B4B97C9D /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg -f /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              D15C1BF0E1F8427680D2E600 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              AE60923485404E1AAB38C9AD /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg -f /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              393E84D53B9A4BD6AA4387D5 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              20A960F6184E4293AFC22C68 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg -f /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              65C6BF744FDA4F9F8F532F1A /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            F0F1D3104528432AB4401F71 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jaricom.c */,
+                            B313909A8910422A8C10BBA9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapimin.c */,
+                            8820594D69C54931B38C973B /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcapistd.c */,
+                            ACE5454DA1ED46E8A510318A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcarith.c */,
+                            D182F39B40644DD1AB849DE9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccoefct.c */,
+                            32054639FC9B47998C5ACF8E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jccolor.c */,
+                            80108CB490844635B8B1DF4C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcdctmgr.c */,
+                            F9CB38BFB3ED4DF1862DCB05 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jchuff.c */,
+                            A7BECBC9102640908139E7B2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcinit.c */,
+                            6EE6BD30611941CEADCB8792 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmainct.c */,
+                            63E087D1ED0247E0ACED256D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmarker.c */,
+                            F3AC97297E6B4E19B7D7E45F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcmaster.c */,
+                            6A881C9FE0F64D9787DF02D0 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcomapi.c */,
+                            7738CF0A4B984EED8E377342 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcparam.c */,
+                            8B01C890BAA548C8A8B9EA20 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcprepct.c */,
+                            F35EBCE4B5C54B0080E2757D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jcsample.c */,
+                            C5CA8920A37F48609C8DE847 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jctrans.c */,
+                            74E0C3916E154DFFB0E8ADC2 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapimin.c */,
+                            88D695750FBC48A7AC4E5E0A /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdapistd.c */,
+                            3F2E6B1FB3D64D9C9B4379C1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdarith.c */,
+                            401AA76501E24BB8902E3E99 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatadst.c */,
+                            EDDE0FAC805541D689155107 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdatasrc.c */,
+                            F03E644926914B4A96008AAF /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcoefct.c */,
+                            746E5397D0D947BDA28960BA /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdcolor.c */,
+                            BB56C39B185743D296D4A825 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jddctmgr.c */,
+                            D9260936115A4B43BAA8CDA8 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdhuff.c */,
+                            DEEBC8F484F04EDF91BDEF1F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdinput.c */,
+                            1AA5D3EC57F0466999ECD59C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmainct.c */,
+                            18DEE6047F4E4A48ACDFBAA8 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmarker.c */,
+                            66EAE04357E64930A0F6E0BD /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmaster.c */,
+                            A42841A081A34313AA6816D1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdmerge.c */,
+                            B1C43A8A127045BF9ABAA0A1 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdpostct.c */,
+                            272350DA99E94CF3A5B9B56E /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdsample.c */,
+                            A63E22AFA96B493D84D1FBD3 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jdtrans.c */,
+                            EB46F6A004B2433388F66C78 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jerror.c */,
+                            440D2535A42C4CAEBA1E5A4D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctflt.c */,
+                            A15AF2E9702D48248713ECF9 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctfst.c */,
+                            603ED7264E8942BF83B36F1D /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jfdctint.c */,
+                            65BF656424A34EC798ACB0AC /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctflt.c */,
+                            08715E48B09241D587421E62 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctfst.c */,
+                            E060D7A00C6A4505819629DB /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jidctint.c */,
+                            51F79E5D14314F31B83F0D46 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemmgr.c */,
+                            DDA9E1355DB74AD99138C02F /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jmemnobs.c */,
+                            29BE04A56F884AB7BC072FF5 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant1.c */,
+                            652EF6270CCC45E889FE351C /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jquant2.c */,
+                            5C80FAC3D370443E9E4F3537 /* /Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg/jutils.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              F0778FCFC93D4C948FE09A6E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */;
+                     targetProxy = FC0C51E31E7A46FDA00FE4ED /* PBXContainerItemProxy */;
+              };
+              858518F0DBC84F689AC274E2 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 3365F89319B243209663F22B /* ZERO_CHECK */;
+                     targetProxy = E4C7A2EB82DA4BA6A1083646 /* PBXContainerItemProxy */;
+              };
+              A36A9E4E477741D997D77463 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 49D1D325B34E4FDAAE62B113 /* libjpeg */;
+                     targetProxy = B9750E92B4BF4023A7E89882 /* PBXContainerItemProxy */;
+              };
+              4E7D9A0D56554171AE8DC837 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 3365F89319B243209663F22B /* ZERO_CHECK */;
+                     targetProxy = 2C9A1E10EF5145B2B0164AD9 /* PBXContainerItemProxy */;
+              };
+              3BE0CBBC2FD44BECB48C4AF7 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */;
+                     targetProxy = 4368AB041AC1478EAC565063 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              667F0A14347A4641843B3946 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg/build;
+                     };
+                     name = Debug;
+              };
+              0D5B4B0F43DA482DA51AC938 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg/build;
+                     };
+                     name = Release;
+              };
+              C563D68BC7814C8C9B84152F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              ADFCAA0B8A5744BFBF42207C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              475C54A5A74A43B0BBFA8180 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -Wno-shadow -Wno-unused -Wno-unused-parameter         -DDEBUG -D_DEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              65C9E259E7534262A09E3E70 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Release;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -Wno-shadow -Wno-unused -Wno-unused-parameter     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              1D2040138E6F497EBDF4F507 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              71AD02F8BDE2472AADB06108 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              9B17C17F4BF74823BE06D81B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              3B6AA3A2A93F4C7780DBF476 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              AEFF9C79F8954676B71BCC91 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E356F5E8358E4B00AD8A390C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              6B4CC3B792514F9EBC51EE61 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              550B075329F741E887507374 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/libjpeg, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              63FEE021B0A44E5A87CA642C /* Build configuration list for PBXProject  "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            667F0A14347A4641843B3946 /* Debug */,
+                            0D5B4B0F43DA482DA51AC938 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              9DE3A07DAF1245BB8C77D673 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            C563D68BC7814C8C9B84152F /* Debug */,
+                            ADFCAA0B8A5744BFBF42207C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B54F6705C885412DACA51D76 /* Build configuration list for PBXNativeTarget "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            475C54A5A74A43B0BBFA8180 /* Debug */,
+                            65C9E259E7534262A09E3E70 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7E4BCDB4C0434B64BA167CC7 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1D2040138E6F497EBDF4F507 /* Debug */,
+                            71AD02F8BDE2472AADB06108 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              F834919FED114933893F6672 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            9B17C17F4BF74823BE06D81B /* Debug */,
+                            3B6AA3A2A93F4C7780DBF476 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              6078ED19500D4EC9959627AF /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            AEFF9C79F8954676B71BCC91 /* Debug */,
+                            E356F5E8358E4B00AD8A390C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              6A28787048804DCE930F9CF9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            6B4CC3B792514F9EBC51EE61 /* Debug */,
+                            550B075329F741E887507374 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = B740F655D4DD4215A14ACC2B;
+}

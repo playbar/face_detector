@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              493D0BD246784F1BBCC547AD /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 9B36351CCFA74400998AF0DA /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            D7020CF530FE4B1C8837FC6D /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            97EDF47E46BD4868A47D82A0 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              F74C27E2ACCC44799BD1E5F8 /* RUN_TESTS */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 93810B8A618547D083A94782 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+                     buildPhases = (
+                            8D9BBD6E75F54988AF958B12 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = RUN_TESTS;
+                     productName = RUN_TESTS;
+              };
+              1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B7A699D3EB1E434EBC8D31E4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            C9765EFE807643B2A0431C73 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            0258E4D27D23459A8351DB50 /* PBXTargetDependency */,
+                            E0D103176E7E4AD9B8E9180E /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              B6681EA43CE64D8AAF0836AC /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = ABFE4FF2C96648C0BE1D4F33 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            8B297BE0765741EE94ED059B /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            95D4D10A63C54FCE83B5B9FC /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+              3365F89319B243209663F22B /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 59948480A8304DCAAA435ED3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            1AA5240DE43C4FF79E324761 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+FFA4804F56DE4D02A205460F /* /Users/mac/MyWorks/HongNuo/face_detector/build/cvconfig.h */ = {isa = PBXBuildFile; fileRef = C94A5C9BE6874D3A80A9D25D /* /Users/mac/MyWorks/HongNuo/face_detector/build/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+6AB29B49251442659095468D /* /Users/mac/MyWorks/HongNuo/face_detector/build/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = BD61281C007C4716BB2B8644 /* /Users/mac/MyWorks/HongNuo/face_detector/build/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+F183FF0067BC44729D8A08F3 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2ACF41AC24EC4DB7AD8A8636 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+7E1A1E774AE0405E9EBCB5C8 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts.hpp */ = {isa = PBXBuildFile; fileRef = A203DE6F8AC14996A1DD38B5 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+938C55F7E654427DBB768F54 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_perf.hpp */ = {isa = PBXBuildFile; fileRef = 6EFB19EB7121436AA67E2803 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_perf.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+43B37A0A0CD14F75AC6765AF /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_test.hpp */ = {isa = PBXBuildFile; fileRef = 092EB27FDC624A8DB4889977 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_test.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+9AAADD28EFF14777B66057B9 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_perf.hpp */ = {isa = PBXBuildFile; fileRef = 4F4775A927D14E32BD16D8D1 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_perf.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+E2B5E15221A244F0B0EE42DB /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_test.hpp */ = {isa = PBXBuildFile; fileRef = 969E4F39A33342FCBB3743CE /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_test.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+0D69094FBCFE4EB1823B8A29 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_ext.hpp */ = {isa = PBXBuildFile; fileRef = CCB60877C8F94292BBEF20ED /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_ext.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+E9F138C715964C8BAF1545A7 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_gtest.h */ = {isa = PBXBuildFile; fileRef = 20EF247E1AFD410D89F77AC4 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_gtest.h */; settings = { COMPILER_FLAGS = ""; }; };
+A329B430D1094B74AFE6EAF6 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_perf.hpp */ = {isa = PBXBuildFile; fileRef = C4EFBF02E47B4A829C5959E2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_perf.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+604B9FDF243A4A4A93449C75 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_perf.cpp */ = {isa = PBXBuildFile; fileRef = 6BB7218586B84B06BAFB7747 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_perf.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+AF06CA21303149CBA5A2DAE6 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_test.cpp */ = {isa = PBXBuildFile; fileRef = 23C37076BE6443498AD1BAD6 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_test.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C7ED63D4027B4F8987380939 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_perf.cpp */ = {isa = PBXBuildFile; fileRef = 403BB7F6DFC84C038ABDFDD1 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_perf.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+97A51D5FD6C34E69A4032B8F /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_test.cpp */ = {isa = PBXBuildFile; fileRef = 7D9C2AB354C64F1185F4EFF0 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_test.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+64062E34C8CA4E799C9032F7 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = E7959443795E40EBB2D1ECE2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+4635E0FAE9354007B30E49A2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts.cpp */ = {isa = PBXBuildFile; fileRef = 99EA5B5EB4E1406486614C33 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+87264D3CB0A44A5F9B9EFC2D /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_arrtest.cpp */ = {isa = PBXBuildFile; fileRef = 1BB5DFF80A4F4BF0ACFC66DA /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_arrtest.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E7D651C8565D4936A2432243 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_func.cpp */ = {isa = PBXBuildFile; fileRef = B2B336D11561429DB7C88966 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_func.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+58195042CA474BCF95889353 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_gtest.cpp */ = {isa = PBXBuildFile; fileRef = 3CB6BEDD927949FF8BDFCC58 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_gtest.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7EA3A89263C8438888773DF0 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_perf.cpp */ = {isa = PBXBuildFile; fileRef = C23E09D1A2344BC3BE8B90E8 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_perf.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              667C6FDCEE884D97881F38DC /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              A84FC79245B94618BD2E0A61 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              81FFC0DD135842D3B05DF101 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              B12D8FAF04604966B45D1B82 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C147C3F56B24AB9B0BA4EC7 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1BAA4FB1DBAC4358B615E327;
+                     remoteInfo = ALL_BUILD;
+              };
+              7A2AF796B63045BF8C049170 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C147C3F56B24AB9B0BA4EC7 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 7B0118C71E064BC096B04BF0;
+                     remoteInfo = opencv_ts;
+              };
+              B51CA47E423A405D91594341 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C147C3F56B24AB9B0BA4EC7 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 3365F89319B243209663F22B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              7E252A7C5B1743EEBCC09A01 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C147C3F56B24AB9B0BA4EC7 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 3365F89319B243209663F22B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              9623285EA6154E7AB3B86299 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C147C3F56B24AB9B0BA4EC7 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1BAA4FB1DBAC4358B615E327;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+6C059A8BEF4A4DE1B3EE3EAE /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+C94A5C9BE6874D3A80A9D25D /* /Users/mac/MyWorks/HongNuo/face_detector/build/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../build/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+BD61281C007C4716BB2B8644 /* /Users/mac/MyWorks/HongNuo/face_detector/build/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../build/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+2ACF41AC24EC4DB7AD8A8636 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+A203DE6F8AC14996A1DD38B5 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "ts.hpp"; path = "include/opencv2/ts.hpp"; sourceTree = SOURCE_ROOT; };
+6EFB19EB7121436AA67E2803 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_perf.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "cuda_perf.hpp"; path = "include/opencv2/ts/cuda_perf.hpp"; sourceTree = SOURCE_ROOT; };
+092EB27FDC624A8DB4889977 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_test.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "cuda_test.hpp"; path = "include/opencv2/ts/cuda_test.hpp"; sourceTree = SOURCE_ROOT; };
+4F4775A927D14E32BD16D8D1 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_perf.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "ocl_perf.hpp"; path = "include/opencv2/ts/ocl_perf.hpp"; sourceTree = SOURCE_ROOT; };
+969E4F39A33342FCBB3743CE /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_test.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "ocl_test.hpp"; path = "include/opencv2/ts/ocl_test.hpp"; sourceTree = SOURCE_ROOT; };
+CCB60877C8F94292BBEF20ED /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_ext.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "ts_ext.hpp"; path = "include/opencv2/ts/ts_ext.hpp"; sourceTree = SOURCE_ROOT; };
+20EF247E1AFD410D89F77AC4 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_gtest.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "ts_gtest.h"; path = "include/opencv2/ts/ts_gtest.h"; sourceTree = SOURCE_ROOT; };
+C4EFBF02E47B4A829C5959E2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_perf.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "ts_perf.hpp"; path = "include/opencv2/ts/ts_perf.hpp"; sourceTree = SOURCE_ROOT; };
+6BB7218586B84B06BAFB7747 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_perf.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "cuda_perf.cpp"; path = "src/cuda_perf.cpp"; sourceTree = SOURCE_ROOT; };
+23C37076BE6443498AD1BAD6 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_test.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "cuda_test.cpp"; path = "src/cuda_test.cpp"; sourceTree = SOURCE_ROOT; };
+403BB7F6DFC84C038ABDFDD1 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_perf.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ocl_perf.cpp"; path = "src/ocl_perf.cpp"; sourceTree = SOURCE_ROOT; };
+7D9C2AB354C64F1185F4EFF0 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_test.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ocl_test.cpp"; path = "src/ocl_test.cpp"; sourceTree = SOURCE_ROOT; };
+E7959443795E40EBB2D1ECE2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+99EA5B5EB4E1406486614C33 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ts.cpp"; path = "src/ts.cpp"; sourceTree = SOURCE_ROOT; };
+1BB5DFF80A4F4BF0ACFC66DA /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_arrtest.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ts_arrtest.cpp"; path = "src/ts_arrtest.cpp"; sourceTree = SOURCE_ROOT; };
+B2B336D11561429DB7C88966 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_func.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ts_func.cpp"; path = "src/ts_func.cpp"; sourceTree = SOURCE_ROOT; };
+3CB6BEDD927949FF8BDFCC58 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_gtest.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ts_gtest.cpp"; path = "src/ts_gtest.cpp"; sourceTree = SOURCE_ROOT; };
+C23E09D1A2344BC3BE8B90E8 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_perf.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ts_perf.cpp"; path = "src/ts_perf.cpp"; sourceTree = SOURCE_ROOT; };
+AA3C6333023946D181F25CE5 /* opencv_ts */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_ts.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+3AA45FCB4FF04B6BA1AF0EF2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              4B0410490FF04003A28F96A5  = {
+                     isa = PBXGroup;
+                     children = (
+                            39251FDBCF394AAA845FC447 /* Sources */,
+                            DF0AEDD556C04F11B3111F84 /* Resources */,
+                            03B740D6F34E4D0E996C2B3F /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              39251FDBCF394AAA845FC447 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            78F872E487A345C0A3F10C01 /* ALL_BUILD */,
+                            52CCAE8FC28A44138460B1DE /* modules */,
+                            DD60243BF00D48329C5E9F6E /* ZERO_CHECK */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              DF0AEDD556C04F11B3111F84 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              78F872E487A345C0A3F10C01 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7E779625886147A88A549EF7 /* CMake Rules */,
+                            6C059A8BEF4A4DE1B3EE3EAE /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              7E779625886147A88A549EF7 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              52CCAE8FC28A44138460B1DE /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            29944DD41B9D454AACAD8409 /* opencv_ts */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              29944DD41B9D454AACAD8409 /* opencv_ts */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C760C802776C4A669FFF52E7 /* Include */,
+                            A99C32B4AAD24F4A87986C9D /* Src */,
+                            46C903D2EB884E329D025422 /* Header Files */,
+                            2ACF41AC24EC4DB7AD8A8636 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */,
+                     );
+                     name = opencv_ts;
+                     sourceTree = "<group>";
+              };
+              C760C802776C4A669FFF52E7 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            70F595F9056B4A6B8624A6D7 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              70F595F9056B4A6B8624A6D7 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            02FC5F010F5E49268C08EE4A /* ts */,
+                            A203DE6F8AC14996A1DD38B5 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              02FC5F010F5E49268C08EE4A /* ts */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6EFB19EB7121436AA67E2803 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_perf.hpp */,
+                            092EB27FDC624A8DB4889977 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/cuda_test.hpp */,
+                            4F4775A927D14E32BD16D8D1 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_perf.hpp */,
+                            969E4F39A33342FCBB3743CE /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ocl_test.hpp */,
+                            CCB60877C8F94292BBEF20ED /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_ext.hpp */,
+                            20EF247E1AFD410D89F77AC4 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_gtest.h */,
+                            C4EFBF02E47B4A829C5959E2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include/opencv2/ts/ts_perf.hpp */,
+                     );
+                     name = ts;
+                     sourceTree = "<group>";
+              };
+              A99C32B4AAD24F4A87986C9D /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6BB7218586B84B06BAFB7747 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_perf.cpp */,
+                            23C37076BE6443498AD1BAD6 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_test.cpp */,
+                            403BB7F6DFC84C038ABDFDD1 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_perf.cpp */,
+                            7D9C2AB354C64F1185F4EFF0 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_test.cpp */,
+                            E7959443795E40EBB2D1ECE2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/precomp.hpp */,
+                            99EA5B5EB4E1406486614C33 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts.cpp */,
+                            1BB5DFF80A4F4BF0ACFC66DA /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_arrtest.cpp */,
+                            B2B336D11561429DB7C88966 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_func.cpp */,
+                            3CB6BEDD927949FF8BDFCC58 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_gtest.cpp */,
+                            C23E09D1A2344BC3BE8B90E8 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_perf.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              46C903D2EB884E329D025422 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C94A5C9BE6874D3A80A9D25D /* /Users/mac/MyWorks/HongNuo/face_detector/build/cvconfig.h */,
+                            BD61281C007C4716BB2B8644 /* /Users/mac/MyWorks/HongNuo/face_detector/build/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              DD60243BF00D48329C5E9F6E /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            50FF4161819E4069BD6527D5 /* CMake Rules */,
+                            3AA45FCB4FF04B6BA1AF0EF2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              50FF4161819E4069BD6527D5 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              03B740D6F34E4D0E996C2B3F /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            AA3C6333023946D181F25CE5 /* opencv_ts */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              7B0118C71E064BC096B04BF0 /* opencv_ts */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = C6BEF78CF258449689022753 /* Build configuration list for PBXNativeTarget "opencv_ts" */;
+                     buildPhases = (
+                            1BC6AE84700C46F79FF4201A /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            E3358523860A4DEA9E178C46 /* PBXTargetDependency */,
+                     );
+                     name = opencv_ts;
+                     productName = opencv_ts;
+                     productReference = AA3C6333023946D181F25CE5 /* opencv_ts */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              2C147C3F56B24AB9B0BA4EC7 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 29D4B6387E8E427CB3A0C5A7 /* Build configuration list for PBXProject  "opencv_ts" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            A84FC79245B94618BD2E0A61 /* Debug */,
+                            81FFC0DD135842D3B05DF101 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 4B0410490FF04003A28F96A5;
+                     projectDirPath = "../../../modules/ts";
+                     projectRoot = "";
+                     targets = (
+                            493D0BD246784F1BBCC547AD /* install */,
+                            F74C27E2ACCC44799BD1E5F8 /* RUN_TESTS */,
+                            1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */,
+                            7B0118C71E064BC096B04BF0 /* opencv_ts */,
+                            B6681EA43CE64D8AAF0836AC /* package */,
+                            3365F89319B243209663F22B /* ZERO_CHECK */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              7EC32416A0FC4F4C87BEF6B1 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D7020CF530FE4B1C8837FC6D /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts -f /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              0B011C708775458C8D3CE2CF /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              8D9BBD6E75F54988AF958B12 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts -f /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              28B807FD7CF944038C4469F7 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              C9765EFE807643B2A0431C73 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts -f /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              A1E28F164F9044B3A22C8EFB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              8B297BE0765741EE94ED059B /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts -f /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              661E7A0A2BB64661BB7669B3 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              1AA5240DE43C4FF79E324761 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts -f /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              1BC6AE84700C46F79FF4201A /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            604B9FDF243A4A4A93449C75 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_perf.cpp */,
+                            AF06CA21303149CBA5A2DAE6 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/cuda_test.cpp */,
+                            C7ED63D4027B4F8987380939 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_perf.cpp */,
+                            97A51D5FD6C34E69A4032B8F /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ocl_test.cpp */,
+                            4635E0FAE9354007B30E49A2 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts.cpp */,
+                            87264D3CB0A44A5F9B9EFC2D /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_arrtest.cpp */,
+                            E7D651C8565D4936A2432243 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_func.cpp */,
+                            58195042CA474BCF95889353 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_gtest.cpp */,
+                            7EA3A89263C8438888773DF0 /* /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src/ts_perf.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              97EDF47E46BD4868A47D82A0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */;
+                     targetProxy = B12D8FAF04604966B45D1B82 /* PBXContainerItemProxy */;
+              };
+              0258E4D27D23459A8351DB50 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 7B0118C71E064BC096B04BF0 /* opencv_ts */;
+                     targetProxy = 7A2AF796B63045BF8C049170 /* PBXContainerItemProxy */;
+              };
+              E0D103176E7E4AD9B8E9180E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 3365F89319B243209663F22B /* ZERO_CHECK */;
+                     targetProxy = B51CA47E423A405D91594341 /* PBXContainerItemProxy */;
+              };
+              E3358523860A4DEA9E178C46 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 3365F89319B243209663F22B /* ZERO_CHECK */;
+                     targetProxy = 7E252A7C5B1743EEBCC09A01 /* PBXContainerItemProxy */;
+              };
+              95D4D10A63C54FCE83B5B9FC /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1BAA4FB1DBAC4358B615E327 /* ALL_BUILD */;
+                     targetProxy = 9623285EA6154E7AB3B86299 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              57E625BEECBA4E4DB6E2FFB8 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts/build;
+                     };
+                     name = Debug;
+              };
+              54A6D9EF7077460A9AFD9EA2 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts/build;
+                     };
+                     name = Release;
+              };
+              1BBE28AA31F941188C6352D4 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              BCAC56EF46F7420783DDA812 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              7DE35437957C44CF82E65A34 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              F9860DB340AD470C8BEC7F69 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              A4265ACCB6A54629A0367EC2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              583FF27772744488AEE6E7C2 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              09D236F10B104AC69562645E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src, /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts, /Users/mac/MyWorks/HongNuo/face_detector/modules/core/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/video/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/world/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes  -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-undef         -DDEBUG -D_DEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_ts;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B1280468C0C143BD88A75F01 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/lib/Release;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/ts/src, /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts, /Users/mac/MyWorks/HongNuo/face_detector/modules/core/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/video/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include, /Users/mac/MyWorks/HongNuo/face_detector/modules/world/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes  -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-undef     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_ts;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              71108BE475404468BC61AFC7 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              AA94603516C64CAFAF900099 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              3779AF1A85AE4C1ABED6CC4D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              A985AE95D5394E0D85EA8285 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include, /Users/mac/MyWorks/HongNuo/face_detector/build, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              29D4B6387E8E427CB3A0C5A7 /* Build configuration list for PBXProject  "opencv_ts" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            57E625BEECBA4E4DB6E2FFB8 /* Debug */,
+                            54A6D9EF7077460A9AFD9EA2 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              9B36351CCFA74400998AF0DA /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1BBE28AA31F941188C6352D4 /* Debug */,
+                            BCAC56EF46F7420783DDA812 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              93810B8A618547D083A94782 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            7DE35437957C44CF82E65A34 /* Debug */,
+                            F9860DB340AD470C8BEC7F69 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B7A699D3EB1E434EBC8D31E4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A4265ACCB6A54629A0367EC2 /* Debug */,
+                            583FF27772744488AEE6E7C2 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              C6BEF78CF258449689022753 /* Build configuration list for PBXNativeTarget "opencv_ts" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            09D236F10B104AC69562645E /* Debug */,
+                            B1280468C0C143BD88A75F01 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              ABFE4FF2C96648C0BE1D4F33 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            71108BE475404468BC61AFC7 /* Debug */,
+                            AA94603516C64CAFAF900099 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              59948480A8304DCAAA435ED3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            3779AF1A85AE4C1ABED6CC4D /* Debug */,
+                            A985AE95D5394E0D85EA8285 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 2C147C3F56B24AB9B0BA4EC7;
+}
