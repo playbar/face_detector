@@ -21,3 +21,4 @@ build/bin
 *.dylib
 *.xcuserstate
 build/modules/world/face_detector.build
+build/3rdparty
