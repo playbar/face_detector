@@ -5196,7 +5196,6 @@
 			isa = PBXGroup;
 			children = (
 				46C0D083501444F8BD98A53E /* Sources */,
-				C6BCFE1D2DE549D1AE40F977 /* Resources */,
 				90682E128AC94FE6AF64EAFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -5598,13 +5597,6 @@
 				AB8B093FF1C94F62BE0353EB /* opencv_annotation */,
 			);
 			name = applications;
-			sourceTree = "<group>";
-		};
-		C6BCFE1D2DE549D1AE40F977 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		C6E7B9F5316B4136B23CF0FF /* opencl */ = {

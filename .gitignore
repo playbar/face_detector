@@ -19,3 +19,4 @@ build/bin
 *.log
 *.bin
 *.dylib
+*.xcuserstate
