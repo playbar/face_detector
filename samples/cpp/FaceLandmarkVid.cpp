@@ -264,8 +264,10 @@ int main (int argc, char **argv)
 			video_capture >> captured_image;
 		}
 
-		if( !video_capture.isOpened() ) FATAL_STREAM( "Failed to open video source" );
-		else INFO_STREAM( "Device or file opened");
+		if( !video_capture.isOpened() )
+            FATAL_STREAM( "Failed to open video source" );
+		else
+            INFO_STREAM( "Device or file opened");
 
 		cv::Mat captured_image;
 		video_capture >> captured_image;		
