@@ -353,6 +353,7 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 		if(params.curr_face_detector == FaceModelParameters::HOG_SVM_DETECTOR)
 		{
 			double confidence;
+            //face_detection_success = LandmarkDetector::DetectFaces(bounding_box, grayscale_image, clnf_model);
 			face_detection_success = LandmarkDetector::DetectSingleFaceHOG(bounding_box, grayscale_image, clnf_model.face_detector_HOG, confidence, preference_det);
 		}
 		else if(params.curr_face_detector == FaceModelParameters::HAAR_DETECTOR)

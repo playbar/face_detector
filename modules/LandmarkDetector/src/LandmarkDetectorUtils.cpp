@@ -1357,13 +1357,13 @@ bool DetectFacesHOG(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>
 bool DetectFacesHOG(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>& intensity, dlib::frontal_face_detector& detector, std::vector<double>& o_confidences)
 {
 		
-	cv::Mat_<uchar> upsampled_intensity;
+	//cv::Mat_<uchar> upsampled_intensity;
 
-	double scaling = 1.3;
+	//double scaling = 1.3;
 
-	cv::resize(intensity, upsampled_intensity, cv::Size((int)(intensity.cols * scaling), (int)(intensity.rows * scaling)));
+	//cv::resize(intensity, upsampled_intensity, cv::Size((int)(intensity.cols * scaling), (int)(intensity.rows * scaling)));
 
-	dlib::cv_image<uchar> cv_grayscale(upsampled_intensity);
+	dlib::cv_image<uchar> cv_grayscale(intensity);
 
 	std::vector<dlib::full_detection> face_detections;
 	detector(cv_grayscale, face_detections, -0.2);
@@ -1379,13 +1379,13 @@ bool DetectFacesHOG(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>
 		// The scalings were learned using the Face Detections on LFPW and Helen using ground truth and detections from the HOG detector
 
 		// Move the face slightly to the right (as the width was made smaller)
-		o_regions[face].x = (face_detections[face].rect.get_rect().tl_corner().x() + 0.0389 * face_detections[face].rect.get_rect().width())/scaling;
+		o_regions[face].x = (face_detections[face].rect.get_rect().tl_corner().x() + 0.0389 * face_detections[face].rect.get_rect().width());
 		// Shift face down as OpenCV Haar Cascade detects the forehead as well, and we're not interested
-		o_regions[face].y = (face_detections[face].rect.get_rect().tl_corner().y() + 0.1278 * face_detections[face].rect.get_rect().height())/scaling;
+		o_regions[face].y = (face_detections[face].rect.get_rect().tl_corner().y() + 0.1278 * face_detections[face].rect.get_rect().height());
 
 		// Correct for scale
-		o_regions[face].width = (face_detections[face].rect.get_rect().width() * 0.9611)/scaling; 
-		o_regions[face].height = (face_detections[face].rect.get_rect().height() * 0.9388)/scaling;
+		o_regions[face].width = (face_detections[face].rect.get_rect().width() * 0.9611);
+		o_regions[face].height = (face_detections[face].rect.get_rect().height() * 0.9388);
 
 		o_confidences[face] = face_detections[face].detection_confidence;
 		
@@ -1401,6 +1401,7 @@ bool DetectSingleFaceHOG(cv::Rect_<double>& o_region, const cv::Mat_<uchar>& int
 	vector<double> confidences;
 
 	bool detect_success = LandmarkDetector::DetectFacesHOG(face_detections, intensity_img, detector, confidences);
+    //bool detect_success = LandmarkDetector::DetectFaces(face_detections, intensity_img );
 					
 	if(detect_success)
 	{
