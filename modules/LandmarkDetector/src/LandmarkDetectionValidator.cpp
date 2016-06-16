@@ -575,7 +575,7 @@ double DetectionValidator::CheckCNN(const cv::Mat_<double>& warped_img, int view
 			cv::Mat kx = cv::Mat::ones(2, 1, CV_32F)*1.0f/scale;
 			cv::Mat ky = cv::Mat::ones(1, 2, CV_32F)*1.0f/scale;
 
-			vector<cv::Mat_<float>> outputs_sub;
+			vector<cv::Mat_<float> > outputs_sub;
 			for(size_t in = 0; in < input_maps.size(); ++in)
 			{
 

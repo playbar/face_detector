@@ -247,7 +247,7 @@ void get_camera_params(int &device, float &fx, float &fy, float &cx, float &cy, 
 }
 
 void get_image_input_output_params(vector<string> &input_image_files, vector<string> &input_depth_files, vector<string> &output_feature_files, vector<string> &output_pose_files, vector<string> &output_image_files,
-		vector<cv::Rect_<double>> &input_bounding_boxes, vector<string> &arguments)
+		vector<cv::Rect_<double> > &input_bounding_boxes, vector<string> &arguments)
 {
 	bool* valid = new bool[arguments.size()];
 	
@@ -813,7 +813,7 @@ void DrawBox(cv::Mat image, cv::Vec6d pose, cv::Scalar color, int thickness, flo
 						-1, -1, -1,
 						-1, -1, 1};
 
-	vector<std::pair<int,int>> edges;
+	vector<std::pair<int,int> > edges;
 	edges.push_back(pair<int,int>(0,1));
 	edges.push_back(pair<int,int>(1,2));
 	edges.push_back(pair<int,int>(2,3));
@@ -869,7 +869,7 @@ void DrawBox(cv::Mat image, cv::Vec6d pose, cv::Scalar color, int thickness, flo
 
 }
 
-vector<std::pair<cv::Point, cv::Point>> CalculateBox(cv::Vec6d pose, float fx, float fy, float cx, float cy)
+vector<std::pair<cv::Point, cv::Point> > CalculateBox(cv::Vec6d pose, float fx, float fy, float cx, float cy)
 {
 	double boxVerts[] = {-1, 1, -1,
 						1, 1, -1,
@@ -880,7 +880,7 @@ vector<std::pair<cv::Point, cv::Point>> CalculateBox(cv::Vec6d pose, float fx, f
 						-1, -1, -1,
 						-1, -1, 1};
 
-	vector<std::pair<int,int>> edges;
+	vector<std::pair<int,int> > edges;
 	edges.push_back(pair<int,int>(0,1));
 	edges.push_back(pair<int,int>(1,2));
 	edges.push_back(pair<int,int>(2,3));
@@ -913,7 +913,7 @@ vector<std::pair<cv::Point, cv::Point>> CalculateBox(cv::Vec6d pose, float fx, f
 	cv::Mat_<double> rotBoxProj;
 	Project(rotBoxProj, rotBox, fx, fy, cx, cy);
 
-	vector<std::pair<cv::Point, cv::Point>> lines;
+	vector<std::pair<cv::Point, cv::Point> > lines;
 	
 	for (size_t i = 0; i < edges.size(); ++i)
 	{
@@ -933,7 +933,7 @@ vector<std::pair<cv::Point, cv::Point>> CalculateBox(cv::Vec6d pose, float fx, f
 	return lines;
 }
 
-void DrawBox(vector<pair<cv::Point, cv::Point>> lines, cv::Mat image, cv::Scalar color, int thickness)
+void DrawBox(vector<pair<cv::Point, cv::Point> > lines, cv::Mat image, cv::Scalar color, int thickness)
 {
 	cv::Rect image_rect(0,0,image.cols, image.rows);
 	

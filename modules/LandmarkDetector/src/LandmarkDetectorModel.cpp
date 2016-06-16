@@ -115,10 +115,10 @@ CLNF::CLNF(const CLNF& other): pdm(other.pdm), params_local(other.params_local.c
 	}
 
 	// Make sure the matrices are allocated properly
-	for(std::map<int, cv::Mat_<float>>::const_iterator it = other.kde_resp_precalc.begin(); it!= other.kde_resp_precalc.end(); it++)
+	for(std::map<int, cv::Mat_<float> >::const_iterator it = other.kde_resp_precalc.begin(); it!= other.kde_resp_precalc.end(); it++)
 	{
 		// Make sure the matrix is copied.
-		this->kde_resp_precalc.insert(std::pair<int, cv::Mat_<float>>(it->first, it->second.clone()));
+		this->kde_resp_precalc.insert(std::pair<int, cv::Mat_<float> >(it->first, it->second.clone()));
 	}
 
 	this->face_detector_HOG = dlib::get_frontal_face_detector();
@@ -162,10 +162,10 @@ CLNF & CLNF::operator= (const CLNF& other)
 		}
 
 		// Make sure the matrices are allocated properly
-		for(std::map<int, cv::Mat_<float>>::const_iterator it = other.kde_resp_precalc.begin(); it!= other.kde_resp_precalc.end(); it++)
+		for(std::map<int, cv::Mat_<float> >::const_iterator it = other.kde_resp_precalc.begin(); it!= other.kde_resp_precalc.end(); it++)
 		{
 			// Make sure the matrix is copied.
-			this->kde_resp_precalc.insert(std::pair<int, cv::Mat_<float>>(it->first, it->second.clone()));
+			this->kde_resp_precalc.insert(std::pair<int, cv::Mat_<float> >(it->first, it->second.clone()));
 		}
 
 		// Copy over the hierarchical models
@@ -402,7 +402,7 @@ void CLNF::Read(string main_location)
 			lineStream >> part_name;
 			cout << "Reading part based module...." << part_name << endl;
 
-			vector<pair<int, int>> mappings;
+			vector<pair<int, int> > mappings;
 			while(!lineStream.eof())
 			{
 				int ind_in_main;
@@ -598,7 +598,8 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, const cv::Mat_<float> &
 		bool parts_used = false;		
 
 		// Do the hierarchical models in parallel
-		tbb::parallel_for(0, (int)hierarchical_models.size(), [&](int part_model){
+		//tbb::parallel_for(0, (int)hierarchical_models.size(), [&](int part_model){
+		for (int part_model = 0; part_model < hierarchical_models.size(); ++part_model )
 		{
 			// Only do the synthetic eye models if we're doing gaze
 			if (!((hierarchical_model_names[part_model].compare("right_eye_28") == 0 ||
@@ -608,7 +609,7 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, const cv::Mat_<float> &
 
 				int n_part_points = hierarchical_models[part_model].pdm.NumberOfPoints();
 
-				vector<pair<int, int>> mappings = this->hierarchical_mapping[part_model];
+				vector<pair<int, int> > mappings = this->hierarchical_mapping[part_model];
 
 				cv::Mat_<double> part_model_locs(n_part_points * 2, 1, 0.0);
 
@@ -645,7 +646,7 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, const cv::Mat_<float> &
 				}
 			}
 		}
-		});
+		//});
 
 		// Recompute main model based on the fit part models
 		if(parts_used)

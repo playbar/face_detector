@@ -987,7 +987,7 @@ namespace dlib
 
             pyramid_type pyr;
 
-			std::vector<std::pair<double, rectangle>> dets_conc;
+			std::vector<std::pair<double, rectangle> > dets_conc;
 
 			int num_features = feats.size();
 

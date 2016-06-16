@@ -96,7 +96,7 @@ PAW::PAW(const cv::Mat_<double>& destination_shape, const cv::Mat_<int>& triangu
 	cv::Mat_<double> ys = destination_shape(cv::Rect(0, num_points, 1, num_points));
     
 	// Create a vector representation of the control points
-	vector<vector<double>> destination_points;
+	vector<vector<double> > destination_points;
 
 	for (int tri = 0; tri < num_tris; ++tri)
 	{	
@@ -203,7 +203,7 @@ PAW::PAW(const cv::Mat_<double>& destination_shape, const cv::Mat_<int>& triangu
 	cv::Mat_<double> ys = destination_shape(cv::Rect(0, num_points, 1, num_points));
 
 	// Create a vector representation of the control points
-	vector<vector<double>> destination_points;
+	vector<vector<double> > destination_points;
     
 	for (int tri = 0; tri < num_tris; ++tri)
 	{	
@@ -472,7 +472,7 @@ bool pointInTriangle(double x0, double y0, double x1, double y1, double x2, doub
 }
 
 // Find if a given point lies in the triangles
-int PAW::findTriangle(const cv::Point_<double>& point, const std::vector<vector<double>>& control_points, int guess) const
+int PAW::findTriangle(const cv::Point_<double>& point, const std::vector<vector<double> >& control_points, int guess) const
 {
     
 	int num_tris = control_points.size();

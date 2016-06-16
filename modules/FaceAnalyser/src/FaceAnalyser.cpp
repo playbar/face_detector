@@ -362,7 +362,7 @@ void FaceAnalyser::AddNextFrame(const cv::Mat& frame, const LandmarkDetector::CL
 	// Perform AU prediction	
 	AU_predictions_reg = PredictCurrentAUs(orientation_to_use);
 
-	std::vector<std::pair<std::string, double>> AU_predictions_reg_corrected;
+	std::vector<std::pair<std::string, double> > AU_predictions_reg_corrected;
 	if(online)
 	{
 		AU_predictions_reg_corrected = CorrectOnlineAUs(AU_predictions_reg, orientation_to_use, true, false, clnf_model.detection_success);
@@ -438,7 +438,7 @@ void FaceAnalyser::PredictAUs(const cv::Mat_<double>& hog_features, const cv::Ma
 	// Perform AU prediction	
 	AU_predictions_reg = PredictCurrentAUs(orientation_to_use);
 
-	std::vector<std::pair<std::string, double>> AU_predictions_reg_corrected;
+	std::vector<std::pair<std::string, double> > AU_predictions_reg_corrected;
 	if(online)
 	{
 		AU_predictions_reg_corrected = CorrectOnlineAUs(AU_predictions_reg, orientation_to_use, true, false, clnf_model.detection_success);
@@ -502,12 +502,12 @@ void FaceAnalyser::PredictAUs(const cv::Mat_<double>& hog_features, const cv::Ma
 	valid_preds.push_back(success);
 }
 
-void FaceAnalyser::ExtractAllPredictionsOfflineReg(vector<std::pair<std::string, vector<double>>>& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps)
+void FaceAnalyser::ExtractAllPredictionsOfflineReg(vector<std::pair<std::string, vector<double> > >& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps)
 {
 	timestamps = this->timestamps;
 	au_predictions.clear();
 	// First extract the valid AU values and put them in a different format
-	vector<vector<double>> aus_valid;
+	vector<vector<double> > aus_valid;
 	vector<double> offsets;
 	confidences = this->confidences;
 	successes = this->valid_preds;
@@ -518,7 +518,7 @@ void FaceAnalyser::ExtractAllPredictionsOfflineReg(vector<std::pair<std::string,
 		string au_name = au_iter->first;
 		vector<double> au_vals = au_iter->second;
 		
-		au_predictions.push_back(std::pair<string,vector<double>>(au_name, au_vals));
+		au_predictions.push_back(std::pair<string,vector<double> >(au_name, au_vals));
 
 		for(size_t frame = 0; frame < au_vals.size(); ++frame)
 		{
@@ -571,7 +571,7 @@ void FaceAnalyser::ExtractAllPredictionsOfflineReg(vector<std::pair<std::string,
 
 }
 
-void FaceAnalyser::ExtractAllPredictionsOfflineClass(vector<std::pair<std::string, vector<double>>>& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps)
+void FaceAnalyser::ExtractAllPredictionsOfflineClass(vector<std::pair<std::string, vector<double> > >& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps)
 {
 	timestamps = this->timestamps;
 	au_predictions.clear();
@@ -581,7 +581,7 @@ void FaceAnalyser::ExtractAllPredictionsOfflineClass(vector<std::pair<std::strin
 		string au_name = au_iter->first;
 		vector<double> au_vals = au_iter->second;
 		
-		au_predictions.push_back(std::pair<string,vector<double>>(au_name, au_vals));
+		au_predictions.push_back(std::pair<string,vector<double> >(au_name, au_vals));
 
 	}
 
@@ -620,7 +620,7 @@ void FaceAnalyser::Reset()
 
 	geom_desc_track = cv::Mat_<double>(geom_desc_track.rows, geom_desc_track.cols, 0.0);
 
-	dyn_scaling = vector<vector<double>>(dyn_scaling.size(), vector<double>(dyn_scaling[0].size(), 5.0));	
+	dyn_scaling = vector<vector<double> >(dyn_scaling.size(), vector<double>(dyn_scaling[0].size(), 5.0));
 
 	AU_predictions_reg.clear();
 	AU_predictions_class.clear();
@@ -733,10 +733,10 @@ void FaceAnalyser::ExtractMedian(cv::Mat_<unsigned int>& histogram, int hist_cou
 	}
 }
 // Apply the current predictors to the currently stored descriptors
-vector<pair<string, double>> FaceAnalyser::PredictCurrentAUs(int view)
+vector<pair<string, double> > FaceAnalyser::PredictCurrentAUs(int view)
 {
 
-	vector<pair<string, double>> predictions;
+	vector<pair<string, double> > predictions;
 
 	if(!hog_desc_frame.empty())
 	{
@@ -765,12 +765,12 @@ vector<pair<string, double>> FaceAnalyser::PredictCurrentAUs(int view)
 	return predictions;
 }
 
-vector<pair<string, double>> FaceAnalyser::CorrectOnlineAUs(std::vector<std::pair<std::string, double>> predictions_orig, int view, bool dyn_shift, bool dyn_scale, bool update_track, bool clip_values)
+vector<pair<string, double> > FaceAnalyser::CorrectOnlineAUs(std::vector<std::pair<std::string, double> > predictions_orig, int view, bool dyn_shift, bool dyn_scale, bool update_track, bool clip_values)
 {
 	// Correction that drags the predicion to 0 (assuming the bottom 10% of predictions are of neutral expresssions)
 	vector<double> correction(predictions_orig.size(), 0.0);
 
-	vector<pair<string, double>> predictions = predictions_orig;
+	vector<pair<string, double> > predictions = predictions_orig;
 
 	if(update_track)
 	{
@@ -829,10 +829,10 @@ vector<pair<string, double>> FaceAnalyser::CorrectOnlineAUs(std::vector<std::pai
 }
 
 // Apply the current predictors to the currently stored descriptors (classification)
-vector<pair<string, double>> FaceAnalyser::PredictCurrentAUsClass(int view)
+vector<pair<string, double> > FaceAnalyser::PredictCurrentAUsClass(int view)
 {
 
-	vector<pair<string, double>> predictions;
+	vector<pair<string, double> > predictions;
 
 	if(!hog_desc_frame.empty())
 	{
@@ -872,17 +872,17 @@ cv::Mat FaceAnalyser::GetLatestHOGDescriptorVisualisation()
 	return hog_descriptor_visualisation;
 }
 
-vector<pair<string, double>> FaceAnalyser::GetCurrentAUsClass() const
+vector<pair<string, double> > FaceAnalyser::GetCurrentAUsClass() const
 {
 	return AU_predictions_class;
 }
 
-vector<pair<string, double>> FaceAnalyser::GetCurrentAUsReg() const
+vector<pair<string, double> > FaceAnalyser::GetCurrentAUsReg() const
 {
 	return AU_predictions_reg;
 }
 
-vector<pair<string, double>> FaceAnalyser::GetCurrentAUsCombined() const
+vector<pair<string, double> > FaceAnalyser::GetCurrentAUsCombined() const
 {
 	return AU_predictions_combined;
 }
@@ -945,7 +945,7 @@ void FaceAnalyser::ReadAU(std::string au_model_location)
   
 }
 
-void FaceAnalyser::UpdatePredictionTrack(cv::Mat_<unsigned int>& prediction_corr_histogram, int& prediction_correction_count, vector<double>& correction, const vector<pair<string, double>>& predictions, double ratio, int num_bins, double min_val, double max_val, int min_frames)
+void FaceAnalyser::UpdatePredictionTrack(cv::Mat_<unsigned int>& prediction_corr_histogram, int& prediction_correction_count, vector<double>& correction, const vector<pair<string, double> >& predictions, double ratio, int num_bins, double min_val, double max_val, int min_frames)
 {
 	double length = max_val - min_val;
 	if(length < 0)

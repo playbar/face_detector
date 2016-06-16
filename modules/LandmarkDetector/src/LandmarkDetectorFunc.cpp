@@ -492,9 +492,9 @@ bool LandmarkDetector::DetectLandmarksInImage(const cv::Mat_<uchar> &grayscale_i
 	// The hierarchical model parameters
 	vector<double> best_likelihood_h(clnf_model.hierarchical_models.size());
 	vector<cv::Vec6d> best_global_parameters_h(clnf_model.hierarchical_models.size());
-	vector<cv::Mat_<double>> best_local_parameters_h(clnf_model.hierarchical_models.size());
-	vector<cv::Mat_<double>> best_detected_landmarks_h(clnf_model.hierarchical_models.size());
-	vector<cv::Mat_<double>> best_landmark_likelihoods_h(clnf_model.hierarchical_models.size());
+	vector<cv::Mat_<double> > best_local_parameters_h(clnf_model.hierarchical_models.size());
+	vector<cv::Mat_<double> > best_detected_landmarks_h(clnf_model.hierarchical_models.size());
+	vector<cv::Mat_<double> > best_landmark_likelihoods_h(clnf_model.hierarchical_models.size());
 
 	for(size_t hypothesis = 0; hypothesis < rotation_hypotheses.size(); ++hypothesis)
 	{
