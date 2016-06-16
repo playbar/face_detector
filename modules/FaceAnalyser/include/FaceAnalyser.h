@@ -95,9 +95,9 @@ public:
 	double GetCurrentTimeSeconds();
 	
 	// Grab the current predictions about AUs from the face analyser
-	std::vector<std::pair<std::string, double>> GetCurrentAUsClass() const; // AU presence
-	std::vector<std::pair<std::string, double>> GetCurrentAUsReg() const;   // AU intensity
-	std::vector<std::pair<std::string, double>> GetCurrentAUsCombined() const; // Both presense and intensity
+	std::vector<std::pair<std::string, double> > GetCurrentAUsClass() const; // AU presence
+	std::vector<std::pair<std::string, double> > GetCurrentAUsReg() const;   // AU intensity
+	std::vector<std::pair<std::string, double> > GetCurrentAUsCombined() const; // Both presense and intensity
 
 	void Reset();
 
@@ -118,21 +118,21 @@ public:
 	std::vector<std::string> GetAUClassNames() const; // Presence
 	std::vector<std::string> GetAURegNames() const; // Intensity
 
-	void ExtractAllPredictionsOfflineReg(vector<std::pair<std::string, vector<double>>>& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps);
-	void ExtractAllPredictionsOfflineClass(vector<std::pair<std::string, vector<double>>>& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps);
+	void ExtractAllPredictionsOfflineReg(vector<std::pair<std::string, vector<double> > >& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps);
+	void ExtractAllPredictionsOfflineClass(vector<std::pair<std::string, vector<double> > >& au_predictions, vector<double>& confidences, vector<bool>& successes, vector<double>& timestamps);
 
 private:
 
 	// Where the predictions are kept
-	std::vector<std::pair<std::string, double>> AU_predictions_reg;
-	std::vector<std::pair<std::string, double>> AU_predictions_class;
+	std::vector<std::pair<std::string, double> > AU_predictions_reg;
+	std::vector<std::pair<std::string, double> > AU_predictions_class;
 
-	std::vector<std::pair<std::string, double>> AU_predictions_combined;
+	std::vector<std::pair<std::string, double> > AU_predictions_combined;
 
 	// Keeping track of AU predictions over time (useful for post-processing)
 	vector<double> timestamps;
-	std::map<std::string, vector<double>> AU_predictions_reg_all_hist;
-	std::map<std::string, vector<double>> AU_predictions_class_all_hist;
+	std::map<std::string, vector<double> > AU_predictions_reg_all_hist;
+	std::map<std::string, vector<double> > AU_predictions_class_all_hist;
 	std::vector<double> confidences;
 	std::vector<bool> valid_preds;
 
@@ -183,11 +183,11 @@ private:
 	cv::Rect_<double> face_bounding_box;
 	
 	// The AU predictions internally
-	std::vector<std::pair<std::string, double>> PredictCurrentAUs(int view);
-	std::vector<std::pair<std::string, double>> PredictCurrentAUsClass(int view);
+	std::vector<std::pair<std::string, double> > PredictCurrentAUs(int view);
+	std::vector<std::pair<std::string, double> > PredictCurrentAUsClass(int view);
 
 	// special step for online (rather than offline AU prediction)
-	std::vector<pair<string, double>> CorrectOnlineAUs(std::vector<std::pair<std::string, double>> predictions_orig, int view, bool dyn_shift = false, bool dyn_scale = false, bool update_track = true, bool clip_values = false);
+	std::vector<pair<string, double> > CorrectOnlineAUs(std::vector<std::pair<std::string, double> > predictions_orig, int view, bool dyn_shift = false, bool dyn_scale = false, bool update_track = true, bool clip_values = false);
 
 	void ReadAU(std::string au_location);
 
@@ -209,18 +209,18 @@ private:
 
 	// The AUs predicted by the model are not always 0 calibrated to a person. That is they don't always predict 0 for a neutral expression
 	// Keeping track of the predictions we can correct for this, by assuming that at least "ratio" of frames are neutral and subtract that value of prediction, only perform the correction after min_frames
-	void UpdatePredictionTrack(cv::Mat_<unsigned int>& prediction_corr_histogram, int& prediction_correction_count, vector<double>& correction, const vector<pair<string, double>>& predictions, double ratio=0.25, int num_bins = 200, double min_val = -3, double max_val = 5, int min_frames = 10);
+	void UpdatePredictionTrack(cv::Mat_<unsigned int>& prediction_corr_histogram, int& prediction_correction_count, vector<double>& correction, const vector<pair<string, double> >& predictions, double ratio=0.25, int num_bins = 200, double min_val = -3, double max_val = 5, int min_frames = 10);
 	void GetSampleHist(cv::Mat_<unsigned int>& prediction_corr_histogram, int prediction_correction_count, vector<double>& sample, double ratio, int num_bins = 200, double min_val = 0, double max_val = 5);
 
-	vector<std::pair<std::string, vector<double>>> PostprocessPredictions();
+	vector<std::pair<std::string, vector<double> > > PostprocessPredictions();
 
-	vector<cv::Mat_<unsigned int>> au_prediction_correction_histogram;
+	vector<cv::Mat_<unsigned int> > au_prediction_correction_histogram;
 	vector<int> au_prediction_correction_count;
 
 	// Some dynamic scaling (the logic is that before the extreme versions of expression or emotion are shown,
 	// it is hard to tell the boundaries, this allows us to scale the model to the most extreme seen)
 	// They have to be view specific
-	vector<vector<double>> dyn_scaling;
+	vector<vector<double> > dyn_scaling;
 	
 	// Keeping track of predictions for summary stats
 	cv::Mat_<double> AU_prediction_track;
