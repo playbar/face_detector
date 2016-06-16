@@ -22,3 +22,4 @@ build/bin
 *.xcuserstate
 build/modules/world/face_detector.build
 build/3rdparty
+build/face_detector.xcodeproj/xcuserdata/mac.xcuserdatad
