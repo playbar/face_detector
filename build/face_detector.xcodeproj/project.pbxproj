@@ -984,6 +984,7 @@
 		0345BDAB9DA84EA7A5D8FB84 /* bit_writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bit_writer.h; path = 3rdparty/libwebp/utils/bit_writer.h; sourceTree = SOURCE_ROOT; };
 		03DC9EA72E8F4F808BE1CE2A /* pyr_up.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = pyr_up.cl; path = modules/imgproc/src/opencl/pyr_up.cl; sourceTree = SOURCE_ROOT; };
 		03E65A58ABDA49A68ADDC4EF /* jas_math.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jas_math.h; path = 3rdparty/libjasper/jasper/jas_math.h; sourceTree = SOURCE_ROOT; };
+		0463FD411D11822000CD40FE /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zconf.h; path = 3rdparty/zlib/zconf.h; sourceTree = "<group>"; };
 		0481ECC9633E458E92CB678C /* canny.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = canny.cpp; path = modules/imgproc/src/canny.cpp; sourceTree = SOURCE_ROOT; };
 		0517113995DC47618B411366 /* ts_gtest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ts_gtest.cpp; path = modules/ts/src/ts_gtest.cpp; sourceTree = SOURCE_ROOT; };
 		055A5CB944CA4052BBEAB365 /* ImfStringVectorAttribute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfStringVectorAttribute.h; path = 3rdparty/openexr/IlmImf/ImfStringVectorAttribute.h; sourceTree = SOURCE_ROOT; };
@@ -1941,7 +1942,6 @@
 		94A5371199F84064A569A4D2 /* quant.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = quant.c; path = 3rdparty/libwebp/dec/quant.c; sourceTree = SOURCE_ROOT; };
 		94A8AE9993524802851B2BB5 /* input_array_utility.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = input_array_utility.hpp; path = modules/superres/src/input_array_utility.hpp; sourceTree = SOURCE_ROOT; };
 		94C838D776C5459BB3C8D9E0 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = 3rdparty/openexr/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		94D5BCD00531459AAE075F13 /* zconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = zconf.h; path = build/3rdparty/zlib/zconf.h; sourceTree = SOURCE_ROOT; };
 		94D8E938627E4A4EB739D392 /* precornerdetect.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = precornerdetect.cl; path = modules/imgproc/src/opencl/precornerdetect.cl; sourceTree = SOURCE_ROOT; };
 		94E4CAFE0C8E456685042DD7 /* jpc_bs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jpc_bs.c; path = 3rdparty/libjasper/jpc_bs.c; sourceTree = SOURCE_ROOT; };
 		9516B52082E447E7866331B9 /* opencl_kernels_imgproc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = opencl_kernels_imgproc.cpp; path = build/modules/world/opencl_kernels_imgproc.cpp; sourceTree = SOURCE_ROOT; };
@@ -5955,7 +5955,7 @@
 				1963BEDA992247AEB033A7FA /* trees.h */,
 				5A4E11512531409894506439 /* zlib.h */,
 				52130119404541F5A16BEFF2 /* zutil.h */,
-				94D5BCD00531459AAE075F13 /* zconf.h */,
+				0463FD411D11822000CD40FE /* zconf.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
