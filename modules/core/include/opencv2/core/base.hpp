@@ -417,11 +417,13 @@ configurations while CV_DbgAssert is only retained in the Debug configuration.
 
 /** replaced with CV_Assert(expr) in Debug configuration */
 #ifdef _DEBUG
-#  define CV_DbgAssert(expr) CV_Assert(expr)
+#  define CV_DbgAssert(expr)
 #else
 #  define CV_DbgAssert(expr)
 #endif
 
+//CV_Assert(expr)
+    
 /*
  * Hamming distance functor - counts the bit differences between two strings - useful for the Brief descriptor
  * bit count of A exclusive XOR'ed with B
