@@ -969,40 +969,41 @@ vector<cv::Point2d> CalculateLandmarks(const cv::Mat_<double>& shape2D, cv::Mat_
 
 	return landmarks;
 }
-
-// Computing landmarks (to be drawn later possibly)
-vector<cv::Point2d> CalculateLandmarks( const cv::Mat_<double>& shape2D)
-{
-	
-	int n = 0;
-	vector<cv::Point2d> landmarks;
-	
-	if(shape2D.cols == 2)
-	{
-		n = shape2D.rows;
-	}
-	else if(shape2D.cols == 1)
-	{
-		n = shape2D.rows/2;
-	}
-
-	for( int i = 0; i < n; ++i)
-	{		
-		cv::Point2d featurePoint;
-		if(shape2D.cols == 1)
-		{
-			featurePoint = cv::Point2d(shape2D.at<double>(i), shape2D.at<double>(i +n));
-		}
-		else
-		{
-			featurePoint = cv::Point2d(shape2D.at<double>(i, 0), shape2D.at<double>(i, 1));
-		}
-
-		landmarks.push_back(featurePoint);
-	}
-	
-	return landmarks;
-}
+    
+//
+//// Computing landmarks (to be drawn later possibly)
+//vector<cv::Point2d> CalculateLandmarks( const cv::Mat_<double>& shape2D)
+//{
+//	
+//	int n = 0;
+//	vector<cv::Point2d> landmarks;
+//	
+//	if(shape2D.cols == 2)
+//	{
+//		n = shape2D.rows;
+//	}
+//	else if(shape2D.cols == 1)
+//	{
+//		n = shape2D.rows/2;
+//	}
+//
+//	for( int i = 0; i < n; ++i)
+//	{		
+//		cv::Point2d featurePoint;
+//		if(shape2D.cols == 1)
+//		{
+//			featurePoint = cv::Point2d(shape2D.at<double>(i), shape2D.at<double>(i +n));
+//		}
+//		else
+//		{
+//			featurePoint = cv::Point2d(shape2D.at<double>(i, 0), shape2D.at<double>(i, 1));
+//		}
+//
+//		landmarks.push_back(featurePoint);
+//	}
+//	
+//	return landmarks;
+//}
 
 // Computing landmarks (to be drawn later possibly)
 vector<cv::Point2d> CalculateLandmarks(CLNF& clnf_model)

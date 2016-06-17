@@ -226,33 +226,18 @@ namespace dlib
             return temp;
         }
 
-        void detect (
-            const fhog_filterbank& w,
-            std::vector<std::pair<double, rectangle> >& dets,
-            const double thresh
-        ) const;
+        void detect (const fhog_filterbank& w,std::vector<std::pair<double, rectangle> >& dets,const double thresh) const;
 
 
-        void get_feature_vector (
-            const full_object_detection& obj,
-            feature_vector_type& psi
-        ) const;
+        void get_feature_vector (const full_object_detection& obj,feature_vector_type& psi) const;
 
-        full_object_detection get_full_object_detection (
-            const rectangle& rect,
-            const feature_vector_type& w
-        ) const;
+        full_object_detection get_full_object_detection (const rectangle& rect,const feature_vector_type& w) const;
 
-        const rectangle get_best_matching_rect (
-            const rectangle& rect
-        ) const;
+        const rectangle get_best_matching_rect (const rectangle& rect) const;
 
-        double get_nuclear_norm_regularization_strength (
-        ) const { return nuclear_norm_regularization_strength; }
+        double get_nuclear_norm_regularization_strength () const { return nuclear_norm_regularization_strength; }
 
-        void set_nuclear_norm_regularization_strength (
-            double strength
-        ) 
+        void set_nuclear_norm_regularization_strength (double strength)
         {
             // make sure requires clause is not broken
             DLIB_ASSERT(strength >= 0 ,
@@ -265,16 +250,14 @@ namespace dlib
             nuclear_norm_regularization_strength = strength;
         }
 
-        unsigned long get_fhog_window_width (
-        ) const 
+        unsigned long get_fhog_window_width () const
         {
             unsigned long width, height;
             compute_fhog_window_size(width, height);
             return width;
         }
 
-        unsigned long get_fhog_window_height (
-        ) const 
+        unsigned long get_fhog_window_height () const
         {
             unsigned long width, height;
             compute_fhog_window_size(width, height);
@@ -282,22 +265,13 @@ namespace dlib
         }
 
         template <typename T, typename U>
-        friend void serialize (
-            const scan_fhog_pyramid<T,U>& item,
-            std::ostream& out
-        );
+        friend void serialize (const scan_fhog_pyramid<T,U>& item,std::ostream& out);
 
         template <typename T, typename U>
-        friend void deserialize (
-            scan_fhog_pyramid<T,U>& item,
-            std::istream& in 
-        );
+        friend void deserialize (scan_fhog_pyramid<T,U>& item,std::istream& in);
 
     private:
-        inline void compute_fhog_window_size(
-            unsigned long& width,
-            unsigned long& height
-        ) const
+        inline void compute_fhog_window_size(unsigned long& width,unsigned long& height) const
         {
             const rectangle rect = centered_rect(point(0,0),window_width,window_height);
             const rectangle temp = grow_rect(fe.image_to_feats(rect, cell_size, 1, 1), padding);
@@ -305,18 +279,9 @@ namespace dlib
             height = temp.height();
         }
 
-        void get_mapped_rect_and_metadata (
-            const unsigned long number_pyramid_levels,
-            const rectangle& rect,
-            rectangle& mapped_rect,
-            rectangle& fhog_rect,
-            unsigned long& best_level
-        ) const;
+        void get_mapped_rect_and_metadata (const unsigned long number_pyramid_levels,const rectangle& rect,rectangle& mapped_rect,rectangle& fhog_rect,unsigned long& best_level) const;
 
-        double get_match_score (
-            rectangle r1,
-            rectangle r2
-        ) const
+        double get_match_score (rectangle r1,rectangle r2) const
         {
             // make the rectangles overlap as much as possible before computing the match score.
             r1 = move_rect(r1, r2.tl_corner());
@@ -355,11 +320,7 @@ namespace dlib
     namespace impl
     {
         template <typename fhog_filterbank>
-        rectangle apply_filters_to_fhog (
-            const fhog_filterbank& w,
-            const array<array2d<float> >& feats,
-            array2d<float>& saliency_image
-        )
+        rectangle apply_filters_to_fhog (const fhog_filterbank& w,const array<array2d<float> >& feats,array2d<float>& saliency_image)
         {
             const unsigned long num_separable_filters = w.num_separable_filters();
             rectangle area;
@@ -405,11 +366,7 @@ namespace dlib
 
 
 		template <typename fhog_filterbank>
-        rectangle apply_filters_to_fhog_parallel (
-            const fhog_filterbank& w,
-            const array<array2d<float> >& feats,
-            array2d<float>& saliency_image
-        )
+        rectangle apply_filters_to_fhog_parallel (const fhog_filterbank& w,const array<array2d<float> >& feats,array2d<float>& saliency_image)
         {
             const unsigned long num_separable_filters = w.num_separable_filters();
             rectangle area;
@@ -489,10 +446,7 @@ namespace dlib
 // ----------------------------------------------------------------------------------------
 
     template <typename T, typename U>
-    void serialize (
-        const scan_fhog_pyramid<T,U>& item,
-        std::ostream& out
-    )
+    void serialize (const scan_fhog_pyramid<T,U>& item,std::ostream& out)
     {
         int version = 1;
         serialize(version, out);
@@ -512,10 +466,7 @@ namespace dlib
 // ----------------------------------------------------------------------------------------
 
     template <typename T, typename U>
-    void deserialize (
-        scan_fhog_pyramid<T,U>& item,
-        std::istream& in 
-    )
+    void deserialize (scan_fhog_pyramid<T,U>& item,std::istream& in)
     {
         int version = 0;
         deserialize(version, in);
@@ -549,27 +500,16 @@ namespace dlib
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    scan_fhog_pyramid (
-    ) 
+    template <typename Pyramid_type,typename feature_extractor_type>
+    scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::scan_fhog_pyramid ()
     {
         init();
     }
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    scan_fhog_pyramid (
-        const feature_extractor_type& fe_
-    ) 
+    template <typename Pyramid_type,typename feature_extractor_type>
+    scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::scan_fhog_pyramid (const feature_extractor_type& fe_)
     {
         init();
         fe = fe_;
@@ -579,22 +519,10 @@ namespace dlib
 
     namespace impl
     {
-        template <
-            typename pyramid_type,
-            typename image_type,
-            typename feature_extractor_type
-            >
-        void create_fhog_pyramid (
-            const image_type& img,
-            const feature_extractor_type& fe,
-            array<array<array2d<float> > >& feats,
-            int cell_size,
-            int filter_rows_padding,
-            int filter_cols_padding,
-            unsigned long min_pyramid_layer_width,
-            unsigned long min_pyramid_layer_height,
-            unsigned long max_pyramid_levels
-        )
+        template <typename pyramid_type,typename image_type,typename feature_extractor_type>
+        void create_fhog_pyramid (const image_type& img,const feature_extractor_type& fe,array<array<array2d<float> > >& feats,
+            int cell_size,int filter_rows_padding,int filter_cols_padding,unsigned long min_pyramid_layer_width,
+            unsigned long min_pyramid_layer_height,unsigned long max_pyramid_levels )
         {
             unsigned long levels = 0;
             rectangle rect = get_rect(img);
@@ -637,22 +565,10 @@ namespace dlib
             }
         }
 
-        template <
-            typename pyramid_type,
-            typename image_type,
-            typename feature_extractor_type
-            >
-        void create_fhog_pyramid_parallel (
-            const image_type& img,
-            const feature_extractor_type& fe,
-            array<array<array2d<float> > >& feats,
-            int cell_size,
-            int filter_rows_padding,
-            int filter_cols_padding,
-            unsigned long min_pyramid_layer_width,
-            unsigned long min_pyramid_layer_height,
-            unsigned long max_pyramid_levels
-        )
+        template <typename pyramid_type,typename image_type,typename feature_extractor_type>
+        void create_fhog_pyramid_parallel (const image_type& img,const feature_extractor_type& fe,
+            array<array<array2d<float> > >& feats, int cell_size, int filter_rows_padding, int filter_cols_padding,
+            unsigned long min_pyramid_layer_width, unsigned long min_pyramid_layer_height, unsigned long max_pyramid_levels)
         {
             unsigned long levels = 0;
             rectangle rect = get_rect(img);
@@ -727,27 +643,16 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    bool scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    is_loaded_with_image (
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    bool scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::is_loaded_with_image () const
     {
         return feats.size() != 0;
     }
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    copy_configuration (
-        const scan_fhog_pyramid& item
-    )
+    template <typename Pyramid_type,typename feature_extractor_type>
+    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::copy_configuration (const scan_fhog_pyramid& item)
     {
         cell_size = item.cell_size;
         padding = item.padding;
@@ -762,39 +667,24 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_num_detection_templates (
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_num_detection_templates () const
     {
         return 1;
     }
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_num_movable_components_per_detection_template (
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_num_movable_components_per_detection_template () const
     {
         return 0;
     }
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_num_dimensions (
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_num_dimensions () const
     {
         unsigned long width, height;
         compute_fhog_window_size(width,height);
@@ -803,27 +693,16 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_max_pyramid_levels (
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_max_pyramid_levels () const
     {
         return max_pyramid_levels;
     }
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    set_max_pyramid_levels (
-        unsigned long max_levels
-    )
+    template <typename Pyramid_type,typename feature_extractor_type>
+    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::set_max_pyramid_levels (unsigned long max_levels)
     {
         // make sure requires clause is not broken
         DLIB_ASSERT(max_levels > 0 ,
@@ -840,19 +719,12 @@ namespace dlib
 
     namespace impl
     {
-        inline bool compare_pair_rect (
-            const std::pair<double, rectangle>& a,
-            const std::pair<double, rectangle>& b
-        )
+        inline bool compare_pair_rect (const std::pair<double, rectangle>& a,const std::pair<double, rectangle>& b)
         {
             return a.first < b.first;
         }
 
-        template <
-            typename pyramid_type,
-            typename feature_extractor_type,
-            typename fhog_filterbank
-            >
+        template <typename pyramid_type,typename feature_extractor_type,typename fhog_filterbank>
         void detect_from_fhog_pyramid (
             const array<array<array2d<float> > >& feats,
             const feature_extractor_type& fe,
@@ -863,8 +735,7 @@ namespace dlib
             const int cell_size,
             const int filter_rows_padding,
             const int filter_cols_padding,
-            std::vector<std::pair<double, rectangle> >& dets
-        ) 
+            std::vector<std::pair<double, rectangle> >& dets)
         {
             dets.clear();
 
@@ -896,11 +767,8 @@ namespace dlib
             std::sort(dets.rbegin(), dets.rend(), compare_pair_rect);
         }
 
- template <
-            typename pyramid_type,
-            typename feature_extractor_type,
-            typename fhog_filterbank
-            >
+
+        template <typename pyramid_type,typename feature_extractor_type,typename fhog_filterbank>
         void detect_from_fhog_pyramid_parallel (
             const array<array<array2d<float> > >& feats,
             const feature_extractor_type& fe,
@@ -911,8 +779,7 @@ namespace dlib
             const int cell_size,
             const int filter_rows_padding,
             const int filter_cols_padding,
-            std::vector<std::pair<double, rectangle> >& dets
-        ) 
+            std::vector<std::pair<double, rectangle> >& dets)
         {
             dets.clear();
 
@@ -957,11 +824,7 @@ namespace dlib
             std::sort(dets.rbegin(), dets.rend(), compare_pair_rect);
         }
 
-        inline bool overlaps_any_box (
-            const test_box_overlap& tester,
-            const std::vector<rect_detection>& rects,
-            const rect_detection& rect
-        ) 
+        inline bool overlaps_any_box (const test_box_overlap& tester,const std::vector<rect_detection>& rects,const rect_detection& rect)
         {
             for (unsigned long i = 0; i < rects.size(); ++i)
             {
@@ -977,16 +840,9 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    detect (
-        const fhog_filterbank& w,
-        std::vector<std::pair<double, rectangle> >& dets,
-        const double thresh
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::detect (
+        const fhog_filterbank& w,std::vector<std::pair<double, rectangle> >& dets,const double thresh) const
     {
         // make sure requires clause is not broken
         DLIB_ASSERT(is_loaded_with_image() &&
@@ -1011,14 +867,8 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    const rectangle scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_best_matching_rect (
-        const rectangle& rect
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    const rectangle scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_best_matching_rect (const rectangle& rect) const
     {
         rectangle mapped_rect, fhog_rect;
         unsigned long best_level;
@@ -1028,18 +878,13 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_mapped_rect_and_metadata (
+    template <typename Pyramid_type,typename feature_extractor_type>
+    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_mapped_rect_and_metadata (
         const unsigned long number_pyramid_levels,
         const rectangle& rect,
         rectangle& mapped_rect,
         rectangle& fhog_rect,
-        unsigned long& best_level
-    ) const
+        unsigned long& best_level) const
     {
         pyramid_type pyr;
         best_level = 0;
@@ -1073,30 +918,18 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    full_object_detection scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_full_object_detection (
+    template <typename Pyramid_type,typename feature_extractor_type>
+    full_object_detection scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_full_object_detection (
         const rectangle& rect,
-        const feature_vector_type& 
-    ) const
+        const feature_vector_type& ) const
     {
         return full_object_detection(rect);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_feature_vector (
-        const full_object_detection& obj,
-        feature_vector_type& psi
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_feature_vector (const full_object_detection& obj,feature_vector_type& psi) const
     {
         // make sure requires clause is not broken
         DLIB_ASSERT(is_loaded_with_image() &&
@@ -1137,15 +970,8 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    set_min_pyramid_layer_size (
-        unsigned long width,
-        unsigned long height 
-    )
+    template <typename Pyramid_type,typename feature_extractor_type>
+    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::set_min_pyramid_layer_size (unsigned long width,unsigned long height)
     {
         // make sure requires clause is not broken
         DLIB_ASSERT(width > 0 && height > 0 ,
@@ -1162,26 +988,16 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_min_pyramid_layer_width (
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_min_pyramid_layer_width () const
     {
         return min_pyramid_layer_width;
     }
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    get_min_pyramid_layer_height (
-    ) const
+    template <typename Pyramid_type,typename feature_extractor_type>
+    unsigned long scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::get_min_pyramid_layer_height () const
     {
         return min_pyramid_layer_height;
     }
@@ -1189,15 +1005,11 @@ namespace dlib
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
+    template <typename Pyramid_type,typename feature_extractor_type>
     matrix<unsigned char> draw_fhog (
         const object_detector<scan_fhog_pyramid<Pyramid_type,feature_extractor_type> >& detector,
         const unsigned long weight_index = 0,
-        const long cell_draw_size = 15
-    )
+        const long cell_draw_size = 15)
     {
         // make sure requires clause is not broken
         DLIB_ASSERT(weight_index < detector.num_detectors(),
@@ -1221,14 +1033,10 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
+    template <typename Pyramid_type,typename feature_extractor_type>
     unsigned long num_separable_filters (
         const object_detector<scan_fhog_pyramid<Pyramid_type,feature_extractor_type> >& detector,
-        const unsigned long weight_index = 0
-    )
+        const unsigned long weight_index = 0)
     {
         // make sure requires clause is not broken
         DLIB_ASSERT(weight_index < detector.num_detectors(),
@@ -1250,15 +1058,11 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
+    template <typename Pyramid_type,typename feature_extractor_type>
     object_detector<scan_fhog_pyramid<Pyramid_type,feature_extractor_type> > threshold_filter_singular_values (
         const object_detector<scan_fhog_pyramid<Pyramid_type,feature_extractor_type> >& detector,
         double thresh,
-        const unsigned long weight_index = 0
-    )
+        const unsigned long weight_index = 0)
     {
         // make sure requires clause is not broken
         DLIB_ASSERT(thresh >= 0 ,
@@ -1316,15 +1120,10 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type,
-        typename svm_struct_prob_type
-        >
+    template <typename Pyramid_type,typename feature_extractor_type,typename svm_struct_prob_type>
     void configure_nuclear_norm_regularizer (
         const scan_fhog_pyramid<Pyramid_type,feature_extractor_type>& scanner,
-        svm_struct_prob_type& prob
-    )
+        svm_struct_prob_type& prob)
     { 
         const double strength = scanner.get_nuclear_norm_regularization_strength();
         const long num_planes = scanner.get_feature_extractor().get_num_planes();
@@ -1342,10 +1141,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
+    template <typename Pyramid_type,typename feature_extractor_type>
     struct processed_weight_vector<scan_fhog_pyramid<Pyramid_type,feature_extractor_type> >
     {
         processed_weight_vector(){}
@@ -1370,16 +1166,12 @@ namespace dlib
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename pyramid_type,
-        typename image_type
-        >
+    template <typename pyramid_type,typename image_type>
     void evaluate_detectors (
         const std::vector<object_detector<scan_fhog_pyramid<pyramid_type> > >& detectors,
         const image_type& img,
         std::vector<rect_detection>& dets,
-        const double adjust_threshold = 0
-    )
+        const double adjust_threshold = 0)
     {
         typedef scan_fhog_pyramid<pyramid_type> scanner_type;
 
@@ -1475,15 +1267,11 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename image_type
-        >
+    template <typename Pyramid_type,typename image_type>
     std::vector<rectangle> evaluate_detectors (
         const std::vector<object_detector<scan_fhog_pyramid<Pyramid_type> > >& detectors,
         const image_type& img,
-        const double adjust_threshold = 0
-    )
+        const double adjust_threshold = 0)
     {
         std::vector<rectangle> out_dets;
         std::vector<rect_detection> dets;
