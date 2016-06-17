@@ -750,8 +750,8 @@ cv::Matx22d AlignShapesWithScale(cv::Mat_<double>& src, cv::Mat_<double> dst)
 	cv::Mat_<double> aligned = (cv::Mat(cv::Mat(A) * src.t())).t();
 	cv::Mat_<double> offset = dst - aligned;
 
-	double t_x =  cv::mean(offset.col(0))[0];
-	double t_y =  cv::mean(offset.col(1))[0];
+	//double t_x =  cv::mean(offset.col(0))[0];
+	//double t_y =  cv::mean(offset.col(1))[0];
     
 	return A;
 

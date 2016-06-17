@@ -31,24 +31,9 @@ namespace dlib
 
     public:
 
-        rectangle (
-            long l_,
-            long t_,
-            long r_,
-            long b_
-        ) :
-            l(l_),
-            t(t_),
-            r(r_),
-            b(b_)
-        {}
+        rectangle (long l_,long t_,long r_,long b_) :l(l_),t(t_),r(r_),b(b_){}
 
-        rectangle (
-            unsigned long w,
-            unsigned long h
-        ) :
-            l(0),
-            t(0),
+        rectangle (unsigned long w,unsigned long h) :l(0),t(0),
             r(static_cast<long>(w)-1),
             b(static_cast<long>(h)-1)
         {
@@ -61,95 +46,57 @@ namespace dlib
                 );
         }
 
-        rectangle (
-            const point& p
-        ) :
-            l(p.x()),
-            t(p.y()),
-            r(p.x()),
-            b(p.y())
+        rectangle (const point& p) :l(p.x()),t(p.y()),r(p.x()),b(p.y())
         {
         }
 
-        rectangle (
-            const point& p1,
-            const point& p2
-        )
+        rectangle (const point& p1,const point& p2)
         {
             *this = rectangle(p1) + rectangle(p2);
         }
 
         template <typename T>
-        rectangle (
-            const vector<T,2>& p1,
-            const vector<T,2>& p2
-        )
+        rectangle (const vector<T,2>& p1,const vector<T,2>& p2)
         {
             *this = rectangle(p1) + rectangle(p2);
         }
 
-        rectangle (
-        ) :
-            l(0),
-            t(0),
-            r(-1),
-            b(-1)
+        rectangle () :l(0),t(0),r(-1),b(-1)
         {}
 
-        long top (
-        ) const { return t; }
+        long top () const { return t; }
 
-        long& top (
-        ) { return t; }
+        long& top () { return t; }
 
-        void set_top (
-            long top_
-        ) { t = top_; }
+        void set_top (long top_) { t = top_; }
 
-        long left (
-        ) const { return l; }
+        long left () const { return l; }
 
-        long& left (
-        ) { return l; }
+        long& left () { return l; }
 
-        void set_left (
-            long left_
-        ) { l = left_; }
+        void set_left (long left_) { l = left_; }
 
-        long right (
-        ) const { return r; }
+        long right () const { return r; }
 
-        long& right (
-        ) { return r; }
+        long& right () { return r; }
 
-        void set_right (
-            long right_
-        ) { r = right_; }
+        void set_right (long right_) { r = right_; }
 
-        long bottom (
-        ) const { return b; }
+        long bottom () const { return b; }
 
-        long& bottom (
-        ) { return b; }
+        long& bottom () { return b; }
 
-        void set_bottom (
-            long bottom_
-        ) { b = bottom_; }
+        void set_bottom (long bottom_) { b = bottom_; }
 
-        const point tl_corner (
-        ) const { return point(left(), top()); }
+        const point tl_corner () const { return point(left(), top()); }
 
-        const point bl_corner (
-        ) const { return point(left(), bottom()); } 
+        const point bl_corner () const { return point(left(), bottom()); }
 
-        const point tr_corner (
-        ) const { return point(right(), top()); }
+        const point tr_corner () const { return point(right(), top()); }
 
-        const point br_corner (
-        ) const { return point(right(), bottom()); }
+        const point br_corner () const { return point(right(), bottom()); }
        
-        unsigned long width (
-        ) const 
+        unsigned long width () const
         { 
             if (is_empty())
                 return 0;
@@ -157,8 +104,7 @@ namespace dlib
                 return r - l + 1; 
         }
 
-        unsigned long height (
-        ) const 
+        unsigned long height () const
         { 
             if (is_empty())
                 return 0;
@@ -166,18 +112,14 @@ namespace dlib
                 return b - t + 1; 
         }
 
-        unsigned long area (
-        ) const
+        unsigned long area () const
         {
             return width()*height();
         }
 
-        bool is_empty (
-        ) const { return (t > b || l > r); }
+        bool is_empty () const { return (t > b || l > r); }
 
-        rectangle operator + (
-            const rectangle& rhs
-        ) const
+        rectangle operator + (const rectangle& rhs) const
         {
             if (rhs.is_empty())
                 return *this;
@@ -192,9 +134,7 @@ namespace dlib
                 );
         }
 
-        rectangle intersect (
-            const rectangle& rhs
-        ) const
+        rectangle intersect (const rectangle& rhs) const
         {
             return rectangle (
                 std::max(l,rhs.l),
@@ -204,58 +144,43 @@ namespace dlib
                 );
         }
 
-        bool contains (
-            const point& p
-        ) const
+        bool contains (const point& p) const
         {
             if (p.x() < l || p.x() > r || p.y() < t || p.y() > b)
                 return false;
             return true;
         }
 
-        bool contains (
-            long x,
-            long y
-        ) const
+        bool contains (long x,long y) const
         {
             if (x < l || x > r || y < t || y > b)
                 return false;
             return true;
         }
 
-        bool contains (
-            const rectangle& rect
-        ) const
+        bool contains (const rectangle& rect) const
         {
             return (rect + *this == *this);
         }
 
-        rectangle& operator+= (
-            const point& p 
-        )
+        rectangle& operator+= (const point& p)
         {
             *this = *this + rectangle(p);
             return *this;
         }
 
-        rectangle& operator+= (
-            const rectangle& rect
-        )
+        rectangle& operator+= (const rectangle& rect)
         {
             *this = *this + rect;
             return *this;
         }
 
-        bool operator== (
-            const rectangle& rect 
-        ) const 
+        bool operator== (const rectangle& rect) const
         {
             return (l == rect.l) && (t == rect.t) && (r == rect.r) && (b == rect.b);
         }
 
-        bool operator!= (
-            const rectangle& rect 
-        ) const 
+        bool operator!= (const rectangle& rect) const
         {
             return !(*this == rect);
         }
@@ -269,10 +194,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline void serialize (
-        const rectangle& item, 
-        std::ostream& out
-    )
+    inline void serialize (const rectangle& item,std::ostream& out)
     {
         try
         {
@@ -287,10 +209,7 @@ namespace dlib
         }
     }
 
-    inline void deserialize (
-        rectangle& item, 
-        std::istream& in
-    )
+    inline void deserialize (rectangle& item,std::istream& in)
     {
         try
         {
@@ -305,19 +224,13 @@ namespace dlib
         }
     }
 
-    inline std::ostream& operator<< (
-        std::ostream& out, 
-        const rectangle& item 
-    )   
+    inline std::ostream& operator<< (std::ostream& out,const rectangle& item)
     {
         out << "[(" << item.left() << ", " << item.top() << ") (" << item.right() << ", " << item.bottom() << ")]";
         return out;
     }
 
-    inline std::istream& operator>>(
-        std::istream& in, 
-        rectangle& item 
-    )
+    inline std::istream& operator>>(std::istream& in,rectangle& item)
     {
         // ignore any whitespace
         while (in.peek() == ' ' || in.peek() == '\t' || in.peek() == '\r' || in.peek() == '\n')
@@ -347,12 +260,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle centered_rect (
-        long x,
-        long y,
-        unsigned long width,
-        unsigned long height
-    )
+    inline const rectangle centered_rect (long x,long y,unsigned long width,unsigned long height)
     {
         rectangle result;
         result.set_left ( x - static_cast<long>(width) / 2 );
@@ -371,15 +279,11 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline unsigned long area (
-        const rectangle& a
-    ) { return a.area(); }
+    inline unsigned long area (const rectangle& a) { return a.area(); }
 
 // ----------------------------------------------------------------------------------------
 
-    inline point center (
-        const dlib::rectangle& rect
-    )
+    inline point center (const dlib::rectangle& rect)
     {
         point temp(rect.left() + rect.right() + 1,
                    rect.top() + rect.bottom() + 1);
@@ -395,9 +299,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline dlib::vector<double,2> dcenter (
-        const dlib::rectangle& rect
-    )
+    inline dlib::vector<double,2> dcenter (const dlib::rectangle& rect)
     {
         dlib::vector<double,2> temp(rect.left() + rect.right(),
                                     rect.top() + rect.bottom());
@@ -407,10 +309,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline long distance_to_rect_edge (
-        const rectangle& rect,
-        const point& p
-    )
+    inline long distance_to_rect_edge (const rectangle& rect,const point& p)
     {
         using std::max;
         using std::min;
@@ -431,10 +330,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const point nearest_point (
-        const rectangle& rect,
-        const point& p
-    )
+    inline const point nearest_point (const rectangle& rect,const point& p)
     {
         point temp(p);
         if (temp.x() < rect.left())
@@ -452,74 +348,49 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle centered_rect (
-        const point& p,
-        unsigned long width,
-        unsigned long height
-    )
+    inline const rectangle centered_rect (const point& p,unsigned long width,unsigned long height)
     {
         return centered_rect(p.x(),p.y(),width,height);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle centered_rect (
-        const rectangle& rect,
-        unsigned long width,
-        unsigned long height
-    )
+    inline const rectangle centered_rect (const rectangle& rect,unsigned long width,unsigned long height)
     {
         return centered_rect((rect.left()+rect.right())/2,  (rect.top()+rect.bottom())/2, width, height);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle shrink_rect (
-        const rectangle& rect,
-        long num 
-    )
+    inline const rectangle shrink_rect (const rectangle& rect,long num)
     {
         return rectangle(rect.left()+num, rect.top()+num, rect.right()-num, rect.bottom()-num);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle grow_rect (
-        const rectangle& rect,
-        long num 
-    )
+    inline const rectangle grow_rect (const rectangle& rect,long num )
     {
         return shrink_rect(rect, -num);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle shrink_rect (
-        const rectangle& rect,
-        long width,
-        long height
-    )
+    inline const rectangle shrink_rect (const rectangle& rect,long width,long height)
     {
         return rectangle(rect.left()+width, rect.top()+height, rect.right()-width, rect.bottom()-height);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle grow_rect (
-        const rectangle& rect,
-        long width,
-        long height
-    )
+    inline const rectangle grow_rect (const rectangle& rect,long width,long height)
     {
         return shrink_rect(rect, -width, -height);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle translate_rect (
-        const rectangle& rect,
-        const point& p
-    )
+    inline const rectangle translate_rect (const rectangle& rect,const point& p)
     {
         rectangle result;
         result.set_top ( rect.top() + p.y() );
@@ -531,11 +402,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle translate_rect (
-        const rectangle& rect,
-        long x,
-        long y
-    )
+    inline const rectangle translate_rect (const rectangle& rect,long x,long y)
     {
         rectangle result;
         result.set_top ( rect.top() + y );
@@ -547,11 +414,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle resize_rect (
-        const rectangle& rect,
-        unsigned long width,
-        unsigned long height
-    )
+    inline const rectangle resize_rect (const rectangle& rect,unsigned long width,unsigned long height)
     {
         return rectangle(rect.left(),rect.top(), 
                          rect.left()+width-1,
@@ -560,10 +423,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle resize_rect_width (
-        const rectangle& rect,
-        unsigned long width
-    )
+    inline const rectangle resize_rect_width (const rectangle& rect,unsigned long width)
     {
         return rectangle(rect.left(),rect.top(), 
                          rect.left()+width-1,
@@ -572,10 +432,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle resize_rect_height (
-        const rectangle& rect,
-        unsigned long height 
-    )
+    inline const rectangle resize_rect_height (const rectangle& rect,unsigned long height)
     {
         return rectangle(rect.left(),rect.top(), 
                          rect.right(),
@@ -584,31 +441,21 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle move_rect (
-        const rectangle& rect,
-        const point& p
-    )
+    inline const rectangle move_rect (const rectangle& rect,const point& p)
     {
         return rectangle(p.x(), p.y(), p.x()+rect.width()-1, p.y()+rect.height()-1);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline const rectangle move_rect (
-        const rectangle& rect,
-        long x,
-        long y 
-    )
+    inline const rectangle move_rect (const rectangle& rect,long x,long y)
     {
         return rectangle(x, y, x+rect.width()-1, y+rect.height()-1);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline rectangle set_aspect_ratio (
-        const rectangle& rect,
-        double ratio
-    )
+    inline rectangle set_aspect_ratio (const rectangle& rect,double ratio)
     {
         DLIB_ASSERT(ratio > 0,
             "\t rectangle set_aspect_ratio()"
@@ -639,32 +486,22 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename T 
-        >
-    inline const rectangle get_rect (
-        const T& m
-    )
+    template <typename T>
+    inline const rectangle get_rect (const T& m)
     {
         return rectangle(0, 0, num_columns(m)-1, num_rows(m)-1);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline rectangle operator+ (
-        const rectangle& r,
-        const point& p
-    )
+    inline rectangle operator+ (const rectangle& r,const point& p)
     {
         return r + rectangle(p);
     }
 
 // ----------------------------------------------------------------------------------------
 
-    inline rectangle operator+ (
-        const point& p,
-        const rectangle& r
-    )
+    inline rectangle operator+ (const point& p,const rectangle& r)
     {
         return r + rectangle(p);
     }
@@ -683,15 +520,24 @@ namespace std
     {
         inline bool operator() (const dlib::rectangle& a, const dlib::rectangle& b) const
         { 
-            if      (a.left() < b.left()) return true;
-            else if (a.left() > b.left()) return false;
-            else if (a.top() < b.top()) return true;
-            else if (a.top() > b.top()) return false;
-            else if (a.right() < b.right()) return true;
-            else if (a.right() > b.right()) return false;
-            else if (a.bottom() < b.bottom()) return true;
-            else if (a.bottom() > b.bottom()) return false;
-            else                    return false;
+            if(a.left() < b.left())
+                return true;
+            else if (a.left() > b.left())
+                return false;
+            else if (a.top() < b.top())
+                return true;
+            else if (a.top() > b.top())
+                return false;
+            else if (a.right() < b.right())
+                return true;
+            else if (a.right() > b.right())
+                return false;
+            else if (a.bottom() < b.bottom())
+                return true;
+            else if (a.bottom() > b.bottom())
+                return false;
+            else
+                return false;
         }
     };
 }
