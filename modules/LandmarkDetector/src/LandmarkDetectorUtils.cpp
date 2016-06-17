@@ -1199,7 +1199,7 @@ cv::Vec3d RotationMatrix2Euler(const cv::Matx33d& rotation_matrix)
 	double q2 = (rotation_matrix(0,2) - rotation_matrix(2,0)) / (4.0*q0) ;
 	double q3 = (rotation_matrix(1,0) - rotation_matrix(0,1)) / (4.0*q0) ;
 
-	double t1 = 2.0 * (q0*q2 + q1*q3);
+	//double t1 = 2.0 * (q0*q2 + q1*q3);
 
 	double yaw  = asin(2.0 * (q0*q2 + q1*q3));
 	double pitch= atan2(2.0 * (q0*q1-q2*q3), q0*q0-q1*q1-q2*q2+q3*q3); 

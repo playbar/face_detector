@@ -86,7 +86,7 @@ public:
 	cv::Mat_<double>		detected_landmarks;
 	
 	// The landmark detection likelihoods (combined and per patch expert)
-	double				model_likelihood;
+	double                  model_likelihood;
 	cv::Mat_<double>		landmark_likelihoods;
 	
 	// Keeping track of how many frames the tracker has failed in so far when tracking in videos

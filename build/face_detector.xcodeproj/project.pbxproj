@@ -77,6 +77,7 @@
 		04914DC81D12824C007159EA /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D911D12824C007159EA /* SVR_patch_expert.cpp */; };
 		04914DCC1D128483007159EA /* dbt_face_detection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914DCB1D128483007159EA /* dbt_face_detection.cpp */; };
 		04914DCE1D128490007159EA /* FaceLandmarkVid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914DCD1D128490007159EA /* FaceLandmarkVid.cpp */; };
+		04BBA11B1D13CCCE00FB3B1F /* windows_file_codecvt.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D091D1281A2007159EA /* windows_file_codecvt.hpp */; };
 		04DBBD2B5B69468A9596C0DE /* tif_lzw.c in Sources */ = {isa = PBXBuildFile; fileRef = 79A45267E9124ED5A1CDF828 /* tif_lzw.c */; settings = {COMPILER_FLAGS = ""; }; };
 		0511D74E1C6D4807B562038E /* blobdetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C482B4E63A294EC1944C115A /* blobdetector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		052CBE941D2C47B5AA0FE78A /* grabcut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DF153346394DE68ABB2A00 /* grabcut.cpp */; settings = {COMPILER_FLAGS = ""; }; };
@@ -7740,6 +7741,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BBA11B1D13CCCE00FB3B1F /* windows_file_codecvt.hpp in Sources */,
 				04914DB91D12824C007159EA /* PAW.cpp in Sources */,
 				04914DCC1D128483007159EA /* dbt_face_detection.cpp in Sources */,
 				04914D391D1281FE007159EA /* error_code.cpp in Sources */,
@@ -8300,7 +8302,10 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DLIB_NO_GUI_SUPPORT,
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
@@ -8323,6 +8328,10 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/build,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
+					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -10551,7 +10560,10 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DLIB_NO_GUI_SUPPORT,
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
@@ -10574,6 +10586,10 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/build,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
+					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
