@@ -18,7 +18,11 @@ namespace dlib
     {
         std::istringstream sin(get_serialized_frontal_faces());
         frontal_face_detector detector;
+        //std::cout<<sin.str()<<std::endl;
         deserialize(detector, sin);
+        
+        //FILE *pfile = fopen("./test.txt", "wb");
+        //fwrite( sin.str(), sin.
 		
 		// A corrected overlap threshold that leads to better precision face detection
 		detector.boxes_overlap.overlap_thresh = 0.3;

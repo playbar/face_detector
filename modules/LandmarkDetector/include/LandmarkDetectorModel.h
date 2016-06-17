@@ -29,6 +29,9 @@ class CLNF{
 
 public:
 
+    // A HOG SVM-struct based face detector
+    static dlib::frontal_face_detector face_detector_HOG;
+    
 	//===========================================================================
 	// Member variables that contain the model description
 
@@ -56,9 +59,6 @@ public:
 	// Haar cascade classifier for face detection
 	cv::CascadeClassifier   face_detector_HAAR;
 	string                  face_detector_location;
-
-	// A HOG SVM-struct based face detector
-	dlib::frontal_face_detector face_detector_HOG;
 
 
 	// Validate if the detected landmarks are correct using an SVR regressor
