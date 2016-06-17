@@ -79,7 +79,17 @@ class FaceAnalyser{
 public:
 
 
-	enum RegressorType{ SVR_appearance_static_linear = 0, SVR_appearance_dynamic_linear = 1, SVR_dynamic_geom_linear = 2, SVR_combined_linear = 3, SVM_linear_stat = 4, SVM_linear_dyn = 5, SVR_linear_static_seg = 6, SVR_linear_dynamic_seg =7};
+	enum RegressorType
+    {
+        SVR_appearance_static_linear = 0,
+        SVR_appearance_dynamic_linear = 1,
+        SVR_dynamic_geom_linear = 2,
+        SVR_combined_linear = 3,
+        SVM_linear_stat = 4,
+        SVM_linear_dyn = 5,
+        SVR_linear_static_seg = 6,
+        SVR_linear_dynamic_seg =7
+    };
 
 	// Constructor from a model file (or a default one if not provided
 	// TODO scale width and height should be read in as part of the model as opposed to being here?

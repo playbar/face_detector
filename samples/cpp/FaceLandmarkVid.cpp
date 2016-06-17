@@ -317,19 +317,19 @@ int main (int argc, char **argv)
 
 			video_capture >> captured_image;
 		
-//			// detect key presses
-//			char character_press = cv::waitKey(1);
-//			
-//			// restart the tracker
-//			if(character_press == 'r')
-//			{
-//				clnf_model.Reset();
-//			}
-//			// quit the application
-//			else if(character_press=='q')
-//			{
-//				return(0);
-//			}
+			// detect key presses
+			char character_press = cv::waitKey(1);
+			
+			// restart the tracker
+			if(character_press == 'r')
+			{
+				clnf_model.Reset();
+			}
+			// quit the application
+			else if(character_press=='q')
+			{
+				return(0);
+			}
 
 			// Update the frame count
 			frame_count++;

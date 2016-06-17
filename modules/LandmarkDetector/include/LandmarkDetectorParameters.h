@@ -133,8 +133,8 @@ struct FaceModelParameters
 
 	FaceModelParameters(vector<string> &arguments);
 
-	private:
-		void init();
+private:
+    void init();
 };
 
 }

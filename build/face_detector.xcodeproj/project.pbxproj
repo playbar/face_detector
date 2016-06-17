@@ -2776,13 +2776,6 @@
 			name = face;
 			sourceTree = "<group>";
 		};
-		04914CA61D123D1E007159EA /* tbb */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = tbb;
-			sourceTree = "<group>";
-		};
 		04914CAC1D127D0F007159EA /* FaceAnalyser */ = {
 			isa = PBXGroup;
 			children = (
@@ -4526,7 +4519,6 @@
 			isa = PBXGroup;
 			children = (
 				04914CFE1D1280EA007159EA /* boost */,
-				04914CA61D123D1E007159EA /* tbb */,
 				C2976BCDC008475E8FD911A6 /* zlib */,
 				35AC40C9D0EE40E6A035AA20 /* libtiff */,
 				933177C2C12A44228928EF27 /* libjpeg */,
