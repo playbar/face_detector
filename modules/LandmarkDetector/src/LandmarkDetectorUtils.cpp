@@ -971,10 +971,10 @@ vector<cv::Point2d> CalculateLandmarks(const cv::Mat_<double>& shape2D, cv::Mat_
 }
 
 // Computing landmarks (to be drawn later possibly)
-vector<cv::Point2d> CalculateLandmarks(cv::Mat img, const cv::Mat_<double>& shape2D)
+vector<cv::Point2d> CalculateLandmarks( const cv::Mat_<double>& shape2D)
 {
 	
-	int n;
+	int n = 0;
 	vector<cv::Point2d> landmarks;
 	
 	if(shape2D.cols == 2)
@@ -1062,8 +1062,8 @@ void Draw(cv::Mat img, const cv::Mat_<double>& shape2D, const cv::Mat_<int>& vis
 			else
 				cv::line(img, featurePoint, nextFeaturePoint, cv::Scalar(0, 0, 255), thickness_2);
 
-			//cv::circle(img, featurePoint, 1, Scalar(0,255,0), thickness);
-			//cv::circle(img, featurePoint, 1, Scalar(0,0,255), thickness_2);
+            //cv::circle(img, featurePoint, 1, cv::Scalar(0,255,0), thickness);
+            //cv::circle(img, featurePoint, 1, cv::Scalar(0,0,255), thickness_2);
 			
 
 		}

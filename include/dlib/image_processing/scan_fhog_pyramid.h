@@ -11,7 +11,6 @@
 #include "../array2d.h"
 #include "object_detector.h"
 
-//#include <tbb/tbb.h>
 
 namespace dlib
 {
@@ -21,42 +20,23 @@ namespace dlib
     class default_fhog_feature_extractor
     {
     public:
-        inline rectangle image_to_feats (
-            const rectangle& rect,
-            int cell_size,
-            int filter_rows_padding,
-            int filter_cols_padding
-        ) const
+        inline rectangle image_to_feats (const rectangle& rect,int cell_size,int filter_rows_padding,int filter_cols_padding) const
         {
             return image_to_fhog(rect, cell_size, filter_rows_padding, filter_cols_padding);
         }
 
-        inline rectangle feats_to_image (
-            const rectangle& rect,
-            int cell_size,
-            int filter_rows_padding,
-            int filter_cols_padding
-        ) const
+        inline rectangle feats_to_image (const rectangle& rect,int cell_size,int filter_rows_padding,int filter_cols_padding) const
         {
             return fhog_to_image(rect, cell_size, filter_rows_padding, filter_cols_padding);
         }
 
-        template <
-            typename image_type
-            >
-        void operator()(
-            const image_type& img, 
-            dlib::array<array2d<float> >& hog, 
-            int cell_size,
-            int filter_rows_padding,
-            int filter_cols_padding
-        ) const
+        template <typename image_type>
+        void operator()(const image_type& img,dlib::array<array2d<float> >& hog,int cell_size,int filter_rows_padding,int filter_cols_padding) const
         {
             extract_fhog_features(img,hog,cell_size,filter_rows_padding,filter_cols_padding);
         }
 
-        inline unsigned long get_num_planes (
-        ) const
+        inline unsigned long get_num_planes () const
         {
             return 31;
         }
@@ -67,10 +47,7 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename Feature_extractor_type = default_fhog_feature_extractor
-        >
+    template <typename Pyramid_type,typename Feature_extractor_type = default_fhog_feature_extractor>
     class scan_fhog_pyramid : noncopyable
     {
 
@@ -81,31 +58,18 @@ namespace dlib
         typedef Pyramid_type pyramid_type;
         typedef Feature_extractor_type feature_extractor_type;
 
-        scan_fhog_pyramid (
-        );  
+        scan_fhog_pyramid ();
 
-        explicit scan_fhog_pyramid (
-            const feature_extractor_type& fe_
-        );  
+        explicit scan_fhog_pyramid (const feature_extractor_type& fe_);
 
-        template <
-            typename image_type
-            >
-        void load (
-            const image_type& img
-        );
+        template <typename image_type>
+        void load (const image_type& img);
 
-        inline bool is_loaded_with_image (
-        ) const;
+        inline bool is_loaded_with_image () const;
 
-        inline void copy_configuration (
-            const scan_fhog_pyramid& item
-        );
+        inline void copy_configuration (const scan_fhog_pyramid& item);
 
-        void set_detection_window_size (
-            unsigned long width,
-            unsigned long height
-        )
+        void set_detection_window_size (unsigned long width,unsigned long height)
         {
             // make sure requires clause is not broken
             DLIB_ASSERT(width > 0 && height > 0,
@@ -121,31 +85,23 @@ namespace dlib
             feats.clear();
         }
 
-        inline unsigned long get_detection_window_width (
-        ) const { return window_width; }
-        inline unsigned long get_detection_window_height (
-        ) const { return window_height; }
+        inline unsigned long get_detection_window_width () const { return window_width; }
+        
+        inline unsigned long get_detection_window_height () const { return window_height; }
 
-        inline unsigned long get_num_detection_templates (
-        ) const;
+        inline unsigned long get_num_detection_templates () const;
 
-        inline unsigned long get_num_movable_components_per_detection_template (
-        ) const;
+        inline unsigned long get_num_movable_components_per_detection_template () const;
 
-        void set_padding (
-            unsigned long new_padding
-        )
+        void set_padding (unsigned long new_padding)
         {
             padding = new_padding;
             feats.clear();
         }
 
-        unsigned long get_padding (
-        ) const { return padding; }
+        unsigned long get_padding () const { return padding; }
 
-        void set_cell_size (
-            unsigned long new_cell_size
-        )
+        void set_cell_size (unsigned long new_cell_size)
         {
             // make sure requires clause is not broken
             DLIB_ASSERT(new_cell_size > 0 ,
@@ -158,38 +114,23 @@ namespace dlib
             feats.clear();
         }
 
-        unsigned long get_cell_size (
-        ) const { return cell_size; }
+        unsigned long get_cell_size () const { return cell_size; }
 
-        inline long get_num_dimensions (
-        ) const;
+        inline long get_num_dimensions () const;
 
-        unsigned long get_max_pyramid_levels (
-        ) const;
+        unsigned long get_max_pyramid_levels () const;
 
-        const feature_extractor_type& get_feature_extractor(
-        ) const { return fe; }
+        const feature_extractor_type& get_feature_extractor() const { return fe; }
 
-        void set_max_pyramid_levels (
-            unsigned long max_levels
-        );
+        void set_max_pyramid_levels (unsigned long max_levels);
 
-        void set_min_pyramid_layer_size (
-            unsigned long width,
-            unsigned long height 
-        );
+        void set_min_pyramid_layer_size (unsigned long width,unsigned long height);
 
-        inline unsigned long get_min_pyramid_layer_width (
-        ) const;
+        inline unsigned long get_min_pyramid_layer_width () const;
 
-        inline unsigned long get_min_pyramid_layer_height (
-        ) const;
+        inline unsigned long get_min_pyramid_layer_height () const;
 
-        void detect (
-            const feature_vector_type& w,
-            std::vector<std::pair<double, rectangle> >& dets,
-            const double thresh
-        ) const
+        void detect (const feature_vector_type& w,std::vector<std::pair<double, rectangle> >& dets,const double thresh) const
         {
             // make sure requires clause is not broken
             DLIB_ASSERT(is_loaded_with_image() &&
@@ -236,9 +177,7 @@ namespace dlib
             std::vector<std::vector<matrix<float,0,1> > > row_filters, col_filters;
         };
 
-        fhog_filterbank build_fhog_filterbank (
-            const feature_vector_type& weights 
-        ) const
+        fhog_filterbank build_fhog_filterbank (const feature_vector_type& weights) const
         {
             // make sure requires clause is not broken
             DLIB_ASSERT(weights.size() >= get_num_dimensions(),
@@ -770,17 +709,9 @@ namespace dlib
 
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename Pyramid_type,
-        typename feature_extractor_type
-        >
-    template <
-        typename image_type
-        >
-    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::
-    load (
-        const image_type& img
-    )
+    template <typename Pyramid_type,typename feature_extractor_type>
+    template <typename image_type>
+    void scan_fhog_pyramid<Pyramid_type,feature_extractor_type>::load (const image_type& img)
     {
         unsigned long width, height;
         compute_fhog_window_size(width,height);
