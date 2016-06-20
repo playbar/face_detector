@@ -625,19 +625,8 @@ namespace dlib
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
 
-    template <
-        typename image_type, 
-        typename T, 
-        typename mm1, 
-        typename mm2
-        >
-    void extract_fhog_features(
-        const image_type& img, 
-        dlib::array<array2d<T,mm1>,mm2>& hog, 
-        int cell_size = 8,
-        int filter_rows_padding = 1,
-        int filter_cols_padding = 1
-    ) 
+    template <typename image_type,typename T,typename mm1,typename mm2>
+    void extract_fhog_features(const image_type& img,dlib::array<array2d<T,mm1>,mm2>& hog,int cell_size = 8,int filter_rows_padding = 1,int filter_cols_padding = 1) 
     {
         impl_fhog::impl_extract_fhog_features(img, hog, cell_size, filter_rows_padding, filter_cols_padding);
         // If the image is too small then the above function outputs an empty feature map.

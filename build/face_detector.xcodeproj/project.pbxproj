@@ -875,6 +875,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		04D5FA5F1D1796C700999CD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A124233CE2148C1B9E0EF92;
+			remoteInfo = opencv_world;
+		};
 		258F687C38154D06A16417E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
@@ -951,13 +958,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 26125CB18A62455F8CB702CE;
 			remoteInfo = libwebp;
-		};
-		D993607CCBC8492A8326FBAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A124233CE2148C1B9E0EF92;
-			remoteInfo = opencv_world;
 		};
 		DF5DC9C049D84305A5FB750B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6784,7 +6784,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F1609CFF6194474881B0BEF1 /* PBXTargetDependency */,
+				04D5FA601D1796C700999CD7 /* PBXTargetDependency */,
 			);
 			name = example_facedetect;
 			productName = example_facedetect;
@@ -7831,6 +7831,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		04D5FA601D1796C700999CD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A124233CE2148C1B9E0EF92 /* opencv_world */;
+			targetProxy = 04D5FA5F1D1796C700999CD7 /* PBXContainerItemProxy */;
+		};
 		087FAB126BE34BC1B2E7CE38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5ED7E2420DC6449C856D4C73 /* libpng */;
@@ -7890,11 +7895,6 @@
 			isa = PBXTargetDependency;
 			target = 2D6EFC08CF8A4AD5BCACE477 /* IlmImf */;
 			targetProxy = 4BB7AD4E84A4461887B883F8 /* PBXContainerItemProxy */;
-		};
-		F1609CFF6194474881B0BEF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5A124233CE2148C1B9E0EF92 /* opencv_world */;
-			targetProxy = D993607CCBC8492A8326FBAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

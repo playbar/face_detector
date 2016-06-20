@@ -608,6 +608,7 @@ namespace dlib
 			}
 
 			//tbb::parallel_for(0, (int)levels, [&](int pyr_level)
+            //levels = 2;
 			for (int pyr_level = 0; pyr_level < levels; ++pyr_level )
 			{
 				if(pyr_level == 0)

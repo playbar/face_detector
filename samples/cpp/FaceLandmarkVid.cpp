@@ -203,7 +203,7 @@ int main (int argc, char **argv)
 		{
 			INFO_STREAM( "Attempting to capture from device: " << device );
 			video_capture = cv::VideoCapture( device );
-            video_capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+            video_capture.set(CV_CAP_PROP_FRAME_WIDTH, 600);
             video_capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
             //video_capture.set(CV_CAP_PROP_FPS, 3000);
 
@@ -294,7 +294,7 @@ int main (int argc, char **argv)
 			
 			// Visualising the results
 			// Drawing the facial landmarks on the face and the bounding box around it if tracking is successful and initialised
-			double detection_certainty = clnf_model.detection_certainty;
+			//double detection_certainty = clnf_model.detection_certainty;
 
 			// Gaze tracking, absolute gaze direction
 			cv::Point3f gazeDirection0(0, 0, -1);
