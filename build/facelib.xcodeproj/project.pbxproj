@@ -8613,7 +8613,7 @@
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/modules/world/OpenCV.build/Debug/opencv_world_object.build/Objects-normal/";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					CVAPI_EXPORTS,
@@ -8675,6 +8675,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/src,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/src,
+					/Users/mac/MyWorks/HongNuo/face_detector/include,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -9321,6 +9322,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/src,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/src,
+					/Users/mac/MyWorks/HongNuo/face_detector/include,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;

@@ -280,8 +280,8 @@
 		045A38631D1921C100A8F47B /* FaceLandmarkVid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceLandmarkVid.cpp; path = ios_mac/mac/FaceLandmarkVid.cpp; sourceTree = "<group>"; };
 		045A38651D1921D500A8F47B /* facelib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = facelib.xcodeproj; path = build/facelib.xcodeproj; sourceTree = "<group>"; };
 		045A38871D1921F500A8F47B /* dbt_face_detection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dbt_face_detection.cpp; path = ios_mac/mac/dbt_face_detection.cpp; sourceTree = "<group>"; };
-		152B056170DB435CB6AD8C3F /* cpp-example-facedetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cpp-example-facedetect"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B268982964C14E9782A231D8 /* cpp-example-dbt_face_detection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cpp-example-dbt_face_detection"; sourceTree = BUILT_PRODUCTS_DIR; };
+		152B056170DB435CB6AD8C3F /* facedetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = facedetect; sourceTree = BUILT_PRODUCTS_DIR; };
+		B268982964C14E9782A231D8 /* dbt_face_detection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = dbt_face_detection; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -693,8 +693,8 @@
 		90682E128AC94FE6AF64EAFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				152B056170DB435CB6AD8C3F /* cpp-example-facedetect */,
-				B268982964C14E9782A231D8 /* cpp-example-dbt_face_detection */,
+				152B056170DB435CB6AD8C3F /* facedetect */,
+				B268982964C14E9782A231D8 /* dbt_face_detection */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -723,7 +723,7 @@
 			);
 			name = facedetect;
 			productName = example_facedetect;
-			productReference = 152B056170DB435CB6AD8C3F /* cpp-example-facedetect */;
+			productReference = 152B056170DB435CB6AD8C3F /* facedetect */;
 			productType = "com.apple.product-type.tool";
 		};
 		B384F8F8CACC4777999148D6 /* dbt_face_detection */ = {
@@ -738,7 +738,7 @@
 			);
 			name = dbt_face_detection;
 			productName = example_dbt_face_detection;
-			productReference = B268982964C14E9782A231D8 /* cpp-example-dbt_face_detection */;
+			productReference = B268982964C14E9782A231D8 /* dbt_face_detection */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -1045,7 +1045,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Release/libopencv_world.3.1.0.dylib,
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-dbt_face_detection";
+				PRODUCT_NAME = dbt_face_detection;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
 				USE_HEADERMAP = NO;
@@ -1183,7 +1183,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencv_world.3.1.0.dylib,
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-facedetect";
+				PRODUCT_NAME = facedetect;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
 				USE_HEADERMAP = NO;
@@ -1331,7 +1331,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Release/libopencv_world.3.1.0.dylib,
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-facedetect";
+				PRODUCT_NAME = facedetect;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
 				USE_HEADERMAP = NO;
@@ -1478,7 +1478,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencv_world.3.1.0.dylib,
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-dbt_face_detection";
+				PRODUCT_NAME = dbt_face_detection;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
 				USE_HEADERMAP = NO;
