@@ -26,58 +26,6 @@
 		034D3F2D40C8433B8D7472F0 /* jcinit.c in Sources */ = {isa = PBXBuildFile; fileRef = E171EA20F2C944549781BF74 /* jcinit.c */; settings = {COMPILER_FLAGS = ""; }; };
 		041B4284A1B142C0AE66C882 /* phasecorr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FEAFF767E4CE6838BB85E /* phasecorr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		041E5E6C879649ACAFE4BD83 /* ImfZipCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C2E06648444C05AD6D1F7E /* ImfZipCompressor.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		04914CE91D127D10007159EA /* Face_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CE21D127D10007159EA /* Face_utils.cpp */; };
-		04914CEA1D127D10007159EA /* FaceAnalyser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CE31D127D10007159EA /* FaceAnalyser.cpp */; };
-		04914CEB1D127D10007159EA /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CE41D127D10007159EA /* GazeEstimation.cpp */; };
-		04914CEC1D127D10007159EA /* SVM_dynamic_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CE51D127D10007159EA /* SVM_dynamic_lin.cpp */; };
-		04914CED1D127D10007159EA /* SVM_static_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CE61D127D10007159EA /* SVM_static_lin.cpp */; };
-		04914CEE1D127D10007159EA /* SVR_dynamic_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CE71D127D10007159EA /* SVR_dynamic_lin_regressors.cpp */; };
-		04914CEF1D127D10007159EA /* SVR_static_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CE81D127D10007159EA /* SVR_static_lin_regressors.cpp */; };
-		04914CFC1D127EF4007159EA /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CF81D127EF4007159EA /* source.cpp */; };
-		04914CFD1D127EF4007159EA /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914CF81D127EF4007159EA /* source.cpp */; };
-		04914D0D1D1281A2007159EA /* codecvt_error_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D011D1281A2007159EA /* codecvt_error_category.cpp */; };
-		04914D0E1D1281A2007159EA /* codecvt_error_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D011D1281A2007159EA /* codecvt_error_category.cpp */; };
-		04914D121D1281A2007159EA /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D021D1281A2007159EA /* operations.cpp */; };
-		04914D131D1281A2007159EA /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D021D1281A2007159EA /* operations.cpp */; };
-		04914D171D1281A2007159EA /* path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D031D1281A2007159EA /* path.cpp */; };
-		04914D181D1281A2007159EA /* path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D031D1281A2007159EA /* path.cpp */; };
-		04914D1C1D1281A2007159EA /* path_traits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D041D1281A2007159EA /* path_traits.cpp */; };
-		04914D1D1D1281A2007159EA /* path_traits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D041D1281A2007159EA /* path_traits.cpp */; };
-		04914D211D1281A2007159EA /* portability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D051D1281A2007159EA /* portability.cpp */; };
-		04914D221D1281A2007159EA /* portability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D051D1281A2007159EA /* portability.cpp */; };
-		04914D261D1281A2007159EA /* unique_path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D061D1281A2007159EA /* unique_path.cpp */; };
-		04914D271D1281A2007159EA /* unique_path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D061D1281A2007159EA /* unique_path.cpp */; };
-		04914D2B1D1281A2007159EA /* utf8_codecvt_facet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D071D1281A2007159EA /* utf8_codecvt_facet.cpp */; };
-		04914D2C1D1281A2007159EA /* utf8_codecvt_facet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D071D1281A2007159EA /* utf8_codecvt_facet.cpp */; };
-		04914D301D1281A2007159EA /* windows_file_codecvt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D081D1281A2007159EA /* windows_file_codecvt.cpp */; };
-		04914D311D1281A2007159EA /* windows_file_codecvt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D081D1281A2007159EA /* windows_file_codecvt.cpp */; };
-		04914D381D1281FE007159EA /* error_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D341D1281FE007159EA /* error_code.cpp */; };
-		04914D391D1281FE007159EA /* error_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D341D1281FE007159EA /* error_code.cpp */; };
-		04914D951D12824C007159EA /* CCNF_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D871D12824C007159EA /* CCNF_patch_expert.cpp */; };
-		04914D961D12824C007159EA /* CCNF_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D871D12824C007159EA /* CCNF_patch_expert.cpp */; };
-		04914D9A1D12824C007159EA /* LandmarkDetectionValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D881D12824C007159EA /* LandmarkDetectionValidator.cpp */; };
-		04914D9B1D12824C007159EA /* LandmarkDetectionValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D881D12824C007159EA /* LandmarkDetectionValidator.cpp */; };
-		04914D9F1D12824C007159EA /* LandmarkDetectorFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D891D12824C007159EA /* LandmarkDetectorFunc.cpp */; };
-		04914DA01D12824C007159EA /* LandmarkDetectorFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D891D12824C007159EA /* LandmarkDetectorFunc.cpp */; };
-		04914DA41D12824C007159EA /* LandmarkDetectorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8A1D12824C007159EA /* LandmarkDetectorModel.cpp */; };
-		04914DA51D12824C007159EA /* LandmarkDetectorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8A1D12824C007159EA /* LandmarkDetectorModel.cpp */; };
-		04914DA91D12824C007159EA /* LandmarkDetectorParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8B1D12824C007159EA /* LandmarkDetectorParameters.cpp */; };
-		04914DAA1D12824C007159EA /* LandmarkDetectorParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8B1D12824C007159EA /* LandmarkDetectorParameters.cpp */; };
-		04914DAE1D12824C007159EA /* LandmarkDetectorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8C1D12824C007159EA /* LandmarkDetectorUtils.cpp */; };
-		04914DAF1D12824C007159EA /* LandmarkDetectorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8C1D12824C007159EA /* LandmarkDetectorUtils.cpp */; };
-		04914DB31D12824C007159EA /* Patch_experts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8D1D12824C007159EA /* Patch_experts.cpp */; };
-		04914DB41D12824C007159EA /* Patch_experts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8D1D12824C007159EA /* Patch_experts.cpp */; };
-		04914DB81D12824C007159EA /* PAW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8E1D12824C007159EA /* PAW.cpp */; };
-		04914DB91D12824C007159EA /* PAW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8E1D12824C007159EA /* PAW.cpp */; };
-		04914DBD1D12824C007159EA /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8F1D12824C007159EA /* PDM.cpp */; };
-		04914DBE1D12824C007159EA /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D8F1D12824C007159EA /* PDM.cpp */; };
-		04914DC21D12824C007159EA /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D901D12824C007159EA /* stdafx.cpp */; };
-		04914DC31D12824C007159EA /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D901D12824C007159EA /* stdafx.cpp */; };
-		04914DC71D12824C007159EA /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D911D12824C007159EA /* SVR_patch_expert.cpp */; };
-		04914DC81D12824C007159EA /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D911D12824C007159EA /* SVR_patch_expert.cpp */; };
-		04914DCC1D128483007159EA /* dbt_face_detection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914DCB1D128483007159EA /* dbt_face_detection.cpp */; };
-		04914DCE1D128490007159EA /* FaceLandmarkVid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914DCD1D128490007159EA /* FaceLandmarkVid.cpp */; };
-		04BBA11B1D13CCCE00FB3B1F /* windows_file_codecvt.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 04914D091D1281A2007159EA /* windows_file_codecvt.hpp */; };
 		04DBBD2B5B69468A9596C0DE /* tif_lzw.c in Sources */ = {isa = PBXBuildFile; fileRef = 79A45267E9124ED5A1CDF828 /* tif_lzw.c */; settings = {COMPILER_FLAGS = ""; }; };
 		0511D74E1C6D4807B562038E /* blobdetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C482B4E63A294EC1944C115A /* blobdetector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		052CBE941D2C47B5AA0FE78A /* grabcut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DF153346394DE68ABB2A00 /* grabcut.cpp */; settings = {COMPILER_FLAGS = ""; }; };
@@ -875,13 +823,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04D5FA5F1D1796C700999CD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A124233CE2148C1B9E0EF92;
-			remoteInfo = opencv_world;
-		};
 		258F687C38154D06A16417E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
@@ -916,13 +857,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3B0507F08B6F457CBAA252E9;
 			remoteInfo = libjasper;
-		};
-		8CF3626E1D3A451C9C6EB8F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A124233CE2148C1B9E0EF92;
-			remoteInfo = opencv_world;
 		};
 		96C2850FB9A644A28FF9327D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1085,8 +1019,6 @@
 		04914D8F1D12824C007159EA /* PDM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PDM.cpp; sourceTree = "<group>"; };
 		04914D901D12824C007159EA /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
 		04914D911D12824C007159EA /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
-		04914DCB1D128483007159EA /* dbt_face_detection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dbt_face_detection.cpp; path = samples/cpp/dbt_face_detection.cpp; sourceTree = "<group>"; };
-		04914DCD1D128490007159EA /* FaceLandmarkVid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceLandmarkVid.cpp; path = samples/cpp/FaceLandmarkVid.cpp; sourceTree = "<group>"; };
 		0517113995DC47618B411366 /* ts_gtest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ts_gtest.cpp; path = modules/ts/src/ts_gtest.cpp; sourceTree = SOURCE_ROOT; };
 		055A5CB944CA4052BBEAB365 /* ImfStringVectorAttribute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfStringVectorAttribute.h; path = 3rdparty/openexr/IlmImf/ImfStringVectorAttribute.h; sourceTree = SOURCE_ROOT; };
 		055F3028B50B4687ABFE5A4D /* vp8l.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vp8l.c; path = 3rdparty/libwebp/enc/vp8l.c; sourceTree = SOURCE_ROOT; };
@@ -1190,7 +1122,6 @@
 		14B5FCE3A7B74B40A0171785 /* autocalib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = autocalib.cpp; path = modules/stitching/src/autocalib.cpp; sourceTree = SOURCE_ROOT; };
 		14DF153346394DE68ABB2A00 /* grabcut.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = grabcut.cpp; path = modules/imgproc/src/grabcut.cpp; sourceTree = SOURCE_ROOT; };
 		15043C270E2940229F9B88CA /* color_cache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = color_cache.h; path = 3rdparty/libwebp/utils/color_cache.h; sourceTree = SOURCE_ROOT; };
-		152B056170DB435CB6AD8C3F /* cpp-example-facedetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cpp-example-facedetect"; sourceTree = BUILT_PRODUCTS_DIR; };
 		152D22FEC2D44DC290CB7876 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = 3rdparty/libpng/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		15321FFD8D7B4F9587DCCEF5 /* spatialgradient.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spatialgradient.cpp; path = modules/imgproc/src/spatialgradient.cpp; sourceTree = SOURCE_ROOT; };
 		15330D90C7094701AD1A6E0B /* lapack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lapack.cpp; path = modules/core/src/lapack.cpp; sourceTree = SOURCE_ROOT; };
@@ -2209,7 +2140,6 @@
 		B13DABD840744473B5AF1085 /* util.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = util.hpp; path = modules/stitching/include/opencv2/stitching/detail/util.hpp; sourceTree = SOURCE_ROOT; };
 		B1F8B4DC684E468084D92560 /* mux_types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mux_types.h; path = 3rdparty/libwebp/webp/mux_types.h; sourceTree = SOURCE_ROOT; };
 		B23E113D3F854D6C91F20D5F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = 3rdparty/zlib/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		B268982964C14E9782A231D8 /* cpp-example-dbt_face_detection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cpp-example-dbt_face_detection"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2765956E43F419B9B5A0671 /* operations.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = operations.hpp; path = modules/core/include/opencv2/core/operations.hpp; sourceTree = SOURCE_ROOT; };
 		B278DFE2D299411CB19617CB /* parallel_pthreads.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parallel_pthreads.cpp; path = modules/core/src/parallel_pthreads.cpp; sourceTree = SOURCE_ROOT; };
 		B284BC64A02849C187137F0A /* pngconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pngconf.h; path = 3rdparty/libpng/pngconf.h; sourceTree = SOURCE_ROOT; };
@@ -3242,14 +3172,6 @@
 			name = video;
 			sourceTree = "<group>";
 		};
-		0F829A77EF684096A775C5F6 /* example_dbt_face_detection */ = {
-			isa = PBXGroup;
-			children = (
-				04914DCB1D128483007159EA /* dbt_face_detection.cpp */,
-			);
-			name = example_dbt_face_detection;
-			sourceTree = "<group>";
-		};
 		1078F5D2E6B04E689060E4ED /* Include */ = {
 			isa = PBXGroup;
 			children = (
@@ -3379,14 +3301,6 @@
 			name = opencv2;
 			sourceTree = "<group>";
 		};
-		21439063A52F4E5BA460FDE9 /* samples */ = {
-			isa = PBXGroup;
-			children = (
-				22FFA3A42DCC4512AA5EEB0F /* cpp */,
-			);
-			name = samples;
-			sourceTree = "<group>";
-		};
 		2291991F9CEC4F90AF28275E /* opencl */ = {
 			isa = PBXGroup;
 			children = (
@@ -3439,15 +3353,6 @@
 				070A6CF35528469BB26F14BC /* wimage.hpp */,
 			);
 			name = core;
-			sourceTree = "<group>";
-		};
-		22FFA3A42DCC4512AA5EEB0F /* cpp */ = {
-			isa = PBXGroup;
-			children = (
-				A1739FEA433C4EDC9A45CF04 /* example_facedetect */,
-				0F829A77EF684096A775C5F6 /* example_dbt_face_detection */,
-			);
-			name = cpp;
 			sourceTree = "<group>";
 		};
 		23B8AA8ED8014F7893BB0762 /* superres */ = {
@@ -4022,7 +3927,6 @@
 				663D32B5DBA5401F957659AD /* 3rdparty */,
 				6DDBE280A72A43B3AF51658D /* modules */,
 				8881BBE875F54158B903FF2B /* object_libraries */,
-				21439063A52F4E5BA460FDE9 /* samples */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -5135,8 +5039,6 @@
 				4FCA66827917428DA7788885 /* libopencv_world.3.1.0.dylib */,
 				335697A6F8C74AC9A105B1C1 /* libopencv_world_object.a */,
 				F887A994EB05471E92BB4A8C /* libopencv_ts.a */,
-				152B056170DB435CB6AD8C3F /* cpp-example-facedetect */,
-				B268982964C14E9782A231D8 /* cpp-example-dbt_face_detection */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5359,14 +5261,6 @@
 				88547D98D8A944D4A57416C2 /* orb.cl */,
 			);
 			name = kernels;
-			sourceTree = "<group>";
-		};
-		A1739FEA433C4EDC9A45CF04 /* example_facedetect */ = {
-			isa = PBXGroup;
-			children = (
-				04914DCD1D128490007159EA /* FaceLandmarkVid.cpp */,
-			);
-			name = example_facedetect;
 			sourceTree = "<group>";
 		};
 		A1C404A3AFD84A9FB8053763 /* videostab */ = {
@@ -6775,38 +6669,6 @@
 			productReference = F887A994EB05471E92BB4A8C /* libopencv_ts.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9219D549BA63440F8ABEF38B /* example_facedetect */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E31E7B33963E4E15A415EE7D /* Build configuration list for PBXNativeTarget "example_facedetect" */;
-			buildPhases = (
-				800DE0D8206A44139FB5011E /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04D5FA601D1796C700999CD7 /* PBXTargetDependency */,
-			);
-			name = example_facedetect;
-			productName = example_facedetect;
-			productReference = 152B056170DB435CB6AD8C3F /* cpp-example-facedetect */;
-			productType = "com.apple.product-type.tool";
-		};
-		B384F8F8CACC4777999148D6 /* example_dbt_face_detection */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDE12DE6D73E4D8A81D19EAF /* Build configuration list for PBXNativeTarget "example_dbt_face_detection" */;
-			buildPhases = (
-				F2957AD25CF44503B813E44A /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D63500FDD7044BEDB8DF3AAE /* PBXTargetDependency */,
-			);
-			name = example_dbt_face_detection;
-			productName = example_dbt_face_detection;
-			productReference = B268982964C14E9782A231D8 /* cpp-example-dbt_face_detection */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -6836,8 +6698,6 @@
 				5A124233CE2148C1B9E0EF92 /* opencv_world */,
 				71B59D83E12347F4B056BB03 /* opencv_world_object */,
 				7B0118C71E064BC096B04BF0 /* opencv_ts */,
-				9219D549BA63440F8ABEF38B /* example_facedetect */,
-				B384F8F8CACC4777999148D6 /* example_dbt_face_detection */,
 			);
 		};
 /* End PBXProject section */
@@ -7321,42 +7181,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		800DE0D8206A44139FB5011E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04914D1C1D1281A2007159EA /* path_traits.cpp in Sources */,
-				04914CED1D127D10007159EA /* SVM_static_lin.cpp in Sources */,
-				04914D9A1D12824C007159EA /* LandmarkDetectionValidator.cpp in Sources */,
-				04914D301D1281A2007159EA /* windows_file_codecvt.cpp in Sources */,
-				04914CFC1D127EF4007159EA /* source.cpp in Sources */,
-				04914DC21D12824C007159EA /* stdafx.cpp in Sources */,
-				04914DCE1D128490007159EA /* FaceLandmarkVid.cpp in Sources */,
-				04914DC71D12824C007159EA /* SVR_patch_expert.cpp in Sources */,
-				04914D171D1281A2007159EA /* path.cpp in Sources */,
-				04914DB31D12824C007159EA /* Patch_experts.cpp in Sources */,
-				04914CEC1D127D10007159EA /* SVM_dynamic_lin.cpp in Sources */,
-				04914CEF1D127D10007159EA /* SVR_static_lin_regressors.cpp in Sources */,
-				04914CE91D127D10007159EA /* Face_utils.cpp in Sources */,
-				04914DB81D12824C007159EA /* PAW.cpp in Sources */,
-				04914D2B1D1281A2007159EA /* utf8_codecvt_facet.cpp in Sources */,
-				04914DBD1D12824C007159EA /* PDM.cpp in Sources */,
-				04914CEB1D127D10007159EA /* GazeEstimation.cpp in Sources */,
-				04914D9F1D12824C007159EA /* LandmarkDetectorFunc.cpp in Sources */,
-				04914D211D1281A2007159EA /* portability.cpp in Sources */,
-				04914D951D12824C007159EA /* CCNF_patch_expert.cpp in Sources */,
-				04914DAE1D12824C007159EA /* LandmarkDetectorUtils.cpp in Sources */,
-				04914CEE1D127D10007159EA /* SVR_dynamic_lin_regressors.cpp in Sources */,
-				04914CEA1D127D10007159EA /* FaceAnalyser.cpp in Sources */,
-				04914DA41D12824C007159EA /* LandmarkDetectorModel.cpp in Sources */,
-				04914D261D1281A2007159EA /* unique_path.cpp in Sources */,
-				04914D121D1281A2007159EA /* operations.cpp in Sources */,
-				04914D0D1D1281A2007159EA /* codecvt_error_category.cpp in Sources */,
-				04914DA91D12824C007159EA /* LandmarkDetectorParameters.cpp in Sources */,
-				04914D381D1281FE007159EA /* error_code.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B57F7F6BE75F44F8990BD547 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7737,36 +7561,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2957AD25CF44503B813E44A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04BBA11B1D13CCCE00FB3B1F /* windows_file_codecvt.hpp in Sources */,
-				04914DB91D12824C007159EA /* PAW.cpp in Sources */,
-				04914DCC1D128483007159EA /* dbt_face_detection.cpp in Sources */,
-				04914D391D1281FE007159EA /* error_code.cpp in Sources */,
-				04914CFD1D127EF4007159EA /* source.cpp in Sources */,
-				04914D9B1D12824C007159EA /* LandmarkDetectionValidator.cpp in Sources */,
-				04914D961D12824C007159EA /* CCNF_patch_expert.cpp in Sources */,
-				04914D1D1D1281A2007159EA /* path_traits.cpp in Sources */,
-				04914D311D1281A2007159EA /* windows_file_codecvt.cpp in Sources */,
-				04914DA51D12824C007159EA /* LandmarkDetectorModel.cpp in Sources */,
-				04914DAA1D12824C007159EA /* LandmarkDetectorParameters.cpp in Sources */,
-				04914D221D1281A2007159EA /* portability.cpp in Sources */,
-				04914D271D1281A2007159EA /* unique_path.cpp in Sources */,
-				04914DC31D12824C007159EA /* stdafx.cpp in Sources */,
-				04914D0E1D1281A2007159EA /* codecvt_error_category.cpp in Sources */,
-				04914D2C1D1281A2007159EA /* utf8_codecvt_facet.cpp in Sources */,
-				04914DA01D12824C007159EA /* LandmarkDetectorFunc.cpp in Sources */,
-				04914D181D1281A2007159EA /* path.cpp in Sources */,
-				04914D131D1281A2007159EA /* operations.cpp in Sources */,
-				04914DBE1D12824C007159EA /* PDM.cpp in Sources */,
-				04914DB41D12824C007159EA /* Patch_experts.cpp in Sources */,
-				04914DC81D12824C007159EA /* SVR_patch_expert.cpp in Sources */,
-				04914DAF1D12824C007159EA /* LandmarkDetectorUtils.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FD4B62AA463A4BCA9FDC8929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7831,11 +7625,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04D5FA601D1796C700999CD7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5A124233CE2148C1B9E0EF92 /* opencv_world */;
-			targetProxy = 04D5FA5F1D1796C700999CD7 /* PBXContainerItemProxy */;
-		};
 		087FAB126BE34BC1B2E7CE38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5ED7E2420DC6449C856D4C73 /* libpng */;
@@ -7880,11 +7669,6 @@
 			isa = PBXTargetDependency;
 			target = 0495CD8B47B841C68590966F /* zlib */;
 			targetProxy = 96C2850FB9A644A28FF9327D /* PBXContainerItemProxy */;
-		};
-		D63500FDD7044BEDB8DF3AAE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5A124233CE2148C1B9E0EF92 /* opencv_world */;
-			targetProxy = 8CF3626E1D3A451C9C6EB8F6 /* PBXContainerItemProxy */;
 		};
 		DFEB4B72E56D4EE2AD183AF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -8292,143 +8076,6 @@
 			};
 			name = Release;
 		};
-		3D7E81EADCF54BD5AC75AD0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/bin/Release;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					DLIB_NO_GUI_SUPPORT,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/video/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/core/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/build,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-Wno-unused-function",
-					"-DNDEBUG",
-					"-DNDEBUG",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-DNDEBUG",
-					"-DNDEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Release/libopencv_world.3.1.0.dylib,
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-dbt_face_detection";
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Release;
-		};
 		540AC937AB4B4A08959D6EDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8723,143 +8370,6 @@
 				);
 			};
 			name = Release;
-		};
-		96DEF1E509644D62B45A2D4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/bin/Debug;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					DLIB_NO_GUI_SUPPORT,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/video/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/core/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/build,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-Wno-unused-function",
-					"-DDEBUG",
-					"-D_DEBUG",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-DDEBUG",
-					"-D_DEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencv_world.3.1.0.dylib,
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-facedetect";
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Debug;
 		};
 		9DBBC81C18A84B848C92D1B5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -10198,143 +9708,6 @@
 			};
 			name = Debug;
 		};
-		E00339591FA44CF587DB213B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/bin/Release;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					DLIB_NO_GUI_SUPPORT,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/video/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/core/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/build,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-Wno-unused-function",
-					"-DNDEBUG",
-					"-DNDEBUG",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-DNDEBUG",
-					"-DNDEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Release/libopencv_world.3.1.0.dylib,
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-facedetect";
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Release;
-		};
 		E61FE209382F4EECB58D9641 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -10550,143 +9923,6 @@
 			};
 			name = Release;
 		};
-		F74F5352830A470883E85DCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/bin/Debug;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					DLIB_NO_GUI_SUPPORT,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/video/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/core/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/build,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-Wno-unused-function",
-					"-DDEBUG",
-					"-D_DEBUG",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-DDEBUG",
-					"-D_DEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencv_world.3.1.0.dylib,
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "cpp-example-dbt_face_detection";
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -10776,24 +10012,6 @@
 			buildConfigurations = (
 				CB14B3D75C7A45628257DFEB /* Debug */,
 				ECC26D03B1964DA093A7FAFF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		E31E7B33963E4E15A415EE7D /* Build configuration list for PBXNativeTarget "example_facedetect" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				96DEF1E509644D62B45A2D4C /* Debug */,
-				E00339591FA44CF587DB213B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		EDE12DE6D73E4D8A81D19EAF /* Build configuration list for PBXNativeTarget "example_dbt_face_detection" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F74F5352830A470883E85DCD /* Debug */,
-				3D7E81EADCF54BD5AC75AD0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
