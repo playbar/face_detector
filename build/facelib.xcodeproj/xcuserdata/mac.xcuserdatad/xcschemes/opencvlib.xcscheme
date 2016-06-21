@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A124233CE2148C1B9E0EF92"
-               BuildableName = "libopencv_world.3.1.0.dylib"
-               BlueprintName = "opencv_world"
+               BlueprintIdentifier = "71B59D83E12347F4B056BB03"
+               BuildableName = "libopencv_world_object.a"
+               BlueprintName = "opencvlib"
                ReferencedContainer = "container:build/facelib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A124233CE2148C1B9E0EF92"
-            BuildableName = "libopencv_world.3.1.0.dylib"
-            BlueprintName = "opencv_world"
+            BlueprintIdentifier = "71B59D83E12347F4B056BB03"
+            BuildableName = "libopencv_world_object.a"
+            BlueprintName = "opencvlib"
             ReferencedContainer = "container:build/facelib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A124233CE2148C1B9E0EF92"
-            BuildableName = "libopencv_world.3.1.0.dylib"
-            BlueprintName = "opencv_world"
+            BlueprintIdentifier = "71B59D83E12347F4B056BB03"
+            BuildableName = "libopencv_world_object.a"
+            BlueprintName = "opencvlib"
             ReferencedContainer = "container:build/facelib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

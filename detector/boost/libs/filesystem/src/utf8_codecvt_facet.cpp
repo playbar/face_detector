@@ -12,6 +12,7 @@
 #endif
 
 #define BOOST_FILESYSTEM_SOURCE
+
 #include <boost/filesystem/config.hpp>
 
 #define BOOST_UTF8_BEGIN_NAMESPACE \
