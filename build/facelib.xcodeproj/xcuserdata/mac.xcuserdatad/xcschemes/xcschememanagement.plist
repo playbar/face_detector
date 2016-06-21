@@ -64,11 +64,6 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>opencvlib_ios.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
 		<key>zlib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
