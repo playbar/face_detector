@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B384F8F8CACC4777999148D6"
                BuildableName = "cpp-example-dbt_face_detection"
-               BlueprintName = "example_dbt_face_detection"
+               BlueprintName = "dbt_face_detection"
                ReferencedContainer = "container:ios_mac/face_detector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B384F8F8CACC4777999148D6"
             BuildableName = "cpp-example-dbt_face_detection"
-            BlueprintName = "example_dbt_face_detection"
+            BlueprintName = "dbt_face_detection"
             ReferencedContainer = "container:ios_mac/face_detector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B384F8F8CACC4777999148D6"
             BuildableName = "cpp-example-dbt_face_detection"
-            BlueprintName = "example_dbt_face_detection"
+            BlueprintName = "dbt_face_detection"
             ReferencedContainer = "container:ios_mac/face_detector.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B384F8F8CACC4777999148D6"
             BuildableName = "cpp-example-dbt_face_detection"
-            BlueprintName = "example_dbt_face_detection"
+            BlueprintName = "dbt_face_detection"
             ReferencedContainer = "container:ios_mac/face_detector.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

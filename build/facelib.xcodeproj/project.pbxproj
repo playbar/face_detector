@@ -823,40 +823,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		258F687C38154D06A16417E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 49D1D325B34E4FDAAE62B113;
-			remoteInfo = libjpeg;
-		};
-		270CDE26A1DA4364BCC9AC30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5ED7E2420DC6449C856D4C73;
-			remoteInfo = libpng;
-		};
-		4BB7AD4E84A4461887B883F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D6EFC08CF8A4AD5BCACE477;
-			remoteInfo = IlmImf;
-		};
 		609024487D0B417EAFE34DCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0495CD8B47B841C68590966F;
 			remoteInfo = zlib;
-		};
-		7E3587F8DF0843228EFD950A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B0507F08B6F457CBAA252E9;
-			remoteInfo = libjasper;
 		};
 		96C2850FB9A644A28FF9327D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -878,27 +850,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5A124233CE2148C1B9E0EF92;
 			remoteInfo = opencv_world;
-		};
-		CB6A1B0F13C8451686235F92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21B4B443DDB7415593B5F54F;
-			remoteInfo = libtiff;
-		};
-		D403CD3A07A24BE7B5D1C860 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26125CB18A62455F8CB702CE;
-			remoteInfo = libwebp;
-		};
-		DF5DC9C049D84305A5FB750B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48913B05C3044C748DA9685E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0495CD8B47B841C68590966F;
-			remoteInfo = zlib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -6608,13 +6559,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				5DD703411D3E4438A9226785 /* PBXTargetDependency */,
-				EF4515D174DA4F4BB78700B6 /* PBXTargetDependency */,
-				1B65E30FD75D40ADA714707D /* PBXTargetDependency */,
-				2FAA6F1542E64CF3B0CC2588 /* PBXTargetDependency */,
-				69F5BAF6D42C487EA8A0C073 /* PBXTargetDependency */,
-				DFEB4B72E56D4EE2AD183AF0 /* PBXTargetDependency */,
-				087FAB126BE34BC1B2E7CE38 /* PBXTargetDependency */,
 			);
 			name = opencv_world;
 			productName = opencv_world;
@@ -7625,40 +7569,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		087FAB126BE34BC1B2E7CE38 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5ED7E2420DC6449C856D4C73 /* libpng */;
-			targetProxy = 270CDE26A1DA4364BCC9AC30 /* PBXContainerItemProxy */;
-		};
 		0A3201B3218C4997BBF260A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0495CD8B47B841C68590966F /* zlib */;
 			targetProxy = 609024487D0B417EAFE34DCD /* PBXContainerItemProxy */;
 		};
-		1B65E30FD75D40ADA714707D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21B4B443DDB7415593B5F54F /* libtiff */;
-			targetProxy = CB6A1B0F13C8451686235F92 /* PBXContainerItemProxy */;
-		};
-		2FAA6F1542E64CF3B0CC2588 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 49D1D325B34E4FDAAE62B113 /* libjpeg */;
-			targetProxy = 258F687C38154D06A16417E9 /* PBXContainerItemProxy */;
-		};
 		4EBFC1258EC5419989B47164 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5A124233CE2148C1B9E0EF92 /* opencv_world */;
 			targetProxy = B182B7BB26C346F99600B320 /* PBXContainerItemProxy */;
-		};
-		5DD703411D3E4438A9226785 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0495CD8B47B841C68590966F /* zlib */;
-			targetProxy = DF5DC9C049D84305A5FB750B /* PBXContainerItemProxy */;
-		};
-		69F5BAF6D42C487EA8A0C073 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 26125CB18A62455F8CB702CE /* libwebp */;
-			targetProxy = D403CD3A07A24BE7B5D1C860 /* PBXContainerItemProxy */;
 		};
 		81818371E45E4BC6B117FB3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7669,16 +7588,6 @@
 			isa = PBXTargetDependency;
 			target = 0495CD8B47B841C68590966F /* zlib */;
 			targetProxy = 96C2850FB9A644A28FF9327D /* PBXContainerItemProxy */;
-		};
-		DFEB4B72E56D4EE2AD183AF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B0507F08B6F457CBAA252E9 /* libjasper */;
-			targetProxy = 7E3587F8DF0843228EFD950A /* PBXContainerItemProxy */;
-		};
-		EF4515D174DA4F4BB78700B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2D6EFC08CF8A4AD5BCACE477 /* IlmImf */;
-			targetProxy = 4BB7AD4E84A4461887B883F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -8375,6 +8284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.11;
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/build;
@@ -8700,7 +8610,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/mac/MyWorks/HongNuo/face_detector/build/modules/world/OpenCV.build/Debug/opencv_world_object.build/Objects-normal/";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/modules/world/OpenCV.build/Debug/opencv_world_object.build/Objects-normal/";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -8851,7 +8761,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = opencv_world_object;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/world;
+				SYMROOT = "$(SRCROOT)/build/modules/world";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -9346,7 +9256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/mac/MyWorks/HongNuo/face_detector/build/modules/world/OpenCV.build/Release/opencv_world_object.build/Objects-normal/";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/modules/world/OpenCV.build/Release/opencv_world_object.build/Objects-normal/";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -9497,7 +9407,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = opencv_world_object;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/world;
+				SYMROOT = "$(SRCROOT)/build/modules/world";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -9712,6 +9622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.11;
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/build;
