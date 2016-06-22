@@ -24,6 +24,8 @@
 		043C0FCB1D1A7A630057A91C /* haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 043C0FC61D1A7A630057A91C /* haarcascade_mcs_mouth.xml */; };
 		043C0FCC1D1A7A630057A91C /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 043C0FC71D1A7A630057A91C /* lbpcascade_frontalface.xml */; };
 		043C0FCD1D1A7A630057A91C /* mustache.png in Resources */ = {isa = PBXBuildFile; fileRef = 043C0FC81D1A7A630057A91C /* mustache.png */; };
+		04CD9C271D1A84ED001DF8D4 /* model in Resources */ = {isa = PBXBuildFile; fileRef = 04CD9C261D1A84ED001DF8D4 /* model */; };
+		04CD9C291D1A8514001DF8D4 /* AU_predictors in Resources */ = {isa = PBXBuildFile; fileRef = 04CD9C281D1A8514001DF8D4 /* AU_predictors */; };
 		83FA79131748FE9000248405 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79121748FE9000248405 /* UIKit.framework */; };
 		83FA79151748FE9000248405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79141748FE9000248405 /* Foundation.framework */; };
 		83FA79171748FE9000248405 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79161748FE9000248405 /* CoreGraphics.framework */; };
@@ -67,6 +69,8 @@
 		043C0FC61D1A7A630057A91C /* haarcascade_mcs_mouth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_mcs_mouth.xml; path = ../detector/CvEffects/haarcascade_mcs_mouth.xml; sourceTree = "<group>"; };
 		043C0FC71D1A7A630057A91C /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = lbpcascade_frontalface.xml; path = ../detector/CvEffects/lbpcascade_frontalface.xml; sourceTree = "<group>"; };
 		043C0FC81D1A7A630057A91C /* mustache.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mustache.png; path = ../detector/CvEffects/mustache.png; sourceTree = "<group>"; };
+		04CD9C261D1A84ED001DF8D4 /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; name = model; path = ../detector/LandmarkDetector/model; sourceTree = "<group>"; };
+		04CD9C281D1A8514001DF8D4 /* AU_predictors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AU_predictors; path = ../detector/FaceAnalyser/AU_predictors; sourceTree = "<group>"; };
 		83FA790E1748FE9000248405 /* face_detector_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = face_detector_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FA79121748FE9000248405 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83FA79141748FE9000248405 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +118,8 @@
 		043C0FC31D1A7A570057A91C /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				04CD9C281D1A8514001DF8D4 /* AU_predictors */,
+				04CD9C261D1A84ED001DF8D4 /* model */,
 				043C0FC41D1A7A630057A91C /* glasses.png */,
 				043C0FC51D1A7A630057A91C /* haarcascade_mcs_eyepair_big.xml */,
 				043C0FC61D1A7A630057A91C /* haarcascade_mcs_mouth.xml */,
@@ -262,10 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				043C0FCA1D1A7A630057A91C /* haarcascade_mcs_eyepair_big.xml in Resources */,
+				04CD9C291D1A8514001DF8D4 /* AU_predictors in Resources */,
 				043C0FC91D1A7A630057A91C /* glasses.png in Resources */,
 				043C0F9D1D1A74B70057A91C /* InfoPlist.strings in Resources */,
 				043C0F961D1A74A70057A91C /* Default-568h@2x.png in Resources */,
 				043C0FCB1D1A7A630057A91C /* haarcascade_mcs_mouth.xml in Resources */,
+				04CD9C271D1A84ED001DF8D4 /* model in Resources */,
 				043C0FCD1D1A7A630057A91C /* mustache.png in Resources */,
 				043C0F981D1A74A70057A91C /* Default@2x.png in Resources */,
 				043C0F8F1D1A74910057A91C /* MainStoryboard_iPhone.storyboard in Resources */,
@@ -388,7 +396,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../detector";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../detector",
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+				);
 				INFOPLIST_FILE = "ios/face_detector_ios-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;
 				PRODUCT_NAME = face_detector_ios;
@@ -411,7 +423,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios/face_detector_ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../detector";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../detector",
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+				);
 				INFOPLIST_FILE = "ios/face_detector_ios-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;
 				PRODUCT_NAME = face_detector_ios;

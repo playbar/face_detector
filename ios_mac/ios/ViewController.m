@@ -13,6 +13,8 @@
  *****************************************************************************/
 
 #import "ViewController.h"
+#import "LandmarkCoreIncludes.h"
+#import "GazeEstimation.h"
 
 @interface ViewController ()
 
@@ -66,6 +68,16 @@
                 pathForResource:@"haarcascade_mcs_mouth"
                          ofType:@"xml"];
     parameters.mouthCascade.load([filename UTF8String]);
+    
+    vector<string> arguments;
+    string strFilename = [filename UTF8String];
+    
+    arguments.push_back(strFilename);
+    LandmarkDetector::FaceModelParameters det_parameters( arguments);
+    
+    LandmarkDetector::CLNF clnf_model( det_parameters.model_location);
+    return;
+    
 }
 
 - (NSInteger)supportedInterfaceOrientations
