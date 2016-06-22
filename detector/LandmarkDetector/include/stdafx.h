@@ -29,7 +29,7 @@
 #include <cmath>
 
 // Boost stuff
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 #endif
