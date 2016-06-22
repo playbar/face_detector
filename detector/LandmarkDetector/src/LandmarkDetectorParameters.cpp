@@ -5,8 +5,8 @@
 #include "LandmarkDetectorParameters.h"
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 // System includes
 #include <sstream>

@@ -384,6 +384,10 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios/face_detector_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../detector";
 				INFOPLIST_FILE = "ios/face_detector_ios-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;
@@ -406,6 +410,7 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios/face_detector_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../detector";
 				INFOPLIST_FILE = "ios/face_detector_ios-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;
