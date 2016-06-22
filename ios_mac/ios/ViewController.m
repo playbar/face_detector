@@ -56,6 +56,9 @@
     
     filename = [[NSBundle mainBundle]pathForResource:@"haarcascade_mcs_mouth" ofType:@"xml"];
     parameters.mouthCascade.load([filename UTF8String]);
+    
+    faceDetector = new FaceDetector();
+    
     return;
 }
 
@@ -71,6 +74,7 @@
     isCapturing = YES;
     
     faceAnimator = new FaceAnimator(parameters);
+   
 }
 
 -(IBAction)stopCaptureButtonPressed:(id)sender

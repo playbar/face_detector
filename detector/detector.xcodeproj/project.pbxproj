@@ -36,6 +36,7 @@
 		049951651D1A401F00730EF1 /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499515A1D1A401F00730EF1 /* PDM.cpp */; };
 		049951661D1A401F00730EF1 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499515B1D1A401F00730EF1 /* stdafx.cpp */; };
 		049951671D1A401F00730EF1 /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0499515C1D1A401F00730EF1 /* SVR_patch_expert.cpp */; };
+		0499516A1D1A429800730EF1 /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049951681D1A429800730EF1 /* FaceDetector.cpp */; };
 		510745751750B49600B6CCD9 /* FaceAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 510745721750B49600B6CCD9 /* FaceAnimator.cpp */; };
 		510745791750B50C00B6CCD9 /* FaceAnimator.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 510745731750B49600B6CCD9 /* FaceAnimator.hpp */; };
 		5107458B1750F1BC00B6CCD9 /* Processing_NEON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5107458A1750F1BC00B6CCD9 /* Processing_NEON.cpp */; };
@@ -203,6 +204,8 @@
 		0499515A1D1A401F00730EF1 /* PDM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PDM.cpp; sourceTree = "<group>"; };
 		0499515B1D1A401F00730EF1 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
 		0499515C1D1A401F00730EF1 /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
+		049951681D1A429800730EF1 /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceDetector.cpp; path = CvEffects/FaceDetector.cpp; sourceTree = "<group>"; };
+		049951691D1A429800730EF1 /* FaceDetector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FaceDetector.hpp; path = CvEffects/FaceDetector.hpp; sourceTree = "<group>"; };
 		510745711750B49600B6CCD9 /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glasses.png; path = CvEffects/glasses.png; sourceTree = "<group>"; };
 		510745721750B49600B6CCD9 /* FaceAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceAnimator.cpp; path = CvEffects/FaceAnimator.cpp; sourceTree = "<group>"; };
 		510745731750B49600B6CCD9 /* FaceAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FaceAnimator.hpp; path = CvEffects/FaceAnimator.hpp; sourceTree = "<group>"; };
@@ -217,7 +220,6 @@
 		5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing_Accelerate.cpp; sourceTree = "<group>"; };
 		51E204271747A1C3005C39DB /* libdetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E2042A1747A1C3005C39DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		51E204471747A4C6005C39DB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
 		51E2044A1747B290005C39DB /* detector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "detector-Prefix.pch"; sourceTree = "<group>"; };
 		51E2044C1747B307005C39DB /* lena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lena.jpg; path = CvEffects/lena.jpg; sourceTree = "<group>"; };
 		51E2044D1747B307005C39DB /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = texture.jpg; path = CvEffects/texture.jpg; sourceTree = "<group>"; };
@@ -596,6 +598,8 @@
 		510745701750B46A00B6CCD9 /* FaceAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				049951681D1A429800730EF1 /* FaceDetector.cpp */,
+				049951691D1A429800730EF1 /* FaceDetector.hpp */,
 				510745771750B4E300B6CCD9 /* haarcascade_mcs_eyepair_big.xml */,
 				510745781750B4E300B6CCD9 /* haarcascade_mcs_mouth.xml */,
 				510745761750B4B500B6CCD9 /* lbpcascade_frontalface.xml */,
@@ -659,7 +663,6 @@
 			children = (
 				044302FB1D1A39180094CF34 /* opencv2.framework */,
 				5168F9A7175245F000FC67D8 /* Accelerate.framework */,
-				51E204471747A4C6005C39DB /* opencv2.framework */,
 				51E2042A1747A1C3005C39DB /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -767,6 +770,7 @@
 				049950BC1D1A3F3C00730EF1 /* windows_file_codecvt.cpp in Sources */,
 				049951611D1A401F00730EF1 /* LandmarkDetectorParameters.cpp in Sources */,
 				049951041D1A401700730EF1 /* SVR_static_lin_regressors.cpp in Sources */,
+				0499516A1D1A429800730EF1 /* FaceDetector.cpp in Sources */,
 				049951601D1A401F00730EF1 /* LandmarkDetectorModel.cpp in Sources */,
 				049951661D1A401F00730EF1 /* stdafx.cpp in Sources */,
 				5168F9AB1752622C00FC67D8 /* Processing_Accelerate.cpp in Sources */,

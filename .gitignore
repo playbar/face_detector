@@ -25,3 +25,4 @@ build/3rdparty
 build/face_detector.xcodeproj/xcuserdata/mac.xcuserdatad
 build/samples/cpp
 ios_mac/opencv2.framework
+ios_mac/face_detector_ios.xcodeproj/xcuserdata

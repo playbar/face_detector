@@ -18,12 +18,12 @@
 		044303121D1A39E70094CF34 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0443030D1D1A39E70094CF34 /* Default@2x.png */; };
 		044303131D1A39E70094CF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443030E1D1A39E70094CF34 /* main.m */; };
 		044303161D1A3A400094CF34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044303141D1A3A400094CF34 /* InfoPlist.strings */; };
-		0499509C1D1A3E3500730EF1 /* libdetector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0499509B1D1A3DF500730EF1 /* libdetector.a */; };
 		049950A21D1A3E5300730EF1 /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499509D1D1A3E5300730EF1 /* glasses.png */; };
 		049950A31D1A3E5300730EF1 /* haarcascade_mcs_eyepair_big.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0499509E1D1A3E5300730EF1 /* haarcascade_mcs_eyepair_big.xml */; };
 		049950A41D1A3E5300730EF1 /* haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0499509F1D1A3E5300730EF1 /* haarcascade_mcs_mouth.xml */; };
 		049950A51D1A3E5300730EF1 /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 049950A01D1A3E5300730EF1 /* lbpcascade_frontalface.xml */; };
 		049950A61D1A3E5300730EF1 /* mustache.png in Resources */ = {isa = PBXBuildFile; fileRef = 049950A11D1A3E5300730EF1 /* mustache.png */; };
+		0499516B1D1A467100730EF1 /* libdetector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0499509B1D1A3DF500730EF1 /* libdetector.a */; };
 		83FA79131748FE9000248405 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79121748FE9000248405 /* UIKit.framework */; };
 		83FA79151748FE9000248405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79141748FE9000248405 /* Foundation.framework */; };
 		83FA79171748FE9000248405 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79161748FE9000248405 /* CoreGraphics.framework */; };
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0499509C1D1A3E3500730EF1 /* libdetector.a in Frameworks */,
+				0499516B1D1A467100730EF1 /* libdetector.a in Frameworks */,
 				044302EC1D1A36820094CF34 /* opencv2.framework in Frameworks */,
 				83FA79471748FF4A00248405 /* QuartzCore.framework in Frameworks */,
 				83FA79431748FF3F00248405 /* CoreImage.framework in Frameworks */,
@@ -383,9 +383,15 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/face_detector.pch;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../detector",
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
+				);
 				INFOPLIST_FILE = ios/face_detector.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,9 +412,15 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/face_detector.pch;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../detector",
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
+				);
 				INFOPLIST_FILE = ios/face_detector.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
