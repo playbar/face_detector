@@ -50,10 +50,10 @@
 		5107458C1750F25400B6CCD9 /* Processing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing.cpp; sourceTree = "<group>"; };
 		5168F9A7175245F000FC67D8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing_Accelerate.cpp; sourceTree = "<group>"; };
-		51E204271747A1C3005C39DB /* libCvEffects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCvEffects.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E204271747A1C3005C39DB /* libdetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E2042A1747A1C3005C39DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51E204471747A4C6005C39DB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
-		51E2044A1747B290005C39DB /* CvEffects-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CvEffects-Prefix.pch"; sourceTree = "<group>"; };
+		51E2044A1747B290005C39DB /* detector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "detector-Prefix.pch"; sourceTree = "<group>"; };
 		51E2044C1747B307005C39DB /* lena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lena.jpg; path = CvEffects/lena.jpg; sourceTree = "<group>"; };
 		51E2044D1747B307005C39DB /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = texture.jpg; path = CvEffects/texture.jpg; sourceTree = "<group>"; };
 		51E2044E1747B307005C39DB /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text.png; path = CvEffects/text.png; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		51E204281747A1C3005C39DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51E204271747A1C3005C39DB /* libCvEffects.a */,
+				51E204271747A1C3005C39DB /* libdetector.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 		51E2042D1747A1C3005C39DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				51E2044A1747B290005C39DB /* CvEffects-Prefix.pch */,
+				51E2044A1747B290005C39DB /* detector-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		51E204261747A1C3005C39DB /* CvEffects */ = {
+		51E204261747A1C3005C39DB /* detector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "CvEffects" */;
+			buildConfigurationList = 51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "detector" */;
 			buildPhases = (
 				51E204231747A1C3005C39DB /* Sources */,
 				51E204241747A1C3005C39DB /* Frameworks */,
@@ -183,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = CvEffects;
+			name = detector;
 			productName = CvEffects;
-			productReference = 51E204271747A1C3005C39DB /* libCvEffects.a */;
+			productReference = 51E204271747A1C3005C39DB /* libdetector.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +197,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Alexander Shishkov & Kirill Kornyakov";
 			};
-			buildConfigurationList = 51E204221747A1C3005C39DB /* Build configuration list for PBXProject "CvEffects" */;
+			buildConfigurationList = 51E204221747A1C3005C39DB /* Build configuration list for PBXProject "detector" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51E204261747A1C3005C39DB /* CvEffects */,
+				51E204261747A1C3005C39DB /* detector */,
 			);
 		};
 /* End PBXProject section */
@@ -293,9 +293,9 @@
 					"\"$(SRCROOT)/../ios_mac\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CvEffects/CvEffects-Prefix.pch";
+				GCC_PREFIX_HEADER = "CvEffects/detector-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = CvEffects;
+				PRODUCT_NAME = detector;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -309,9 +309,9 @@
 					"\"$(SRCROOT)/../ios_mac\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CvEffects/CvEffects-Prefix.pch";
+				GCC_PREFIX_HEADER = "CvEffects/detector-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = CvEffects;
+				PRODUCT_NAME = detector;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		51E204221747A1C3005C39DB /* Build configuration list for PBXProject "CvEffects" */ = {
+		51E204221747A1C3005C39DB /* Build configuration list for PBXProject "detector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51E204331747A1C3005C39DB /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "CvEffects" */ = {
+		51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "detector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51E204361747A1C3005C39DB /* Debug */,

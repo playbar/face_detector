@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "83FA790D1748FE9000248405"
-               BuildableName = "face_dector.app"
-               BlueprintName = "face_dector"
+               BuildableName = "face_detector.app"
+               BlueprintName = "face_detector"
                ReferencedContainer = "container:face_detector_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83FA790D1748FE9000248405"
-            BuildableName = "face_dector.app"
-            BlueprintName = "face_dector"
+            BuildableName = "face_detector.app"
+            BlueprintName = "face_detector"
             ReferencedContainer = "container:face_detector_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83FA790D1748FE9000248405"
-            BuildableName = "face_dector.app"
-            BlueprintName = "face_dector"
+            BuildableName = "face_detector.app"
+            BlueprintName = "face_detector"
             ReferencedContainer = "container:face_detector_ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "83FA790D1748FE9000248405"
-            BuildableName = "face_dector.app"
-            BlueprintName = "face_dector"
+            BuildableName = "face_detector.app"
+            BlueprintName = "face_detector"
             ReferencedContainer = "container:face_detector_ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

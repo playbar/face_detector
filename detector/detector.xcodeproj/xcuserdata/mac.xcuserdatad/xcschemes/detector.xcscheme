@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51E204261747A1C3005C39DB"
-               BuildableName = "libCvEffects.a"
-               BlueprintName = "CvEffects"
-               ReferencedContainer = "container:CvEffects.xcodeproj">
+               BuildableName = "libdetector.a"
+               BlueprintName = "detector"
+               ReferencedContainer = "container:detector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51E204261747A1C3005C39DB"
-            BuildableName = "libCvEffects.a"
-            BlueprintName = "CvEffects"
-            ReferencedContainer = "container:CvEffects.xcodeproj">
+            BuildableName = "libdetector.a"
+            BlueprintName = "detector"
+            ReferencedContainer = "container:detector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51E204261747A1C3005C39DB"
-            BuildableName = "libCvEffects.a"
-            BlueprintName = "CvEffects"
-            ReferencedContainer = "container:CvEffects.xcodeproj">
+            BuildableName = "libdetector.a"
+            BlueprintName = "detector"
+            ReferencedContainer = "container:detector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
