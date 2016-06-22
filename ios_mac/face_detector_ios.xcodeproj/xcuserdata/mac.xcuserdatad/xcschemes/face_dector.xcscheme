@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "830790E51741201E008E3CF5"
-               BuildableName = "face_detector.app"
-               BlueprintName = "face_detector"
+               BlueprintIdentifier = "83FA790D1748FE9000248405"
+               BuildableName = "face_dector.app"
+               BlueprintName = "face_dector"
                ReferencedContainer = "container:face_detector_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "830790E51741201E008E3CF5"
-            BuildableName = "face_detector.app"
-            BlueprintName = "face_detector"
+            BlueprintIdentifier = "83FA790D1748FE9000248405"
+            BuildableName = "face_dector.app"
+            BlueprintName = "face_dector"
             ReferencedContainer = "container:face_detector_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "830790E51741201E008E3CF5"
-            BuildableName = "face_detector.app"
-            BlueprintName = "face_detector"
+            BlueprintIdentifier = "83FA790D1748FE9000248405"
+            BuildableName = "face_dector.app"
+            BlueprintName = "face_dector"
             ReferencedContainer = "container:face_detector_ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "830790E51741201E008E3CF5"
-            BuildableName = "face_detector.app"
-            BlueprintName = "face_detector"
+            BlueprintIdentifier = "83FA790D1748FE9000248405"
+            BuildableName = "face_dector.app"
+            BlueprintName = "face_dector"
             ReferencedContainer = "container:face_detector_ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

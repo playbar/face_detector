@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>489A423E-AF09-4D9B-AA25-3B472C24221C</string>
+	<string>E444E772-6F5F-4BD6-8AD9-BAFF1F81A655</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Chapter08_TakingPhotosFromCamera</string>
+	<string>Chapter15_DetectingFacialFeatures</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A0B627FE-A569-4C91-83C2-9BE1D651D27C</key>
 		<string>ssh://bitbucket.org/kirill_kornyakov/packt.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>book/3848_sources/Chapter08_TakingPhotosFromCamera/Chapter08_TakingPhotosFromCamera.xcodeproj/project.xcworkspace</string>
+	<string>book/3848_sources/Chapter15_DetectingFacialFeatures/Chapter15_DetectingFacialFeatures.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A0B627FE-A569-4C91-83C2-9BE1D651D27C</key>

@@ -1,57 +1,71 @@
 /*****************************************************************************
  *   ViewController.m
  ******************************************************************************
- *   by Kirill Kornyakov and Alexander Shishkov, 13th May 2013
+ *   by Kirill Kornyakov and Alexander Shishkov, 19th May 2013
  ******************************************************************************
- *   Chapter 8 of the "OpenCV for iOS" book
+ *   Chapter 15 of the "OpenCV for iOS" book
  *
- *   Taking Photos From Camera shows how to capture static images
- *   with camera.
+ *   Detecting Facial Features presents a simple facial feature
+ *   detection demo.
  *
  *   Copyright Packt Publishing 2013.
  *   http://bit.ly/OpenCV_for_iOS_book
  *****************************************************************************/
 
 #import "ViewController.h"
-#import "opencv2/imgcodecs/ios.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
 @synthesize imageView;
-@synthesize toolbar;
-@synthesize photoCamera;
-@synthesize takePhotoButton;
 @synthesize startCaptureButton;
+@synthesize toolbar;
+@synthesize videoCamera;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    // Initialize camera
-    photoCamera = [[CvPhotoCamera alloc]
+    self.videoCamera = [[CvVideoCamera alloc]
                         initWithParentView:imageView];
-    photoCamera.delegate = self;
-    photoCamera.defaultAVCaptureDevicePosition =
-                        AVCaptureDevicePositionFront;
-    photoCamera.defaultAVCaptureSessionPreset =
-                        AVCaptureSessionPresetPhoto;
-    photoCamera.defaultAVCaptureVideoOrientation =
-                        AVCaptureVideoOrientationPortrait;
+    self.videoCamera.delegate = self;
+    self.videoCamera.defaultAVCaptureDevicePosition =
+                            AVCaptureDevicePositionFront;
+    self.videoCamera.defaultAVCaptureSessionPreset =
+                            AVCaptureSessionPreset352x288;
+    self.videoCamera.defaultAVCaptureVideoOrientation =
+                            AVCaptureVideoOrientationPortrait;
+    self.videoCamera.defaultFPS = 30;
+ 
+    isCapturing = NO;
     
     // Load images
-    UIImage* resImage = [UIImage imageNamed:@"scratches.png"];
-    UIImageToMat(resImage, params.scratches);
+    UIImage* resImage = [UIImage imageNamed:@"glasses.png"];
+    UIImageToMat(resImage, parameters.glasses, true);
+    cvtColor(parameters.glasses, parameters.glasses, CV_BGRA2RGBA);
     
-    resImage = [UIImage imageNamed:@"fuzzy_border.png"];
-    UIImageToMat(resImage, params.fuzzyBorder);
+    resImage = [UIImage imageNamed:@"mustache.png"];
+    UIImageToMat(resImage, parameters.mustache, true);
+    cvtColor(parameters.mustache, parameters.mustache, CV_BGRA2RGBA);
     
-    [photoCamera start];
-    [self.view addSubview:imageView];
+    // Load Cascade Classisiers
+    NSString* filename = [[NSBundle mainBundle]
+                          pathForResource:@"lbpcascade_frontalface"
+                                   ofType:@"xml"];
+    parameters.faceCascade.load([filename UTF8String]);
     
-    [takePhotoButton setEnabled:NO];
+    filename = [[NSBundle mainBundle]
+                pathForResource:@"haarcascade_mcs_eyepair_big"
+                         ofType:@"xml"];
+    parameters.eyesCascade.load([filename UTF8String]);
+    
+    filename = [[NSBundle mainBundle]
+                pathForResource:@"haarcascade_mcs_mouth"
+                         ofType:@"xml"];
+    parameters.mouthCascade.load([filename UTF8String]);
 }
 
 - (NSInteger)supportedInterfaceOrientations
@@ -60,59 +74,35 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
--(IBAction)takePhotoButtonPressed:(id)sender;
+-(IBAction)startCaptureButtonPressed:(id)sender
 {
-    [photoCamera takePicture];
+    [videoCamera start];
+    isCapturing = YES;
+    
+    faceAnimator = new FaceAnimator(parameters);
 }
 
--(IBAction)startCaptureButtonPressed:(id)sender;
+-(IBAction)stopCaptureButtonPressed:(id)sender
 {
-    [photoCamera start];
-    [self.view addSubview:imageView];
-    [takePhotoButton setEnabled:YES];
-    [startCaptureButton setEnabled:NO];
+    [videoCamera stop];
+    isCapturing = NO;
 }
 
-- (UIImage*)applyEffect:(UIImage*)image;
-{
-    cv::Mat frame;
-    UIImageToMat(image, frame);
-    
-    params.frameSize = frame.size();
-    RetroFilter retroFilter(params);
-    
-    cv::Mat finalFrame;
-    retroFilter.applyToPhoto(frame, finalFrame);
-    
-    UIImage* result = MatToUIImage(finalFrame);
-    return [UIImage imageWithCGImage:[result CGImage]
-                               scale:1.0
-                         orientation:UIImageOrientationLeftMirrored];
-}
+// Macros for time measurements
+#if 1
+  #define TS(name) int64 t_##name = cv::getTickCount()
+  #define TE(name) printf("TIMER_" #name ": %.2fms\n", \
+    1000.*((cv::getTickCount() - t_##name) / cv::getTickFrequency()))
+#else
+  #define TS(name)
+  #define TE(name)
+#endif
 
-- (void)photoCamera:(CvPhotoCamera*)camera
-                    capturedImage:(UIImage *)image;
+- (void)processImage:(cv::Mat&)image
 {
-    [camera stop];
-    resultView = [[UIImageView alloc]
-                  initWithFrame:imageView.bounds];
-    
-    UIImage* result = [self applyEffect:image];
-   
-    [resultView setImage:result];
-    [self.view addSubview:resultView];
-    
-    [takePhotoButton setEnabled:NO];
-    [startCaptureButton setEnabled:YES];
-}
-
-- (void)photoCameraCancel:(CvPhotoCamera*)camera;
-{
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [photoCamera stop];
+    TS(DetectAndAnimateFaces);
+    faceAnimator->detectAndAnimateFaces(image);
+    TE(DetectAndAnimateFaces);
 }
 
 - (void)didReceiveMemoryWarning
@@ -121,8 +111,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    if (isCapturing)
+    {
+        [videoCamera stop];
+    }
+}
+
 - (void)dealloc
 {
-    photoCamera.delegate = nil;
+    videoCamera.delegate = nil;
 }
+
 @end

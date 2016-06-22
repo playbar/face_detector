@@ -1,12 +1,12 @@
 /*****************************************************************************
  *   AppDelegate.m
  ******************************************************************************
- *   by Kirill Kornyakov and Alexander Shishkov, 13th May 2013
+ *   by Kirill Kornyakov and Alexander Shishkov, 19th May 2013
  ******************************************************************************
- *   Chapter 8 of the "OpenCV for iOS" book
+ *   Chapter 15 of the "OpenCV for iOS" book
  *
- *   Taking Photos From Camera shows how to capture static images
- *   with camera.
+ *   Detecting Facial Features presents a simple facial feature
+ *   detection demo.
  *
  *   Copyright Packt Publishing 2013.
  *   http://bit.ly/OpenCV_for_iOS_book

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -10,27 +10,27 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="H3z-ov-TNI"/>
-                        <viewControllerLayoutGuide type="bottom" id="Lp4-KF-RIK"/>
+                        <viewControllerLayoutGuide type="top" id="gHp-7E-538"/>
+                        <viewControllerLayoutGuide type="bottom" id="pEh-Mi-Czn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erG-BY-ahs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjU-6U-uHz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-Tk-5NX">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFI-hA-UHL">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Start capture" id="mZb-MB-Z32">
+                                    <barButtonItem title="Start capture" id="4U3-8j-grf">
                                         <connections>
-                                            <action selector="startCaptureButtonPressed:" destination="2" id="bxP-3p-T05"/>
+                                            <action selector="startCaptureButtonPressed:" destination="2" id="jbk-ok-E34"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Take photo" id="XAR-Yr-xCw">
+                                    <barButtonItem title="Stop capture" id="9Mu-Tc-Pcc">
                                         <connections>
-                                            <action selector="takePhotoButtonPressed:" destination="2" id="emK-Xt-gvn"/>
+                                            <action selector="stopCaptureButtonPressed:" destination="2" id="QAG-gJ-aHZ"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -38,24 +38,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="erG-BY-ahs" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="A8U-DS-Tug"/>
-                            <constraint firstItem="erG-BY-ahs" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="NwH-fC-zuE"/>
-                            <constraint firstItem="Qe7-Tk-5NX" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="anv-5g-1H9"/>
-                            <constraint firstItem="Qe7-Tk-5NX" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="ep5-Cc-b8Z"/>
-                            <constraint firstItem="erG-BY-ahs" firstAttribute="top" secondItem="3" secondAttribute="top" id="oo7-iv-xzm"/>
-                            <constraint firstItem="Qe7-Tk-5NX" firstAttribute="top" secondItem="erG-BY-ahs" secondAttribute="bottom" id="p9w-2Q-Byo"/>
-                            <constraint firstItem="Qe7-Tk-5NX" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="sPZ-kI-ZYQ"/>
+                            <constraint firstItem="fFI-hA-UHL" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="16p-24-ArT"/>
+                            <constraint firstItem="fFI-hA-UHL" firstAttribute="top" secondItem="gjU-6U-uHz" secondAttribute="bottom" id="3wA-jh-LfQ"/>
+                            <constraint firstItem="fFI-hA-UHL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="9ra-QV-h6V"/>
+                            <constraint firstItem="gjU-6U-uHz" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="JFk-A0-WPv"/>
+                            <constraint firstItem="gjU-6U-uHz" firstAttribute="top" secondItem="3" secondAttribute="top" id="YNo-1S-Wul"/>
+                            <constraint firstItem="fFI-hA-UHL" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="cG3-0x-Ise"/>
+                            <constraint firstItem="gjU-6U-uHz" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="hsN-xO-h1P"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="erG-BY-ahs" id="8fr-nJ-gG1"/>
-                        <outlet property="startCaptureButton" destination="mZb-MB-Z32" id="C9R-hn-5Cc"/>
-                        <outlet property="takePhotoButton" destination="XAR-Yr-xCw" id="lIF-Iw-Qeg"/>
-                        <outlet property="toolbar" destination="Qe7-Tk-5NX" id="xDD-vF-CYo"/>
+                        <outlet property="imageView" destination="gjU-6U-uHz" id="nst-cF-pIB"/>
+                        <outlet property="startCaptureButton" destination="4U3-8j-grf" id="rTX-DY-NHt"/>
+                        <outlet property="stopCaptureButton" destination="9Mu-Tc-Pcc" id="X6i-hK-4oL"/>
+                        <outlet property="toolbar" destination="fFI-hA-UHL" id="GRr-BB-nBX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

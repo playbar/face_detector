@@ -1,40 +1,43 @@
 /*****************************************************************************
  *   ViewController.h
  ******************************************************************************
- *   by Kirill Kornyakov and Alexander Shishkov, 13th May 2013
+ *   by Kirill Kornyakov and Alexander Shishkov, 19th May 2013
  ******************************************************************************
- *   Chapter 8 of the "OpenCV for iOS" book
+ *   Chapter 15 of the "OpenCV for iOS" book
  *
- *   Taking Photos From Camera shows how to capture static images
- *   with camera.
+ *   Detecting Facial Features presents a simple facial feature
+ *   detection demo.
  *
  *   Copyright Packt Publishing 2013.
  *   http://bit.ly/OpenCV_for_iOS_book
  *****************************************************************************/
 
 #import <UIKit/UIKit.h>
-#import "opencv2/imgcodecs/ios.h"
-#import "opencv2/videoio/cap_ios.h"
-#import "RetroFilter.hpp"
 
-@interface ViewController : UIViewController<CvPhotoCameraDelegate>
+#import <opencv2/imgcodecs/ios.h>
+#import <opencv2/videoio/cap_ios.h>
+
+#import "CvEffects/RetroFilter.hpp"
+#import "CvEffects/FaceAnimator.hpp"
+
+@interface ViewController : UIViewController<CvVideoCameraDelegate>
 {
-    CvPhotoCamera* photoCamera;
-    UIImageView* resultView;
-    RetroFilter::Parameters params;
+    CvVideoCamera* videoCamera;
+    BOOL isCapturing;
+    
+    FaceAnimator::Parameters parameters;
+    cv::Ptr<FaceAnimator> faceAnimator;
 }
 
-@property (nonatomic, strong) CvPhotoCamera* photoCamera;
-@property (nonatomic, strong) IBOutlet UIImageView* imageView;
+@property (nonatomic, strong) CvVideoCamera* videoCamera;
+@property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UIToolbar* toolbar;
 @property (nonatomic, weak) IBOutlet
-    UIBarButtonItem* takePhotoButton;
-@property (nonatomic, weak) IBOutlet
     UIBarButtonItem* startCaptureButton;
+@property (nonatomic, weak) IBOutlet
+    UIBarButtonItem* stopCaptureButton;
 
--(IBAction)takePhotoButtonPressed:(id)sender;
 -(IBAction)startCaptureButtonPressed:(id)sender;
-
-- (UIImage*)applyEffect:(UIImage*)image;
+-(IBAction)stopCaptureButtonPressed:(id)sender;
 
 @end

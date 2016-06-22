@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "830790E51741201E008E3CF5"
-               BuildableName = "Chapter08_TakingPhotosFromCamera.app"
-               BlueprintName = "Chapter08_TakingPhotosFromCamera"
-               ReferencedContainer = "container:Chapter08_TakingPhotosFromCamera.xcodeproj">
+               BlueprintIdentifier = "83FA790D1748FE9000248405"
+               BuildableName = "Chapter15_DetectingFacialFeatures.app"
+               BlueprintName = "Chapter15_DetectingFacialFeatures"
+               ReferencedContainer = "container:Chapter15_DetectingFacialFeatures.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "830790E51741201E008E3CF5"
-            BuildableName = "Chapter08_TakingPhotosFromCamera.app"
-            BlueprintName = "Chapter08_TakingPhotosFromCamera"
-            ReferencedContainer = "container:Chapter08_TakingPhotosFromCamera.xcodeproj">
+            BlueprintIdentifier = "83FA790D1748FE9000248405"
+            BuildableName = "Chapter15_DetectingFacialFeatures.app"
+            BlueprintName = "Chapter15_DetectingFacialFeatures"
+            ReferencedContainer = "container:Chapter15_DetectingFacialFeatures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "830790E51741201E008E3CF5"
-            BuildableName = "Chapter08_TakingPhotosFromCamera.app"
-            BlueprintName = "Chapter08_TakingPhotosFromCamera"
-            ReferencedContainer = "container:Chapter08_TakingPhotosFromCamera.xcodeproj">
+            BlueprintIdentifier = "83FA790D1748FE9000248405"
+            BuildableName = "Chapter15_DetectingFacialFeatures.app"
+            BlueprintName = "Chapter15_DetectingFacialFeatures"
+            ReferencedContainer = "container:Chapter15_DetectingFacialFeatures.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "830790E51741201E008E3CF5"
-            BuildableName = "Chapter08_TakingPhotosFromCamera.app"
-            BlueprintName = "Chapter08_TakingPhotosFromCamera"
-            ReferencedContainer = "container:Chapter08_TakingPhotosFromCamera.xcodeproj">
+            BlueprintIdentifier = "83FA790D1748FE9000248405"
+            BuildableName = "Chapter15_DetectingFacialFeatures.app"
+            BlueprintName = "Chapter15_DetectingFacialFeatures"
+            ReferencedContainer = "container:Chapter15_DetectingFacialFeatures.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
