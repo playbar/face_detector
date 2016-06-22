@@ -19,7 +19,6 @@
 
 #import "CvEffects/RetroFilter.hpp"
 #import "CvEffects/FaceAnimator.hpp"
-#import "CvEffects/FaceDetector.hpp"
 
 @interface ViewController : UIViewController<CvVideoCameraDelegate>
 {
@@ -28,7 +27,6 @@
     
     FaceAnimator::Parameters parameters;
     cv::Ptr<FaceAnimator> faceAnimator;
-    cv::Ptr<FaceDetector> faceDetector;
 }
 
 @property (nonatomic, strong) CvVideoCamera* videoCamera;

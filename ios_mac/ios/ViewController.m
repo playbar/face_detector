@@ -29,11 +29,15 @@
 {
     [super viewDidLoad];
 
-    self.videoCamera = [[CvVideoCamera alloc] initWithParentView:imageView];
+    self.videoCamera = [[CvVideoCamera alloc]
+                        initWithParentView:imageView];
     self.videoCamera.delegate = self;
-    self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
-    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
-    self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
+    self.videoCamera.defaultAVCaptureDevicePosition =
+                            AVCaptureDevicePositionFront;
+    self.videoCamera.defaultAVCaptureSessionPreset =
+                            AVCaptureSessionPreset352x288;
+    self.videoCamera.defaultAVCaptureVideoOrientation =
+                            AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = 30;
  
     isCapturing = NO;
@@ -48,18 +52,20 @@
     cvtColor(parameters.mustache, parameters.mustache, CV_BGRA2RGBA);
     
     // Load Cascade Classisiers
-    NSString* filename = [[NSBundle mainBundle] pathForResource:@"lbpcascade_frontalface" ofType:@"xml"];
+    NSString* filename = [[NSBundle mainBundle]
+                          pathForResource:@"lbpcascade_frontalface"
+                                   ofType:@"xml"];
     parameters.faceCascade.load([filename UTF8String]);
     
-    filename = [[NSBundle mainBundle] pathForResource:@"haarcascade_mcs_eyepair_big" ofType:@"xml"];
+    filename = [[NSBundle mainBundle]
+                pathForResource:@"haarcascade_mcs_eyepair_big"
+                         ofType:@"xml"];
     parameters.eyesCascade.load([filename UTF8String]);
     
-    filename = [[NSBundle mainBundle]pathForResource:@"haarcascade_mcs_mouth" ofType:@"xml"];
+    filename = [[NSBundle mainBundle]
+                pathForResource:@"haarcascade_mcs_mouth"
+                         ofType:@"xml"];
     parameters.mouthCascade.load([filename UTF8String]);
-    
-    faceDetector = new FaceDetector();
-    
-    return;
 }
 
 - (NSInteger)supportedInterfaceOrientations
@@ -74,7 +80,6 @@
     isCapturing = YES;
     
     faceAnimator = new FaceAnimator(parameters);
-   
 }
 
 -(IBAction)stopCaptureButtonPressed:(id)sender

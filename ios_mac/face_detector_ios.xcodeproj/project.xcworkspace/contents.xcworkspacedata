@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/mac/MyWorks/HongNuo/face_detector/ios_mac/face_detector_ios.xcodeproj">
+      location = "self:/Users/mac/Desktop/opencv_for_ios_book_samples/Chapter15_DetectingFacialFeatures/face_detector_ios.xcodeproj">
    </FileRef>
 </Workspace>
