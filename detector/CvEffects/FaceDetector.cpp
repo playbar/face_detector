@@ -15,67 +15,77 @@
 using namespace cv;
 using namespace std;
 
-FaceDetector::FaceDetector()
+FaceDetector::FaceDetector(vector<string> &arguments)
 {
+    det_parameters.init();
+    det_parameters.initArg(arguments);
     clnf_model.Read(det_parameters.model_location);
 }
 
-void FaceDetector::putImage(Mat& frame, const Mat& image,
-                            const Mat& alpha, Rect face,
-                            Rect feature, float shift)
-{
-    // Scale animation image
-    float scale = 1.1;
-    Size size;
-    size.width = scale * feature.width;
-    size.height = scale * feature.height;
-    Size newSz = Size(size.width,
-                      float(image.rows) / image.cols * size.width);
-    Mat glasses;
-    Mat mask;
-    resize(image, glasses, newSz);
-    resize(alpha, mask, newSz);
-
-    // Find place for animation
-    float coeff = (scale - 1.) / 2.;
-    Point origin(face.x + feature.x - coeff * feature.width,
-                 face.y + feature.y - coeff * feature.height +
-                 newSz.height * shift);
-    Rect roi(origin, newSz);
-    Mat roi4glass = frame(roi);
-    
-    alphaBlendC4(glasses, roi4glass, mask);
-}
-
-static bool FaceSizeComparer(const Rect& r1, const Rect& r2)
-{
-    return r1.area() > r2.area();
-}
-
-void FaceDetector::PreprocessToGray(Mat& frame)
-{
-    cvtColor(frame, grayFrame_, CV_RGBA2GRAY);
-    equalizeHist(grayFrame_, grayFrame_);
-}
-
-void FaceDetector::PreprocessToGray_optimized(Mat& frame)
-{
-    grayFrame_.create(frame.size(), CV_8UC1);
-    accBuffer1_.create(frame.size(), frame.type());
-    accBuffer2_.create(frame.size(), CV_8UC1);
-        
-    cvtColor_Accelerate(frame, grayFrame_, accBuffer1_, accBuffer2_);
-    equalizeHist_Accelerate(grayFrame_, grayFrame_);
-}
 
 void FaceDetector::detectAndAnimateFaces(Mat& frame)
 {
+    float fx = 0;
+    float fy = 0;
+    float cx = 0;
+    float cy = 0;
+    
+    cx = frame.cols / 2.0f;
+    cy = frame.rows / 2.0f;
+    
+    fx = 500 * (frame.cols / 640.0f);
+    fy = 500 * (frame.rows / 480.0f);
+    
+    fx = (fx + fy) / 2.0;
+    fy = fx;
+    
+    
     TS(Preprocessing);
+    if( frame.channels() == 3 ){
+        cv::cvtColor(frame, grayscale_image, CV_BGR2GRAY );
+    }
+    else{
+        grayscale_image = frame.clone();
+    }
     //PreprocessToGray(frame);
-    PreprocessToGray_optimized(frame);
     TE(Preprocessing);
     
-    // Detect faces
+    
     TS(DetectFaces);
+    bool detection_success = LandmarkDetector::DetectLandmarksInVideo( grayscale_image, depth_image, clnf_model, det_parameters );
+    //bool detection_success = LandmarkDetector::DetectLandmarksInImage(grayscale_image, clnf_model, det_parameters);
+    
+    cv::Point3f gazeDirection0(0, 0, -1);
+    cv::Point3f gazeDirection1(0, 0, -1);
+    
+    
+    if (det_parameters.track_gaze && detection_success && clnf_model.eye_model)
+    {
+        FaceAnalysis::EstimateGaze(clnf_model, gazeDirection0, fx, fy, cx, cy, true);
+        FaceAnalysis::EstimateGaze(clnf_model, gazeDirection1, fx, fy, cx, cy, false);
+    }
+    
+    double detection_certainty = clnf_model.detection_certainty;
+    detection_success = clnf_model.detection_success;
+    
+    double visualisation_boundary = 0.2;
+    if (detection_certainty < visualisation_boundary)
+    {
+        LandmarkDetector::Draw(frame, clnf_model);
+
+        if (det_parameters.track_gaze && detection_success && clnf_model.eye_model)
+        {
+            FaceAnalysis::DrawGaze(frame, clnf_model, gazeDirection0, gazeDirection1, fx, fy, cx, cy);
+        }
+    }
+    
+    cv::Point center( 100, 100);
+    cv::circle(frame, center, 20, cv::Scalar( 255, 0, 0));
+    
+    TE(DetectFaces);
+    
+    
+    // Detect faces
+    
    
 }

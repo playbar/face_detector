@@ -19,140 +19,143 @@ using namespace LandmarkDetector;
 FaceModelParameters::FaceModelParameters()
 {
 	// initialise the default values
-	init();
 }
 
 FaceModelParameters::FaceModelParameters(vector<string> &arguments)
 {
 	// initialise the default values
 	init();
+    initArg( arguments);
+}
 
-	// First element is reserved for the executable location (useful for finding relative model locs)
-	boost::filesystem::path root = boost::filesystem::path(arguments[0]).parent_path();
-
-	bool* valid = new bool[arguments.size()];
-	valid[0] = true;
-
-	for (size_t i = 1; i < arguments.size(); ++i)
-	{
-		valid[i] = true;
-
-		if (arguments[i].compare("-mloc") == 0)
-		{
-			string model_loc = arguments[i + 1];
-			model_location = model_loc;
-			valid[i] = false;
-			valid[i + 1] = false;
-			i++;
-
-		}
-		if (arguments[i].compare("-sigma") == 0)
-		{
-			stringstream data(arguments[i + 1]);
-			data >> sigma;
-			valid[i] = false;
-			valid[i + 1] = false;
-			i++;
-		}
-		else if (arguments[i].compare("-w_reg") == 0)
-		{
-			stringstream data(arguments[i + 1]);
-			data >> weight_factor;
-			valid[i] = false;
-			valid[i + 1] = false;
-			i++;
-		}
-		else if (arguments[i].compare("-reg") == 0)
-		{
-			stringstream data(arguments[i + 1]);
-			data >> reg_factor;
-			valid[i] = false;
-			valid[i + 1] = false;
-			i++;
-		}
-		else if (arguments[i].compare("-multi_view") == 0)
-		{
-
-			stringstream data(arguments[i + 1]);
-			int m_view;
-			data >> m_view;
-
-			multi_view = (bool)(m_view != 0);
-			valid[i] = false;
-			valid[i + 1] = false;
-			i++;
-		}
-		else if (arguments[i].compare("-validate_detections") == 0)
-		{
-			stringstream data(arguments[i + 1]);
-			int v_det;
-			data >> v_det;
-
-			validate_detections = (bool)(v_det != 0);
-			valid[i] = false;
-			valid[i + 1] = false;
-			i++;
-		}
-		else if (arguments[i].compare("-n_iter") == 0)
-		{
-			stringstream data(arguments[i + 1]);
-			data >> num_optimisation_iteration;
-
-			valid[i] = false;
-			valid[i + 1] = false;
-			i++;
-		}
-		else if (arguments[i].compare("-gaze") == 0)
-		{
-			track_gaze = true;
-
-			valid[i] = false;
-			i++;
-		}
-		else if (arguments[i].compare("-q") == 0)
-		{
-
-			quiet_mode = true;
-
-			valid[i] = false;
-		}
-		else if (arguments[i].compare("-wild") == 0)
-		{
-			// For in the wild fitting these parameters are suitable
-			window_sizes_init = vector<int>(4);
-			window_sizes_init[0] = 15; window_sizes_init[1] = 13; window_sizes_init[2] = 11; window_sizes_init[3] = 9;
-
-			sigma = 1.25;
-			reg_factor = 35;
-			weight_factor = 2.5;
-			num_optimisation_iteration = 10;
-
-			valid[i] = false;
-
-			// For in-the-wild images use an in-the wild detector				
-			curr_face_detector = HOG_SVM_DETECTOR;
-
-		}
-	}
-
-	for (int i = arguments.size() - 1; i >= 0; --i)
-	{
-		if (!valid[i])
-		{
-			arguments.erase(arguments.begin() + i);
-		}
-	}
-
-	// Make sure model_location is valid
-	if (!boost::filesystem::exists(boost::filesystem::path(model_location)))
-	{
-		model_location = (root / model_location).string();
-		if (!boost::filesystem::exists(boost::filesystem::path(model_location)))
-		{
-			std::cout << "Could not find the landmark detection model to load" << std::endl;
-		}
-	}
-
+void FaceModelParameters::initArg(vector<string> &arguments)
+{
+   	// First element is reserved for the executable location (useful for finding relative model locs)
+    boost::filesystem::path root = boost::filesystem::path(arguments[0]).parent_path();
+    
+    bool* valid = new bool[arguments.size()];
+    valid[0] = true;
+    
+    for (size_t i = 1; i < arguments.size(); ++i)
+    {
+        valid[i] = true;
+        
+        if (arguments[i].compare("-mloc") == 0)
+        {
+            string model_loc = arguments[i + 1];
+            model_location = model_loc;
+            valid[i] = false;
+            valid[i + 1] = false;
+            i++;
+            
+        }
+        if (arguments[i].compare("-sigma") == 0)
+        {
+            stringstream data(arguments[i + 1]);
+            data >> sigma;
+            valid[i] = false;
+            valid[i + 1] = false;
+            i++;
+        }
+        else if (arguments[i].compare("-w_reg") == 0)
+        {
+            stringstream data(arguments[i + 1]);
+            data >> weight_factor;
+            valid[i] = false;
+            valid[i + 1] = false;
+            i++;
+        }
+        else if (arguments[i].compare("-reg") == 0)
+        {
+            stringstream data(arguments[i + 1]);
+            data >> reg_factor;
+            valid[i] = false;
+            valid[i + 1] = false;
+            i++;
+        }
+        else if (arguments[i].compare("-multi_view") == 0)
+        {
+            
+            stringstream data(arguments[i + 1]);
+            int m_view;
+            data >> m_view;
+            
+            multi_view = (bool)(m_view != 0);
+            valid[i] = false;
+            valid[i + 1] = false;
+            i++;
+        }
+        else if (arguments[i].compare("-validate_detections") == 0)
+        {
+            stringstream data(arguments[i + 1]);
+            int v_det;
+            data >> v_det;
+            
+            validate_detections = (bool)(v_det != 0);
+            valid[i] = false;
+            valid[i + 1] = false;
+            i++;
+        }
+        else if (arguments[i].compare("-n_iter") == 0)
+        {
+            stringstream data(arguments[i + 1]);
+            data >> num_optimisation_iteration;
+            
+            valid[i] = false;
+            valid[i + 1] = false;
+            i++;
+        }
+        else if (arguments[i].compare("-gaze") == 0)
+        {
+            track_gaze = true;
+            
+            valid[i] = false;
+            i++;
+        }
+        else if (arguments[i].compare("-q") == 0)
+        {
+            
+            quiet_mode = true;
+            
+            valid[i] = false;
+        }
+        else if (arguments[i].compare("-wild") == 0)
+        {
+            // For in the wild fitting these parameters are suitable
+            window_sizes_init = vector<int>(4);
+            window_sizes_init[0] = 15; window_sizes_init[1] = 13; window_sizes_init[2] = 11; window_sizes_init[3] = 9;
+            
+            sigma = 1.25;
+            reg_factor = 35;
+            weight_factor = 2.5;
+            num_optimisation_iteration = 10;
+            
+            valid[i] = false;
+            
+            // For in-the-wild images use an in-the wild detector				
+            curr_face_detector = HOG_SVM_DETECTOR;
+            
+        }
+    }
+    
+    for (int i = arguments.size() - 1; i >= 0; --i)
+    {
+        if (!valid[i])
+        {
+            arguments.erase(arguments.begin() + i);
+        }
+    }
+    
+    // Make sure model_location is valid
+    if (!boost::filesystem::exists(boost::filesystem::path(model_location)))
+    {
+        model_location = (root / model_location).string();
+        if (!boost::filesystem::exists(boost::filesystem::path(model_location)))
+        {
+            std::cout << "Could not find the landmark detection model to load" << std::endl;
+        }
+    }
+    return;
 }
 
 void FaceModelParameters::init()

@@ -21,7 +21,7 @@ class FaceDetector
 {
 public:
 
-    FaceDetector();
+    FaceDetector(vector<string> &arguments);
     virtual ~FaceDetector() {};
 
     void detectAndAnimateFaces(cv::Mat& frame);
@@ -33,17 +33,8 @@ protected:
     
     
     
-    cv::Mat maskOrig_;
-    cv::Mat maskMust_;
-    cv::Mat grayFrame_;
+    cv::Mat_<float> depth_image;
+    cv::Mat_<uchar> grayscale_image;
     
-    void putImage(cv::Mat& frame, const cv::Mat& image,
-                  const cv::Mat& alpha, cv::Rect face,
-                  cv::Rect facialFeature, float shift);
-    void PreprocessToGray(cv::Mat& frame);
 
-    // Members needed for optimization with Accelerate Framework
-    void PreprocessToGray_optimized(cv::Mat& frame);
-    cv::Mat accBuffer1_;
-    cv::Mat accBuffer2_;
 };

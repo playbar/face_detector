@@ -73,9 +73,10 @@
     string strFilename = [filename UTF8String];
     
     arguments.push_back(strFilename);
-    LandmarkDetector::FaceModelParameters det_parameters( arguments);
+    faceDetector = new FaceDetector( arguments);
+    //LandmarkDetector::FaceModelParameters det_parameters( arguments);
     
-    LandmarkDetector::CLNF clnf_model( det_parameters.model_location);
+    //LandmarkDetector::CLNF clnf_model( det_parameters.model_location);
     return;
     
 }
@@ -112,9 +113,12 @@
 
 - (void)processImage:(cv::Mat&)image
 {
-    TS(DetectAndAnimateFaces);
-    faceAnimator->detectAndAnimateFaces(image);
-    TE(DetectAndAnimateFaces);
+    //TS(DetectAndAnimateFaces);
+    //faceAnimator->detectAndAnimateFaces(image);
+    faceDetector->detectAndAnimateFaces(image );
+    //cv::Point center( 100, 100);
+    //cv::circle(image, center, 20, cv::Scalar( 255, 0, 0));
+    //TE(DetectAndAnimateFaces);
 }
 
 - (void)didReceiveMemoryWarning

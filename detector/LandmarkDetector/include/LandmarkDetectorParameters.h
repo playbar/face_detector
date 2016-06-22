@@ -79,8 +79,9 @@ struct FaceModelParameters
 
 	FaceModelParameters(vector<string> &arguments);
 
-private:
     void init();
+    void initArg(vector<string> &arguments);
+    
 };
 
 }

@@ -390,6 +390,7 @@
 					"$(SRCROOT)",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios/face_detector_ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -400,6 +401,7 @@
 					"$(SRCROOT)/../detector",
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
 				);
 				INFOPLIST_FILE = "ios/face_detector_ios-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;
@@ -420,6 +422,7 @@
 					"$(SRCROOT)",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios/face_detector_ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
@@ -427,6 +430,7 @@
 					"$(SRCROOT)/../detector",
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
 				);
 				INFOPLIST_FILE = "ios/face_detector_ios-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novo.test;

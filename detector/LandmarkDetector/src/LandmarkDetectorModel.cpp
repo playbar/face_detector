@@ -24,8 +24,8 @@ dlib::frontal_face_detector CLNF::face_detector_HOG = dlib::get_frontal_face_det
 // A default constructor
 CLNF::CLNF()
 {
-	FaceModelParameters parameters;
-	this->Read(parameters.model_location);
+	//FaceModelParameters parameters;
+	//this->Read(parameters.model_location);
 }
 
 // Constructor from a model file
