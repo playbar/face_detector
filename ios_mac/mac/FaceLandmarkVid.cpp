@@ -299,6 +299,9 @@ int main (int argc, char **argv)
 			//double detection_certainty = clnf_model.detection_certainty;
 
 			// Gaze tracking, absolute gaze direction
+            
+            TS(FaceDraw);
+            
 			cv::Point3f gazeDirection0(0, 0, -1);
 			cv::Point3f gazeDirection1(0, 0, -1);
 
@@ -310,6 +313,8 @@ int main (int argc, char **argv)
 
 			visualise_tracking(captured_image, depth_image, clnf_model, det_parameters, gazeDirection0, gazeDirection1, frame_count, fx, fy, cx, cy);
 			
+           TE(FaceDraw);
+            
 			// output the tracked video
 			if (!output_video_files.empty())
 			{
