@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0403230F1D1B843400473C33 /* Processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0403230D1D1B843400473C33 /* Processing.cpp */; };
+		040323101D1B843400473C33 /* Processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0403230D1D1B843400473C33 /* Processing.cpp */; };
 		0438FE111D192980008EA36D /* codecvt_error_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE081D192980008EA36D /* codecvt_error_category.cpp */; };
 		0438FE121D192980008EA36D /* codecvt_error_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE081D192980008EA36D /* codecvt_error_category.cpp */; };
 		0438FE131D192980008EA36D /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE091D192980008EA36D /* operations.cpp */; };
@@ -140,6 +142,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0403230D1D1B843400473C33 /* Processing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Processing.cpp; path = detector/CvEffects/Processing.cpp; sourceTree = "<group>"; };
+		0403230E1D1B843400473C33 /* Processing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Processing.hpp; path = detector/CvEffects/Processing.hpp; sourceTree = "<group>"; };
 		0438FE081D192980008EA36D /* codecvt_error_category.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = codecvt_error_category.cpp; path = detector/boost/libs/filesystem/src/codecvt_error_category.cpp; sourceTree = "<group>"; };
 		0438FE091D192980008EA36D /* operations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = operations.cpp; path = detector/boost/libs/filesystem/src/operations.cpp; sourceTree = "<group>"; };
 		0438FE0A1D192980008EA36D /* path_traits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = path_traits.cpp; path = detector/boost/libs/filesystem/src/path_traits.cpp; sourceTree = "<group>"; };
@@ -285,6 +289,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		040323021D1B842300473C33 /* CvEffects */ = {
+			isa = PBXGroup;
+			children = (
+				0403230D1D1B843400473C33 /* Processing.cpp */,
+				0403230E1D1B843400473C33 /* Processing.hpp */,
+			);
+			name = CvEffects;
+			sourceTree = "<group>";
+		};
 		0438FD211D19263A008EA36D /* dlib */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +694,7 @@
 		46C0D083501444F8BD98A53E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				040323021D1B842300473C33 /* CvEffects */,
 				0438FE271D1929AD008EA36D /* FaceAnalyser */,
 				0438FE641D1929AD008EA36D /* LandmarkDetector */,
 				0438FDDE1D192695008EA36D /* boost */,
@@ -852,6 +866,7 @@
 			files = (
 				0438FEE01D192A40008EA36D /* FaceLandmarkVid.cpp in Sources */,
 				0438FEDC1D1929AD008EA36D /* stdafx.cpp in Sources */,
+				0403230F1D1B843400473C33 /* Processing.cpp in Sources */,
 				0438FE251D1929A2008EA36D /* source.cpp in Sources */,
 				0438FEBC1D1929AD008EA36D /* Face_utils.cpp in Sources */,
 				0438FE111D192980008EA36D /* codecvt_error_category.cpp in Sources */,
@@ -899,6 +914,7 @@
 				0438FEC31D1929AD008EA36D /* SVM_dynamic_lin.cpp in Sources */,
 				0438FE181D192980008EA36D /* path.cpp in Sources */,
 				0438FE1C1D192980008EA36D /* unique_path.cpp in Sources */,
+				040323101D1B843400473C33 /* Processing.cpp in Sources */,
 				0438FE1A1D192980008EA36D /* portability.cpp in Sources */,
 				0438FEC51D1929AD008EA36D /* SVM_static_lin.cpp in Sources */,
 				0438FE1E1D192980008EA36D /* utf8_codecvt_facet.cpp in Sources */,
@@ -1098,6 +1114,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost/boost,
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
 					/Users/mac/MyWorks/HongNuo/face_detector/detector,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/CvEffects,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -1246,6 +1263,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost/boost,
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
 					/Users/mac/MyWorks/HongNuo/face_detector/detector,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/CvEffects,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";

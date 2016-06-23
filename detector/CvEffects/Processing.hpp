@@ -31,9 +31,9 @@ int equalizeHist_Accelerate(const cv::Mat& src, cv::Mat& dst);
 
 // Macros for time measurements
 #if 1
-  #define TS(name) int64 t_##name = getTickCount()
+  #define TS(name) int64 t_##name = cv::getTickCount()
   #define TE(name) printf("TIMER_" #name ": %.2fms\n", \
-    1000.f * ((getTickCount() - t_##name) / getTickFrequency()))
+    1000.f * ((cv::getTickCount() - t_##name) / cv::getTickFrequency()))
 #else
   #define TS(name)
   #define TE(name)

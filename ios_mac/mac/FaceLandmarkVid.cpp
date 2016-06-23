@@ -2,6 +2,7 @@
 // Libraries for landmark detection (includes CLNF and CLM modules)
 #include "LandmarkCoreIncludes.h"
 #include "GazeEstimation.h"
+#include "Processing.hpp"
 
 #include <fstream>
 #include <sstream>
@@ -289,8 +290,9 @@ int main (int argc, char **argv)
 			
 			// The actual facial landmark detection / tracking
             //bool detection_success = false;
+            TS(FaceDetetect);
 			bool detection_success = LandmarkDetector::DetectLandmarksInVideo(grayscale_image, depth_image, clnf_model, det_parameters);
-            
+            TE(FaceDetetect);
 			
 			// Visualising the results
 			// Drawing the facial landmarks on the face and the bounding box around it if tracking is successful and initialised
