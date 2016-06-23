@@ -971,13 +971,19 @@ void Draw(cv::Mat img, const cv::Mat_<double>& shape2D, const cv::Mat_<int>& vis
 			if(visibilities.at<int>(i))
 			{
 				cv::Point featurePoint((int)shape2D.at<double>(i), (int)shape2D.at<double>(i +n));
+                
+                
 
 				// A rough heuristic for drawn point size
 				int thickness = (int)std::ceil(3.0* ((double)img.cols) / 640.0);
 				int thickness_2 = (int)std::ceil(1.0* ((double)img.cols) / 640.0);
 
 				cv::circle(img, featurePoint, 1, cv::Scalar(0,0,255), thickness);
-				cv::circle(img, featurePoint, 1, cv::Scalar(255,0,0), thickness_2);
+                char num[3] = {0};
+                std::sprintf(num, "%d", i );
+                cv::putText(img, num, featurePoint, CV_FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(255, 255, 255));
+                
+				//cv::circle(img, featurePoint, 1, cv::Scalar(255,0,0), thickness_2);
 			}
 		}
 	}
@@ -1032,6 +1038,7 @@ void Draw(cv::Mat img, const cv::Mat_<double>& shape2D, const cv::Mat_<int>& vis
 			cv::line(img, featurePoint, nextFeaturePoint, cv::Scalar(255, 0, 0), thickness_2);
 		}
 	}
+    return;
 }
 
 // Drawing landmarks on a face image

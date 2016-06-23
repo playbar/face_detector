@@ -103,12 +103,12 @@ void visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& depth_image, c
 	std::sprintf(fpsC, "%d", (int)fps_tracker);
 	string fpsSt("FPS:");
 	fpsSt += fpsC;
-	cv::putText(captured_image, fpsSt, cv::Point(10, 20), CV_FONT_HERSHEY_SIMPLEX, 0.5, CV_RGB(255, 0, 0));
+	//cv::putText(captured_image, fpsSt, cv::Point(10, 20), CV_FONT_HERSHEY_SIMPLEX, 0.5, CV_RGB(255, 0, 0));
 
 	if (!det_parameters.quiet_mode)
 	{
-		cv::namedWindow("tracking_result", 1);
-		cv::imshow("tracking_result", captured_image);
+		cv::namedWindow("facedetector", 1);
+		cv::imshow("facedetector", captured_image);
 
 		if (!depth_image.empty())
 		{
