@@ -22,6 +22,21 @@ FaceDetector::FaceDetector(vector<string> &arguments)
     clnf_model.Read(det_parameters.model_location);
 }
 
+void FaceDetector::PreprocessToGray_optimized(Mat& frame)
+{
+    grayFrame_.create(frame.size(), CV_8UC1);
+    accBuffer1_.create(frame.size(), frame.type());
+    accBuffer2_.create(frame.size(), CV_8UC1);
+    
+    cvtColor_Accelerate(frame, grayFrame_, accBuffer1_, accBuffer2_);
+    equalizeHist_Accelerate(grayFrame_, grayFrame_);
+}
+
+void FaceDetector::PreprocessToGray(Mat& frame)
+{
+    cvtColor(frame, grayFrame_, CV_RGBA2GRAY);
+    equalizeHist(grayFrame_, grayFrame_);
+}
 
 void FaceDetector::detectAndAnimateFaces(Mat& frame)
 {
@@ -41,13 +56,15 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     
     
     TS(Preprocessing);
-    if( frame.channels() == 3 ){
-        cv::cvtColor(frame, grayscale_image, CV_BGR2GRAY );
-    }
-    else{
-        grayscale_image = frame.clone();
-    }
-    //PreprocessToGray(frame);
+    cvtColor(frame, grayscale_image, CV_BGR2GRAY);
+    equalizeHist( grayscale_image, grayscale_image);
+//    if( frame.channels() == 3 ){
+//        cv::cvtColor(frame, grayscale_image, CV_BGR2GRAY );
+//    }
+//    else{
+//        grayscale_image = frame.clone();
+//    }
+//    //PreprocessToGray(frame);
     TE(Preprocessing);
     
     

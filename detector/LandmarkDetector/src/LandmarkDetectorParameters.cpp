@@ -19,6 +19,7 @@ using namespace LandmarkDetector;
 FaceModelParameters::FaceModelParameters()
 {
 	// initialise the default values
+    init();
 }
 
 FaceModelParameters::FaceModelParameters(vector<string> &arguments)
