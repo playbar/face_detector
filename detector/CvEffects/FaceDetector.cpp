@@ -62,7 +62,6 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     
     TS(DetectFaces);
     detection_success = LandmarkDetector::DetectLandmarksInVideo( grayscale_image, depth_image, clnf_model, det_parameters );
-    //detection_success = LandmarkDetector::DetectLandmarksInImage(grayscale_image, depth_image, clnf_model, det_parameters);
     
     showDetect(frame);
     
@@ -98,8 +97,8 @@ void FaceDetector::showDetect(Mat& frame)
         }
     }
     
-    cv::Point center( 100, 100);
-    cv::circle(frame, center, 20, cv::Scalar( 255, 0, 0));
+    //cv::Point center( 100, 100);
+    //cv::circle(frame, center, 20, cv::Scalar( 255, 0, 0));
     return;
  
 }

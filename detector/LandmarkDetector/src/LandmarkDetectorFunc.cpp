@@ -9,6 +9,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/calib3d.hpp>
 #include <opencv2/imgproc.hpp>
+#include "Processing.hpp"
 
 // System includes
 #include <vector>
@@ -256,8 +257,9 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 		{
 			CorrectGlobalParametersVideo(grayscale_image, clnf_model, params);
 		}
-
+        TS(DetectLandmarks);
 		bool track_success = clnf_model.DetectLandmarks(grayscale_image, depth_image, params);
+        TE(DetectLandmarks);
 		if(!track_success)
 		{
 			// Make a record that tracking failed
@@ -299,12 +301,15 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 		if(params.curr_face_detector == FaceModelParameters::HOG_SVM_DETECTOR)
 		{
 			double confidence;
-            //face_detection_success = LandmarkDetector::DetectFaces(bounding_box, grayscale_image, clnf_model);
+            TS(DetectSingleFaceHOG);
 			face_detection_success = LandmarkDetector::DetectSingleFaceHOG(bounding_box, grayscale_image, clnf_model.face_detector_HOG, confidence, preference_det);
+            TE(DetectSingleFaceHOG);
 		}
 		else if(params.curr_face_detector == FaceModelParameters::HAAR_DETECTOR)
 		{
+            TS(DetectSingleFace);
 			face_detection_success = LandmarkDetector::DetectSingleFace(bounding_box, grayscale_image, clnf_model.face_detector_HAAR, preference_det);
+            TE(DetectSingleFace);
 		}
 
 		// Attempt to detect landmarks using the detected face (if unseccessful the detection will be ignored)
