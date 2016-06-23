@@ -112,6 +112,13 @@
 
 - (void)processImage:(cv::Mat&)image
 {
+    static int i = 0;
+    if( 2 != i ){
+        i++;
+        faceDetector->showDetect(image);
+        return;
+    }
+    i = 0;
     //TS(DetectAndAnimateFaces);
     //faceAnimator->detectAndAnimateFaces(image);
     faceDetector->detectAndAnimateFaces(image );

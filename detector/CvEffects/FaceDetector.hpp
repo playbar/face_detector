@@ -25,6 +25,7 @@ public:
     virtual ~FaceDetector() {};
 
     void detectAndAnimateFaces(cv::Mat& frame);
+    void showDetect(cv::Mat &frame);
     
     void PreprocessToGray_optimized(cv::Mat& frame);
     void PreprocessToGray(cv::Mat& frame);
@@ -42,5 +43,11 @@ protected:
     cv::Mat grayFrame_;
     cv::Mat accBuffer1_;
     cv::Mat accBuffer2_;
+    
+    float fx;
+    float fy;
+    float cx;
+    float cy;
+    bool detection_success;
 
 };

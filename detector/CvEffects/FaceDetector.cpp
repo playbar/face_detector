@@ -24,12 +24,12 @@ FaceDetector::FaceDetector(vector<string> &arguments)
 
 void FaceDetector::PreprocessToGray_optimized(Mat& frame)
 {
-    grayFrame_.create(frame.size(), CV_8UC1);
+    grayscale_image.create(frame.size());
     accBuffer1_.create(frame.size(), frame.type());
     accBuffer2_.create(frame.size(), CV_8UC1);
     
-    cvtColor_Accelerate(frame, grayFrame_, accBuffer1_, accBuffer2_);
-    equalizeHist_Accelerate(grayFrame_, grayFrame_);
+    cvtColor_Accelerate(frame, grayscale_image, accBuffer1_, accBuffer2_);
+    equalizeHist_Accelerate(grayscale_image, grayscale_image);
 }
 
 void FaceDetector::PreprocessToGray(Mat& frame)
@@ -40,10 +40,7 @@ void FaceDetector::PreprocessToGray(Mat& frame)
 
 void FaceDetector::detectAndAnimateFaces(Mat& frame)
 {
-    float fx = 0;
-    float fy = 0;
-    float cx = 0;
-    float cy = 0;
+
     
     cx = frame.cols / 2.0f;
     cy = frame.rows / 2.0f;
@@ -58,20 +55,25 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     TS(Preprocessing);
     cvtColor(frame, grayscale_image, CV_BGR2GRAY);
     equalizeHist( grayscale_image, grayscale_image);
-//    if( frame.channels() == 3 ){
-//        cv::cvtColor(frame, grayscale_image, CV_BGR2GRAY );
-//    }
-//    else{
-//        grayscale_image = frame.clone();
-//    }
-//    //PreprocessToGray(frame);
+    //PreprocessToGray_optimized( frame);
+
     TE(Preprocessing);
     
     
     TS(DetectFaces);
-    bool detection_success = LandmarkDetector::DetectLandmarksInVideo( grayscale_image, depth_image, clnf_model, det_parameters );
+    detection_success = LandmarkDetector::DetectLandmarksInVideo( grayscale_image, depth_image, clnf_model, det_parameters );
     //bool detection_success = LandmarkDetector::DetectLandmarksInImage(grayscale_image, clnf_model, det_parameters);
     
+    showDetect(frame);
+    
+    TE(DetectFaces);
+
+    // Detect faces
+   
+}
+
+void FaceDetector::showDetect(Mat& frame)
+{
     cv::Point3f gazeDirection0(0, 0, -1);
     cv::Point3f gazeDirection1(0, 0, -1);
     
@@ -89,7 +91,7 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     if (detection_certainty < visualisation_boundary)
     {
         LandmarkDetector::Draw(frame, clnf_model);
-
+        
         if (det_parameters.track_gaze && detection_success && clnf_model.eye_model)
         {
             FaceAnalysis::DrawGaze(frame, clnf_model, gazeDirection0, gazeDirection1, fx, fy, cx, cy);
@@ -98,11 +100,6 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     
     cv::Point center( 100, 100);
     cv::circle(frame, center, 20, cv::Scalar( 255, 0, 0));
-    
-    TE(DetectFaces);
-    
-    
-    // Detect faces
-    
-   
+    return;
+ 
 }
