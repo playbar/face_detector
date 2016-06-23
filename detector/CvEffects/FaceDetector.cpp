@@ -62,7 +62,7 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     
     TS(DetectFaces);
     detection_success = LandmarkDetector::DetectLandmarksInVideo( grayscale_image, depth_image, clnf_model, det_parameters );
-    //bool detection_success = LandmarkDetector::DetectLandmarksInImage(grayscale_image, clnf_model, det_parameters);
+    //detection_success = LandmarkDetector::DetectLandmarksInImage(grayscale_image, depth_image, clnf_model, det_parameters);
     
     showDetect(frame);
     

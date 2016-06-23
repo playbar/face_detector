@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042B17061D1B804A0088FE7A /* classifiers in Resources */ = {isa = PBXBuildFile; fileRef = 042B17051D1B804A0088FE7A /* classifiers */; };
 		043C0F881D1A74840057A91C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F851D1A74840057A91C /* AppDelegate.m */; };
 		043C0F891D1A74840057A91C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F871D1A74840057A91C /* ViewController.m */; };
 		043C0F8E1D1A74910057A91C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F8A1D1A74910057A91C /* MainStoryboard_iPad.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042B17051D1B804A0088FE7A /* classifiers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = classifiers; path = ../detector/classifiers; sourceTree = "<group>"; };
 		043C0F841D1A74840057A91C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ios/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		043C0F851D1A74840057A91C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ios/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		043C0F861D1A74840057A91C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ios/ViewController.h; sourceTree = SOURCE_ROOT; };
@@ -118,6 +120,7 @@
 		043C0FC31D1A7A570057A91C /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				042B17051D1B804A0088FE7A /* classifiers */,
 				04CD9C281D1A8514001DF8D4 /* AU_predictors */,
 				04CD9C261D1A84ED001DF8D4 /* model */,
 				043C0FC41D1A7A630057A91C /* glasses.png */,
@@ -279,6 +282,7 @@
 				043C0F8F1D1A74910057A91C /* MainStoryboard_iPhone.storyboard in Resources */,
 				043C0F991D1A74A70057A91C /* face_detector_ios-Info.plist in Resources */,
 				043C0F8E1D1A74910057A91C /* MainStoryboard_iPad.storyboard in Resources */,
+				042B17061D1B804A0088FE7A /* classifiers in Resources */,
 				043C0F971D1A74A70057A91C /* Default.png in Resources */,
 				043C0FCC1D1A7A630057A91C /* lbpcascade_frontalface.xml in Resources */,
 			);

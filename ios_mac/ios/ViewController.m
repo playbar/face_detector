@@ -35,11 +35,9 @@
                         initWithParentView:imageView];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
-    self.videoCamera.defaultAVCaptureSessionPreset =
-                            AVCaptureSessionPreset640x480;
-    self.videoCamera.defaultAVCaptureVideoOrientation =
-                            AVCaptureVideoOrientationPortrait;
-    self.videoCamera.defaultFPS = 30;
+    self.videoCamera.defaultAVCaptureSessionPreset =AVCaptureSessionPreset352x288;
+    self.videoCamera.defaultAVCaptureVideoOrientation =AVCaptureVideoOrientationPortrait;
+    self.videoCamera.defaultFPS = 10;
  
     isCapturing = NO;
     
@@ -112,13 +110,13 @@
 
 - (void)processImage:(cv::Mat&)image
 {
-    static int i = 0;
-    if( 2 != i ){
-        i++;
-        faceDetector->showDetect(image);
-        return;
-    }
-    i = 0;
+//    static int i = 0;
+//    if( 2 != i ){
+//        i++;
+//        faceDetector->showDetect(image);
+//        return;
+//    }
+//    i = 0;
     //TS(DetectAndAnimateFaces);
     //faceAnimator->detectAndAnimateFaces(image);
     faceDetector->detectAndAnimateFaces(image );
