@@ -474,25 +474,30 @@ void CLNF::Read(string main_location)
 		}
 	}
  
-	detected_landmarks.create(2 * pdm.NumberOfPoints(), 1);
-	detected_landmarks.setTo(0);
+    Init();
 
-	detection_success = false;
-	tracking_initialised = false;
-	model_likelihood = -10; // very low
-	detection_certainty = 1; // very uncertain
+}
 
-	// Initialising default values for the rest of the variables
-
-	// local parameters (shape)
-	params_local.create(pdm.NumberOfModes(), 1);
-	params_local.setTo(0.0);
-
-	// global parameters (pose) [scale, euler_x, euler_y, euler_z, tx, ty]
-	params_global = cv::Vec6d(1, 0, 0, 0, 0, 0);
-
-	failures_in_a_row = -1;
-
+void CLNF::Init(){
+    
+   	detected_landmarks.create(2 * pdm.NumberOfPoints(), 1);
+    detected_landmarks.setTo(0);
+    
+    detection_success = false;
+    tracking_initialised = false;
+    model_likelihood = -10; // very low
+    detection_certainty = 1; // very uncertain
+    
+    // Initialising default values for the rest of the variables
+    
+    // local parameters (shape)
+    params_local.create(pdm.NumberOfModes(), 1);
+    params_local.setTo(0.0);
+    
+    // global parameters (pose) [scale, euler_x, euler_y, euler_z, tx, ty]
+    params_global = cv::Vec6d(1, 0, 0, 0, 0, 0);
+    
+    failures_in_a_row = -1;
 }
 
 // Resetting the model (for a new video, or complet reinitialisation

@@ -141,6 +141,7 @@ public:
 
 	// Helper reading function
 	void Read_CLNF(string clnf_location);
+    void Init();
 	
 private:
 

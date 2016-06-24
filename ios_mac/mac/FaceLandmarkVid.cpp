@@ -103,7 +103,7 @@ void visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& depth_image, c
 	std::sprintf(fpsC, "%d", (int)fps_tracker);
 	string fpsSt("FPS:");
 	fpsSt += fpsC;
-	//cv::putText(captured_image, fpsSt, cv::Point(10, 20), CV_FONT_HERSHEY_SIMPLEX, 0.5, CV_RGB(255, 0, 0));
+	cv::putText(captured_image, fpsSt, cv::Point(10, 20), CV_FONT_HERSHEY_SIMPLEX, 0.5, CV_RGB(255, 0, 0));
 
 	if (!det_parameters.quiet_mode)
 	{
@@ -118,6 +118,175 @@ void visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& depth_image, c
 
 	}
 }
+
+void LoadLefEye(LandmarkDetector::CLNF& face_model){
+    LandmarkDetector::CLNF left_eye("model/model_eye/main_clnf_synth_left.txt");
+    vector<pair<int, int> > mappings;
+    //37 10 38 12 39 14 40 16 41 18
+    mappings.push_back( pair<int, int>(36,8));
+    mappings.push_back( pair<int, int>(37, 10));
+    mappings.push_back( pair<int, int>(38,12));
+    mappings.push_back( pair<int, int>(39,14));
+    mappings.push_back( pair<int, int>(40,16));
+    mappings.push_back( pair<int, int>(41, 18));
+    face_model.hierarchical_mapping.push_back(mappings);
+    face_model.hierarchical_models.push_back( left_eye );
+    face_model.hierarchical_model_names.push_back("left_eye_28");
+    LandmarkDetector::FaceModelParameters params;
+    params.validate_detections = false;
+    params.refine_hierarchical = false;
+    params.refine_parameters = false;
+    vector<int> windows_large;
+    windows_large.push_back(3);
+    windows_large.push_back(5);
+    windows_large.push_back(9);
+    
+    vector<int> windows_small;
+    windows_small.push_back(3);
+    windows_small.push_back(5);
+    windows_small.push_back(9);
+    
+    params.window_sizes_init = windows_large;
+    params.window_sizes_small = windows_small;
+    params.window_sizes_current = windows_large;
+    
+    params.reg_factor = 0.5;
+    params.sigma = 1.0;
+    face_model.hierarchical_params.push_back(params);
+}
+
+void LoadRightEye(LandmarkDetector::CLNF& face_model){
+    LandmarkDetector::CLNF left_eye("model/model_eye/main_clnf_synth_right.txt");
+    vector<pair<int, int> > mappings;
+    //42 8 43 10 44 12 45 14 46 16 47 18
+    mappings.push_back( pair<int, int>(42, 8));
+    mappings.push_back( pair<int, int>(43, 10));
+    mappings.push_back( pair<int, int>(44, 12));
+    mappings.push_back( pair<int, int>(45, 14));
+    mappings.push_back( pair<int, int>(46, 16));
+    mappings.push_back( pair<int, int>(47, 18));
+    face_model.hierarchical_mapping.push_back(mappings);
+    face_model.hierarchical_models.push_back( left_eye );
+    face_model.hierarchical_model_names.push_back("right_eye_28");
+    LandmarkDetector::FaceModelParameters params;
+    params.validate_detections = false;
+    params.refine_hierarchical = false;
+    params.refine_parameters = false;
+    vector<int> windows_large;
+    windows_large.push_back(3);
+    windows_large.push_back(5);
+    windows_large.push_back(9);
+    
+    vector<int> windows_small;
+    windows_small.push_back(3);
+    windows_small.push_back(5);
+    windows_small.push_back(9);
+    
+    params.window_sizes_init = windows_large;
+    params.window_sizes_small = windows_small;
+    params.window_sizes_current = windows_large;
+    
+    params.reg_factor = 0.5;
+    params.sigma = 1.0;
+    face_model.hierarchical_params.push_back(params);
+}
+
+void LoadCLNFInner(LandmarkDetector::CLNF& face_model)
+{
+    LandmarkDetector::CLNF clnf_inner("model/model_inner/main_clnf_inner.txt");
+    vector<pair<int, int> > mappings;
+
+    mappings.push_back( pair<int, int>(17, 0));
+    mappings.push_back( pair<int, int>(18, 1));
+    mappings.push_back( pair<int, int>(19, 2));
+    mappings.push_back( pair<int, int>(20, 3));
+    mappings.push_back( pair<int, int>(21, 4));
+    mappings.push_back( pair<int, int>(22, 5));
+    mappings.push_back( pair<int, int>(23, 6));
+    mappings.push_back( pair<int, int>(24, 7));
+    mappings.push_back( pair<int, int>(25, 8));
+    mappings.push_back( pair<int, int>(26, 9));
+    mappings.push_back( pair<int, int>(27, 10));
+    mappings.push_back( pair<int, int>(28, 11));
+    mappings.push_back( pair<int, int>(29, 12));
+    mappings.push_back( pair<int, int>(30, 13));
+    mappings.push_back( pair<int, int>(31, 14));
+    mappings.push_back( pair<int, int>(32, 15));
+    mappings.push_back( pair<int, int>(33, 16));
+    mappings.push_back( pair<int, int>(34, 17));
+    mappings.push_back( pair<int, int>(35, 18));
+    mappings.push_back( pair<int, int>(36, 19));
+    mappings.push_back( pair<int, int>(37, 20));
+    mappings.push_back( pair<int, int>(38, 21));
+    mappings.push_back( pair<int, int>(39, 22));
+    mappings.push_back( pair<int, int>(40, 23));
+    mappings.push_back( pair<int, int>(41, 24));
+    mappings.push_back( pair<int, int>(42, 25));
+    mappings.push_back( pair<int, int>(43, 26));
+    mappings.push_back( pair<int, int>(44, 27));
+    mappings.push_back( pair<int, int>(45, 28));
+    mappings.push_back( pair<int, int>(46, 29));
+    mappings.push_back( pair<int, int>(47, 30));
+    mappings.push_back( pair<int, int>(48, 31));
+    mappings.push_back( pair<int, int>(49, 32));
+    mappings.push_back( pair<int, int>(50, 33));
+    mappings.push_back( pair<int, int>(51, 34));
+    mappings.push_back( pair<int, int>(52, 35));
+    mappings.push_back( pair<int, int>(53, 36));
+    mappings.push_back( pair<int, int>(54, 37));
+    mappings.push_back( pair<int, int>(55, 38));
+    mappings.push_back( pair<int, int>(56, 39));
+    mappings.push_back( pair<int, int>(57, 40));
+    mappings.push_back( pair<int, int>(58, 41));
+    mappings.push_back( pair<int, int>(59, 42));
+    mappings.push_back( pair<int, int>(60, 43));
+    mappings.push_back( pair<int, int>(61, 44));
+    mappings.push_back( pair<int, int>(62, 45));
+    mappings.push_back( pair<int, int>(63, 46));
+    mappings.push_back( pair<int, int>(64, 47));
+    mappings.push_back( pair<int, int>(65, 48));
+    mappings.push_back( pair<int, int>(66, 49));
+    mappings.push_back( pair<int, int>(67, 50));
+    
+    face_model.hierarchical_mapping.push_back(mappings);
+    face_model.hierarchical_models.push_back( clnf_inner );
+    face_model.hierarchical_model_names.push_back("inner");
+    LandmarkDetector::FaceModelParameters params;
+    params.validate_detections = false;
+    params.refine_hierarchical = false;
+    params.refine_parameters = false;
+    vector<int> windows_large;
+    windows_large.push_back(9);
+    
+    vector<int> windows_small;
+    windows_small.push_back(9);
+    
+    params.window_sizes_init = windows_large;
+    params.window_sizes_small = windows_small;
+    params.window_sizes_current = windows_large;
+    
+    params.reg_factor = 2.5;
+    params.sigma = 1.75;
+    params.weight_factor = 2.5;
+    face_model.hierarchical_params.push_back(params);
+}
+
+
+void BuildCLNF(LandmarkDetector::CLNF& face_model, string name )
+{
+    face_model.Read_CLNF( "model/clnf_general.txt" );
+   
+    LoadLefEye(face_model);
+    LoadRightEye(face_model);
+    face_model.eye_model = true;
+    LoadCLNFInner( face_model);
+    //face_model.Read( name );
+    face_model.Init();
+    face_model.landmark_validator.Read("model/detection_validation/validator_general_68.txt");
+    
+    
+}
+
 
 int main (int argc, char **argv)
 {
@@ -142,7 +311,12 @@ int main (int argc, char **argv)
 	LandmarkDetector::get_video_input_output_params(files, depth_directories, out_dummy, output_video_files, u, arguments);
 	
 	// The modules that are being used for tracking
-	LandmarkDetector::CLNF clnf_model(det_parameters.model_location);	
+    //LandmarkDetector::CLNF inner("model/model_inner/main_clnf_inner.txt");
+    //LandmarkDetector::CLNF left_eye("model/model_eye/main_clnf_synth_left.txt");
+    //LandmarkDetector::CLNF right_eye("model/model_eye/main_clnf_synth_right.txt");
+    
+    LandmarkDetector::CLNF clnf_model;//(det_parameters.model_location);
+    BuildCLNF( clnf_model, det_parameters.model_location);
 
 	// Grab camera parameters, if they are not defined (approximate values will be used)
 	float fx = 0, fy = 0, cx = 0, cy = 0;
