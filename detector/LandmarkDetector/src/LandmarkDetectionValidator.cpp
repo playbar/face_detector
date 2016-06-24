@@ -24,9 +24,11 @@
 using namespace LandmarkDetector;
 
 // Copy constructor
-DetectionValidator::DetectionValidator(const DetectionValidator& other) : orientations(other.orientations), bs(other.bs), paws(other.paws),
-cnn_subsampling_layers(other.cnn_subsampling_layers), cnn_layer_types(other.cnn_layer_types), cnn_fully_connected_layers_bias(other.cnn_fully_connected_layers_bias),
-cnn_convolutional_layers_bias(other.cnn_convolutional_layers_bias), cnn_convolutional_layers_dft(other.cnn_convolutional_layers_dft)
+DetectionValidator::DetectionValidator(const DetectionValidator& other)
+    : orientations(other.orientations), bs(other.bs), paws(other.paws),cnn_subsampling_layers(other.cnn_subsampling_layers),
+    cnn_layer_types(other.cnn_layer_types), cnn_fully_connected_layers_bias(other.cnn_fully_connected_layers_bias),
+    cnn_convolutional_layers_bias(other.cnn_convolutional_layers_bias),
+    cnn_convolutional_layers_dft(other.cnn_convolutional_layers_dft)
 {
 
 	this->validator_type = other.validator_type;
