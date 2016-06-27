@@ -264,7 +264,7 @@
 		51E2041E1747A1C3005C39DB = {
 			isa = PBXGroup;
 			children = (
-				51E2042D1747A1C3005C39DB /* Supporting Files */,
+				51E2042D1747A1C3005C39DB /* support */,
 				04CD9AFD1D1A8085001DF8D4 /* LandmarkDetector */,
 				04CD9AB91D1A807B001DF8D4 /* FaceAnalyser */,
 				04CD9AB51D1A7F24001DF8D4 /* dlib */,
@@ -292,12 +292,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		51E2042D1747A1C3005C39DB /* Supporting Files */ = {
+		51E2042D1747A1C3005C39DB /* support */ = {
 			isa = PBXGroup;
 			children = (
 				51E2044A1747B290005C39DB /* detector_ios-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			name = support;
 			path = CvEffects;
 			sourceTree = "<group>";
 		};
