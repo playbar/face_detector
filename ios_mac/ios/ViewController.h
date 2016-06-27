@@ -17,7 +17,6 @@
 #import <opencv2/imgcodecs/ios.h>
 #import <opencv2/videoio/cap_ios.h>
 
-#import "CvEffects/RetroFilter.hpp"
 #import "CvEffects/FaceDetector.hpp"
 
 @interface ViewController : UIViewController<CvVideoCameraDelegate>

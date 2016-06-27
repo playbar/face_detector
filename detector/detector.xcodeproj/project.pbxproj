@@ -41,10 +41,6 @@
 		5168F9AB1752622C00FC67D8 /* Processing_Accelerate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */; };
 		51E2042B1747A1C3005C39DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E2042A1747A1C3005C39DB /* Foundation.framework */; };
 		51E204481747A4C6005C39DB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E204471747A4C6005C39DB /* opencv2.framework */; };
-		51E204601748A890005C39DB /* PostcardPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51E2045E1748A890005C39DB /* PostcardPrinter.cpp */; };
-		51E204611748AA25005C39DB /* PostcardPrinter.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51E2045F1748A890005C39DB /* PostcardPrinter.hpp */; };
-		83FA796B1749096700248405 /* RetroFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83FA79681749096700248405 /* RetroFilter.cpp */; };
-		83FA796D1749097E00248405 /* RetroFilter.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83FA79691749096700248405 /* RetroFilter.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,8 +50,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				83FA796D1749097E00248405 /* RetroFilter.hpp in CopyFiles */,
-				51E204611748AA25005C39DB /* PostcardPrinter.hpp in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,24 +104,15 @@
 		04CD9B541D1A8085001DF8D4 /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
 		04CD9B601D1A81B7001DF8D4 /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceDetector.cpp; path = CvEffects/FaceDetector.cpp; sourceTree = "<group>"; };
 		04CD9B611D1A81B7001DF8D4 /* FaceDetector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FaceDetector.hpp; path = CvEffects/FaceDetector.hpp; sourceTree = "<group>"; };
-		510745891750F11F00B6CCD9 /* Processing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Processing.hpp; sourceTree = "<group>"; };
-		5107458A1750F1BC00B6CCD9 /* Processing_NEON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing_NEON.cpp; sourceTree = "<group>"; };
-		5107458C1750F25400B6CCD9 /* Processing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing.cpp; sourceTree = "<group>"; };
+		510745891750F11F00B6CCD9 /* Processing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Processing.hpp; path = CvEffects/Processing.hpp; sourceTree = "<group>"; };
+		5107458A1750F1BC00B6CCD9 /* Processing_NEON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Processing_NEON.cpp; path = CvEffects/Processing_NEON.cpp; sourceTree = "<group>"; };
+		5107458C1750F25400B6CCD9 /* Processing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Processing.cpp; path = CvEffects/Processing.cpp; sourceTree = "<group>"; };
 		5168F9A7175245F000FC67D8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing_Accelerate.cpp; sourceTree = "<group>"; };
+		5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Processing_Accelerate.cpp; path = CvEffects/Processing_Accelerate.cpp; sourceTree = "<group>"; };
 		51E204271747A1C3005C39DB /* libdetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E2042A1747A1C3005C39DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51E204471747A4C6005C39DB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
 		51E2044A1747B290005C39DB /* detector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "detector-Prefix.pch"; sourceTree = "<group>"; };
-		51E2044C1747B307005C39DB /* lena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lena.jpg; path = CvEffects/lena.jpg; sourceTree = "<group>"; };
-		51E2044D1747B307005C39DB /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = texture.jpg; path = CvEffects/texture.jpg; sourceTree = "<group>"; };
-		51E2044E1747B307005C39DB /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text.png; path = CvEffects/text.png; sourceTree = "<group>"; };
-		51E2045E1748A890005C39DB /* PostcardPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PostcardPrinter.cpp; path = CvEffects/PostcardPrinter.cpp; sourceTree = SOURCE_ROOT; };
-		51E2045F1748A890005C39DB /* PostcardPrinter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PostcardPrinter.hpp; path = CvEffects/PostcardPrinter.hpp; sourceTree = SOURCE_ROOT; };
-		83FA79671749096700248405 /* fuzzy_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fuzzy_border.png; path = CvEffects/fuzzy_border.png; sourceTree = "<group>"; };
-		83FA79681749096700248405 /* RetroFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RetroFilter.cpp; path = CvEffects/RetroFilter.cpp; sourceTree = "<group>"; };
-		83FA79691749096700248405 /* RetroFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RetroFilter.hpp; path = CvEffects/RetroFilter.hpp; sourceTree = "<group>"; };
-		83FA796A1749096700248405 /* scratches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scratches.png; path = CvEffects/scratches.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,46 +254,25 @@
 		510745701750B46A00B6CCD9 /* FaceAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				510745891750F11F00B6CCD9 /* Processing.hpp */,
+				5107458C1750F25400B6CCD9 /* Processing.cpp */,
+				5107458A1750F1BC00B6CCD9 /* Processing_NEON.cpp */,
+				5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */,
 				04CD9B601D1A81B7001DF8D4 /* FaceDetector.cpp */,
 				04CD9B611D1A81B7001DF8D4 /* FaceDetector.hpp */,
 			);
 			name = FaceAnimator;
 			sourceTree = "<group>";
 		};
-		51DDCAE91780794700DA10F4 /* PostcardPrinter */ = {
-			isa = PBXGroup;
-			children = (
-				51E2044C1747B307005C39DB /* lena.jpg */,
-				51E2044D1747B307005C39DB /* texture.jpg */,
-				51E2044E1747B307005C39DB /* text.png */,
-				51E2045E1748A890005C39DB /* PostcardPrinter.cpp */,
-				51E2045F1748A890005C39DB /* PostcardPrinter.hpp */,
-			);
-			name = PostcardPrinter;
-			sourceTree = "<group>";
-		};
-		51DDCAEA1780798500DA10F4 /* RetroFilter */ = {
-			isa = PBXGroup;
-			children = (
-				83FA79671749096700248405 /* fuzzy_border.png */,
-				83FA796A1749096700248405 /* scratches.png */,
-				83FA79691749096700248405 /* RetroFilter.hpp */,
-				83FA79681749096700248405 /* RetroFilter.cpp */,
-			);
-			name = RetroFilter;
-			sourceTree = "<group>";
-		};
 		51E2041E1747A1C3005C39DB = {
 			isa = PBXGroup;
 			children = (
+				51E2042D1747A1C3005C39DB /* Supporting Files */,
 				04CD9AFD1D1A8085001DF8D4 /* LandmarkDetector */,
 				04CD9AB91D1A807B001DF8D4 /* FaceAnalyser */,
 				04CD9AB51D1A7F24001DF8D4 /* dlib */,
 				04CD9A9F1D1A7E32001DF8D4 /* boost */,
-				51DDCAEA1780798500DA10F4 /* RetroFilter */,
-				51DDCAE91780794700DA10F4 /* PostcardPrinter */,
 				510745701750B46A00B6CCD9 /* FaceAnimator */,
-				51E2042C1747A1C3005C39DB /* Processing */,
 				51E204291747A1C3005C39DB /* Frameworks */,
 				51E204281747A1C3005C39DB /* Products */,
 			);
@@ -332,25 +296,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		51E2042C1747A1C3005C39DB /* Processing */ = {
-			isa = PBXGroup;
-			children = (
-				510745891750F11F00B6CCD9 /* Processing.hpp */,
-				5107458C1750F25400B6CCD9 /* Processing.cpp */,
-				5107458A1750F1BC00B6CCD9 /* Processing_NEON.cpp */,
-				5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */,
-				51E2042D1747A1C3005C39DB /* Supporting Files */,
-			);
-			name = Processing;
-			path = CvEffects;
-			sourceTree = "<group>";
-		};
 		51E2042D1747A1C3005C39DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				51E2044A1747B290005C39DB /* detector-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = CvEffects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,12 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51E204601748A890005C39DB /* PostcardPrinter.cpp in Sources */,
 				04CD9AAD1D1A7EF7001DF8D4 /* codecvt_error_category.cpp in Sources */,
 				04CD9AFB1D1A807C001DF8D4 /* SVR_dynamic_lin_regressors.cpp in Sources */,
 				04CD9AB21D1A7EF7001DF8D4 /* unique_path.cpp in Sources */,
 				04CD9AAE1D1A7EF7001DF8D4 /* operations.cpp in Sources */,
-				83FA796B1749096700248405 /* RetroFilter.cpp in Sources */,
 				04CD9AB31D1A7EF7001DF8D4 /* utf8_codecvt_facet.cpp in Sources */,
 				04CD9AFA1D1A807C001DF8D4 /* SVM_static_lin.cpp in Sources */,
 				04CD9AAF1D1A7EF7001DF8D4 /* path_traits.cpp in Sources */,
