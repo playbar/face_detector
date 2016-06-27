@@ -108,9 +108,9 @@
 		5107458C1750F25400B6CCD9 /* Processing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Processing.cpp; path = CvEffects/Processing.cpp; sourceTree = "<group>"; };
 		5168F9A7175245F000FC67D8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		5168F9AA1752622C00FC67D8 /* Processing_Accelerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Processing_Accelerate.cpp; path = CvEffects/Processing_Accelerate.cpp; sourceTree = "<group>"; };
-		51E204271747A1C3005C39DB /* libdetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E204271747A1C3005C39DB /* libdetector_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdetector_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E2042A1747A1C3005C39DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		51E2044A1747B290005C39DB /* detector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "detector-Prefix.pch"; sourceTree = "<group>"; };
+		51E2044A1747B290005C39DB /* detector_ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "detector_ios-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,7 +278,7 @@
 		51E204281747A1C3005C39DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51E204271747A1C3005C39DB /* libdetector.a */,
+				51E204271747A1C3005C39DB /* libdetector_ios.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 		51E2042D1747A1C3005C39DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				51E2044A1747B290005C39DB /* detector-Prefix.pch */,
+				51E2044A1747B290005C39DB /* detector_ios-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = CvEffects;
@@ -304,9 +304,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		51E204261747A1C3005C39DB /* detector */ = {
+		51E204261747A1C3005C39DB /* detector_ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "detector" */;
+			buildConfigurationList = 51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "detector_ios" */;
 			buildPhases = (
 				51E204231747A1C3005C39DB /* Sources */,
 				51E204241747A1C3005C39DB /* Frameworks */,
@@ -316,9 +316,9 @@
 			);
 			dependencies = (
 			);
-			name = detector;
+			name = detector_ios;
 			productName = CvEffects;
-			productReference = 51E204271747A1C3005C39DB /* libdetector.a */;
+			productReference = 51E204271747A1C3005C39DB /* libdetector_ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -330,7 +330,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Alexander Shishkov & Kirill Kornyakov";
 			};
-			buildConfigurationList = 51E204221747A1C3005C39DB /* Build configuration list for PBXProject "detector" */;
+			buildConfigurationList = 51E204221747A1C3005C39DB /* Build configuration list for PBXProject "detector_ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -342,7 +342,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51E204261747A1C3005C39DB /* detector */,
+				51E204261747A1C3005C39DB /* detector_ios */,
 			);
 		};
 /* End PBXProject section */
@@ -413,7 +413,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -436,7 +436,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -452,7 +452,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CvEffects/detector-Prefix.pch";
+				GCC_PREFIX_HEADER = "CvEffects/detector_ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -465,7 +465,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = detector;
+				PRODUCT_NAME = detector_ios;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -480,7 +480,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CvEffects/detector-Prefix.pch";
+				GCC_PREFIX_HEADER = "CvEffects/detector_ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DLIB_NO_GUI_SUPPORT;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/boost",
@@ -489,7 +489,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = detector;
+				PRODUCT_NAME = detector_ios;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -497,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		51E204221747A1C3005C39DB /* Build configuration list for PBXProject "detector" */ = {
+		51E204221747A1C3005C39DB /* Build configuration list for PBXProject "detector_ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51E204331747A1C3005C39DB /* Debug */,
@@ -506,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "detector" */ = {
+		51E204351747A1C3005C39DB /* Build configuration list for PBXNativeTarget "detector_ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51E204361747A1C3005C39DB /* Debug */,

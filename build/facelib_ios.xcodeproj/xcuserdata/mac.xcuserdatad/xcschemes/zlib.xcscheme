@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "51E204261747A1C3005C39DB"
-               BuildableName = "libdetector.a"
-               BlueprintName = "detector"
-               ReferencedContainer = "container:detector.xcodeproj">
+               BlueprintIdentifier = "0495CD8B47B841C68590966F"
+               BuildableName = "libzlib.a"
+               BlueprintName = "zlib"
+               ReferencedContainer = "container:build/facelib_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "51E204261747A1C3005C39DB"
-            BuildableName = "libdetector.a"
-            BlueprintName = "detector"
-            ReferencedContainer = "container:detector.xcodeproj">
+            BlueprintIdentifier = "0495CD8B47B841C68590966F"
+            BuildableName = "libzlib.a"
+            BlueprintName = "zlib"
+            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "51E204261747A1C3005C39DB"
-            BuildableName = "libdetector.a"
-            BlueprintName = "detector"
-            ReferencedContainer = "container:detector.xcodeproj">
+            BlueprintIdentifier = "0495CD8B47B841C68590966F"
+            BuildableName = "libzlib.a"
+            BlueprintName = "zlib"
+            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
