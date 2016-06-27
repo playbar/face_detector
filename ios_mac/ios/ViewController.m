@@ -1,17 +1,3 @@
-/*****************************************************************************
- *   ViewController.m
- ******************************************************************************
- *   by Kirill Kornyakov and Alexander Shishkov, 19th May 2013
- ******************************************************************************
- *   Chapter 15 of the "OpenCV for iOS" book
- *
- *   Detecting Facial Features presents a simple facial feature
- *   detection demo.
- *
- *   Copyright Packt Publishing 2013.
- *   http://bit.ly/OpenCV_for_iOS_book
- *****************************************************************************/
-
 #import "ViewController.h"
 #import "LandmarkCoreIncludes.h"
 #import "GazeEstimation.h"
@@ -41,32 +27,7 @@
  
     isCapturing = NO;
     
-    // Load images
-    UIImage* resImage = [UIImage imageNamed:@"glasses.png"];
-    UIImageToMat(resImage, parameters.glasses, true);
-    cvtColor(parameters.glasses, parameters.glasses, CV_BGRA2RGBA);
-    
-    resImage = [UIImage imageNamed:@"mustache.png"];
-    UIImageToMat(resImage, parameters.mustache, true);
-    cvtColor(parameters.mustache, parameters.mustache, CV_BGRA2RGBA);
-    
-    // Load Cascade Classisiers
-    NSString* filename = [[NSBundle mainBundle]
-                          pathForResource:@"lbpcascade_frontalface"
-                                   ofType:@"xml"];
-    parameters.faceCascade.load([filename UTF8String]);
-    
-    filename = [[NSBundle mainBundle]
-                pathForResource:@"haarcascade_mcs_eyepair_big"
-                         ofType:@"xml"];
-    parameters.eyesCascade.load([filename UTF8String]);
-    
-    filename = [[NSBundle mainBundle]
-                pathForResource:@"haarcascade_mcs_mouth"
-                         ofType:@"xml"];
-    parameters.mouthCascade.load([filename UTF8String]);
-    
-    filename = [[NSBundle mainBundle]pathForResource:@"data/main" ofType:@"dat"];
+    NSString* filename = [[NSBundle mainBundle]pathForResource:@"data/main" ofType:@"dat"];
     
     vector<string> arguments;
     string strFilename = [filename UTF8String];
@@ -91,7 +52,6 @@
     [videoCamera start];
     isCapturing = YES;
     
-    faceAnimator = new FaceAnimator(parameters);
 }
 
 -(IBAction)stopCaptureButtonPressed:(id)sender
