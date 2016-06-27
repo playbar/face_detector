@@ -31,8 +31,6 @@
 		0438FE261D1929A2008EA36D /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE241D1929A2008EA36D /* source.cpp */; };
 		0438FEBC1D1929AD008EA36D /* Face_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5D1D1929AD008EA36D /* Face_utils.cpp */; };
 		0438FEBD1D1929AD008EA36D /* Face_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5D1D1929AD008EA36D /* Face_utils.cpp */; };
-		0438FEBE1D1929AD008EA36D /* FaceAnalyser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5E1D1929AD008EA36D /* FaceAnalyser.cpp */; };
-		0438FEBF1D1929AD008EA36D /* FaceAnalyser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5E1D1929AD008EA36D /* FaceAnalyser.cpp */; };
 		0438FEC01D1929AD008EA36D /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5F1D1929AD008EA36D /* GazeEstimation.cpp */; };
 		0438FEC11D1929AD008EA36D /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5F1D1929AD008EA36D /* GazeEstimation.cpp */; };
 		0438FEC21D1929AD008EA36D /* SVM_dynamic_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE601D1929AD008EA36D /* SVM_dynamic_lin.cpp */; };
@@ -193,14 +191,12 @@
 		0438FE521D1929AD008EA36D /* AU_9_dyn.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = AU_9_dyn.dat; sourceTree = "<group>"; };
 		0438FE531D1929AD008EA36D /* AU_9_static.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = AU_9_static.dat; sourceTree = "<group>"; };
 		0438FE551D1929AD008EA36D /* Face_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face_utils.h; sourceTree = "<group>"; };
-		0438FE561D1929AD008EA36D /* FaceAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceAnalyser.h; sourceTree = "<group>"; };
 		0438FE571D1929AD008EA36D /* GazeEstimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeEstimation.h; sourceTree = "<group>"; };
 		0438FE581D1929AD008EA36D /* SVM_dynamic_lin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVM_dynamic_lin.h; sourceTree = "<group>"; };
 		0438FE591D1929AD008EA36D /* SVM_static_lin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVM_static_lin.h; sourceTree = "<group>"; };
 		0438FE5A1D1929AD008EA36D /* SVR_dynamic_lin_regressors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVR_dynamic_lin_regressors.h; sourceTree = "<group>"; };
 		0438FE5B1D1929AD008EA36D /* SVR_static_lin_regressors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVR_static_lin_regressors.h; sourceTree = "<group>"; };
 		0438FE5D1D1929AD008EA36D /* Face_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Face_utils.cpp; sourceTree = "<group>"; };
-		0438FE5E1D1929AD008EA36D /* FaceAnalyser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceAnalyser.cpp; sourceTree = "<group>"; };
 		0438FE5F1D1929AD008EA36D /* GazeEstimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GazeEstimation.cpp; sourceTree = "<group>"; };
 		0438FE601D1929AD008EA36D /* SVM_dynamic_lin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVM_dynamic_lin.cpp; sourceTree = "<group>"; };
 		0438FE611D1929AD008EA36D /* SVM_static_lin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVM_static_lin.cpp; sourceTree = "<group>"; };
@@ -446,7 +442,6 @@
 			isa = PBXGroup;
 			children = (
 				0438FE551D1929AD008EA36D /* Face_utils.h */,
-				0438FE561D1929AD008EA36D /* FaceAnalyser.h */,
 				0438FE571D1929AD008EA36D /* GazeEstimation.h */,
 				0438FE581D1929AD008EA36D /* SVM_dynamic_lin.h */,
 				0438FE591D1929AD008EA36D /* SVM_static_lin.h */,
@@ -460,7 +455,6 @@
 			isa = PBXGroup;
 			children = (
 				0438FE5D1D1929AD008EA36D /* Face_utils.cpp */,
-				0438FE5E1D1929AD008EA36D /* FaceAnalyser.cpp */,
 				0438FE5F1D1929AD008EA36D /* GazeEstimation.cpp */,
 				0438FE601D1929AD008EA36D /* SVM_dynamic_lin.cpp */,
 				0438FE611D1929AD008EA36D /* SVM_static_lin.cpp */,
@@ -893,7 +887,6 @@
 				0438FED01D1929AD008EA36D /* LandmarkDetectorModel.cpp in Sources */,
 				0438FEC61D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp in Sources */,
 				0438FEDE1D1929AD008EA36D /* SVR_patch_expert.cpp in Sources */,
-				0438FEBE1D1929AD008EA36D /* FaceAnalyser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,7 +922,6 @@
 				0438FED11D1929AD008EA36D /* LandmarkDetectorModel.cpp in Sources */,
 				0438FEC71D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp in Sources */,
 				0438FEDF1D1929AD008EA36D /* SVR_patch_expert.cpp in Sources */,
-				0438FEBF1D1929AD008EA36D /* FaceAnalyser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,7 +1074,7 @@
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					DLIB_NO_GUI_SUPPORT,
