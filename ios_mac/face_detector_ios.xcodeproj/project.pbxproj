@@ -17,7 +17,7 @@
 		043C0F991D1A74A70057A91C /* face_detector_ios-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F931D1A74A70057A91C /* face_detector_ios-Info.plist */; };
 		043C0F9A1D1A74A70057A91C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F951D1A74A70057A91C /* main.m */; };
 		043C0F9D1D1A74B70057A91C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F9B1D1A74B70057A91C /* InfoPlist.strings */; };
-		0440E3561D2100CD00777F79 /* libopencv_world_object.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3451D20FC4500777F79 /* libopencv_world_object.a */; };
+		0440E3561D2100CD00777F79 /* libcvlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3451D20FC4500777F79 /* libcvlib.a */; };
 		0440E3571D21024000777F79 /* libIlmImf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3411D20FC4500777F79 /* libIlmImf.a */; };
 		0440E3581D21024300777F79 /* liblibjasper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E33D1D20FC4500777F79 /* liblibjasper.a */; };
 		0440E3591D21024C00777F79 /* liblibjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3391D20FC4500777F79 /* liblibjpeg.a */; };
@@ -95,6 +95,13 @@
 			remoteGlobalIDString = 335697A6F8C74AC9A105B1C1;
 			remoteInfo = opencvlib;
 		};
+		0440E3651D210A7500777F79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043C0FA01D1A77A30057A91C /* detector_ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51E204271747A1C3005C39DB;
+			remoteInfo = detector_ios;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -141,7 +148,7 @@
 				0440E35C1D21024C00777F79 /* libzlib.a in Frameworks */,
 				0440E3581D21024300777F79 /* liblibjasper.a in Frameworks */,
 				0440E3571D21024000777F79 /* libIlmImf.a in Frameworks */,
-				0440E3561D2100CD00777F79 /* libopencv_world_object.a in Frameworks */,
+				0440E3561D2100CD00777F79 /* libcvlib.a in Frameworks */,
 				83FA79471748FF4A00248405 /* QuartzCore.framework in Frameworks */,
 				83FA79431748FF3F00248405 /* CoreImage.framework in Frameworks */,
 				83FA79441748FF3F00248405 /* CoreMedia.framework in Frameworks */,
@@ -176,7 +183,15 @@
 				0440E33D1D20FC4500777F79 /* liblibjasper.a */,
 				0440E33F1D20FC4500777F79 /* liblibpng.a */,
 				0440E3411D20FC4500777F79 /* libIlmImf.a */,
-				0440E3451D20FC4500777F79 /* libopencv_world_object.a */,
+				0440E3451D20FC4500777F79 /* libcvlib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0440E3621D210A7500777F79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0440E3661D210A7500777F79 /* libdetector_ios.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,6 +310,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 0440E3621D210A7500777F79 /* Products */;
+					ProjectRef = 043C0FA01D1A77A30057A91C /* detector_ios.xcodeproj */;
+				},
+				{
 					ProductGroup = 0440E3281D20FC4500777F79 /* Products */;
 					ProjectRef = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
 				},
@@ -356,11 +375,18 @@
 			remoteRef = 0440E3401D20FC4500777F79 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E3451D20FC4500777F79 /* libopencv_world_object.a */ = {
+		0440E3451D20FC4500777F79 /* libcvlib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libopencv_world_object.a;
+			path = libcvlib.a;
 			remoteRef = 0440E3441D20FC4500777F79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0440E3661D210A7500777F79 /* libdetector_ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdetector_ios.a;
+			remoteRef = 0440E3651D210A7500777F79 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
