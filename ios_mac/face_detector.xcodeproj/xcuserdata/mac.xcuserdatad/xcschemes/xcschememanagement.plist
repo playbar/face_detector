@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>dbt_face_detection.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
 		<key>facedetect.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -29,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -48,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>04BBA0F51D138B0900FB3B1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04C7458A1D20F88500F1E0E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

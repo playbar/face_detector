@@ -8,62 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		0403230F1D1B843400473C33 /* Processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0403230D1D1B843400473C33 /* Processing.cpp */; };
-		040323101D1B843400473C33 /* Processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0403230D1D1B843400473C33 /* Processing.cpp */; };
 		0438FE111D192980008EA36D /* codecvt_error_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE081D192980008EA36D /* codecvt_error_category.cpp */; };
-		0438FE121D192980008EA36D /* codecvt_error_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE081D192980008EA36D /* codecvt_error_category.cpp */; };
 		0438FE131D192980008EA36D /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE091D192980008EA36D /* operations.cpp */; };
-		0438FE141D192980008EA36D /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE091D192980008EA36D /* operations.cpp */; };
 		0438FE151D192980008EA36D /* path_traits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0A1D192980008EA36D /* path_traits.cpp */; };
-		0438FE161D192980008EA36D /* path_traits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0A1D192980008EA36D /* path_traits.cpp */; };
 		0438FE171D192980008EA36D /* path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0B1D192980008EA36D /* path.cpp */; };
-		0438FE181D192980008EA36D /* path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0B1D192980008EA36D /* path.cpp */; };
 		0438FE191D192980008EA36D /* portability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0C1D192980008EA36D /* portability.cpp */; };
-		0438FE1A1D192980008EA36D /* portability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0C1D192980008EA36D /* portability.cpp */; };
 		0438FE1B1D192980008EA36D /* unique_path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0D1D192980008EA36D /* unique_path.cpp */; };
-		0438FE1C1D192980008EA36D /* unique_path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0D1D192980008EA36D /* unique_path.cpp */; };
 		0438FE1D1D192980008EA36D /* utf8_codecvt_facet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0E1D192980008EA36D /* utf8_codecvt_facet.cpp */; };
-		0438FE1E1D192980008EA36D /* utf8_codecvt_facet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0E1D192980008EA36D /* utf8_codecvt_facet.cpp */; };
 		0438FE1F1D192980008EA36D /* windows_file_codecvt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0F1D192980008EA36D /* windows_file_codecvt.cpp */; };
-		0438FE201D192980008EA36D /* windows_file_codecvt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0F1D192980008EA36D /* windows_file_codecvt.cpp */; };
 		0438FE221D192990008EA36D /* error_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE211D192990008EA36D /* error_code.cpp */; };
-		0438FE231D192990008EA36D /* error_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE211D192990008EA36D /* error_code.cpp */; };
 		0438FE251D1929A2008EA36D /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE241D1929A2008EA36D /* source.cpp */; };
-		0438FE261D1929A2008EA36D /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE241D1929A2008EA36D /* source.cpp */; };
 		0438FEBC1D1929AD008EA36D /* Face_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5D1D1929AD008EA36D /* Face_utils.cpp */; };
-		0438FEBD1D1929AD008EA36D /* Face_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5D1D1929AD008EA36D /* Face_utils.cpp */; };
 		0438FEC01D1929AD008EA36D /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5F1D1929AD008EA36D /* GazeEstimation.cpp */; };
-		0438FEC11D1929AD008EA36D /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5F1D1929AD008EA36D /* GazeEstimation.cpp */; };
 		0438FEC21D1929AD008EA36D /* SVM_dynamic_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE601D1929AD008EA36D /* SVM_dynamic_lin.cpp */; };
-		0438FEC31D1929AD008EA36D /* SVM_dynamic_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE601D1929AD008EA36D /* SVM_dynamic_lin.cpp */; };
 		0438FEC41D1929AD008EA36D /* SVM_static_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE611D1929AD008EA36D /* SVM_static_lin.cpp */; };
-		0438FEC51D1929AD008EA36D /* SVM_static_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE611D1929AD008EA36D /* SVM_static_lin.cpp */; };
 		0438FEC61D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE621D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp */; };
-		0438FEC71D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE621D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp */; };
 		0438FEC81D1929AD008EA36D /* SVR_static_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE631D1929AD008EA36D /* SVR_static_lin_regressors.cpp */; };
-		0438FEC91D1929AD008EA36D /* SVR_static_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE631D1929AD008EA36D /* SVR_static_lin_regressors.cpp */; };
 		0438FECA1D1929AD008EA36D /* CCNF_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB11D1929AD008EA36D /* CCNF_patch_expert.cpp */; };
-		0438FECB1D1929AD008EA36D /* CCNF_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB11D1929AD008EA36D /* CCNF_patch_expert.cpp */; };
 		0438FECC1D1929AD008EA36D /* LandmarkDetectionValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB21D1929AD008EA36D /* LandmarkDetectionValidator.cpp */; };
-		0438FECD1D1929AD008EA36D /* LandmarkDetectionValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB21D1929AD008EA36D /* LandmarkDetectionValidator.cpp */; };
 		0438FECE1D1929AD008EA36D /* LandmarkDetectorFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB31D1929AD008EA36D /* LandmarkDetectorFunc.cpp */; };
-		0438FECF1D1929AD008EA36D /* LandmarkDetectorFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB31D1929AD008EA36D /* LandmarkDetectorFunc.cpp */; };
 		0438FED01D1929AD008EA36D /* LandmarkDetectorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB41D1929AD008EA36D /* LandmarkDetectorModel.cpp */; };
-		0438FED11D1929AD008EA36D /* LandmarkDetectorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB41D1929AD008EA36D /* LandmarkDetectorModel.cpp */; };
 		0438FED21D1929AD008EA36D /* LandmarkDetectorParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB51D1929AD008EA36D /* LandmarkDetectorParameters.cpp */; };
-		0438FED31D1929AD008EA36D /* LandmarkDetectorParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB51D1929AD008EA36D /* LandmarkDetectorParameters.cpp */; };
 		0438FED41D1929AD008EA36D /* LandmarkDetectorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB61D1929AD008EA36D /* LandmarkDetectorUtils.cpp */; };
-		0438FED51D1929AD008EA36D /* LandmarkDetectorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB61D1929AD008EA36D /* LandmarkDetectorUtils.cpp */; };
 		0438FED61D1929AD008EA36D /* Patch_experts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB71D1929AD008EA36D /* Patch_experts.cpp */; };
-		0438FED71D1929AD008EA36D /* Patch_experts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB71D1929AD008EA36D /* Patch_experts.cpp */; };
 		0438FED81D1929AD008EA36D /* PAW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB81D1929AD008EA36D /* PAW.cpp */; };
-		0438FED91D1929AD008EA36D /* PAW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB81D1929AD008EA36D /* PAW.cpp */; };
 		0438FEDA1D1929AD008EA36D /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB91D1929AD008EA36D /* PDM.cpp */; };
-		0438FEDB1D1929AD008EA36D /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB91D1929AD008EA36D /* PDM.cpp */; };
 		0438FEDC1D1929AD008EA36D /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBA1D1929AD008EA36D /* stdafx.cpp */; };
-		0438FEDD1D1929AD008EA36D /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBA1D1929AD008EA36D /* stdafx.cpp */; };
 		0438FEDE1D1929AD008EA36D /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBB1D1929AD008EA36D /* SVR_patch_expert.cpp */; };
-		0438FEDF1D1929AD008EA36D /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBB1D1929AD008EA36D /* SVR_patch_expert.cpp */; };
 		0438FEE01D192A40008EA36D /* FaceLandmarkVid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045A38631D1921C100A8F47B /* FaceLandmarkVid.cpp */; };
+		04C7458D1D20F88500F1E0E4 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBA1D1929AD008EA36D /* stdafx.cpp */; };
+		04C7458E1D20F88500F1E0E4 /* Processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0403230D1D1B843400473C33 /* Processing.cpp */; };
+		04C7458F1D20F88500F1E0E4 /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE241D1929A2008EA36D /* source.cpp */; };
+		04C745901D20F88500F1E0E4 /* Face_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5D1D1929AD008EA36D /* Face_utils.cpp */; };
+		04C745911D20F88500F1E0E4 /* codecvt_error_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE081D192980008EA36D /* codecvt_error_category.cpp */; };
+		04C745921D20F88500F1E0E4 /* path_traits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0A1D192980008EA36D /* path_traits.cpp */; };
+		04C745931D20F88500F1E0E4 /* Patch_experts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB71D1929AD008EA36D /* Patch_experts.cpp */; };
+		04C745941D20F88500F1E0E4 /* windows_file_codecvt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0F1D192980008EA36D /* windows_file_codecvt.cpp */; };
+		04C745951D20F88500F1E0E4 /* SVR_static_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE631D1929AD008EA36D /* SVR_static_lin_regressors.cpp */; };
+		04C745961D20F88500F1E0E4 /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE5F1D1929AD008EA36D /* GazeEstimation.cpp */; };
+		04C745971D20F88500F1E0E4 /* LandmarkDetectionValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB21D1929AD008EA36D /* LandmarkDetectionValidator.cpp */; };
+		04C745981D20F88500F1E0E4 /* SVM_dynamic_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE601D1929AD008EA36D /* SVM_dynamic_lin.cpp */; };
+		04C745991D20F88500F1E0E4 /* path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0B1D192980008EA36D /* path.cpp */; };
+		04C7459A1D20F88500F1E0E4 /* unique_path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0D1D192980008EA36D /* unique_path.cpp */; };
+		04C7459B1D20F88500F1E0E4 /* portability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0C1D192980008EA36D /* portability.cpp */; };
+		04C7459C1D20F88500F1E0E4 /* SVM_static_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE611D1929AD008EA36D /* SVM_static_lin.cpp */; };
+		04C7459D1D20F88500F1E0E4 /* utf8_codecvt_facet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE0E1D192980008EA36D /* utf8_codecvt_facet.cpp */; };
+		04C7459E1D20F88500F1E0E4 /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB91D1929AD008EA36D /* PDM.cpp */; };
+		04C7459F1D20F88500F1E0E4 /* operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE091D192980008EA36D /* operations.cpp */; };
+		04C745A01D20F88500F1E0E4 /* CCNF_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB11D1929AD008EA36D /* CCNF_patch_expert.cpp */; };
+		04C745A11D20F88500F1E0E4 /* error_code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE211D192990008EA36D /* error_code.cpp */; };
+		04C745A21D20F88500F1E0E4 /* PAW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB81D1929AD008EA36D /* PAW.cpp */; };
+		04C745A31D20F88500F1E0E4 /* LandmarkDetectorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB61D1929AD008EA36D /* LandmarkDetectorUtils.cpp */; };
+		04C745A41D20F88500F1E0E4 /* LandmarkDetectorParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB51D1929AD008EA36D /* LandmarkDetectorParameters.cpp */; };
+		04C745A51D20F88500F1E0E4 /* LandmarkDetectorFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB31D1929AD008EA36D /* LandmarkDetectorFunc.cpp */; };
+		04C745A61D20F88500F1E0E4 /* LandmarkDetectorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEB41D1929AD008EA36D /* LandmarkDetectorModel.cpp */; };
+		04C745A71D20F88500F1E0E4 /* SVR_dynamic_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE621D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp */; };
+		04C745A81D20F88500F1E0E4 /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBB1D1929AD008EA36D /* SVR_patch_expert.cpp */; };
+		04C745B01D20F92700F1E0E4 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C745AF1D20F92700F1E0E4 /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,9 +191,9 @@
 		0438FEBB1D1929AD008EA36D /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
 		045A38631D1921C100A8F47B /* FaceLandmarkVid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceLandmarkVid.cpp; path = ios_mac/mac/FaceLandmarkVid.cpp; sourceTree = "<group>"; };
 		045A38651D1921D500A8F47B /* facelib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = facelib.xcodeproj; path = build/facelib.xcodeproj; sourceTree = "<group>"; };
-		045A38871D1921F500A8F47B /* dbt_face_detection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dbt_face_detection.cpp; path = ios_mac/mac/dbt_face_detection.cpp; sourceTree = "<group>"; };
+		04C745AC1D20F88500F1E0E4 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C745AF1D20F92700F1E0E4 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ios_mac/mac/test.cpp; sourceTree = "<group>"; };
 		152B056170DB435CB6AD8C3F /* facedetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = facedetect; sourceTree = BUILT_PRODUCTS_DIR; };
-		B268982964C14E9782A231D8 /* dbt_face_detection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = dbt_face_detection; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -332,7 +333,7 @@
 		045A38611D1921A500A8F47B /* mac */ = {
 			isa = PBXGroup;
 			children = (
-				045A38861D1921EA00A8F47B /* dbt_face_detection */,
+				045A38861D1921EA00A8F47B /* test */,
 				045A38621D1921B000A8F47B /* facedetect */,
 			);
 			name = mac;
@@ -363,12 +364,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		045A38861D1921EA00A8F47B /* dbt_face_detection */ = {
+		045A38861D1921EA00A8F47B /* test */ = {
 			isa = PBXGroup;
 			children = (
-				045A38871D1921F500A8F47B /* dbt_face_detection.cpp */,
+				04C745AF1D20F92700F1E0E4 /* test.cpp */,
 			);
-			name = dbt_face_detection;
+			name = test;
 			sourceTree = "<group>";
 		};
 		46C0D083501444F8BD98A53E /* Sources */ = {
@@ -388,7 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				152B056170DB435CB6AD8C3F /* facedetect */,
-				B268982964C14E9782A231D8 /* dbt_face_detection */,
+				04C745AC1D20F88500F1E0E4 /* test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,6 +406,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		04C7458A1D20F88500F1E0E4 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C745A91D20F88500F1E0E4 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				04C7458B1D20F88500F1E0E4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = example_facedetect;
+			productReference = 04C745AC1D20F88500F1E0E4 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
 		9219D549BA63440F8ABEF38B /* facedetect */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E31E7B33963E4E15A415EE7D /* Build configuration list for PBXNativeTarget "facedetect" */;
@@ -418,21 +434,6 @@
 			name = facedetect;
 			productName = example_facedetect;
 			productReference = 152B056170DB435CB6AD8C3F /* facedetect */;
-			productType = "com.apple.product-type.tool";
-		};
-		B384F8F8CACC4777999148D6 /* dbt_face_detection */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDE12DE6D73E4D8A81D19EAF /* Build configuration list for PBXNativeTarget "dbt_face_detection" */;
-			buildPhases = (
-				F2957AD25CF44503B813E44A /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = dbt_face_detection;
-			productName = example_dbt_face_detection;
-			productReference = B268982964C14E9782A231D8 /* dbt_face_detection */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -461,7 +462,7 @@
 			projectRoot = "";
 			targets = (
 				9219D549BA63440F8ABEF38B /* facedetect */,
-				B384F8F8CACC4777999148D6 /* dbt_face_detection */,
+				04C7458A1D20F88500F1E0E4 /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -540,6 +541,42 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04C7458B1D20F88500F1E0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C7458D1D20F88500F1E0E4 /* stdafx.cpp in Sources */,
+				04C7458E1D20F88500F1E0E4 /* Processing.cpp in Sources */,
+				04C745B01D20F92700F1E0E4 /* test.cpp in Sources */,
+				04C7458F1D20F88500F1E0E4 /* source.cpp in Sources */,
+				04C745901D20F88500F1E0E4 /* Face_utils.cpp in Sources */,
+				04C745911D20F88500F1E0E4 /* codecvt_error_category.cpp in Sources */,
+				04C745921D20F88500F1E0E4 /* path_traits.cpp in Sources */,
+				04C745931D20F88500F1E0E4 /* Patch_experts.cpp in Sources */,
+				04C745941D20F88500F1E0E4 /* windows_file_codecvt.cpp in Sources */,
+				04C745951D20F88500F1E0E4 /* SVR_static_lin_regressors.cpp in Sources */,
+				04C745961D20F88500F1E0E4 /* GazeEstimation.cpp in Sources */,
+				04C745971D20F88500F1E0E4 /* LandmarkDetectionValidator.cpp in Sources */,
+				04C745981D20F88500F1E0E4 /* SVM_dynamic_lin.cpp in Sources */,
+				04C745991D20F88500F1E0E4 /* path.cpp in Sources */,
+				04C7459A1D20F88500F1E0E4 /* unique_path.cpp in Sources */,
+				04C7459B1D20F88500F1E0E4 /* portability.cpp in Sources */,
+				04C7459C1D20F88500F1E0E4 /* SVM_static_lin.cpp in Sources */,
+				04C7459D1D20F88500F1E0E4 /* utf8_codecvt_facet.cpp in Sources */,
+				04C7459E1D20F88500F1E0E4 /* PDM.cpp in Sources */,
+				04C7459F1D20F88500F1E0E4 /* operations.cpp in Sources */,
+				04C745A01D20F88500F1E0E4 /* CCNF_patch_expert.cpp in Sources */,
+				04C745A11D20F88500F1E0E4 /* error_code.cpp in Sources */,
+				04C745A21D20F88500F1E0E4 /* PAW.cpp in Sources */,
+				04C745A31D20F88500F1E0E4 /* LandmarkDetectorUtils.cpp in Sources */,
+				04C745A41D20F88500F1E0E4 /* LandmarkDetectorParameters.cpp in Sources */,
+				04C745A51D20F88500F1E0E4 /* LandmarkDetectorFunc.cpp in Sources */,
+				04C745A61D20F88500F1E0E4 /* LandmarkDetectorModel.cpp in Sources */,
+				04C745A71D20F88500F1E0E4 /* SVR_dynamic_lin_regressors.cpp in Sources */,
+				04C745A81D20F88500F1E0E4 /* SVR_patch_expert.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		800DE0D8206A44139FB5011E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,45 +613,149 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2957AD25CF44503B813E44A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0438FEDD1D1929AD008EA36D /* stdafx.cpp in Sources */,
-				0438FE261D1929A2008EA36D /* source.cpp in Sources */,
-				0438FEBD1D1929AD008EA36D /* Face_utils.cpp in Sources */,
-				0438FE121D192980008EA36D /* codecvt_error_category.cpp in Sources */,
-				0438FE161D192980008EA36D /* path_traits.cpp in Sources */,
-				0438FED71D1929AD008EA36D /* Patch_experts.cpp in Sources */,
-				0438FE201D192980008EA36D /* windows_file_codecvt.cpp in Sources */,
-				0438FEC91D1929AD008EA36D /* SVR_static_lin_regressors.cpp in Sources */,
-				0438FEC11D1929AD008EA36D /* GazeEstimation.cpp in Sources */,
-				0438FECD1D1929AD008EA36D /* LandmarkDetectionValidator.cpp in Sources */,
-				0438FEC31D1929AD008EA36D /* SVM_dynamic_lin.cpp in Sources */,
-				0438FE181D192980008EA36D /* path.cpp in Sources */,
-				0438FE1C1D192980008EA36D /* unique_path.cpp in Sources */,
-				040323101D1B843400473C33 /* Processing.cpp in Sources */,
-				0438FE1A1D192980008EA36D /* portability.cpp in Sources */,
-				0438FEC51D1929AD008EA36D /* SVM_static_lin.cpp in Sources */,
-				0438FE1E1D192980008EA36D /* utf8_codecvt_facet.cpp in Sources */,
-				0438FEDB1D1929AD008EA36D /* PDM.cpp in Sources */,
-				0438FE141D192980008EA36D /* operations.cpp in Sources */,
-				0438FECB1D1929AD008EA36D /* CCNF_patch_expert.cpp in Sources */,
-				0438FE231D192990008EA36D /* error_code.cpp in Sources */,
-				0438FED91D1929AD008EA36D /* PAW.cpp in Sources */,
-				0438FED51D1929AD008EA36D /* LandmarkDetectorUtils.cpp in Sources */,
-				0438FED31D1929AD008EA36D /* LandmarkDetectorParameters.cpp in Sources */,
-				0438FECF1D1929AD008EA36D /* LandmarkDetectorFunc.cpp in Sources */,
-				0438FED11D1929AD008EA36D /* LandmarkDetectorModel.cpp in Sources */,
-				0438FEC71D1929AD008EA36D /* SVR_dynamic_lin_regressors.cpp in Sources */,
-				0438FEDF1D1929AD008EA36D /* SVR_patch_expert.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3D7E81EADCF54BD5AC75AD0A /* Release */ = {
+		04C745AA1D20F88500F1E0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DLIB_NO_GUI_SUPPORT,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/video/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/core/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/build,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost/boost,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/CvEffects,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-fsigned-char",
+					"-W",
+					"-Werror=return-type",
+					"-Werror=non-virtual-dtor",
+					"-Werror=address",
+					"-Werror=sequence-point",
+					"-Wformat",
+					"-Werror=format-security",
+					"-Wmissing-declarations",
+					"-Wmissing-prototypes",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"-Winit-self",
+					"-Wpointer-arith",
+					"-Wshadow",
+					"-Wsign-promo",
+					"-Wno-narrowing",
+					"-Wno-delete-non-virtual-dtor",
+					"-Wno-unnamed-type-template-args",
+					"-fdiagnostics-show-option",
+					"-Wno-long-long",
+					"-Qunused-arguments",
+					"-Wno-semicolon-before-method-body",
+					"-fno-omit-frame-pointer",
+					"-msse",
+					"-msse2",
+					"-mno-avx",
+					"-msse3",
+					"-mno-ssse3",
+					"-mno-sse4.1",
+					"-mno-sse4.2",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-Wno-unused-function",
+					"-DDEBUG",
+					"-D_DEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fsigned-char",
+					"-W",
+					"-Werror=return-type",
+					"-Werror=non-virtual-dtor",
+					"-Werror=address",
+					"-Werror=sequence-point",
+					"-Wformat",
+					"-Werror=format-security",
+					"-Wmissing-declarations",
+					"-Wmissing-prototypes",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"-Winit-self",
+					"-Wpointer-arith",
+					"-Wshadow",
+					"-Wsign-promo",
+					"-Wno-narrowing",
+					"-Wno-delete-non-virtual-dtor",
+					"-Wno-unnamed-type-template-args",
+					"-fdiagnostics-show-option",
+					"-Wno-long-long",
+					"-Qunused-arguments",
+					"-Wno-semicolon-before-method-body",
+					"-fno-omit-frame-pointer",
+					"-msse",
+					"-msse2",
+					"-mno-avx",
+					"-msse3",
+					"-mno-ssse3",
+					"-mno-sse4.1",
+					"-mno-sse4.2",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-DDEBUG",
+					"-D_DEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencv_world.3.1.0.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		04C745AB1D20F88500F1E0E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -650,10 +791,12 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/build,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/FaceAnalyser/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/LandmarkDetector/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost/boost,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/boost,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector,
+					/Users/mac/MyWorks/HongNuo/face_detector/detector/CvEffects,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -739,7 +882,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Release/libopencv_world.3.1.0.dylib,
 				);
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = dbt_face_detection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
 				USE_HEADERMAP = NO;
@@ -1049,146 +1192,18 @@
 			};
 			name = Debug;
 		};
-		F74F5352830A470883E85DCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/bin/Debug;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					DLIB_NO_GUI_SUPPORT,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/calib3d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/features2d/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/superres/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/objdetect/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/highgui/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/videoio/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/shape/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgcodecs/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/video/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/photo/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/ml/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/imgproc/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/flann/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/core/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/build,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/FaceAnalyser/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/modules/LandmarkDetector/include,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost/boost,
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/boost,
-				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-Wno-unused-function",
-					"-DDEBUG",
-					"-D_DEBUG",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-fsigned-char",
-					"-W",
-					"-Werror=return-type",
-					"-Werror=non-virtual-dtor",
-					"-Werror=address",
-					"-Werror=sequence-point",
-					"-Wformat",
-					"-Werror=format-security",
-					"-Wmissing-declarations",
-					"-Wmissing-prototypes",
-					"-Wstrict-prototypes",
-					"-Wundef",
-					"-Winit-self",
-					"-Wpointer-arith",
-					"-Wshadow",
-					"-Wsign-promo",
-					"-Wno-narrowing",
-					"-Wno-delete-non-virtual-dtor",
-					"-Wno-unnamed-type-template-args",
-					"-fdiagnostics-show-option",
-					"-Wno-long-long",
-					"-Qunused-arguments",
-					"-Wno-semicolon-before-method-body",
-					"-fno-omit-frame-pointer",
-					"-msse",
-					"-msse2",
-					"-mno-avx",
-					"-msse3",
-					"-mno-ssse3",
-					"-mno-sse4.1",
-					"-mno-sse4.2",
-					"-fvisibility=hidden",
-					"-fvisibility-inlines-hidden",
-					"-DDEBUG",
-					"-D_DEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencv_world.3.1.0.dylib,
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = dbt_face_detection;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/samples/cpp;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04C745A91D20F88500F1E0E4 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C745AA1D20F88500F1E0E4 /* Debug */,
+				04C745AB1D20F88500F1E0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "face_detector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1203,15 +1218,6 @@
 			buildConfigurations = (
 				96DEF1E509644D62B45A2D4C /* Debug */,
 				E00339591FA44CF587DB213B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		EDE12DE6D73E4D8A81D19EAF /* Build configuration list for PBXNativeTarget "dbt_face_detection" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F74F5352830A470883E85DCD /* Debug */,
-				3D7E81EADCF54BD5AC75AD0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
