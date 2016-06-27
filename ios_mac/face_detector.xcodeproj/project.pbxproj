@@ -1017,8 +1017,24 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencv_world.3.1.0.dylib,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencvlib.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libzlib.a,
+					"-framework",
+					QTKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AppKit,
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = facedetect;
@@ -1166,8 +1182,24 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Release/libopencv_world.3.1.0.dylib,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencvlib.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
+					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libzlib.a,
+					"-framework",
+					QTKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AppKit,
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = facedetect;
