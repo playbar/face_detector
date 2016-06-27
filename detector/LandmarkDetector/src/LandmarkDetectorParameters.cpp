@@ -33,6 +33,7 @@ void FaceModelParameters::initArg(vector<string> &arguments)
 {
    	// First element is reserved for the executable location (useful for finding relative model locs)
     boost::filesystem::path root = boost::filesystem::path(arguments[0]).parent_path();
+    strRoot = root.string();
     
     bool* valid = new bool[arguments.size()];
     valid[0] = true;
@@ -196,7 +197,7 @@ void FaceModelParameters::init()
 	// For first frame use the initialisation
 	window_sizes_current = window_sizes_init;
 
-	model_location = "model/main_clnf_general.txt";
+	model_location = "data/main.dat";
 
 	sigma = 1.5;
 	reg_factor = 25;

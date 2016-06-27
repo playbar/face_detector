@@ -29,11 +29,18 @@ public:
     
     void PreprocessToGray_optimized(cv::Mat& frame);
     void PreprocessToGray(cv::Mat& frame);
+    
+    void BuildCLNF( );
+
 
 protected:
     
+    void LoadLefEye();
+    void LoadRightEye();
+    void LoadCLNFInner();
+    
     LandmarkDetector::FaceModelParameters det_parameters;
-    LandmarkDetector::CLNF clnf_model;
+    LandmarkDetector::CLNF face_model;
     
     cv::Mat_<float> depth_image;
     cv::Mat_<uchar> grayscale_image;

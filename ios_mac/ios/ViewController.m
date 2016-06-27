@@ -66,6 +66,8 @@
                          ofType:@"xml"];
     parameters.mouthCascade.load([filename UTF8String]);
     
+    filename = [[NSBundle mainBundle]pathForResource:@"data/main" ofType:@"dat"];
+    
     vector<string> arguments;
     string strFilename = [filename UTF8String];
     

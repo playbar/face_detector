@@ -121,7 +121,7 @@ void visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& depth_image, c
 
 void LoadLefEye(LandmarkDetector::CLNF& face_model){
     LandmarkDetector::CLNF left_eye;
-    left_eye.Read_CLNF("data/eye/left.txt");
+    left_eye.Read_CLNF("data/eye/left.dat");
     left_eye.Init();
     vector<pair<int, int> > mappings;
     //37 10 38 12 39 14 40 16 41 18
@@ -159,7 +159,7 @@ void LoadLefEye(LandmarkDetector::CLNF& face_model){
 
 void LoadRightEye(LandmarkDetector::CLNF& face_model){
     LandmarkDetector::CLNF right_eye;
-    right_eye.Read_CLNF("data/eye/right.txt");
+    right_eye.Read_CLNF("data/eye/right.dat");
     right_eye.Init();
     vector<pair<int, int> > mappings;
     //42 8 43 10 44 12 45 14 46 16 47 18
@@ -198,7 +198,7 @@ void LoadRightEye(LandmarkDetector::CLNF& face_model){
 void LoadCLNFInner(LandmarkDetector::CLNF& face_model)
 {
     LandmarkDetector::CLNF clnf_inner;
-    clnf_inner.Read_CLNF("data/inner/clnf_inner.txt");
+    clnf_inner.Read_CLNF("data/inner/clnf_inner.dat");
     clnf_inner.Init();
     vector<pair<int, int> > mappings;
 
@@ -280,7 +280,7 @@ void LoadCLNFInner(LandmarkDetector::CLNF& face_model)
 
 void BuildCLNF(LandmarkDetector::CLNF& face_model, string name )
 {
-    face_model.Read_CLNF( "data/main.txt" );
+    face_model.Read_CLNF( "data/main.dat" );
    
     LoadLefEye(face_model);
     LoadRightEye(face_model);
@@ -288,7 +288,7 @@ void BuildCLNF(LandmarkDetector::CLNF& face_model, string name )
     LoadCLNFInner( face_model);
     //face_model.Read( name );
     face_model.Init();
-    face_model.landmark_validator.Read("data/validator.txt");
+    face_model.landmark_validator.Read("data/validator.dat");
     
     
 }

@@ -39,6 +39,7 @@ struct FaceModelParameters
 
 	// Where to load the model from
 	string model_location;
+    string strRoot;
 	
 	// this is used for the smooting of response maps (KDE sigma)
 	double sigma;
