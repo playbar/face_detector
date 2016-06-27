@@ -369,6 +369,7 @@ void Patch_experts::Read(vector<string> intensity_svr_expert_locations,
 			}
 		}
 	}
+    return;
 
 }
 //======================= Reading the SVR patch experts =========================================//

@@ -120,7 +120,9 @@ void visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& depth_image, c
 }
 
 void LoadLefEye(LandmarkDetector::CLNF& face_model){
-    LandmarkDetector::CLNF left_eye("model/model_eye/main_clnf_synth_left.txt");
+    LandmarkDetector::CLNF left_eye;
+    left_eye.Read_CLNF("data/eye/left.txt");
+    left_eye.Init();
     vector<pair<int, int> > mappings;
     //37 10 38 12 39 14 40 16 41 18
     mappings.push_back( pair<int, int>(36,8));
@@ -156,7 +158,9 @@ void LoadLefEye(LandmarkDetector::CLNF& face_model){
 }
 
 void LoadRightEye(LandmarkDetector::CLNF& face_model){
-    LandmarkDetector::CLNF left_eye("model/model_eye/main_clnf_synth_right.txt");
+    LandmarkDetector::CLNF right_eye;
+    right_eye.Read_CLNF("data/eye/right.txt");
+    right_eye.Init();
     vector<pair<int, int> > mappings;
     //42 8 43 10 44 12 45 14 46 16 47 18
     mappings.push_back( pair<int, int>(42, 8));
@@ -166,7 +170,7 @@ void LoadRightEye(LandmarkDetector::CLNF& face_model){
     mappings.push_back( pair<int, int>(46, 16));
     mappings.push_back( pair<int, int>(47, 18));
     face_model.hierarchical_mapping.push_back(mappings);
-    face_model.hierarchical_models.push_back( left_eye );
+    face_model.hierarchical_models.push_back( right_eye );
     face_model.hierarchical_model_names.push_back("right_eye_28");
     LandmarkDetector::FaceModelParameters params;
     params.validate_detections = false;
@@ -193,7 +197,9 @@ void LoadRightEye(LandmarkDetector::CLNF& face_model){
 
 void LoadCLNFInner(LandmarkDetector::CLNF& face_model)
 {
-    LandmarkDetector::CLNF clnf_inner("model/model_inner/main_clnf_inner.txt");
+    LandmarkDetector::CLNF clnf_inner;
+    clnf_inner.Read_CLNF("data/inner/clnf_inner.txt");
+    clnf_inner.Init();
     vector<pair<int, int> > mappings;
 
     mappings.push_back( pair<int, int>(17, 0));
@@ -274,7 +280,7 @@ void LoadCLNFInner(LandmarkDetector::CLNF& face_model)
 
 void BuildCLNF(LandmarkDetector::CLNF& face_model, string name )
 {
-    face_model.Read_CLNF( "model/clnf_general.txt" );
+    face_model.Read_CLNF( "data/main.txt" );
    
     LoadLefEye(face_model);
     LoadRightEye(face_model);
@@ -282,7 +288,7 @@ void BuildCLNF(LandmarkDetector::CLNF& face_model, string name )
     LoadCLNFInner( face_model);
     //face_model.Read( name );
     face_model.Init();
-    face_model.landmark_validator.Read("model/detection_validation/validator_general_68.txt");
+    face_model.landmark_validator.Read("data/validator.txt");
     
     
 }
