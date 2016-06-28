@@ -37,7 +37,7 @@
     //LandmarkDetector::FaceModelParameters det_parameters( arguments);
     
     //LandmarkDetector::CLNF clnf_model( det_parameters.model_location);
-    [videoCamera start];
+    //[videoCamera start];
     return;
     
 }
