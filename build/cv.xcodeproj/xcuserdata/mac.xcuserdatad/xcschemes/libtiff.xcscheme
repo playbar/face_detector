@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "71B59D83E12347F4B056BB03"
-               BuildableName = "libopencvlib.a"
-               BlueprintName = "opencvlib"
-               ReferencedContainer = "container:build/facelib.xcodeproj">
+               BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
+               BuildableName = "liblibtiff.a"
+               BlueprintName = "tiff"
+               ReferencedContainer = "container:build/cv.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71B59D83E12347F4B056BB03"
-            BuildableName = "libopencvlib.a"
-            BlueprintName = "opencvlib"
-            ReferencedContainer = "container:build/facelib.xcodeproj">
+            BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
+            BuildableName = "liblibtiff.a"
+            BlueprintName = "tiff"
+            ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71B59D83E12347F4B056BB03"
-            BuildableName = "libopencvlib.a"
-            BlueprintName = "opencvlib"
-            ReferencedContainer = "container:build/facelib.xcodeproj">
+            BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
+            BuildableName = "liblibtiff.a"
+            BlueprintName = "tiff"
+            ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

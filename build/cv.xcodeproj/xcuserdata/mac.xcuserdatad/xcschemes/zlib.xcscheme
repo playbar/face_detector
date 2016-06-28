@@ -17,7 +17,7 @@
                BlueprintIdentifier = "0495CD8B47B841C68590966F"
                BuildableName = "libzlib.a"
                BlueprintName = "zlib"
-               ReferencedContainer = "container:build/facelib.xcodeproj">
+               ReferencedContainer = "container:build/cv.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,7 +48,7 @@
             BlueprintIdentifier = "0495CD8B47B841C68590966F"
             BuildableName = "libzlib.a"
             BlueprintName = "zlib"
-            ReferencedContainer = "container:build/facelib.xcodeproj">
+            ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,7 +66,7 @@
             BlueprintIdentifier = "0495CD8B47B841C68590966F"
             BuildableName = "libzlib.a"
             BlueprintName = "zlib"
-            ReferencedContainer = "container:build/facelib.xcodeproj">
+            ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

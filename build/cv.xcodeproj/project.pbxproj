@@ -663,7 +663,7 @@
 		1C341AA1941848F8AAD63E6C /* ImathLine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImathLine.h; path = 3rdparty/openexr/Imath/ImathLine.h; sourceTree = SOURCE_ROOT; };
 		1C54067303B14250BB50D215 /* va_intel.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = va_intel.hpp; path = modules/core/include/opencv2/core/va_intel.hpp; sourceTree = SOURCE_ROOT; };
 		1C69536E064E41BB82EAA283 /* tif_dirinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_dirinfo.c; path = 3rdparty/libtiff/tif_dirinfo.c; sourceTree = SOURCE_ROOT; };
-		1C90A63CAC874268ABAA5883 /* liblibtiff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibtiff.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C90A63CAC874268ABAA5883 /* libtiff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtiff.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAD7C1FE3464CCCBA9E5544 /* opencl_kernels_photo.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = opencl_kernels_photo.cpp.rule; path = build/modules/world/opencl_kernels_photo.cpp.rule; sourceTree = SOURCE_ROOT; };
 		1CF4A740BBAE4F2B9E416E33 /* templmatch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = templmatch.cpp; path = modules/imgproc/src/templmatch.cpp; sourceTree = SOURCE_ROOT; };
 		1D3CB489618840FAABA338D2 /* tiffio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiffio.h; path = 3rdparty/libtiff/tiffio.h; sourceTree = SOURCE_ROOT; };
@@ -745,7 +745,7 @@
 		327D5DF9707D40359C5D0A17 /* precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precomp.hpp; path = modules/features2d/src/precomp.hpp; sourceTree = SOURCE_ROOT; };
 		331D4956C5C54CDDA6842457 /* opencl_kernels_imgproc.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencl_kernels_imgproc.hpp; path = build/modules/world/opencl_kernels_imgproc.hpp; sourceTree = SOURCE_ROOT; };
 		3333E92B81E64F2A84ADA646 /* IexThrowErrnoExc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IexThrowErrnoExc.cpp; path = 3rdparty/openexr/Iex/IexThrowErrnoExc.cpp; sourceTree = SOURCE_ROOT; };
-		335697A6F8C74AC9A105B1C1 /* libopencvlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libopencvlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		335697A6F8C74AC9A105B1C1 /* libcvlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcvlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399A1641D874B11B73B4C20 /* halfLimits.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfLimits.h; path = 3rdparty/openexr/Half/halfLimits.h; sourceTree = SOURCE_ROOT; };
 		33B77B99958B4D37BADBFC93 /* tif_packbits.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_packbits.c; path = 3rdparty/libtiff/tif_packbits.c; sourceTree = SOURCE_ROOT; };
 		342F2F40D04547D8863AF7D1 /* five-point.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "five-point.cpp"; path = "modules/calib3d/src/five-point.cpp"; sourceTree = SOURCE_ROOT; };
@@ -983,7 +983,7 @@
 		6EE3114CA9A44EFE89619CA7 /* autotuned_index.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = autotuned_index.h; path = modules/flann/include/opencv2/flann/autotuned_index.h; sourceTree = SOURCE_ROOT; };
 		6F6160C343974927A9AA01A1 /* hough.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hough.cpp; path = modules/imgproc/src/hough.cpp; sourceTree = SOURCE_ROOT; };
 		6F86995221634DFCA463DA4E /* precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precomp.hpp; path = modules/objdetect/src/precomp.hpp; sourceTree = SOURCE_ROOT; };
-		6FA811231B1D4566B33198E5 /* liblibjasper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibjasper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA811231B1D4566B33198E5 /* libjasper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjasper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC1C0DB5E074AF5B3AB6F00 /* bgfg_gaussmix2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bgfg_gaussmix2.cpp; path = modules/video/src/bgfg_gaussmix2.cpp; sourceTree = SOURCE_ROOT; };
 		6FD383641B074E0B8DA95EDA /* jas_cm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jas_cm.h; path = 3rdparty/libjasper/jasper/jas_cm.h; sourceTree = SOURCE_ROOT; };
 		6FD5FFC363F54B1EB15D00E9 /* IlmThreadSemaphore.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IlmThreadSemaphore.h; path = 3rdparty/openexr/IlmThread/IlmThreadSemaphore.h; sourceTree = SOURCE_ROOT; };
@@ -1133,7 +1133,7 @@
 		8FA019D1E9C44468A7395B69 /* tif_dir.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tif_dir.h; path = 3rdparty/libtiff/tif_dir.h; sourceTree = SOURCE_ROOT; };
 		8FAED15AEF614DDBA0AED67E /* jp2_cod.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jp2_cod.h; path = 3rdparty/libjasper/jp2_cod.h; sourceTree = SOURCE_ROOT; };
 		8FCE82EFE7E74AA392B9B7D4 /* upnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = upnp.cpp; path = modules/calib3d/src/upnp.cpp; sourceTree = SOURCE_ROOT; };
-		8FECB2B2FA594796BE832ECC /* liblibpng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibpng.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FECB2B2FA594796BE832ECC /* libpng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libpng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A5D1FFF2404824976858FC /* tif_jbig.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_jbig.c; path = 3rdparty/libtiff/tif_jbig.c; sourceTree = SOURCE_ROOT; };
 		90C2EA129CA944AFAC39D512 /* quant.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = quant.c; path = 3rdparty/libwebp/enc/quant.c; sourceTree = SOURCE_ROOT; };
 		91722106331D46A3A45E114C /* ImfRgba.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfRgba.h; path = 3rdparty/openexr/IlmImf/ImfRgba.h; sourceTree = SOURCE_ROOT; };
@@ -1357,7 +1357,7 @@
 		C51E8761BF564B29ABB28CEA /* video.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = video.hpp; path = modules/video/include/opencv2/video/video.hpp; sourceTree = SOURCE_ROOT; };
 		C55043B98504467997D54101 /* idec.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = idec.c; path = 3rdparty/libwebp/dec/idec.c; sourceTree = SOURCE_ROOT; };
 		C57B949D193040109A51FD2D /* ImfHeader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfHeader.h; path = 3rdparty/openexr/IlmImf/ImfHeader.h; sourceTree = SOURCE_ROOT; };
-		C5E43F3F1C024A4FB22A33EE /* liblibjpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibjpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E43F3F1C024A4FB22A33EE /* libjpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E514094F3746329B2F2DB1 /* ImfTileOffsets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfTileOffsets.h; path = 3rdparty/openexr/IlmImf/ImfTileOffsets.h; sourceTree = SOURCE_ROOT; };
 		C6076A0E52094CD7B2754335 /* ImfTimeCodeAttribute.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImfTimeCodeAttribute.cpp; path = 3rdparty/openexr/IlmImf/ImfTimeCodeAttribute.cpp; sourceTree = SOURCE_ROOT; };
 		C62BA0C62DFF4D83ADB94FD8 /* ocl_perf.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ocl_perf.hpp; path = modules/ts/include/opencv2/ts/ocl_perf.hpp; sourceTree = SOURCE_ROOT; };
@@ -1559,7 +1559,7 @@
 		F827DAF83BB54E698603CAEF /* frame_source.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = frame_source.cpp; path = modules/superres/src/frame_source.cpp; sourceTree = SOURCE_ROOT; };
 		F84A9E49674540E5A799B5A2 /* ImfIO.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfIO.h; path = 3rdparty/openexr/IlmImf/ImfIO.h; sourceTree = SOURCE_ROOT; };
 		F88039B59F174995B2A95F75 /* crc32.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = crc32.c; path = 3rdparty/zlib/crc32.c; sourceTree = SOURCE_ROOT; };
-		F887A994EB05471E92BB4A8C /* libopencv_ts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libopencv_ts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F887A994EB05471E92BB4A8C /* libcv_ts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcv_ts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A0AD03049946ADBBEDF6E2 /* ImfVersion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfVersion.h; path = 3rdparty/openexr/IlmImf/ImfVersion.h; sourceTree = SOURCE_ROOT; };
 		F8C1E29619A04895BC412D20 /* jas_icc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jas_icc.h; path = 3rdparty/libjasper/jasper/jas_icc.h; sourceTree = SOURCE_ROOT; };
 		F8CA295A9F844BCCAF914658 /* utility.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = utility.hpp; path = modules/core/include/opencv2/core/utility.hpp; sourceTree = SOURCE_ROOT; };
@@ -2919,13 +2919,13 @@
 			isa = PBXGroup;
 			children = (
 				E04B5AFCC3824259B25B5CB0 /* libzlib.a */,
-				1C90A63CAC874268ABAA5883 /* liblibtiff.a */,
-				C5E43F3F1C024A4FB22A33EE /* liblibjpeg.a */,
-				6FA811231B1D4566B33198E5 /* liblibjasper.a */,
-				8FECB2B2FA594796BE832ECC /* liblibpng.a */,
+				1C90A63CAC874268ABAA5883 /* libtiff.a */,
+				C5E43F3F1C024A4FB22A33EE /* libjpeg.a */,
+				6FA811231B1D4566B33198E5 /* libjasper.a */,
+				8FECB2B2FA594796BE832ECC /* libpng.a */,
 				9B0DBD2B3D3B4D39A74D2515 /* libIlmImf.a */,
-				335697A6F8C74AC9A105B1C1 /* libopencvlib.a */,
-				F887A994EB05471E92BB4A8C /* libopencv_ts.a */,
+				335697A6F8C74AC9A105B1C1 /* libcvlib.a */,
+				F887A994EB05471E92BB4A8C /* libcv_ts.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3777,9 +3777,9 @@
 			productReference = E04B5AFCC3824259B25B5CB0 /* libzlib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		21B4B443DDB7415593B5F54F /* libtiff */ = {
+		21B4B443DDB7415593B5F54F /* tiff */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80060005B6974213A4915533 /* Build configuration list for PBXNativeTarget "libtiff" */;
+			buildConfigurationList = 80060005B6974213A4915533 /* Build configuration list for PBXNativeTarget "tiff" */;
 			buildPhases = (
 				DF6AF127176C4826AFBB8230 /* Sources */,
 			);
@@ -3788,9 +3788,9 @@
 			dependencies = (
 				81818371E45E4BC6B117FB3D /* PBXTargetDependency */,
 			);
-			name = libtiff;
+			name = tiff;
 			productName = libtiff;
-			productReference = 1C90A63CAC874268ABAA5883 /* liblibtiff.a */;
+			productReference = 1C90A63CAC874268ABAA5883 /* libtiff.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2D6EFC08CF8A4AD5BCACE477 /* IlmImf */ = {
@@ -3809,9 +3809,9 @@
 			productReference = 9B0DBD2B3D3B4D39A74D2515 /* libIlmImf.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		3B0507F08B6F457CBAA252E9 /* libjasper */ = {
+		3B0507F08B6F457CBAA252E9 /* jasper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64496D1D3C4D44EE826066E3 /* Build configuration list for PBXNativeTarget "libjasper" */;
+			buildConfigurationList = 64496D1D3C4D44EE826066E3 /* Build configuration list for PBXNativeTarget "jasper" */;
 			buildPhases = (
 				B57F7F6BE75F44F8990BD547 /* Sources */,
 			);
@@ -3819,14 +3819,14 @@
 			);
 			dependencies = (
 			);
-			name = libjasper;
+			name = jasper;
 			productName = libjasper;
-			productReference = 6FA811231B1D4566B33198E5 /* liblibjasper.a */;
+			productReference = 6FA811231B1D4566B33198E5 /* libjasper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		49D1D325B34E4FDAAE62B113 /* libjpeg */ = {
+		49D1D325B34E4FDAAE62B113 /* jpeg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B3DD128A4CD41BD89DF8430 /* Build configuration list for PBXNativeTarget "libjpeg" */;
+			buildConfigurationList = 0B3DD128A4CD41BD89DF8430 /* Build configuration list for PBXNativeTarget "jpeg" */;
 			buildPhases = (
 				3F07E33FD14A46F597890515 /* Sources */,
 			);
@@ -3834,14 +3834,14 @@
 			);
 			dependencies = (
 			);
-			name = libjpeg;
+			name = jpeg;
 			productName = libjpeg;
-			productReference = C5E43F3F1C024A4FB22A33EE /* liblibjpeg.a */;
+			productReference = C5E43F3F1C024A4FB22A33EE /* libjpeg.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5ED7E2420DC6449C856D4C73 /* libpng */ = {
+		5ED7E2420DC6449C856D4C73 /* png */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 857CD53BB7B24FFD942B7FCC /* Build configuration list for PBXNativeTarget "libpng" */;
+			buildConfigurationList = 857CD53BB7B24FFD942B7FCC /* Build configuration list for PBXNativeTarget "png" */;
 			buildPhases = (
 				E6630B4771404A66BA36B9E5 /* Sources */,
 			);
@@ -3850,14 +3850,14 @@
 			dependencies = (
 				0A3201B3218C4997BBF260A1 /* PBXTargetDependency */,
 			);
-			name = libpng;
+			name = png;
 			productName = libpng;
-			productReference = 8FECB2B2FA594796BE832ECC /* liblibpng.a */;
+			productReference = 8FECB2B2FA594796BE832ECC /* libpng.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		71B59D83E12347F4B056BB03 /* opencvlib */ = {
+		71B59D83E12347F4B056BB03 /* cvlib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "opencvlib" */;
+			buildConfigurationList = 3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "cvlib" */;
 			buildPhases = (
 				479A3AE503C7444FA449880C /* CMake Rules */,
 				6EEB4FE164DA429BAB6F2C2A /* Sources */,
@@ -3866,14 +3866,14 @@
 			);
 			dependencies = (
 			);
-			name = opencvlib;
+			name = cvlib;
 			productName = opencv_world_object;
-			productReference = 335697A6F8C74AC9A105B1C1 /* libopencvlib.a */;
+			productReference = 335697A6F8C74AC9A105B1C1 /* libcvlib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		7B0118C71E064BC096B04BF0 /* opencv_ts */ = {
+		7B0118C71E064BC096B04BF0 /* cv_ts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE7E69C55F344EAD8A852BF4 /* Build configuration list for PBXNativeTarget "opencv_ts" */;
+			buildConfigurationList = CE7E69C55F344EAD8A852BF4 /* Build configuration list for PBXNativeTarget "cv_ts" */;
 			buildPhases = (
 				488E2641D11F4655B433D448 /* Sources */,
 			);
@@ -3881,9 +3881,9 @@
 			);
 			dependencies = (
 			);
-			name = opencv_ts;
+			name = cv_ts;
 			productName = opencv_ts;
-			productReference = F887A994EB05471E92BB4A8C /* libopencv_ts.a */;
+			productReference = F887A994EB05471E92BB4A8C /* libcv_ts.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -3894,7 +3894,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 			};
-			buildConfigurationList = 31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "facelib" */;
+			buildConfigurationList = 31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "cv" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -3906,13 +3906,13 @@
 			projectRoot = "";
 			targets = (
 				0495CD8B47B841C68590966F /* zlib */,
-				21B4B443DDB7415593B5F54F /* libtiff */,
-				49D1D325B34E4FDAAE62B113 /* libjpeg */,
-				3B0507F08B6F457CBAA252E9 /* libjasper */,
-				5ED7E2420DC6449C856D4C73 /* libpng */,
+				21B4B443DDB7415593B5F54F /* tiff */,
+				49D1D325B34E4FDAAE62B113 /* jpeg */,
+				3B0507F08B6F457CBAA252E9 /* jasper */,
+				5ED7E2420DC6449C856D4C73 /* png */,
 				2D6EFC08CF8A4AD5BCACE477 /* IlmImf */,
-				71B59D83E12347F4B056BB03 /* opencvlib */,
-				7B0118C71E064BC096B04BF0 /* opencv_ts */,
+				71B59D83E12347F4B056BB03 /* cvlib */,
+				7B0118C71E064BC096B04BF0 /* cv_ts */,
 			);
 		};
 /* End PBXProject section */
@@ -4690,7 +4690,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjpeg;
+				PRODUCT_NAME = jpeg;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
 				USE_HEADERMAP = NO;
@@ -4909,7 +4909,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libpng;
+				PRODUCT_NAME = png;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libpng;
 				USE_HEADERMAP = NO;
@@ -5038,7 +5038,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libtiff;
+				PRODUCT_NAME = tiff;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libtiff;
 				USE_HEADERMAP = NO;
@@ -5057,7 +5057,7 @@
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/lib/Debug";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					CVAPI_EXPORTS,
@@ -5203,7 +5203,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = opencvlib;
+				PRODUCT_NAME = cvlib;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "$(SRCROOT)/build/modules/world";
 				USE_HEADERMAP = NO;
@@ -5276,7 +5276,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libpng;
+				PRODUCT_NAME = png;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libpng;
 				USE_HEADERMAP = NO;
@@ -5349,7 +5349,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjpeg;
+				PRODUCT_NAME = jpeg;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
 				USE_HEADERMAP = NO;
@@ -5399,6 +5399,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/include,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -5478,7 +5479,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = opencv_ts;
+				PRODUCT_NAME = cv_ts;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
 				USE_HEADERMAP = NO;
@@ -5562,7 +5563,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjasper;
+				PRODUCT_NAME = jasper;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjasper;
 				USE_HEADERMAP = NO;
@@ -5849,7 +5850,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = opencvlib;
+				PRODUCT_NAME = cvlib;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "$(SRCROOT)/build/modules/world";
 				USE_HEADERMAP = NO;
@@ -5933,7 +5934,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjasper;
+				PRODUCT_NAME = jasper;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjasper;
 				USE_HEADERMAP = NO;
@@ -6050,7 +6051,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libtiff;
+				PRODUCT_NAME = tiff;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libtiff;
 				USE_HEADERMAP = NO;
@@ -6112,6 +6113,7 @@
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/stitching/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/videostab/include,
 					/Users/mac/MyWorks/HongNuo/face_detector/modules/world/include,
+					/Users/mac/MyWorks/HongNuo/face_detector/include,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -6191,7 +6193,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = opencv_ts;
+				PRODUCT_NAME = cv_ts;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/modules/ts;
 				USE_HEADERMAP = NO;
@@ -6206,7 +6208,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B3DD128A4CD41BD89DF8430 /* Build configuration list for PBXNativeTarget "libjpeg" */ = {
+		0B3DD128A4CD41BD89DF8430 /* Build configuration list for PBXNativeTarget "jpeg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8FFD5FD16E1448583271952 /* Debug */,
@@ -6215,7 +6217,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "facelib" */ = {
+		31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "cv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E61FE209382F4EECB58D9641 /* Debug */,
@@ -6224,7 +6226,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "opencvlib" */ = {
+		3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "cvlib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD9B22FF4A340BAAF944304 /* Debug */,
@@ -6251,7 +6253,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		64496D1D3C4D44EE826066E3 /* Build configuration list for PBXNativeTarget "libjasper" */ = {
+		64496D1D3C4D44EE826066E3 /* Build configuration list for PBXNativeTarget "jasper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD307FA0997F4D0395082527 /* Debug */,
@@ -6260,7 +6262,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		80060005B6974213A4915533 /* Build configuration list for PBXNativeTarget "libtiff" */ = {
+		80060005B6974213A4915533 /* Build configuration list for PBXNativeTarget "tiff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE6F5CCE75E04FFD952D994F /* Debug */,
@@ -6269,7 +6271,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		857CD53BB7B24FFD942B7FCC /* Build configuration list for PBXNativeTarget "libpng" */ = {
+		857CD53BB7B24FFD942B7FCC /* Build configuration list for PBXNativeTarget "png" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7CFDA24D1E34D66B5A060B6 /* Debug */,
@@ -6278,7 +6280,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CE7E69C55F344EAD8A852BF4 /* Build configuration list for PBXNativeTarget "opencv_ts" */ = {
+		CE7E69C55F344EAD8A852BF4 /* Build configuration list for PBXNativeTarget "cv_ts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB14B3D75C7A45628257DFEB /* Debug */,

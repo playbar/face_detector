@@ -36,6 +36,13 @@
 		0438FEDC1D1929AD008EA36D /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBA1D1929AD008EA36D /* stdafx.cpp */; };
 		0438FEDE1D1929AD008EA36D /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBB1D1929AD008EA36D /* SVR_patch_expert.cpp */; };
 		0438FEE01D192A40008EA36D /* FaceLandmarkVid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045A38631D1921C100A8F47B /* FaceLandmarkVid.cpp */; };
+		043C012F1D226595006C8FB3 /* libopencvlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C012B1D226456006C8FB3 /* libopencvlib.a */; };
+		043C01301D2265A6006C8FB3 /* liblibtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01211D226456006C8FB3 /* liblibtiff.a */; };
+		043C01311D2265B3006C8FB3 /* libIlmImf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01291D226456006C8FB3 /* libIlmImf.a */; };
+		043C01321D2265B3006C8FB3 /* liblibjasper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01251D226456006C8FB3 /* liblibjasper.a */; };
+		043C01331D2265B3006C8FB3 /* liblibjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01231D226456006C8FB3 /* liblibjpeg.a */; };
+		043C01341D2265B3006C8FB3 /* liblibpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01271D226456006C8FB3 /* liblibpng.a */; };
+		043C01351D2265B3006C8FB3 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C011F1D226456006C8FB3 /* libzlib.a */; };
 		04C7458D1D20F88500F1E0E4 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FEBA1D1929AD008EA36D /* stdafx.cpp */; };
 		04C7458E1D20F88500F1E0E4 /* Processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0403230D1D1B843400473C33 /* Processing.cpp */; };
 		04C7458F1D20F88500F1E0E4 /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0438FE241D1929A2008EA36D /* source.cpp */; };
@@ -68,72 +75,58 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		045A38721D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C011E1D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E04B5AFCC3824259B25B5CB0;
 			remoteInfo = zlib;
 		};
-		045A38741D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C01201D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1C90A63CAC874268ABAA5883;
 			remoteInfo = libtiff;
 		};
-		045A38761D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C01221D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C5E43F3F1C024A4FB22A33EE;
 			remoteInfo = libjpeg;
 		};
-		045A38781D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C01241D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4BBD9897B1EF4C08B60AE406;
-			remoteInfo = libwebp;
-		};
-		045A387A1D1921D500A8F47B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 6FA811231B1D4566B33198E5;
 			remoteInfo = libjasper;
 		};
-		045A387C1D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C01261D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8FECB2B2FA594796BE832ECC;
 			remoteInfo = libpng;
 		};
-		045A387E1D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C01281D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9B0DBD2B3D3B4D39A74D2515;
 			remoteInfo = IlmImf;
 		};
-		045A38801D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C012A1D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4FCA66827917428DA7788885;
-			remoteInfo = opencv_world;
-		};
-		045A38821D1921D500A8F47B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 335697A6F8C74AC9A105B1C1;
-			remoteInfo = opencv_world_object;
+			remoteInfo = opencvlib;
 		};
-		045A38841D1921D500A8F47B /* PBXContainerItemProxy */ = {
+		043C012C1D226456006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+			containerPortal = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F887A994EB05471E92BB4A8C;
 			remoteInfo = opencv_ts;
@@ -189,12 +182,29 @@
 		0438FEB91D1929AD008EA36D /* PDM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PDM.cpp; sourceTree = "<group>"; };
 		0438FEBA1D1929AD008EA36D /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
 		0438FEBB1D1929AD008EA36D /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
+		043C01131D226456006C8FB3 /* cv.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cv.xcodeproj; path = build/cv.xcodeproj; sourceTree = "<group>"; };
 		045A38631D1921C100A8F47B /* FaceLandmarkVid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceLandmarkVid.cpp; path = ios_mac/mac/FaceLandmarkVid.cpp; sourceTree = "<group>"; };
-		045A38651D1921D500A8F47B /* facelib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = facelib.xcodeproj; path = build/facelib.xcodeproj; sourceTree = "<group>"; };
 		04C745AC1D20F88500F1E0E4 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C745AF1D20F92700F1E0E4 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ios_mac/mac/test.cpp; sourceTree = "<group>"; };
 		152B056170DB435CB6AD8C3F /* facedetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = facedetect; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043C012E1D22658C006C8FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043C01311D2265B3006C8FB3 /* libIlmImf.a in Frameworks */,
+				043C01321D2265B3006C8FB3 /* liblibjasper.a in Frameworks */,
+				043C01331D2265B3006C8FB3 /* liblibjpeg.a in Frameworks */,
+				043C01341D2265B3006C8FB3 /* liblibpng.a in Frameworks */,
+				043C01351D2265B3006C8FB3 /* libzlib.a in Frameworks */,
+				043C01301D2265A6006C8FB3 /* liblibtiff.a in Frameworks */,
+				043C012F1D226595006C8FB3 /* libopencvlib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		040323021D1B842300473C33 /* CvEffects */ = {
@@ -330,6 +340,21 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		043C01141D226456006C8FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043C011F1D226456006C8FB3 /* libzlib.a */,
+				043C01211D226456006C8FB3 /* liblibtiff.a */,
+				043C01231D226456006C8FB3 /* liblibjpeg.a */,
+				043C01251D226456006C8FB3 /* liblibjasper.a */,
+				043C01271D226456006C8FB3 /* liblibpng.a */,
+				043C01291D226456006C8FB3 /* libIlmImf.a */,
+				043C012B1D226456006C8FB3 /* libopencvlib.a */,
+				043C012D1D226456006C8FB3 /* libopencv_ts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		045A38611D1921A500A8F47B /* mac */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,23 +370,6 @@
 				045A38631D1921C100A8F47B /* FaceLandmarkVid.cpp */,
 			);
 			name = facedetect;
-			sourceTree = "<group>";
-		};
-		045A38661D1921D500A8F47B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				045A38731D1921D500A8F47B /* libzlib.a */,
-				045A38751D1921D500A8F47B /* liblibtiff.a */,
-				045A38771D1921D500A8F47B /* liblibjpeg.a */,
-				045A38791D1921D500A8F47B /* liblibwebp.a */,
-				045A387B1D1921D500A8F47B /* liblibjasper.a */,
-				045A387D1D1921D500A8F47B /* liblibpng.a */,
-				045A387F1D1921D500A8F47B /* libIlmImf.a */,
-				045A38811D1921D500A8F47B /* libopencv_world.3.1.0.dylib */,
-				045A38831D1921D500A8F47B /* libopencv_world_object.a */,
-				045A38851D1921D500A8F47B /* libopencv_ts.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		045A38861D1921EA00A8F47B /* test */ = {
@@ -397,7 +405,7 @@
 		A5809045022E430986BB818E = {
 			isa = PBXGroup;
 			children = (
-				045A38651D1921D500A8F47B /* facelib.xcodeproj */,
+				043C01131D226456006C8FB3 /* cv.xcodeproj */,
 				46C0D083501444F8BD98A53E /* Sources */,
 				90682E128AC94FE6AF64EAFD /* Products */,
 			);
@@ -426,6 +434,7 @@
 			buildConfigurationList = E31E7B33963E4E15A415EE7D /* Build configuration list for PBXNativeTarget "facedetect" */;
 			buildPhases = (
 				800DE0D8206A44139FB5011E /* Sources */,
+				043C012E1D22658C006C8FB3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,8 +464,8 @@
 			projectDirPath = ..;
 			projectReferences = (
 				{
-					ProductGroup = 045A38661D1921D500A8F47B /* Products */;
-					ProjectRef = 045A38651D1921D500A8F47B /* facelib.xcodeproj */;
+					ProductGroup = 043C01141D226456006C8FB3 /* Products */;
+					ProjectRef = 043C01131D226456006C8FB3 /* cv.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -468,74 +477,60 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		045A38731D1921D500A8F47B /* libzlib.a */ = {
+		043C011F1D226456006C8FB3 /* libzlib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libzlib.a;
-			remoteRef = 045A38721D1921D500A8F47B /* PBXContainerItemProxy */;
+			remoteRef = 043C011E1D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		045A38751D1921D500A8F47B /* liblibtiff.a */ = {
+		043C01211D226456006C8FB3 /* liblibtiff.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = liblibtiff.a;
-			remoteRef = 045A38741D1921D500A8F47B /* PBXContainerItemProxy */;
+			remoteRef = 043C01201D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		045A38771D1921D500A8F47B /* liblibjpeg.a */ = {
+		043C01231D226456006C8FB3 /* liblibjpeg.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = liblibjpeg.a;
-			remoteRef = 045A38761D1921D500A8F47B /* PBXContainerItemProxy */;
+			remoteRef = 043C01221D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		045A38791D1921D500A8F47B /* liblibwebp.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = liblibwebp.a;
-			remoteRef = 045A38781D1921D500A8F47B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		045A387B1D1921D500A8F47B /* liblibjasper.a */ = {
+		043C01251D226456006C8FB3 /* liblibjasper.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = liblibjasper.a;
-			remoteRef = 045A387A1D1921D500A8F47B /* PBXContainerItemProxy */;
+			remoteRef = 043C01241D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		045A387D1D1921D500A8F47B /* liblibpng.a */ = {
+		043C01271D226456006C8FB3 /* liblibpng.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = liblibpng.a;
-			remoteRef = 045A387C1D1921D500A8F47B /* PBXContainerItemProxy */;
+			remoteRef = 043C01261D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		045A387F1D1921D500A8F47B /* libIlmImf.a */ = {
+		043C01291D226456006C8FB3 /* libIlmImf.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libIlmImf.a;
-			remoteRef = 045A387E1D1921D500A8F47B /* PBXContainerItemProxy */;
+			remoteRef = 043C01281D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		045A38811D1921D500A8F47B /* libopencv_world.3.1.0.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libopencv_world.3.1.0.dylib;
-			remoteRef = 045A38801D1921D500A8F47B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		045A38831D1921D500A8F47B /* libopencv_world_object.a */ = {
+		043C012B1D226456006C8FB3 /* libopencvlib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libopencv_world_object.a;
-			remoteRef = 045A38821D1921D500A8F47B /* PBXContainerItemProxy */;
+			path = libopencvlib.a;
+			remoteRef = 043C012A1D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		045A38851D1921D500A8F47B /* libopencv_ts.a */ = {
+		043C012D1D226456006C8FB3 /* libopencv_ts.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libopencv_ts.a;
-			remoteRef = 045A38841D1921D500A8F47B /* PBXContainerItemProxy */;
+			remoteRef = 043C012C1D226456006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1017,18 +1012,6 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencvlib.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libzlib.a,
 					"-framework",
 					QTKit,
 					"-framework",
@@ -1182,18 +1165,6 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/mac/MyWorks/HongNuo/face_detector/build/lib/Debug/libopencvlib.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libIlmImf.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjasper.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibjpeg.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibpng.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/liblibtiff.a,
-					/Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug/libzlib.a,
 					"-framework",
 					QTKit,
 					"-framework",

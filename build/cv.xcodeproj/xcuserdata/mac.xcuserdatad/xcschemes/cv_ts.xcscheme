@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5ED7E2420DC6449C856D4C73"
-               BuildableName = "liblibpng.a"
-               BlueprintName = "libpng"
-               ReferencedContainer = "container:build/facelib.xcodeproj">
+               BlueprintIdentifier = "7B0118C71E064BC096B04BF0"
+               BuildableName = "libopencv_ts.a"
+               BlueprintName = "cv_ts"
+               ReferencedContainer = "container:build/cv.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5ED7E2420DC6449C856D4C73"
-            BuildableName = "liblibpng.a"
-            BlueprintName = "libpng"
-            ReferencedContainer = "container:build/facelib.xcodeproj">
+            BlueprintIdentifier = "7B0118C71E064BC096B04BF0"
+            BuildableName = "libopencv_ts.a"
+            BlueprintName = "cv_ts"
+            ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5ED7E2420DC6449C856D4C73"
-            BuildableName = "liblibpng.a"
-            BlueprintName = "libpng"
-            ReferencedContainer = "container:build/facelib.xcodeproj">
+            BlueprintIdentifier = "7B0118C71E064BC096B04BF0"
+            BuildableName = "libopencv_ts.a"
+            BlueprintName = "cv_ts"
+            ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
