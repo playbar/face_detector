@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51E204261747A1C3005C39DB"
-               BuildableName = "libdetector_ios.a"
-               BlueprintName = "detector_ios"
-               ReferencedContainer = "container:detector_ios.xcodeproj">
+               BuildableName = "libface_ios.a"
+               BlueprintName = "face_ios"
+               ReferencedContainer = "container:face_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51E204261747A1C3005C39DB"
-            BuildableName = "libdetector_ios.a"
-            BlueprintName = "detector_ios"
-            ReferencedContainer = "container:detector_ios.xcodeproj">
+            BuildableName = "libface_ios.a"
+            BlueprintName = "face_ios"
+            ReferencedContainer = "container:face_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51E204261747A1C3005C39DB"
-            BuildableName = "libdetector_ios.a"
-            BlueprintName = "detector_ios"
-            ReferencedContainer = "container:detector_ios.xcodeproj">
+            BuildableName = "libface_ios.a"
+            BlueprintName = "face_ios"
+            ReferencedContainer = "container:face_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

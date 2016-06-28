@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B0507F08B6F457CBAA252E9"
-               BuildableName = "liblibjasper.a"
+               BuildableName = "libjasper.a"
                BlueprintName = "libjasper"
                ReferencedContainer = "container:build/facelib_ios.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B0507F08B6F457CBAA252E9"
-            BuildableName = "liblibjasper.a"
+            BuildableName = "libjasper.a"
             BlueprintName = "libjasper"
             ReferencedContainer = "container:build/facelib_ios.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B0507F08B6F457CBAA252E9"
-            BuildableName = "liblibjasper.a"
+            BuildableName = "libjasper.a"
             BlueprintName = "libjasper"
             ReferencedContainer = "container:build/facelib_ios.xcodeproj">
          </BuildableReference>
