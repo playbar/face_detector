@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0495CD8B47B841C68590966F"
-               BuildableName = "libzlib.a"
-               BlueprintName = "zlib"
-               ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+               BlueprintIdentifier = "49D1D325B34E4FDAAE62B113"
+               BuildableName = "libjpeg.a"
+               BlueprintName = "libjpeg"
+               ReferencedContainer = "container:build/cv_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0495CD8B47B841C68590966F"
-            BuildableName = "libzlib.a"
-            BlueprintName = "zlib"
-            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+            BlueprintIdentifier = "49D1D325B34E4FDAAE62B113"
+            BuildableName = "libjpeg.a"
+            BlueprintName = "libjpeg"
+            ReferencedContainer = "container:build/cv_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0495CD8B47B841C68590966F"
-            BuildableName = "libzlib.a"
-            BlueprintName = "zlib"
-            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+            BlueprintIdentifier = "49D1D325B34E4FDAAE62B113"
+            BuildableName = "libjpeg.a"
+            BlueprintName = "libjpeg"
+            ReferencedContainer = "container:build/cv_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

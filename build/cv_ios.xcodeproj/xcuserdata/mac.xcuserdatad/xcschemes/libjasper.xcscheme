@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
-               BuildableName = "libtiff.a"
-               BlueprintName = "libtiff"
-               ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+               BlueprintIdentifier = "3B0507F08B6F457CBAA252E9"
+               BuildableName = "libjasper.a"
+               BlueprintName = "libjasper"
+               ReferencedContainer = "container:build/cv_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
-            BuildableName = "libtiff.a"
-            BlueprintName = "libtiff"
-            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+            BlueprintIdentifier = "3B0507F08B6F457CBAA252E9"
+            BuildableName = "libjasper.a"
+            BlueprintName = "libjasper"
+            ReferencedContainer = "container:build/cv_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
-            BuildableName = "libtiff.a"
-            BlueprintName = "libtiff"
-            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+            BlueprintIdentifier = "3B0507F08B6F457CBAA252E9"
+            BuildableName = "libjasper.a"
+            BlueprintName = "libjasper"
+            ReferencedContainer = "container:build/cv_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

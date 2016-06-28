@@ -3538,7 +3538,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 			};
-			buildConfigurationList = 31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "facelib_ios" */;
+			buildConfigurationList = 31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "cv_ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -5588,7 +5588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "facelib_ios" */ = {
+		31196B6A6CCB49088406C9D6 /* Build configuration list for PBXProject "cv_ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E61FE209382F4EECB58D9641 /* Debug */,

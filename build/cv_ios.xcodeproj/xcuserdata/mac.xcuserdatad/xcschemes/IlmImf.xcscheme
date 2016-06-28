@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5ED7E2420DC6449C856D4C73"
-               BuildableName = "libpng.a"
-               BlueprintName = "libpng"
-               ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+               BlueprintIdentifier = "2D6EFC08CF8A4AD5BCACE477"
+               BuildableName = "libIlmImf.a"
+               BlueprintName = "IlmImf"
+               ReferencedContainer = "container:build/cv_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5ED7E2420DC6449C856D4C73"
-            BuildableName = "libpng.a"
-            BlueprintName = "libpng"
-            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+            BlueprintIdentifier = "2D6EFC08CF8A4AD5BCACE477"
+            BuildableName = "libIlmImf.a"
+            BlueprintName = "IlmImf"
+            ReferencedContainer = "container:build/cv_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5ED7E2420DC6449C856D4C73"
-            BuildableName = "libpng.a"
-            BlueprintName = "libpng"
-            ReferencedContainer = "container:build/facelib_ios.xcodeproj">
+            BlueprintIdentifier = "2D6EFC08CF8A4AD5BCACE477"
+            BuildableName = "libIlmImf.a"
+            BlueprintName = "IlmImf"
+            ReferencedContainer = "container:build/cv_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

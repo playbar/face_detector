@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043C00D51D225C5D006C8FB3 /* libcvlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3451D20FC4500777F79 /* libcvlib.a */; };
 		043C00D81D226044006C8FB3 /* libface_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C00D71D226044006C8FB3 /* libface_ios.a */; };
+		043C010A1D226227006C8FB3 /* libcvlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01091D22621A006C8FB3 /* libcvlib.a */; };
+		043C010B1D226238006C8FB3 /* libIlmImf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01071D22621A006C8FB3 /* libIlmImf.a */; };
+		043C010C1D226238006C8FB3 /* libjasper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01031D22621A006C8FB3 /* libjasper.a */; };
+		043C010D1D226238006C8FB3 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01011D22621A006C8FB3 /* libjpeg.a */; };
+		043C010E1D226238006C8FB3 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C01051D22621A006C8FB3 /* libpng.a */; };
+		043C010F1D226238006C8FB3 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C00FF1D22621A006C8FB3 /* libtiff.a */; };
+		043C01101D226238006C8FB3 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C00FD1D22621A006C8FB3 /* libzlib.a */; };
 		043C0F881D1A74840057A91C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F851D1A74840057A91C /* AppDelegate.m */; };
 		043C0F891D1A74840057A91C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F871D1A74840057A91C /* ViewController.m */; };
 		043C0F8E1D1A74910057A91C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F8A1D1A74910057A91C /* MainStoryboard_iPad.storyboard */; };
@@ -19,12 +25,6 @@
 		043C0F991D1A74A70057A91C /* face_detector_ios-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F931D1A74A70057A91C /* face_detector_ios-Info.plist */; };
 		043C0F9A1D1A74A70057A91C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F951D1A74A70057A91C /* main.m */; };
 		043C0F9D1D1A74B70057A91C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F9B1D1A74B70057A91C /* InfoPlist.strings */; };
-		0440E3571D21024000777F79 /* libIlmImf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3411D20FC4500777F79 /* libIlmImf.a */; };
-		0440E3581D21024300777F79 /* libjasper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E33D1D20FC4500777F79 /* libjasper.a */; };
-		0440E3591D21024C00777F79 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3391D20FC4500777F79 /* libjpeg.a */; };
-		0440E35A1D21024C00777F79 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E33F1D20FC4500777F79 /* libpng.a */; };
-		0440E35B1D21024C00777F79 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3371D20FC4500777F79 /* libtiff.a */; };
-		0440E35C1D21024C00777F79 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3351D20FC4500777F79 /* libzlib.a */; };
 		04C745771D20D20800F1E0E4 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 04C745761D20D20800F1E0E4 /* data */; };
 		83FA79131748FE9000248405 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79121748FE9000248405 /* UIKit.framework */; };
 		83FA79151748FE9000248405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA79141748FE9000248405 /* Foundation.framework */; };
@@ -46,59 +46,60 @@
 			remoteGlobalIDString = 51E204271747A1C3005C39DB;
 			remoteInfo = face_ios;
 		};
-		0440E3341D20FC4500777F79 /* PBXContainerItemProxy */ = {
+		043C00FC1D22621A006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+			containerPortal = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E04B5AFCC3824259B25B5CB0;
 			remoteInfo = zlib;
 		};
-		0440E3361D20FC4500777F79 /* PBXContainerItemProxy */ = {
+		043C00FE1D22621A006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+			containerPortal = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1C90A63CAC874268ABAA5883;
 			remoteInfo = libtiff;
 		};
-		0440E3381D20FC4500777F79 /* PBXContainerItemProxy */ = {
+		043C01001D22621A006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+			containerPortal = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C5E43F3F1C024A4FB22A33EE;
 			remoteInfo = libjpeg;
 		};
-		0440E33C1D20FC4500777F79 /* PBXContainerItemProxy */ = {
+		043C01021D22621A006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+			containerPortal = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 6FA811231B1D4566B33198E5;
 			remoteInfo = libjasper;
 		};
-		0440E33E1D20FC4500777F79 /* PBXContainerItemProxy */ = {
+		043C01041D22621A006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+			containerPortal = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8FECB2B2FA594796BE832ECC;
 			remoteInfo = libpng;
 		};
-		0440E3401D20FC4500777F79 /* PBXContainerItemProxy */ = {
+		043C01061D22621A006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+			containerPortal = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9B0DBD2B3D3B4D39A74D2515;
 			remoteInfo = IlmImf;
 		};
-		0440E3441D20FC4500777F79 /* PBXContainerItemProxy */ = {
+		043C01081D22621A006C8FB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+			containerPortal = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 335697A6F8C74AC9A105B1C1;
-			remoteInfo = opencvlib;
+			remoteInfo = cvlib;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		043C00D71D226044006C8FB3 /* libface_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libface_ios.a; path = "../../../../Library/Developer/Xcode/DerivedData/face_detector_ios-gqenoqainiepmrfjlwkuhobppzdy/Build/Products/Debug-iphoneos/libface_ios.a"; sourceTree = "<group>"; };
+		043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cv_ios.xcodeproj; path = ../build/cv_ios.xcodeproj; sourceTree = "<group>"; };
 		043C0F841D1A74840057A91C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ios/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		043C0F851D1A74840057A91C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ios/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		043C0F861D1A74840057A91C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ios/ViewController.h; sourceTree = SOURCE_ROOT; };
@@ -113,7 +114,6 @@
 		043C0F951D1A74A70057A91C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = SOURCE_ROOT; };
 		043C0F9C1D1A74B70057A91C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ios/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		043C0FA01D1A77A30057A91C /* face_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = face_ios.xcodeproj; path = ../detector/face_ios.xcodeproj; sourceTree = "<group>"; };
-		0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = facelib_ios.xcodeproj; path = ../build/facelib_ios.xcodeproj; sourceTree = "<group>"; };
 		0440E3541D2100C800777F79 /* libdetector_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdetector_ios.a; path = "../../../../Library/Developer/Xcode/DerivedData/face_detector_ios-gqenoqainiepmrfjlwkuhobppzdy/Build/Products/Debug-iphoneos/libdetector_ios.a"; sourceTree = "<group>"; };
 		0440E35D1D21036800777F79 /* libippicv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libippicv.a; path = ../3rdparty/ippicv/unpack/ippicv_osx/lib/libippicv.a; sourceTree = "<group>"; };
 		04C745761D20D20800F1E0E4 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../detector/LandmarkDetector/data; sourceTree = "<group>"; };
@@ -135,14 +135,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C010B1D226238006C8FB3 /* libIlmImf.a in Frameworks */,
+				043C010C1D226238006C8FB3 /* libjasper.a in Frameworks */,
+				043C010D1D226238006C8FB3 /* libjpeg.a in Frameworks */,
+				043C010E1D226238006C8FB3 /* libpng.a in Frameworks */,
+				043C010F1D226238006C8FB3 /* libtiff.a in Frameworks */,
+				043C01101D226238006C8FB3 /* libzlib.a in Frameworks */,
+				043C010A1D226227006C8FB3 /* libcvlib.a in Frameworks */,
 				043C00D81D226044006C8FB3 /* libface_ios.a in Frameworks */,
-				043C00D51D225C5D006C8FB3 /* libcvlib.a in Frameworks */,
-				0440E3591D21024C00777F79 /* libjpeg.a in Frameworks */,
-				0440E35A1D21024C00777F79 /* libpng.a in Frameworks */,
-				0440E35B1D21024C00777F79 /* libtiff.a in Frameworks */,
-				0440E35C1D21024C00777F79 /* libzlib.a in Frameworks */,
-				0440E3581D21024300777F79 /* libjasper.a in Frameworks */,
-				0440E3571D21024000777F79 /* libIlmImf.a in Frameworks */,
 				83FA79471748FF4A00248405 /* QuartzCore.framework in Frameworks */,
 				83FA79431748FF3F00248405 /* CoreImage.framework in Frameworks */,
 				83FA79441748FF3F00248405 /* CoreMedia.framework in Frameworks */,
@@ -167,6 +167,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		043C00F31D22621A006C8FB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043C00FD1D22621A006C8FB3 /* libzlib.a */,
+				043C00FF1D22621A006C8FB3 /* libtiff.a */,
+				043C01011D22621A006C8FB3 /* libjpeg.a */,
+				043C01031D22621A006C8FB3 /* libjasper.a */,
+				043C01051D22621A006C8FB3 /* libpng.a */,
+				043C01071D22621A006C8FB3 /* libIlmImf.a */,
+				043C01091D22621A006C8FB3 /* libcvlib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		043C0FC31D1A7A570057A91C /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,25 +189,11 @@
 			name = resource;
 			sourceTree = "<group>";
 		};
-		0440E3281D20FC4500777F79 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0440E3351D20FC4500777F79 /* libzlib.a */,
-				0440E3371D20FC4500777F79 /* libtiff.a */,
-				0440E3391D20FC4500777F79 /* libjpeg.a */,
-				0440E33D1D20FC4500777F79 /* libjasper.a */,
-				0440E33F1D20FC4500777F79 /* libpng.a */,
-				0440E3411D20FC4500777F79 /* libIlmImf.a */,
-				0440E3451D20FC4500777F79 /* libcvlib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		83FA79031748FE9000248405 = {
 			isa = PBXGroup;
 			children = (
+				043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */,
 				043C0FA01D1A77A30057A91C /* face_ios.xcodeproj */,
-				0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */,
 				043C0FC31D1A7A570057A91C /* resource */,
 				83FA79181748FE9000248405 /* ios */,
 				83FA79111748FE9000248405 /* Frameworks */,
@@ -304,12 +304,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 043C00DA1D2260AE006C8FB3 /* Products */;
-					ProjectRef = 043C0FA01D1A77A30057A91C /* face_ios.xcodeproj */;
+					ProductGroup = 043C00F31D22621A006C8FB3 /* Products */;
+					ProjectRef = 043C00F21D22621A006C8FB3 /* cv_ios.xcodeproj */;
 				},
 				{
-					ProductGroup = 0440E3281D20FC4500777F79 /* Products */;
-					ProjectRef = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
+					ProductGroup = 043C00DA1D2260AE006C8FB3 /* Products */;
+					ProjectRef = 043C0FA01D1A77A30057A91C /* face_ios.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -327,53 +327,53 @@
 			remoteRef = 043C00DD1D2260AE006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E3351D20FC4500777F79 /* libzlib.a */ = {
+		043C00FD1D22621A006C8FB3 /* libzlib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libzlib.a;
-			remoteRef = 0440E3341D20FC4500777F79 /* PBXContainerItemProxy */;
+			remoteRef = 043C00FC1D22621A006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E3371D20FC4500777F79 /* libtiff.a */ = {
+		043C00FF1D22621A006C8FB3 /* libtiff.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libtiff.a;
-			remoteRef = 0440E3361D20FC4500777F79 /* PBXContainerItemProxy */;
+			remoteRef = 043C00FE1D22621A006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E3391D20FC4500777F79 /* libjpeg.a */ = {
+		043C01011D22621A006C8FB3 /* libjpeg.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libjpeg.a;
-			remoteRef = 0440E3381D20FC4500777F79 /* PBXContainerItemProxy */;
+			remoteRef = 043C01001D22621A006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E33D1D20FC4500777F79 /* libjasper.a */ = {
+		043C01031D22621A006C8FB3 /* libjasper.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libjasper.a;
-			remoteRef = 0440E33C1D20FC4500777F79 /* PBXContainerItemProxy */;
+			remoteRef = 043C01021D22621A006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E33F1D20FC4500777F79 /* libpng.a */ = {
+		043C01051D22621A006C8FB3 /* libpng.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libpng.a;
-			remoteRef = 0440E33E1D20FC4500777F79 /* PBXContainerItemProxy */;
+			remoteRef = 043C01041D22621A006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E3411D20FC4500777F79 /* libIlmImf.a */ = {
+		043C01071D22621A006C8FB3 /* libIlmImf.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libIlmImf.a;
-			remoteRef = 0440E3401D20FC4500777F79 /* PBXContainerItemProxy */;
+			remoteRef = 043C01061D22621A006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E3451D20FC4500777F79 /* libcvlib.a */ = {
+		043C01091D22621A006C8FB3 /* libcvlib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libcvlib.a;
-			remoteRef = 0440E3441D20FC4500777F79 /* PBXContainerItemProxy */;
+			remoteRef = 043C01081D22621A006C8FB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
