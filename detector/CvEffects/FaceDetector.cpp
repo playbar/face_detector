@@ -233,21 +233,15 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     fy = fx;
     
     
-    TS(Preprocessing);
     cvtColor(frame, grayscale_image, CV_BGR2GRAY);
     equalizeHist( grayscale_image, grayscale_image);
     //PreprocessToGray_optimized( frame);
 
-    TE(Preprocessing);
     
     
-    TS(DetectFaces);
     detection_success = LandmarkDetector::DetectLandmarksInVideo( grayscale_image, depth_image, face_model, det_parameters );
-    TE(DetectFaces);
     
-    TS(ShowFaces);
     showDetect(frame);
-    TE(ShowFaces);
     
 
     // Detect faces

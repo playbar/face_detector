@@ -36,7 +36,7 @@ CLNF::CLNF(string fname)
 
 // Copy constructor (makes a deep copy of CLNF)
 CLNF::CLNF(const CLNF& other): pdm(other.pdm), params_local(other.params_local.clone()), params_global(other.params_global), detected_landmarks(other.detected_landmarks.clone()),
-	landmark_likelihoods(other.landmark_likelihoods.clone()), patch_experts(other.patch_experts), landmark_validator(other.landmark_validator), face_detector_location(other.face_detector_location),
+	landmark_likelihoods(other.landmark_likelihoods.clone()), patch_experts(other.patch_experts), landmark_validator(other.landmark_validator),
 	hierarchical_mapping(other.hierarchical_mapping), hierarchical_models(other.hierarchical_models), hierarchical_model_names(other.hierarchical_model_names),
 	hierarchical_params(other.hierarchical_params), eye_model(other.eye_model)
 {
@@ -46,11 +46,6 @@ CLNF::CLNF(const CLNF& other): pdm(other.pdm), params_local(other.params_local.c
 	this->model_likelihood = other.model_likelihood;
 	this->failures_in_a_row = other.failures_in_a_row;
 	
-	// Load the CascadeClassifier (as it does not have a proper copy constructor)
-	if(!face_detector_location.empty())
-	{
-		this->face_detector_HAAR.load(face_detector_location);
-	}
 	// Make sure the matrices are allocated properly
 	this->triangulations.resize(other.triangulations.size());
 	for(size_t i = 0; i < other.triangulations.size(); ++i)
@@ -66,7 +61,6 @@ CLNF::CLNF(const CLNF& other): pdm(other.pdm), params_local(other.params_local.c
 		this->kde_resp_precalc.insert(std::pair<int, cv::Mat_<float> >(it->first, it->second.clone()));
 	}
 
-	//this->face_detector_HOG = dlib::get_frontal_face_detector();
 
 }
 
@@ -83,7 +77,6 @@ CLNF & CLNF::operator= (const CLNF& other)
 		landmark_likelihoods =other.landmark_likelihoods.clone();
 		patch_experts = Patch_experts(other.patch_experts);
 		landmark_validator = DetectionValidator(other.landmark_validator);
-		face_detector_location = other.face_detector_location;
 
 		this->detection_success = other.detection_success;
 		this->tracking_initialised = other.tracking_initialised;
@@ -93,11 +86,6 @@ CLNF & CLNF::operator= (const CLNF& other)
 
 		this->eye_model = other.eye_model;
 
-		// Load the CascadeClassifier (as it does not have a proper copy constructor)
-		if(!face_detector_location.empty())
-		{
-			this->face_detector_HAAR.load(face_detector_location);
-		}
 		// Make sure the matrices are allocated properly
 		this->triangulations.resize(other.triangulations.size());
 		for(size_t i = 0; i < other.triangulations.size(); ++i)
@@ -120,7 +108,6 @@ CLNF & CLNF::operator= (const CLNF& other)
 		this->hierarchical_params = other.hierarchical_params;
 	}
 
-	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 	return *this;
 }
@@ -141,14 +128,9 @@ CLNF::CLNF(const CLNF&& other)
 	landmark_likelihoods = other.landmark_likelihoods;
 	patch_experts = other.patch_experts;
 	landmark_validator = other.landmark_validator;
-	face_detector_location = other.face_detector_location;
-
-	face_detector_HAAR = other.face_detector_HAAR;
 
 	triangulations = other.triangulations;
 	kde_resp_precalc = other.kde_resp_precalc;
-
-	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 	// Copy over the hierarchical models
 	this->hierarchical_mapping = other.hierarchical_mapping;
@@ -176,14 +158,9 @@ CLNF & CLNF::operator= (const CLNF&& other)
 	landmark_likelihoods = other.landmark_likelihoods;
 	patch_experts = other.patch_experts;
 	landmark_validator = other.landmark_validator;
-	face_detector_location = other.face_detector_location;
-
-	face_detector_HAAR = other.face_detector_HAAR;
 
 	triangulations = other.triangulations;
 	kde_resp_precalc = other.kde_resp_precalc;
-
-	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 	// Copy over the hierarchical models
 	this->hierarchical_mapping = other.hierarchical_mapping;
@@ -291,7 +268,6 @@ void CLNF::Read_CLNF(string clnf_location)
 	patch_experts.Read(intensity_expert_locations, depth_expert_locations, ccnf_expert_locations);
 
 	// Read in a face detector
-	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 }
 
@@ -552,9 +528,9 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, const cv::Mat_<float> &
 		for (int part_model = 0; part_model < hierarchical_models.size(); ++part_model )
 		{
 			// Only do the synthetic eye models if we're doing gaze
-			if (!((hierarchical_model_names[part_model].compare("right_eye_28") == 0 ||
-			hierarchical_model_names[part_model].compare("left_eye_28") == 0)
-			&& !params.track_gaze))
+			if (!((hierarchical_model_names[part_model].compare("right_eye_28") == 0
+                 ||hierarchical_model_names[part_model].compare("left_eye_28") == 0)
+                 && !params.track_gaze))
 			{
 
 				int n_part_points = hierarchical_models[part_model].pdm.NumberOfPoints();

@@ -56,11 +56,6 @@ public:
 
 	//==================== Helpers for face detection and landmark detection validation =========================================
 
-	// Haar cascade classifier for face detection
-	cv::CascadeClassifier   face_detector_HAAR;
-	string                  face_detector_location;
-
-
 	// Validate if the detected landmarks are correct using an SVR regressor
 	DetectionValidator	landmark_validator; 
 

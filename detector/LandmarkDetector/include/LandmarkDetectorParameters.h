@@ -55,14 +55,6 @@ struct FaceModelParameters
 
 	// Determining which face detector to use for (re)initialisation, HAAR is quicker but provides more false positives and is not goot for in-the-wild conditions
 	// Also HAAR detector can detect smaller faces while HOG SVM is only capable of detecting faces at least 70px across
-	enum FaceDetector
-    {
-        HAAR_DETECTOR,
-        HOG_SVM_DETECTOR
-    };
-
-	string face_detector_location;
-	FaceDetector curr_face_detector;
 
 	// Should the results be visualised and reported to console
 	bool quiet_mode;

@@ -285,13 +285,6 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 
 		cv::Rect_<double> bounding_box;
 
-		// If the face detector has not been initialised read it in
-		if(clnf_model.face_detector_HAAR.empty())
-		{
-			clnf_model.face_detector_HAAR.load(params.face_detector_location);
-			clnf_model.face_detector_location = params.face_detector_location;
-		}
-
 		cv::Point preference_det(-1, -1);
 		if(clnf_model.preference_det.x != -1 && clnf_model.preference_det.y != -1)
 		{
@@ -301,19 +294,13 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 		}
 
 		bool face_detection_success;
-		if(params.curr_face_detector == FaceModelParameters::HOG_SVM_DETECTOR)
-		{
-			double confidence;
-            TS(DetectSingleFaceHOG);
-			face_detection_success = LandmarkDetector::DetectSingleFaceHOG(bounding_box, grayscale_image, clnf_model.face_detector_HOG, confidence, preference_det);
-            TE(DetectSingleFaceHOG);
-		}
-		else if(params.curr_face_detector == FaceModelParameters::HAAR_DETECTOR)
-		{
-            TS(DetectSingleFace);
-			face_detection_success = LandmarkDetector::DetectSingleFace(bounding_box, grayscale_image, clnf_model.face_detector_HAAR, preference_det);
-            TE(DetectSingleFace);
-		}
+			
+        double confidence;
+        TS(DetectSingleFaceHOG);
+        face_detection_success = LandmarkDetector::DetectSingleFaceHOG(bounding_box, grayscale_image,
+            clnf_model.face_detector_HOG, confidence, preference_det);
+        TE(DetectSingleFaceHOG);
+
 
 		// Attempt to detect landmarks using the detected face (if unseccessful the detection will be ignored)
 		if(face_detection_success)
@@ -336,7 +323,7 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 			params.window_sizes_current = params.window_sizes_init;
 
 			// Do the actual landmark detection (and keep it only if successful)
-			bool landmark_detection_success = clnf_model.DetectLandmarks(grayscale_image, depth_image, params);
+            bool landmark_detection_success = clnf_model.DetectLandmarks(grayscale_image, depth_image, params);
 
 			// If landmark reinitialisation unsucessful continue from previous estimates
 			// if it's initial detection however, do not care if it was successful as the validator might be wrong, so continue trackig
@@ -351,13 +338,14 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 				clnf_model.model_likelihood = likelihood_init;
 				clnf_model.detected_landmarks = detected_landmarks_init.clone();
 				clnf_model.landmark_likelihoods = landmark_likelihoods_init.clone();
-
+                TE(DetectLandmarksInVideo);
 				return false;
 			}
 			else
 			{
 				clnf_model.failures_in_a_row = -1;				
 				UpdateTemplate(grayscale_image, clnf_model);
+                TE(DetectLandmarksInVideo);
 				return true;
 			}
 		}
@@ -515,24 +503,9 @@ bool LandmarkDetector::DetectLandmarksInImage(const cv::Mat_<uchar> &grayscale_i
 {
 
 	cv::Rect_<double> bounding_box;
-
-	// If the face detector has not been initialised read it in
-	if(clnf_model.face_detector_HAAR.empty())
-	{
-		clnf_model.face_detector_HAAR.load(params.face_detector_location);
-		clnf_model.face_detector_location = params.face_detector_location;
-	}
 		
-	// Detect the face first
-	if(params.curr_face_detector == FaceModelParameters::HOG_SVM_DETECTOR)
-	{
-		double confidence;
-		LandmarkDetector::DetectSingleFaceHOG(bounding_box, grayscale_image, clnf_model.face_detector_HOG, confidence);
-	}
-	else if(params.curr_face_detector == FaceModelParameters::HAAR_DETECTOR)
-	{
-		LandmarkDetector::DetectSingleFace(bounding_box, grayscale_image, clnf_model.face_detector_HAAR);
-	}
+    double confidence;
+    LandmarkDetector::DetectSingleFaceHOG(bounding_box, grayscale_image, clnf_model.face_detector_HOG, confidence);
 
 	if(bounding_box.width == 0)
 	{

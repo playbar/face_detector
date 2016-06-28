@@ -60,13 +60,6 @@
 			remoteGlobalIDString = C5E43F3F1C024A4FB22A33EE;
 			remoteInfo = libjpeg;
 		};
-		0440E33A1D20FC4500777F79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4BBD9897B1EF4C08B60AE406;
-			remoteInfo = libwebp;
-		};
 		0440E33C1D20FC4500777F79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0440E3271D20FC4500777F79 /* facelib_ios.xcodeproj */;
@@ -179,7 +172,6 @@
 				0440E3351D20FC4500777F79 /* libzlib.a */,
 				0440E3371D20FC4500777F79 /* liblibtiff.a */,
 				0440E3391D20FC4500777F79 /* liblibjpeg.a */,
-				0440E33B1D20FC4500777F79 /* liblibwebp.a */,
 				0440E33D1D20FC4500777F79 /* liblibjasper.a */,
 				0440E33F1D20FC4500777F79 /* liblibpng.a */,
 				0440E3411D20FC4500777F79 /* libIlmImf.a */,
@@ -345,13 +337,6 @@
 			fileType = archive.ar;
 			path = liblibjpeg.a;
 			remoteRef = 0440E3381D20FC4500777F79 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0440E33B1D20FC4500777F79 /* liblibwebp.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = liblibwebp.a;
-			remoteRef = 0440E33A1D20FC4500777F79 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		0440E33D1D20FC4500777F79 /* liblibjasper.a */ = {
