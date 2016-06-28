@@ -236,6 +236,9 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 	// and using a smaller search area
 
 	// Indicating that this is a first detection in video sequence or after restart
+    
+    TS(DetectLandmarksInVideo);
+    
 	bool initial_detection = !clnf_model.tracking_initialised;
 
 	// Only do it if there was a face detection at all
@@ -371,7 +374,9 @@ bool LandmarkDetector::DetectLandmarksInVideo(const cv::Mat_<uchar> &grayscale_i
 	{
 		clnf_model.tracking_initialised = false;
 	}
-
+    
+    TE(DetectLandmarksInVideo);
+    
 	return clnf_model.detection_success;
 	
 }

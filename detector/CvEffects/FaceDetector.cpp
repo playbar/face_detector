@@ -243,10 +243,12 @@ void FaceDetector::detectAndAnimateFaces(Mat& frame)
     
     TS(DetectFaces);
     detection_success = LandmarkDetector::DetectLandmarksInVideo( grayscale_image, depth_image, face_model, det_parameters );
-    
-    showDetect(frame);
-    
     TE(DetectFaces);
+    
+    TS(ShowFaces);
+    showDetect(frame);
+    TE(ShowFaces);
+    
 
     // Detect faces
    
