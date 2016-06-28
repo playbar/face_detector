@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "71B59D83E12347F4B056BB03"
-               BuildableName = "libcv.a"
-               BlueprintName = "cv"
+               BuildableName = "libcvlib.a"
+               BlueprintName = "cvlib"
                ReferencedContainer = "container:build/facelib_ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "71B59D83E12347F4B056BB03"
-            BuildableName = "libcv.a"
-            BlueprintName = "cv"
+            BuildableName = "libcvlib.a"
+            BlueprintName = "cvlib"
             ReferencedContainer = "container:build/facelib_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "71B59D83E12347F4B056BB03"
-            BuildableName = "libcv.a"
-            BlueprintName = "cv"
+            BuildableName = "libcvlib.a"
+            BlueprintName = "cvlib"
             ReferencedContainer = "container:build/facelib_ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

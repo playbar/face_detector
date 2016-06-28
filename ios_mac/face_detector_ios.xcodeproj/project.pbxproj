@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043C00D51D225C5D006C8FB3 /* libcv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3451D20FC4500777F79 /* libcv.a */; };
 		043C0F881D1A74840057A91C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F851D1A74840057A91C /* AppDelegate.m */; };
 		043C0F891D1A74840057A91C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F871D1A74840057A91C /* ViewController.m */; };
 		043C0F8E1D1A74910057A91C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F8A1D1A74910057A91C /* MainStoryboard_iPad.storyboard */; };
@@ -17,7 +18,6 @@
 		043C0F991D1A74A70057A91C /* face_detector_ios-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F931D1A74A70057A91C /* face_detector_ios-Info.plist */; };
 		043C0F9A1D1A74A70057A91C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C0F951D1A74A70057A91C /* main.m */; };
 		043C0F9D1D1A74B70057A91C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 043C0F9B1D1A74B70057A91C /* InfoPlist.strings */; };
-		0440E3561D2100CD00777F79 /* libcvlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3451D20FC4500777F79 /* libcvlib.a */; };
 		0440E3571D21024000777F79 /* libIlmImf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3411D20FC4500777F79 /* libIlmImf.a */; };
 		0440E3581D21024300777F79 /* liblibjasper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E33D1D20FC4500777F79 /* liblibjasper.a */; };
 		0440E3591D21024C00777F79 /* liblibjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440E3391D20FC4500777F79 /* liblibjpeg.a */; };
@@ -134,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C00D51D225C5D006C8FB3 /* libcv.a in Frameworks */,
 				0440E35F1D21039A00777F79 /* libdetector_ios.a in Frameworks */,
 				0440E3591D21024C00777F79 /* liblibjpeg.a in Frameworks */,
 				0440E35A1D21024C00777F79 /* liblibpng.a in Frameworks */,
@@ -141,7 +142,6 @@
 				0440E35C1D21024C00777F79 /* libzlib.a in Frameworks */,
 				0440E3581D21024300777F79 /* liblibjasper.a in Frameworks */,
 				0440E3571D21024000777F79 /* libIlmImf.a in Frameworks */,
-				0440E3561D2100CD00777F79 /* libcvlib.a in Frameworks */,
 				83FA79471748FF4A00248405 /* QuartzCore.framework in Frameworks */,
 				83FA79431748FF3F00248405 /* CoreImage.framework in Frameworks */,
 				83FA79441748FF3F00248405 /* CoreMedia.framework in Frameworks */,
@@ -175,7 +175,7 @@
 				0440E33D1D20FC4500777F79 /* liblibjasper.a */,
 				0440E33F1D20FC4500777F79 /* liblibpng.a */,
 				0440E3411D20FC4500777F79 /* libIlmImf.a */,
-				0440E3451D20FC4500777F79 /* libcvlib.a */,
+				0440E3451D20FC4500777F79 /* libcv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,10 +360,10 @@
 			remoteRef = 0440E3401D20FC4500777F79 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0440E3451D20FC4500777F79 /* libcvlib.a */ = {
+		0440E3451D20FC4500777F79 /* libcv.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libcvlib.a;
+			path = libcv.a;
 			remoteRef = 0440E3441D20FC4500777F79 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

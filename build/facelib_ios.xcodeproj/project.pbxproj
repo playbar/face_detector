@@ -640,7 +640,7 @@
 		1C341AA1941848F8AAD63E6C /* ImathLine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImathLine.h; path = 3rdparty/openexr/Imath/ImathLine.h; sourceTree = SOURCE_ROOT; };
 		1C54067303B14250BB50D215 /* va_intel.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = va_intel.hpp; path = modules/core/include/opencv2/core/va_intel.hpp; sourceTree = SOURCE_ROOT; };
 		1C69536E064E41BB82EAA283 /* tif_dirinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_dirinfo.c; path = 3rdparty/libtiff/tif_dirinfo.c; sourceTree = SOURCE_ROOT; };
-		1C90A63CAC874268ABAA5883 /* liblibtiff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibtiff.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C90A63CAC874268ABAA5883 /* libtiff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtiff.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF4A740BBAE4F2B9E416E33 /* templmatch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = templmatch.cpp; path = modules/imgproc/src/templmatch.cpp; sourceTree = SOURCE_ROOT; };
 		1D3CB489618840FAABA338D2 /* tiffio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiffio.h; path = 3rdparty/libtiff/tiffio.h; sourceTree = SOURCE_ROOT; };
 		1D50BE20E9AB49378AAA3E6D /* result_set.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = result_set.h; path = modules/flann/include/opencv2/flann/result_set.h; sourceTree = SOURCE_ROOT; };
@@ -717,7 +717,7 @@
 		327D5DF9707D40359C5D0A17 /* precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precomp.hpp; path = modules/features2d/src/precomp.hpp; sourceTree = SOURCE_ROOT; };
 		331D4956C5C54CDDA6842457 /* opencl_kernels_imgproc.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencl_kernels_imgproc.hpp; path = build/modules/world/opencl_kernels_imgproc.hpp; sourceTree = SOURCE_ROOT; };
 		3333E92B81E64F2A84ADA646 /* IexThrowErrnoExc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IexThrowErrnoExc.cpp; path = 3rdparty/openexr/Iex/IexThrowErrnoExc.cpp; sourceTree = SOURCE_ROOT; };
-		335697A6F8C74AC9A105B1C1 /* libcv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcv.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		335697A6F8C74AC9A105B1C1 /* libcvlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcvlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399A1641D874B11B73B4C20 /* halfLimits.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfLimits.h; path = 3rdparty/openexr/Half/halfLimits.h; sourceTree = SOURCE_ROOT; };
 		33B77B99958B4D37BADBFC93 /* tif_packbits.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_packbits.c; path = 3rdparty/libtiff/tif_packbits.c; sourceTree = SOURCE_ROOT; };
 		342F2F40D04547D8863AF7D1 /* five-point.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "five-point.cpp"; path = "modules/calib3d/src/five-point.cpp"; sourceTree = SOURCE_ROOT; };
@@ -930,7 +930,7 @@
 		6EE3114CA9A44EFE89619CA7 /* autotuned_index.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = autotuned_index.h; path = modules/flann/include/opencv2/flann/autotuned_index.h; sourceTree = SOURCE_ROOT; };
 		6F6160C343974927A9AA01A1 /* hough.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hough.cpp; path = modules/imgproc/src/hough.cpp; sourceTree = SOURCE_ROOT; };
 		6F86995221634DFCA463DA4E /* precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precomp.hpp; path = modules/objdetect/src/precomp.hpp; sourceTree = SOURCE_ROOT; };
-		6FA811231B1D4566B33198E5 /* liblibjasper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibjasper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA811231B1D4566B33198E5 /* libjasper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjasper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC1C0DB5E074AF5B3AB6F00 /* bgfg_gaussmix2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bgfg_gaussmix2.cpp; path = modules/video/src/bgfg_gaussmix2.cpp; sourceTree = SOURCE_ROOT; };
 		6FD383641B074E0B8DA95EDA /* jas_cm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jas_cm.h; path = 3rdparty/libjasper/jasper/jas_cm.h; sourceTree = SOURCE_ROOT; };
 		6FD5FFC363F54B1EB15D00E9 /* IlmThreadSemaphore.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IlmThreadSemaphore.h; path = 3rdparty/openexr/IlmThread/IlmThreadSemaphore.h; sourceTree = SOURCE_ROOT; };
@@ -1060,7 +1060,7 @@
 		8FA019D1E9C44468A7395B69 /* tif_dir.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tif_dir.h; path = 3rdparty/libtiff/tif_dir.h; sourceTree = SOURCE_ROOT; };
 		8FAED15AEF614DDBA0AED67E /* jp2_cod.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jp2_cod.h; path = 3rdparty/libjasper/jp2_cod.h; sourceTree = SOURCE_ROOT; };
 		8FCE82EFE7E74AA392B9B7D4 /* upnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = upnp.cpp; path = modules/calib3d/src/upnp.cpp; sourceTree = SOURCE_ROOT; };
-		8FECB2B2FA594796BE832ECC /* liblibpng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibpng.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FECB2B2FA594796BE832ECC /* libpng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libpng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A5D1FFF2404824976858FC /* tif_jbig.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_jbig.c; path = 3rdparty/libtiff/tif_jbig.c; sourceTree = SOURCE_ROOT; };
 		91722106331D46A3A45E114C /* ImfRgba.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfRgba.h; path = 3rdparty/openexr/IlmImf/ImfRgba.h; sourceTree = SOURCE_ROOT; };
 		91B15FE82FE74A989C3A60A7 /* grfmt_pxm.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = grfmt_pxm.hpp; path = modules/imgcodecs/src/grfmt_pxm.hpp; sourceTree = SOURCE_ROOT; };
@@ -1255,7 +1255,7 @@
 		C517F24FBF434534B915FA3E /* epnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = epnp.cpp; path = modules/calib3d/src/epnp.cpp; sourceTree = SOURCE_ROOT; };
 		C51E8761BF564B29ABB28CEA /* video.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = video.hpp; path = modules/video/include/opencv2/video/video.hpp; sourceTree = SOURCE_ROOT; };
 		C57B949D193040109A51FD2D /* ImfHeader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfHeader.h; path = 3rdparty/openexr/IlmImf/ImfHeader.h; sourceTree = SOURCE_ROOT; };
-		C5E43F3F1C024A4FB22A33EE /* liblibjpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibjpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E43F3F1C024A4FB22A33EE /* libjpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libjpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E514094F3746329B2F2DB1 /* ImfTileOffsets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImfTileOffsets.h; path = 3rdparty/openexr/IlmImf/ImfTileOffsets.h; sourceTree = SOURCE_ROOT; };
 		C6076A0E52094CD7B2754335 /* ImfTimeCodeAttribute.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImfTimeCodeAttribute.cpp; path = 3rdparty/openexr/IlmImf/ImfTimeCodeAttribute.cpp; sourceTree = SOURCE_ROOT; };
 		C6308F7326FB46F686E9EA9F /* frame_source.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = frame_source.hpp; path = modules/videostab/include/opencv2/videostab/frame_source.hpp; sourceTree = SOURCE_ROOT; };
@@ -2652,12 +2652,12 @@
 			isa = PBXGroup;
 			children = (
 				E04B5AFCC3824259B25B5CB0 /* libzlib.a */,
-				1C90A63CAC874268ABAA5883 /* liblibtiff.a */,
-				C5E43F3F1C024A4FB22A33EE /* liblibjpeg.a */,
-				6FA811231B1D4566B33198E5 /* liblibjasper.a */,
-				8FECB2B2FA594796BE832ECC /* liblibpng.a */,
+				1C90A63CAC874268ABAA5883 /* libtiff.a */,
+				C5E43F3F1C024A4FB22A33EE /* libjpeg.a */,
+				6FA811231B1D4566B33198E5 /* libjasper.a */,
+				8FECB2B2FA594796BE832ECC /* libpng.a */,
 				9B0DBD2B3D3B4D39A74D2515 /* libIlmImf.a */,
-				335697A6F8C74AC9A105B1C1 /* libcv.a */,
+				335697A6F8C74AC9A105B1C1 /* libcvlib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3449,7 +3449,7 @@
 			);
 			name = libtiff;
 			productName = libtiff;
-			productReference = 1C90A63CAC874268ABAA5883 /* liblibtiff.a */;
+			productReference = 1C90A63CAC874268ABAA5883 /* libtiff.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2D6EFC08CF8A4AD5BCACE477 /* IlmImf */ = {
@@ -3480,7 +3480,7 @@
 			);
 			name = libjasper;
 			productName = libjasper;
-			productReference = 6FA811231B1D4566B33198E5 /* liblibjasper.a */;
+			productReference = 6FA811231B1D4566B33198E5 /* libjasper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		49D1D325B34E4FDAAE62B113 /* libjpeg */ = {
@@ -3495,7 +3495,7 @@
 			);
 			name = libjpeg;
 			productName = libjpeg;
-			productReference = C5E43F3F1C024A4FB22A33EE /* liblibjpeg.a */;
+			productReference = C5E43F3F1C024A4FB22A33EE /* libjpeg.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5ED7E2420DC6449C856D4C73 /* libpng */ = {
@@ -3511,12 +3511,12 @@
 			);
 			name = libpng;
 			productName = libpng;
-			productReference = 8FECB2B2FA594796BE832ECC /* liblibpng.a */;
+			productReference = 8FECB2B2FA594796BE832ECC /* libpng.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		71B59D83E12347F4B056BB03 /* cv */ = {
+		71B59D83E12347F4B056BB03 /* cvlib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "cv" */;
+			buildConfigurationList = 3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "cvlib" */;
 			buildPhases = (
 				479A3AE503C7444FA449880C /* CMake Rules */,
 				6EEB4FE164DA429BAB6F2C2A /* Sources */,
@@ -3525,9 +3525,9 @@
 			);
 			dependencies = (
 			);
-			name = cv;
+			name = cvlib;
 			productName = opencv_world_object;
-			productReference = 335697A6F8C74AC9A105B1C1 /* libcv.a */;
+			productReference = 335697A6F8C74AC9A105B1C1 /* libcvlib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -3555,7 +3555,7 @@
 				3B0507F08B6F457CBAA252E9 /* libjasper */,
 				5ED7E2420DC6449C856D4C73 /* libpng */,
 				2D6EFC08CF8A4AD5BCACE477 /* IlmImf */,
-				71B59D83E12347F4B056BB03 /* cv */,
+				71B59D83E12347F4B056BB03 /* cvlib */,
 			);
 		};
 /* End PBXProject section */
@@ -4140,7 +4140,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/debug";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -4262,7 +4262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Release;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/release";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -4319,7 +4319,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjpeg;
+				PRODUCT_NAME = jpeg;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
 				USE_HEADERMAP = NO;
@@ -4335,7 +4335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Release;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/release";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -4408,7 +4408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/debug";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -4481,7 +4481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Release;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/release";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -4538,7 +4538,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libpng;
+				PRODUCT_NAME = png;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libpng;
 				USE_HEADERMAP = NO;
@@ -4567,7 +4567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Release;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/release";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -4668,7 +4668,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libtiff;
+				PRODUCT_NAME = tiff;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libtiff;
 				USE_HEADERMAP = NO;
@@ -4684,7 +4684,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/modules/world/OpenCV.build/Debug/opencv_world_object.build/Objects-normal/";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/debug";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -4833,9 +4833,9 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = cv;
+				PRODUCT_NAME = cvlib;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "$(SRCROOT)/build/modules/world";
+				SYMROOT = "$(SRCROOT)/build/ios/debug";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -4849,7 +4849,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/debug";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -4906,7 +4906,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libpng;
+				PRODUCT_NAME = png;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libpng;
 				USE_HEADERMAP = NO;
@@ -4922,7 +4922,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/debug";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -4979,7 +4979,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjpeg;
+				PRODUCT_NAME = jpeg;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjpeg;
 				USE_HEADERMAP = NO;
@@ -4995,7 +4995,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Release;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/release";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -5063,7 +5063,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjasper;
+				PRODUCT_NAME = jasper;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjasper;
 				USE_HEADERMAP = NO;
@@ -5079,7 +5079,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Release;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/release";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -5201,7 +5201,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/modules/world/OpenCV.build/Release/opencv_world_object.build/Objects-normal/";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/release";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -5350,9 +5350,9 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = cv;
+				PRODUCT_NAME = cvlib;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "$(SRCROOT)/build/modules/world";
+				SYMROOT = "$(SRCROOT)/build/ios/debug";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -5366,7 +5366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/debug";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -5434,7 +5434,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libjasper;
+				PRODUCT_NAME = jasper;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libjasper;
 				USE_HEADERMAP = NO;
@@ -5450,7 +5450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/lib/Debug;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/ios/debug";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -5551,7 +5551,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = libtiff;
+				PRODUCT_NAME = tiff;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/mac/MyWorks/HongNuo/face_detector/build/3rdparty/libtiff;
 				USE_HEADERMAP = NO;
@@ -5597,7 +5597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "cv" */ = {
+		3297C5E55EDF4109A0D3A579 /* Build configuration list for PBXNativeTarget "cvlib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD9B22FF4A340BAAF944304 /* Debug */,
