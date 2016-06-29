@@ -1,4 +1,4 @@
-package org.opencv.facedetector;
+package org.opencv.facedetect;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -65,7 +65,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
                     Log.i(TAG, "OpenCV loaded successfully");
 
                     // Load native library after(!) OpenCV initialization
-                    System.loadLibrary("detection_based_tracker");
+                    System.loadLibrary("facedetector");
 
                     try {
                         // load cascade file from application resources

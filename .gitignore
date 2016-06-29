@@ -29,3 +29,4 @@ ios_mac/face_detector_ios.xcodeproj/xcuserdata
 ios_mac/face_detector.xcodeproj/xcuserdata
 native
 android/bin
+*.so

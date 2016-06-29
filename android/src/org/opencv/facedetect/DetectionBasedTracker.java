@@ -1,4 +1,4 @@
-package org.opencv.facedetector;
+package org.opencv.facedetect;
 
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
