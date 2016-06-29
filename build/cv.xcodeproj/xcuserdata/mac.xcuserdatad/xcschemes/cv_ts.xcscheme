@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7B0118C71E064BC096B04BF0"
-               BuildableName = "libopencv_ts.a"
+               BuildableName = "libcv_ts.a"
                BlueprintName = "cv_ts"
                ReferencedContainer = "container:build/cv.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B0118C71E064BC096B04BF0"
-            BuildableName = "libopencv_ts.a"
+            BuildableName = "libcv_ts.a"
             BlueprintName = "cv_ts"
             ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B0118C71E064BC096B04BF0"
-            BuildableName = "libopencv_ts.a"
+            BuildableName = "libcv_ts.a"
             BlueprintName = "cv_ts"
             ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>

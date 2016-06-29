@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
-               BuildableName = "liblibtiff.a"
+               BuildableName = "libtiff.a"
                BlueprintName = "tiff"
                ReferencedContainer = "container:build/cv.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
-            BuildableName = "liblibtiff.a"
+            BuildableName = "libtiff.a"
             BlueprintName = "tiff"
             ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21B4B443DDB7415593B5F54F"
-            BuildableName = "liblibtiff.a"
+            BuildableName = "libtiff.a"
             BlueprintName = "tiff"
             ReferencedContainer = "container:build/cv.xcodeproj">
          </BuildableReference>

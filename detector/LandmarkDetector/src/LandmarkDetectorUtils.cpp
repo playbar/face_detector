@@ -979,9 +979,10 @@ void Draw(cv::Mat img, const cv::Mat_<double>& shape2D, const cv::Mat_<int>& vis
 				int thickness_2 = (int)std::ceil(1.0* ((double)img.cols) / 640.0);
 
 				cv::circle(img, featurePoint, 1, cv::Scalar(0,0,255), thickness);
-                char num[3] = {0};
-                std::sprintf(num, "%d", i );
-                cv::putText(img, num, featurePoint, CV_FONT_HERSHEY_SIMPLEX, 0.4, cv::Scalar(255, 255, 255));
+                
+                //char num[3] = {0};
+                //std::sprintf(num, "%d", i );
+                //cv::putText(img, num, featurePoint, CV_FONT_HERSHEY_SIMPLEX, 0.4, cv::Scalar(255, 255, 255));
                 
 				//cv::circle(img, featurePoint, 1, cv::Scalar(255,0,0), thickness_2);
 			}

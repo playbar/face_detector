@@ -392,7 +392,8 @@ Mat::Mat(const Mat& m)
         CV_XADD(&u->refcount, 1);
     if( m.dims <= 2 )
     {
-        step[0] = m.step[0]; step[1] = m.step[1];
+        step[0] = m.step[0];
+        step[1] = m.step[1];
     }
     else
     {
