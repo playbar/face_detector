@@ -77,8 +77,8 @@ void visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& depth_image,
 
 	if (!det_parameters.quiet_mode)
 	{
-		cv::namedWindow("facedetector", 1);
-		cv::imshow("facedetector", captured_image);
+		cv::namedWindow("test", 1);
+		cv::imshow("test", captured_image);
 
 		if (!depth_image.empty())
 		{
@@ -89,231 +89,137 @@ void visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& depth_image,
 	}
 }
 
+void TestImg()
+{
+    IplImage *img1 = cvCreateImage(cvSize(640, 480), IPL_DEPTH_8U, 1 );
+    IplImage *img2;
+    img2 = cvCloneImage(img1 );
+    return;
+}
+
+void cvShiftDFT( CvArr *src_arr, CvArr *dst_arr){
+    CvMat *tmp;
+    CvMat q1stub, q2stub;
+    CvMat q3stub, q4stub;
+    CvMat d1stub, d2stub;
+    CvMat d3stub, d4stub;
+    CvMat *q1, *q2, *q3, *q4;
+    CvMat *d1, *d2, *d3, *d4;
+    CvSize size = cvGetSize(src_arr);
+    CvSize dst_size = cvGetSize(dst_arr );
+    
+    int cx, cy;
+    
+    if( dst_size.width != size.width || dst_size.height != size.height ){
+        cvError( CV_StsUnmatchedSizes, "cvShiftDFT", "Source and Destination arrays must have equal sizes", __FILE__, __LINE__);
+    }
+    
+    if( src_arr == dst_arr ){
+        tmp = cvCreateMat( size.height / 2, size.width / 2, cvGetElemType( src_arr ));
+    }
+    
+    cx = size.width / 2;
+    cy = size.height / 2;
+    
+    q1 = cvGetSubRect(src_arr, &q1stub, cvRect(0, 0, cx, cy ));
+    q2 = cvGetSubRect(src_arr, &q2stub, cvRect(cx, 0, cx, cy));
+    q3 = cvGetSubRect(src_arr, &q3stub, cvRect(cx, cy, cx, cy));
+    q4 = cvGetSubRect(src_arr, &q4stub, cvRect(0, cy, cx, cy));
+    d1 = cvGetSubRect(src_arr, &d1stub, cvRect(0, 0, cx, cy));
+    d2 = cvGetSubRect(src_arr, &d2stub, cvRect(cx, 0, cx, cy));
+    d3 = cvGetSubRect(src_arr, &d3stub, cvRect(cx, cy, cx, cy));
+    d4 = cvGetSubRect(src_arr, &d4stub, cvRect(0, cy, cx, cy));
+    
+    if( src_arr != dst_arr ){
+        if( CV_ARE_TYPES_EQ(q1, d1)){
+            cvError(CV_StsUnmatchedFormats, "cvShiftDFT", "Source and Destination", __FILE__, __LINE__ );
+        }
+        cvCopy(q3, d1, 0 );
+        cvCopy(q4, d2, 0 );
+        cvCopy(q1, d3, 0 );
+        cvCopy(q2, d4, 0);
+    }
+    else{
+        cvCopy(q3, tmp,  0);
+        cvCopy(q1, q3, 0);
+        cvCopy( tmp, q1, 0);
+        cvCopy(q4, tmp, 0);
+        cvCopy(q2, q4, 0);
+        cvCopy(tmp, q2, 0);
+    }
+    return;
+    
+    
+}
+
 int main (int argc, char **argv)
 {
 
+    TestImg();
+    
 	vector<string> arguments = get_arguments(argc, argv);
-
-	// Some initial parameters that can be overriden from command line	
-    vector<string> files;
-    vector<string> depth_directories;
-    vector<string> output_video_files;
-    vector<string> out_dummy;
-	
-	// By default try webcam 0
-	int device = 0;
+    
+    int height, width, step, channels;
+    uchar *data;
 
 	LandmarkDetector::FaceModelParameters det_parameters(arguments);
-
-	// Get the input output file parameters
-	
-	// Indicates that rotation should be with respect to world or camera coordinates
-	bool u;
-	LandmarkDetector::get_video_input_output_params(files, depth_directories, out_dummy, output_video_files, u, arguments);
-	
-	// The modules that are being used for tracking
-    //LandmarkDetector::CLNF inner("model/model_inner/main_clnf_inner.txt");
-    //LandmarkDetector::CLNF left_eye("model/model_eye/main_clnf_synth_left.txt");
-    //LandmarkDetector::CLNF right_eye("model/model_eye/main_clnf_synth_right.txt");
+    std::string filename = det_parameters.strRoot + "/test.jpg";
+    IplImage *img = cvLoadImage(filename.c_str());
     
-
-	// Grab camera parameters, if they are not defined (approximate values will be used)
-	float fx = 0, fy = 0, cx = 0, cy = 0;
-	// Get camera parameters
-	LandmarkDetector::get_camera_params(device, fx, fy, cx, cy, arguments);
-
-	// If cx (optical axis centre) is undefined will use the image size/2 as an estimate
-	bool cx_undefined = false;
-	bool fx_undefined = false;
-	if (cx == 0 || cy == 0)
-	{
-		cx_undefined = true;
-	}
-	if (fx == 0 || fy == 0)
-	{
-		fx_undefined = true;
-	}
-
-	// If multiple video files are tracked, use this to indicate if we are done
-	bool done = false;	
-	int f_n = -1;
-	
-	det_parameters.track_gaze = true;
-
-	while(!done) // this is not a for loop as we might also be reading from a webcam
-	{
-		
-		string current_file;
-
-		// We might specify multiple video files as arguments
-		if(files.size() > 0)
-		{
-			f_n++;			
-		    current_file = files[f_n];
-		}
-		else
-		{
-			// If we want to write out from webcam
-			f_n = 0;
-		}
-		
-		bool use_depth = !depth_directories.empty();	
-
-		// Do some grabbing
-		cv::VideoCapture video_capture;
-		if( current_file.size() > 0 )
-		{
-			if (!boost::filesystem::exists(current_file))
-			{
-				FATAL_STREAM("File does not exist");
-			}
-
-			current_file = boost::filesystem::path(current_file).generic_string();
-
-			INFO_STREAM( "Attempting to read from file: " << current_file );
-			video_capture = cv::VideoCapture( current_file );
-		}
-		else
-		{
-			INFO_STREAM( "Attempting to capture from device: " << device );
-			video_capture = cv::VideoCapture( device );
-            video_capture.set(CV_CAP_PROP_FRAME_WIDTH, 600);
-            video_capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
-            //video_capture.set(CV_CAP_PROP_FPS, 3000);
-
-			// Read a first frame often empty in camera
-			cv::Mat captured_image;
-			video_capture >> captured_image;
-		}
-
-		if( !video_capture.isOpened() )
-            FATAL_STREAM( "Failed to open video source" );
-		else
-            INFO_STREAM( "Device or file opened");
-
-		cv::Mat captured_image;
-		video_capture >> captured_image;		
-
-		// If optical centers are not defined just use center of image
-		if (cx_undefined)
-		{
-			cx = captured_image.cols / 2.0f;
-			cy = captured_image.rows / 2.0f;
-		}
-		// Use a rough guess-timate of focal length
-		if (fx_undefined)
-		{
-			fx = 500 * (captured_image.cols / 640.0);
-			fy = 500 * (captured_image.rows / 480.0);
-
-			fx = (fx + fy) / 2.0;
-			fy = fx;
-		}		
-	
-		int frame_count = 0;
-		
-		// saving the videos
-		cv::VideoWriter writerFace;
-		if (!output_video_files.empty())
-		{
-			writerFace = cv::VideoWriter(output_video_files[f_n], CV_FOURCC('D', 'I', 'V', 'X'), 30, captured_image.size(), true);
-		}
-
-		// Use for timestamping if using a webcam
-		int64 t_initial = cv::getTickCount();
-
-		INFO_STREAM( "Starting tracking");
-		while(!captured_image.empty())
-		{		
-
-			// Reading the images
-			cv::Mat_<float> depth_image;
-			cv::Mat_<uchar> grayscale_image;
-
-			if(captured_image.channels() == 3)
-			{
-				cv::cvtColor(captured_image, grayscale_image, CV_BGR2GRAY);				
-			}
-			else
-			{
-				grayscale_image = captured_image.clone();				
-			}
-		
-			// Get depth image
-			if(use_depth)
-			{
-				char* dst = new char[100];
-				std::stringstream sstream;
-
-				sstream << depth_directories[f_n] << "\\depth%05d.png";
-				sprintf(dst, sstream.str().c_str(), frame_count + 1);
-				// Reading in 16-bit png image representing depth
-				cv::Mat_<short> depth_image_16_bit = cv::imread(string(dst), -1);
-
-				// Convert to a floating point depth image
-				if(!depth_image_16_bit.empty())
-				{
-					depth_image_16_bit.convertTo(depth_image, CV_32F);
-				}
-				else
-				{
-					WARN_STREAM( "Can't find depth image" );
-				}
-			}
-			
-			// The actual facial landmark detection / tracking
-            //bool detection_success = false;
-			
-			// Visualising the results
-			// Drawing the facial landmarks on the face and the bounding box around it if tracking is successful and initialised
-			//double detection_certainty = clnf_model.detection_certainty;
-
-			// Gaze tracking, absolute gaze direction
-            
-            TS(FaceDraw);
-            
-			cv::Point3f gazeDirection0(0, 0, -1);
-			cv::Point3f gazeDirection1(0, 0, -1);
-
-
-			visualise_tracking(captured_image, depth_image, det_parameters, gazeDirection0, gazeDirection1, frame_count, fx, fy, cx, cy);
-			
-           TE(FaceDraw);
-            
-			// output the tracked video
-			if (!output_video_files.empty())
-			{
-				writerFace << captured_image;
-			}
-
-
-			video_capture >> captured_image;
-		
-			// detect key presses
-			char character_press = cv::waitKey(1);
-			
-		
-			// quit the application
-			if(character_press=='q')
-			{
-				return(0);
-			}
-
-			// Update the frame count
-			frame_count++;
-
-		}
-		
-		frame_count = 0;
-
-		
-		// break out of the loop if done with all the files (or using a webcam)
-		if(f_n == files.size() -1 || files.empty())
-		{
-			done = true;
-		}
-	}
-
-	return 0;
+    IplImage *im;
+    IplImage *realInput;
+    IplImage *imaginaryInput;
+    IplImage *complexInput;
+    int dft_M, dft_N;
+    CvMat *dft_A, tmp;
+    IplImage *image_Re;
+    IplImage *image_Im;
+    double m, M;
+    im = cvLoadImage(filename.c_str(), CV_LOAD_IMAGE_GRAYSCALE );
+    if( !im )
+        return -1;
+    
+    realInput = cvCreateImage(cvGetSize(im), IPL_DEPTH_64F, 1);
+    imaginaryInput = cvCreateImage( cvGetSize(im), IPL_DEPTH_64F, 1 );
+    complexInput = cvCreateImage(cvGetSize(im), IPL_DEPTH_64F, 2);
+    
+    cvScale( im, realInput, 1.0, 0.0);
+    cvZero( imaginaryInput );
+    cvMerge( realInput, imaginaryInput, NULL, NULL, complexInput);
+    
+    dft_M = cvGetOptimalDFTSize( im->height - 1 );
+    dft_N = cvGetOptimalDFTSize( im->width - 1 );
+    dft_A = cvCreateMat( dft_M, dft_N, CV_64FC2);
+    
+    image_Re = cvCreateImage( cvSize(dft_N, dft_M), IPL_DEPTH_64F, 1 );
+    image_Im = cvCreateImage( cvSize(dft_N, dft_M), IPL_DEPTH_64F, 1 );
+    
+    cvGetSubRect( dft_A, &tmp, cvRect( 0, 0, im->width, im->height ));
+    cvCopy( complexInput, &tmp, NULL );
+    cvGetSubRect( dft_A, &tmp, cvRect(im->width, 0, dft_A->cols - im->width, im->height));
+    cvZero( &tmp );
+    
+    cvDFT( dft_A, dft_A, CV_DXT_FORWARD, complexInput->height );
+    
+    cvNamedWindow("win", 0);
+    cvNamedWindow("magnitude", 0);
+    cvShowImage("win", im);
+    
+    cvSplit( dft_A, image_Re, image_Im, 0, 0);
+    
+    cvPow( image_Re, image_Re, 2.0 );
+    cvPow( image_Im, image_Im, 2.0 );
+    cvAdd( image_Re, image_Im, image_Re, NULL );
+    cvPow( image_Re, image_Re, 0.5);
+    
+    cvAddS(image_Re, cvScalarAll(1.0), image_Re, NULL );
+    cvLog( image_Re, image_Re );
+    cvShiftDFT( image_Re, image_Re );
+    cvMinMaxLoc( image_Re, &m, &M, NULL, NULL, NULL);
+    cvScale( image_Re, image_Re, 1.0 / (M - m), 1.0 * ( -m) / (M - m));
+    cvShowImage("magnitude", image_Re );
+    cvWaitKey( -1);
+    return 0;
+    
 }
 
