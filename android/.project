@@ -100,6 +100,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>3rdparty</name>
+			<type>2</type>
+			<location>/Users/mac/MyWorks/HongNuo/face_detector/3rdparty</location>
+		</link>
+		<link>
 			<name>modules</name>
 			<type>2</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/modules</locationURI>

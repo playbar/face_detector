@@ -2,9 +2,10 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-$(call import-add-path,$(LOCAL_PATH)/../../modules)
+#$(call import-add-path,$(LOCAL_PATH)/../../modules)
+#$(call import-add-path,$(LOCAL_PATH)/../../3rdparty)
 
-#include ../native/jni/OpenCV.mk
+include ../native/jni/OpenCV.mk
 
 LOCAL_SRC_FILES  := DetectionBasedTracker_jni.cpp
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
@@ -14,7 +15,14 @@ LOCAL_MODULE     := facedetector
 #LOCAL_SRC_FILES :=  libopencv_java.so
 #LOCAL_MODULE := opencv_java
 
+LOCAL_STATIC_LIBRARIES := cv
+
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module,.)
+#$(call import-module, .)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE :=opencv_java
+LOCAL_SRC_FILES := libopencv_java.so
+include $(PREBUILT_SHARED_LIBRARY)
 
