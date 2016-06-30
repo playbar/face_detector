@@ -22,7 +22,7 @@ include $(BUILD_SHARED_LIBRARY)
 #$(call import-module, .)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE :=opencv_java
-LOCAL_SRC_FILES := libopencv_java.so
+LOCAL_MODULE :=opencv_java3
+LOCAL_SRC_FILES := libopencv_java3.so
 include $(PREBUILT_SHARED_LIBRARY)
 

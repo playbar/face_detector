@@ -8,6 +8,10 @@ public class DetectionBasedTracker
     public DetectionBasedTracker(String cascadeName, int minFaceSize) {
         mNativeObj = nativeCreateObject(cascadeName, minFaceSize);
     }
+    
+    static{
+    	 	System.loadLibrary("facedetector");
+    }
 
     public void start() {
         nativeStart(mNativeObj);

@@ -53,7 +53,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
 
     private float                  mRelativeFaceSize   = 0.2f;
     private int                    mAbsoluteFaceSize   = 0;
-
+    
     private CameraBridgeViewBase   mOpenCvCameraView;
 
     private BaseLoaderCallback  mLoaderCallback = new BaseLoaderCallback(this) {
@@ -65,7 +65,8 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
                     Log.i(TAG, "OpenCV loaded successfully");
 
                     // Load native library after(!) OpenCV initialization
-                    System.loadLibrary("facedetector");
+                    
+                   
 
                     try {
                         // load cascade file from application resources
@@ -142,6 +143,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
     public void onResume()
     {
         super.onResume();
+        
         if (!OpenCVLoader.initDebug()) {
             Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
             OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, this, mLoaderCallback);
